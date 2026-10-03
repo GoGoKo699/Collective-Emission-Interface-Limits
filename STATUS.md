@@ -2,30 +2,30 @@
 
 **3 October 2026 · Dedicated development candidate · Manuscript on hold.**
 
-The fixed object is optimized canonical transfer of a Dicke number code into one prechosen linear optical memory mode. The source, receiver, target and excitation regimes are unchanged.
+The source, canonical number map, excitation code, receiver class and theorem are unchanged.
 
 ## Current reproducibility outcome
 
-The follow-up to issue #7 is recorded in [HOSTED_REPRODUCTION.md](provenance/HOSTED_REPRODUCTION.md). The newly retained hosted outputs reproduce all eight references byte-for-byte. A separate hosted execution of the exact original runner, with only temporary-output capture added externally, also reproduces all eight references. Each execution covers 39 scientific groups and 612 cases. None of the 2440 recorded numeric fields differs.
+The follow-up to issue #7 is recorded in [HOSTED_REPRODUCTION.md](provenance/HOSTED_REPRODUCTION.md). Two initial hosted checks reproduced all references exactly, including an execution of the unmodified old runner. A subsequent run reproduced the mismatch and failed the new reference gate before merging. Its complete output was retained and inspected.
 
-**The historical PR #6 mismatch was not reproduced; its cause remains undetermined.** Its raw outputs were discarded, so it cannot be retrospectively classified as rounding or metadata. The old summary is preserved. Current exact agreement is not an explanation of that missing evidence.
+The retained recurrence changes 429 floating values and two solver-work counts, with no metadata, schema or status differences. Eleven raw alerts concern N-squared-rescaled infidelity; the largest corresponds to a 4.22e-15 change of the original infidelity. Two alerts are solver evaluation counts, not physical or test-case counts. Other floating differences fall within the previously declared general threshold. The main finite photon-collection/fidelity contrast retains its reported precision; every original scientific assertion passes.
 
-The runner and workflow now retain generated results, reference copies, field differences and numerical environment details. Structural or out-of-tolerance scientific differences fail the reference gate. The [policy](provenance/REPRODUCTION_POLICY.md) distinguishes these operational checks from proofs and numerical error certificates. The eight scientific scripts, saved references and suite registry remain unchanged; twelve infrastructure unit tests are not counted as new scientific groups.
+A source-informed review now distinguishes those two precisely identified field families while retaining every raw value and raw failed verdict. The general tolerance and all science assertions are unchanged. [REPRODUCTION_POLICY.md](provenance/REPRODUCTION_POLICY.md) defines the two-layer gate and its fifteen infrastructure unit tests. The scientific count remains eight suites, 39 groups and 612 cases.
 
-## Scientific core and its boundaries
+**The retained recurrence is classified; the discarded PR #6 values are still unavailable.** It is not established that their exact cause matches the later run. Exact bytes are not promised across machines, and numerical agreement is not independent proof review. Current branch and merge results must be read from their actual runs.
 
-[STORY.md](research/STORY.md) states the physical account: a dilute collective source can approach an oscillator for mean-photon collection without admitting faithful transfer of its whole excitation code into one fixed linear memory. The all-waveform optimization is essential; the claim is not failure of an arbitrary exponential.
+## Scientific core
 
-[THEOREM.md](research/THEOREM.md) includes the explicit endpoint-safe converse correction recorded in [PROOF_AUDIT.md](research/PROOF_AUDIT.md). The uniform approximation, optimized boundary, mean-collection comparison and two-sector witness are unchanged by this maintenance pass. The two-mode explanation and source-realization analyses remain supporting results with their stated regimes, not new claims introduced to expand the project.
+[STORY.md](research/STORY.md) states the physical account: a dilute collective source can approach an oscillator for mean-photon collection without faithfully transferring its whole excitation code into one fixed linear memory. The optimized all-waveform converse matters, rather than failure of an arbitrarily selected exponential.
 
-The [Law–Lee comparison](literature/LAW_LEE_FULL_TEXT.md) is complete. The paper retains credit for mean-occupation optimization, the oscillator comparator, few-mode behavior and the semiclassical pulse. No subsumption was established in that comparison; exhaustive priority was not certified.
+[THEOREM.md](research/THEOREM.md) includes the endpoint-safe proof correction in [PROOF_AUDIT.md](research/PROOF_AUDIT.md). The uniform approximation, critical boundary, mean-collection comparison and two-sector witness are unchanged. The two-mode explanation and source-realization analyses remain supporting results within their stated regimes.
 
-The named preparation readings are complete in [PREPARATION_EVIDENCE.md](literature/PREPARATION_EVIDENCE.md), at the recorded versions and access depths. Five related construction-level readings are not five demonstrations of one reference-preserving input preparation and emitting apparatus. The [assumption register](literature/ASSUMPTIONS.md) keeps those distinctions explicit.
+The [Law–Lee reading](literature/LAW_LEE_FULL_TEXT.md) and [preparation readings](literature/PREPARATION_EVIDENCE.md) are complete at their documented versions and scope. Their inherited contributions remain credited. The [assumption register](literature/ASSUMPTIONS.md) does not convert five related preparation methods into five joint-device demonstrations.
 
-## Remaining substantive step
+## Next substantive step
 
-A genuinely separate mathematical/physical reading remains absent. The [checklist](research/CRITICAL_READING.md), proof, correction and direct literature comparisons are ready for it. No outside researcher has been contacted. Repeated internal tests are not that reading.
+A separate mathematical/physical report is still absent. The [reading checklist](research/CRITICAL_READING.md), canonical proof, explicit correction and direct comparisons are ready for it. No outside researcher has been contacted. Another internal reproduction is not that assessment.
 
-Whole-code preparation cost, known-N calibration, microscopic bandwidth/rate scaling and a compatible joint realization remain conditional for a device claim. No quantum-capacity claim, alternative encoding, nonlinear decoder or new source is introduced. The [work order](work_orders/CURRENT.md) does not authorize expansion to avoid those questions.
+Whole-code preparation, reference-preserving encoding, atom-number calibration, microscopic bandwidth/rate scaling and joint realization remain conditional for a device claim. This is not a quantum-capacity theorem or an unrestricted decoding limit. The [work order](work_orders/CURRENT.md) does not authorize another model to avoid those questions.
 
-The scientific and literature files, MIT license and historical manifests remain unchanged. This pass changes only verification infrastructure and its status/evidence documents. Hosted run identities, downloaded-artifact hashes and the limited local reconstruction are recorded in the reproduction note. Manuscript writing and outreach remain on hold.
+All eight scientific scripts/results, the suite registry, research and literature trees, MIT license and historical manifests remain unchanged. This pass changes reporting infrastructure and its evidence/status records only. Manuscript writing and outreach remain on hold.

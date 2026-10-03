@@ -8,6 +8,7 @@ import tempfile
 import unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from tools.reproduction import compare_results, numerical_environment, write_suite_evidence
+from tools.reviewed_fields import review_field_differences
 
 
 def raw(x): return json.dumps(x,allow_nan=False).encode()
@@ -71,6 +72,28 @@ class ReproductionTests(unittest.TestCase):
             self.assertEqual((p/'reference.json').read_bytes(),r)
             self.assertEqual((p/'observed.json').read_bytes(),o)
             with self.assertRaises(FileExistsError):write_suite_evidence(p,b'',r,o,{})
+
+    def test_source_units_not_looser_general_tolerance(self):
+        a={'groups':{'one_mode_number_superpositions':{'small_code':{'N':2000,'exact_scaled_losses':[6.0]}}}}
+        b={'groups':{'one_mode_number_superpositions':{'small_code':{'N':2000,'exact_scaled_losses':[6.0+2e-8]}}}}
+        r=compare_results(raw(a),raw(b));self.assertEqual(r['verdict'],'REVIEW_REQUIRED')
+        v=review_field_differences(r,'01_pulse_matching',raw(a),raw(b));self.assertTrue(v['accepted'])
+        self.assertEqual(r['verdict'],'REVIEW_REQUIRED') # The raw failed verdict is retained.
+        b['groups']['one_mode_number_superpositions']['small_code']['exact_scaled_losses'][0]=10.0
+        r=compare_results(raw(a),raw(b));self.assertFalse(review_field_differences(r,'01_pulse_matching',raw(a),raw(b))['accepted'])
+
+    def test_solver_work_is_narrowly_scoped(self):
+        a={'groups':{'finite_mean_and_fidelity':{'refined_largest_case':{'nfev':100}}},'cases':10}
+        b={'groups':{'finite_mean_and_fidelity':{'refined_largest_case':{'nfev':112}}},'cases':10}
+        r=compare_results(raw(a),raw(b));self.assertTrue(review_field_differences(r,'05_photon_collection',raw(a),raw(b))['accepted'])
+        self.assertFalse(review_field_differences(r,'different_suite',raw(a),raw(b))['accepted'])
+        b['cases']=11;r=compare_results(raw(a),raw(b))
+        self.assertFalse(review_field_differences(r,'05_photon_collection',raw(a),raw(b))['accepted'])
+
+    def test_changed_scaling_parameter_is_not_hidden(self):
+        a={'groups':{'one_mode_number_superpositions':{'small_code':{'N':2000,'exact_scaled_losses':[6.0]}}}}
+        b={'groups':{'one_mode_number_superpositions':{'small_code':{'N':3000,'exact_scaled_losses':[6.0+2e-8]}}}}
+        r=compare_results(raw(a),raw(b));self.assertFalse(review_field_differences(r,'01_pulse_matching',raw(a),raw(b))['accepted'])
 
     def test_environment(self):
         r=numerical_environment()

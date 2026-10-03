@@ -1,18 +1,8 @@
-# Reproduction evidence and reporting policy
+# Reproduction evidence and source-informed review
 
-**3 October 2026.** This policy addresses issue #7 without changing the physical model, scientific calculations, or saved scientific results. It is not a proof review.
+**3 October 2026.** This policy addresses issue #7 without changing any scientific calculation or saved reference. It is not a proof or a rigorous numerical-error certificate.
 
-## Three separate questions
-
-1. Did every scientific assertion in the standalone suites pass?
-2. Were the scientific scripts and saved references preserved exactly?
-3. How do the newly generated outputs compare with those references?
-
-A green assertion run answers the first question, not automatically the third. The previous runner recorded byte/JSON equality flags but discarded the actual temporary outputs. The new runner keeps those flags and additionally compares every JSON field.
-
-## Retained evidence
-
-Run from the repository root, choosing an output directory that does not already exist:
+## Run and retain the evidence
 
 ```sh
 python tools/test_reproduction.py
@@ -20,28 +10,40 @@ python verify.py --output verification-report.json \
   --artifacts-dir verification-artifacts --require-reference
 ```
 
-For every suite the artifact contains its unchanged script, unchanged reference JSON, actual generated JSON, and complete field comparison. An allowlisted environment report records Python/package versions, CPU model, numerical-library build information and thread controls. It does not dump credentials or the full process environment. The workflow uploads evidence even when a check fails; normal hosted artifact retention is fourteen days.
+Choose a new artifact directory for each run. It contains every suite's unchanged script and reference, actual generated output, full raw field comparison and separate reviewed comparison. An allowlisted runtime report records package/build/CPU details and thread settings without dumping credentials. The workflow retains artifacts even on failure; normal hosted retention is fourteen days.
 
-The classifications distinguish exact bytes, serialization-only changes, metadata-only changes, numerical differences within the review threshold, and differences requiring review. Only the top-level `environment` and `date` fields are metadata. Changes of seeds, integer counters, booleans, strings, structure, or number types are not waved through as floating-point roundoff. Duplicate keys and nonfinite/invalid outputs require review.
+Scientific assertion success, source/reference preservation, exact-byte equality and reviewed numerical agreement are separate report fields. None is silently substituted for another. Raw field comparisons and byte flags remain visible even when a reviewed difference is accepted.
 
-Every differing numerical field retains both values, its absolute difference, and a symmetric relative difference. A reference-based relative difference is explicitly undefined when the reference is zero. This avoids reporting a tiny absolute residue as an unexplained infinite percentage. All differences remain visible, even when they do not trigger failure.
+## Generic comparison
 
-## Thresholds and what they do not prove
+Only top-level `environment` and `date` values are metadata. Duplicate keys, nonfinite/invalid JSON, scientific schema or type changes, changed status strings and integer counters trigger review. Every numeric difference records both values, an absolute difference and a symmetric relative difference. A reference-relative difference is undefined for zero references rather than reported as a misleading infinite percentage.
 
-The initial branch declared the default alert rule before inspecting its hosted results:
+Before the first retained run, the branch declared the general review threshold
 
 $$|a-b|\leq10^{-10}+10^{-9}\max(|a|,|b|).$$
 
-These are operational regression thresholds, not rigorous errors of an integrator, an allowed physical infidelity, or proof that a changed result is harmless. `--require-reference` fails the workflow on a scientific structural change or a numeric alert. The independent scientific assertions still run unchanged. Current byte-identical runs do not use this tolerance to make nonidentical results appear equal.
+That threshold is unchanged. It is a regression alert, not solver accuracy, an allowable physical infidelity or a proof that all changes within it are harmless. Every raw difference is preserved, not just threshold violations.
 
-Tolerances can be specified explicitly for investigation. Any future change to the workflow defaults must be justified against the affected calculation, with both outputs retained; it must not be widened merely to restore a green job. A large relative difference at a near-zero residual can be benign or significant depending on the quantity, so a report must identify its path and scale rather than offer a blanket rounding explanation.
+## Explicit source-informed interpretations
 
-The comparator has twelve infrastructure unit tests, including changed values, nonfinite data, type/structure errors, large integers, reference zeros, metadata and evidence preservation. These are not additional scientific groups. An end-to-end negative control confirms that a script reporting `PASS` can nevertheless fail the new reference gate when its synthetic fidelity changes from 0.9 to 0.901.
+The retained recurrence first failed the generic gate. Source inspection then established two narrow reporting conventions. `tools/reviewed_fields.py` implements them without changing the generic verdict.
 
-## Historical limitations
+**Rescaled infidelity:** only suite 01's `fixed_m_checks/*/scaled_loss` and `small_code/exact_scaled_losses/*` values are known from the unchanged source to be `N*N*(1-fidelity)`. The review compares their original infidelity units using the same numerical threshold, provided both records have the same positive integer N. Raw scaled differences remain in `comparison.json`. Parameter, type and unrelated result changes are not hidden by rescaling.
 
-The old PR #6 report remains evidence that equality flags were false. Its raw generated values were discarded, so later successful reruns cannot retrospectively identify those differences. Do not call the old discrepancy rounding, metadata, a proven bug, or a theorem failure without the missing evidence. The current recorded investigation is in [HOSTED_REPRODUCTION.md](HOSTED_REPRODUCTION.md).
+**Solver work:** only suite 05's `finite_rows/*/mean/nfev` and `refined_largest_case/nfev` are the stored `solve_ivp` evaluation counts. Nonnegative integer differences there are classified as workload, not physics. The same field name elsewhere, changed types, missing values, test counts and physical integers still require review.
 
-The optional `tools/capture_previous_runner.py` checks the exact original runner blob and copies its temporary outputs immediately before their normal cleanup. It permits a separate reproduction of the old execution path without modifying scientific scripts. It cannot recover files from a completed historical run. It is not part of every normal workflow run.
+These rules were added after inspecting the retained failure. They are not a generic permission to relax comparison whenever a result differs. No scientific assertion, reference file or general tolerance was changed. Any further exception requires its own source justification and preserved failing evidence.
 
-No saved result is regenerated to match a machine. Historical exact-byte executions remain historical; new executions state their own equality result and environment. Separate mathematical/physical reading and joint-device evidence remain outside the scope of these checks.
+With `--require-reference`, unresolved raw alerts fail the run. The two justified families receive an explicit `reviewed-comparison.json` record. The original scientific assertions run separately and must also pass. An artifact may therefore contain a raw `REVIEW_REQUIRED` label alongside accepted source-unit review; this is deliberate and explained, not exact-byte equality.
+
+## Controls
+
+Fifteen tooling unit tests cover invalid data, duplicate keys, zeros, large integers, types, metadata, changes to N, scoped work counts, rescaled physical errors and evidence preservation. A local end-to-end replay of the captured output passes the declared review while retaining its false exact-byte flags. Altering an ordinary fidelity by 0.001 makes the gate fail even if the replayed script reports PASS. These fixtures test infrastructure, not the science.
+
+The optional `tools/capture_previous_runner.py` verifies the old runner's blob and copies its temporary output immediately before cleanup. Its hosted cross-check reproduced all references exactly. It cannot recover values discarded by a historical job and is not run on every normal commit.
+
+## Reporting limits
+
+The old PR #6 summary remains evidence of a mismatch with missing raw outputs. The later retained PR #8 recurrence can be classified; it does not establish the exact values or causal instruction path of that earlier run. Different CPUs coincided with different numerical results, but no controlled causal CPU/library diagnosis has been performed.
+
+See [HOSTED_REPRODUCTION.md](HOSTED_REPRODUCTION.md) for the actual observed fields and scientific interpretation. Never regenerate a saved reference to match a machine. Future changed benchmarks need a calculation-specific investigation, not a blanket rounding explanation. Independent proof reading and joint-device evidence remain separate tasks.

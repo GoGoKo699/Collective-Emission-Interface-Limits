@@ -17,6 +17,7 @@ import sys
 import tempfile
 import time
 from tools.reproduction import compare_results, numerical_environment, write_suite_evidence, DEFAULT_ATOL, DEFAULT_RTOL
+from tools.reviewed_fields import review_field_differences
 
 ROOT=Path(__file__).resolve().parent
 
@@ -101,24 +102,27 @@ def main():
             observed=output.read_bytes() if output.exists() else None
             saved=(folder/'results.json').read_bytes()
             comparison=compare_results(saved,observed,args.atol,args.rtol)
+            review=review_field_differences(comparison,suite['name'],saved,observed)
             try:parsed=json.loads(observed) if observed else {}
             except (ValueError,UnicodeError):parsed={}
             if not isinstance(parsed,dict):parsed={}
             if artifacts:
                 write_suite_evidence(artifacts/suite['name'],(folder/'checks.py').read_bytes(),saved,observed,comparison)
+                (artifacts/suite['name']/'reviewed-comparison.json').write_text(json.dumps(review,indent=2,allow_nan=False)+'\n')
             clean=lambda s:s.replace(str(temp),'[TEMP]').replace(str(ROOT),'[REPOSITORY]')
             row=dict(name=suite['name'],returncode=returncode,status=parsed.get('status','NO RESULT'),
                      groups=parsed.get('group_count'),cases=parsed.get('cases',parsed.get('parameter_cases')),
                      result_byte_identical=observed==saved,result_JSON_identical=parsed==json.loads(saved),
                      elapsed_seconds=round(time.monotonic()-start,3),stdout=clean(stdout),stderr=clean(stderr),
-                     comparison={k:v for k,v in comparison.items() if k!='differences'})
+                     comparison={k:v for k,v in comparison.items() if k!='differences'},review=review)
             rows.append(row)
             print(f'{row["name"]}: {row["status"]}; saved results identical: {row["result_byte_identical"]}',flush=True)
             print(f'  reference comparison: {comparison["verdict"]}; scientific numeric differences: {comparison["differing_numeric_fields"]}',flush=True)
+            print(f'  source-reviewed comparison accepted: {review["accepted"]}; unresolved paths: {len(review["unresolved_paths"])}',flush=True)
             if returncode:break
     integrity()
     passed=len(rows)==len(suites) and all(r['returncode']==0 and r['status']=='PASS' for r in rows)
-    reference_ok=all(r['comparison']['verdict']!='REVIEW_REQUIRED' for r in rows)
+    reference_ok=all(r['review']['accepted'] for r in rows)
     assertions_passed=passed
     if args.require_reference:passed=passed and reference_ok
     report=dict(scientific_assertions_passed=assertions_passed,reference_comparison_passed=reference_ok,
