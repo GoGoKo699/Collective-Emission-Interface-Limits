@@ -1,6 +1,6 @@
 # Model and proof of the common-mode boundary
 
-**Consolidated on 3 October 2026.** This is an edited, standalone presentation of the preceding collective-emission calculations. It introduces no new source or receiver. The complete primitive identities and numerical benchmarks are covered by the preserved standalone suites. Statements below are mathematical claims within the declared model; the priority and physical-scope checks are separate.
+**Consolidated on 3 October 2026; endpoint-safe proof clarification the same day.** This is an edited, standalone presentation of the preceding collective-emission calculations. It introduces no new source or receiver. The complete primitive identities and numerical benchmarks are covered by the preserved standalone suites. Statements below are mathematical claims within the declared model; the priority and physical-scope checks are separate.
 
 ## 1. Source, output normalization, and target
 
@@ -102,23 +102,51 @@ $$K(u_m-u_*)^{2m}\longrightarrow
 
 The maximum of $x(x-3/4)^2$ on $[0,1]$ is $1/16$, attained at $x=1/4$ and $x=1$. The construction therefore gives limiting worst fidelity $e^{-c^3/192}$. Uniform source-state control transfers this lower bound to the true field.
 
+### A finite lower envelope
+
+The preceding construction can be bounded before taking any limit. Define
+
+$$b_M=1-(M-1)/N,\qquad B_M=\frac{M(M-1)}{12N^2b_M^2},\qquad
+\epsilon=\sqrt{2(1-e^{-B_M/2})}.$$
+
+Every sector vector error is at most $\epsilon$. The exact inequalities $\ln K(z)\geq-z^2/24$ and $|u_m-u_*|\leq |m-3M/4|/(Nb_M)$ give, for $M\geq2$,
+
+$$\boxed{\mathcal F_{N,M}\geq
+\left[\max\{0,e^{-M^3/(384N^2b_M^2)}-\epsilon\}\right]^2.}$$
+
+This is uniform over the entire code and avoids interchanging a sector minimum with a pointwise limit. Vacuum and the $M\leq1$ codes transfer exactly. An elementary proof of the kernel inequality is in [the proof audit](PROOF_AUDIT.md).
+
 ## 5. Converse for every waveform
 
-Let $q=\lfloor M/4\rfloor$; at large $M$, $q\geq1$. If a receiver has true fidelity at least $F$ on both $q$ and $M$, the respective reference-product overlap amplitudes are at least $\sqrt F-\varepsilon_q$ and $\sqrt F-\varepsilon_M$.
+Take an integer $1\leq q<M$ and set
 
-The angle between their one-photon modes obeys the projective Hilbert-space triangle inequality through the arbitrary receiving mode. Along a critical-scale subsequence with a positive limiting fidelity, the vanishing source errors do not change its leading form:
+$$\theta=\arccos K(u_M-u_q),\qquad S=q^{-1/2}+M^{-1/2},\qquad X=\theta^2/S^2.$$
 
-$$\frac{M-q}{\sqrt{12}N}[1+o(1)]
-\leq\sqrt{-\ln F}\left(q^{-1/2}+M^{-1/2}\right)[1+o(1)].$$
+If a receiver has true fidelity at least $F$ on both $q$ and $M$, its reference-product overlap amplitudes are at least $\sqrt F-\epsilon$. When $s=\sqrt F-\epsilon>0$, its one-photon overlaps with the reference modes are at least $s^{1/q}$ and $s^{1/M}$. The projective Hilbert-space triangle inequality through the arbitrary receiver and $\arccos(e^{-t})\leq\sqrt{2t}$ imply
 
-Hence $-\ln F\geq M^3/(192N^2)+o(1)$. A subsequence tending to zero already satisfies the desired upper bound. Complex phases cannot improve the bound, by the positivity argument above.
+$$\theta\leq\arccos(s^{1/q})+\arccos(s^{1/M})
+\leq\sqrt{-2\ln s}\,S.$$
 
-Combining construction and converse gives
+Rearranging gives the finite all-waveform upper bound
+
+$$\boxed{\mathcal F_{N,M}\leq
+\min\{1,[\epsilon+e^{-X/2}]^2\}.}$$
+
+For $\sqrt F\leq\epsilon$ the bound is automatic. It holds for every waveform, so no optimizer needs to exist and complex phases cannot evade it. The same bound directly applies to the two-sector code. This elementary envelope is used for proof clarity, not in place of the sharper numerical angle brackets below.
+
+At $q=\lfloor M/4\rfloor$ and $M/N^{2/3}\to c>0$,
+
+$$b_M\to1,\qquad\epsilon\to0,\qquad
+X=\frac{M^3}{192N^2}[1+o(1)]\to c^3/192.$$
+
+The finite constructive and converse bounds therefore squeeze the optimum to
 
 $$\boxed{M/N^{2/3}\to c>0\quad\Longrightarrow\quad
 \mathcal F_{N,M}\to e^{-c^3/192}.}$$
 
-For $M=o(N^{2/3})$, the constructive pulse gives limiting fidelity one. For $M/N^{2/3}\to\infty$, restrict the full consecutive code to a subcode with cutoff near $cN^{2/3}$ for any fixed $c$. Monotonicity gives $\limsup\mathcal F\leq e^{-c^3/192}$ for every $c$, hence zero. This argument does not extend the displayed exponential as an asymptotic equality throughout every supercritical regime.
+This argument includes the unit-fidelity endpoint. The earlier compressed multiplicative-error argument required an additional justification there; the finite inequality supplies it. The [audit](PROOF_AUDIT.md) records that proof-level correction explicitly. The theorem statement and its coefficient are unchanged.
+
+For $M=o(N^{2/3})$, the constructive lower envelope tends to one. For $M/N^{2/3}\to\infty$, restrict the full consecutive code to a subcode with cutoff near $cN^{2/3}$ for any fixed $c$. Monotonicity gives $\limsup\mathcal F\leq e^{-c^3/192}$ for every $c$, hence zero. This does not extend the critical exponential as an asymptotic equality throughout every supercritical regime. The two-sector code requires its own direct converse rather than this full-code monotonicity argument.
 
 ### Finite brackets
 
@@ -157,7 +185,7 @@ It tends to one for every $M=o(N)$. Taking $M=\lfloor N^{3/4}\rfloor$ simultaneo
 
 The emitted cascade, conventional exponential overlap, nonlinear-emission mode dependence, and passive-capture framework are prior results [P1–P4]. The optimized exponent is not claimed to be the first appearance of the $N^{2/3}$ scale. The candidate additional result is its all-waveform, whole-code, uniform optimization and the observable/channel distinction.
 
-The calculations and proof have author-side audits but no independent report. Full construction-level comparison with Law–Lee [P5] remains open because only its primary abstract was retrieved. See the [prior-art register](../literature/PRIOR_ART.md) and [physical boundaries](PHYSICAL_SCOPE.md). No joint large-code experiment is asserted.
+The calculations and proof have author-side audits but no independent report. The [Law–Lee full-text comparison](../literature/LAW_LEE_FULL_TEXT.md) is complete: mean-occupation optimization, the oscillator comparator, dominant few-mode behavior and the semiclassical pulse are credited directly. That scoped comparison did not establish subsumption of this uniform common-code theorem; it is not exhaustive priority certification. The [endpoint-safe proof audit](PROOF_AUDIT.md) records the current clarification and its limits. See also the [prior-art register](../literature/PRIOR_ART.md) and [physical boundaries](PHYSICAL_SCOPE.md). No joint large-code experiment is asserted.
 
 [P1] V. Paulisch, *Waveguide Quantum Electrodynamics*, dissertation (2018), Chapter 1. https://edoc.ub.uni-muenchen.de/22151/1/Paulisch_Vanessa.pdf
 

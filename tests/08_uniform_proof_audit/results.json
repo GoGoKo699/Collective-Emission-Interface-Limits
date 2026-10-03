@@ -1,0 +1,306 @@
+{
+  "status": "PASS",
+  "date": "2026-10-03",
+  "group_count": 5,
+  "cases": 91,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0"
+  },
+  "groups": {
+    "normalization_and_entropy_identity": {
+      "cases": 51,
+      "exact_ordered_normalizations": 27,
+      "exact_size_biased_moments": 24,
+      "scope": "Rational finite identities; full derivation is in the note."
+    },
+    "channel_and_reference": {
+      "cases": 5,
+      "channels": [
+        {
+          "dimension": 2,
+          "minimum": 0.17289819732588627,
+          "reference_input_fidelity": 0.46847240523111244
+        },
+        {
+          "dimension": 3,
+          "minimum": 0.5540953816984441,
+          "reference_input_fidelity": 0.7821019023296799
+        },
+        {
+          "dimension": 5,
+          "minimum": 0.030728259613807873,
+          "reference_input_fidelity": 0.4345306186687597
+        },
+        {
+          "dimension": 7,
+          "minimum": 0.10217824539784652,
+          "reference_input_fidelity": 0.3248937053607493
+        }
+      ],
+      "phase_control": {
+        "number_fidelities": [
+          1,
+          1
+        ],
+        "superposition_fidelity": 0
+      },
+      "scope": "No environment measurement or postselection; random channels test the structural lemma, not a new physical source."
+    },
+    "endpoint_safe_geometry": {
+      "cases": 12,
+      "geometry": [
+        {
+          "q": 1,
+          "M": 4,
+          "theta": 0.01,
+          "product_optimum": 0.9999555562962905,
+          "upper": 0.9999555565431952
+        },
+        {
+          "q": 1,
+          "M": 4,
+          "theta": 0.2,
+          "product_optimum": 0.9823403697131451,
+          "upper": 0.9823793146181776
+        },
+        {
+          "q": 1,
+          "M": 4,
+          "theta": 0.8,
+          "product_optimum": 0.7444141309977224,
+          "upper": 0.7524321560893033
+        },
+        {
+          "q": 3,
+          "M": 12,
+          "theta": 0.01,
+          "product_optimum": 0.9998666748145122,
+          "upper": 0.9998666755551605
+        },
+        {
+          "q": 3,
+          "M": 12,
+          "theta": 0.2,
+          "product_optimum": 0.9479511893878506,
+          "upper": 0.9480639384933955
+        },
+        {
+          "q": 3,
+          "M": 12,
+          "theta": 0.8,
+          "product_optimum": 0.41251887611689775,
+          "upper": 0.42599258740013063
+        },
+        {
+          "q": 25,
+          "M": 100,
+          "theta": 0.01,
+          "product_optimum": 0.9988894997782423,
+          "upper": 0.9988895059442793
+        },
+        {
+          "q": 25,
+          "M": 100,
+          "theta": 0.2,
+          "product_optimum": 0.6405452255790661,
+          "upper": 0.6411803884299546
+        },
+        {
+          "q": 25,
+          "M": 100,
+          "theta": 0.8,
+          "product_optimum": 0.0006242595796347616,
+          "upper": 0.0008159878350721483
+        }
+      ],
+      "endpoint_negative_control": [
+        {
+          "N": 1000,
+          "source_error": 0.1,
+          "trial_fidelity": 0.999999,
+          "log_error_ratio": 210722.03706626137
+        },
+        {
+          "N": 1000000,
+          "source_error": 0.01,
+          "trial_fidelity": 0.999999999999,
+          "log_error_ratio": 20100671708.002934
+        },
+        {
+          "N": 1000000000,
+          "source_error": 0.001,
+          "trial_fidelity": 1.0,
+          "log_error_ratio": 2001000667167068.0
+        }
+      ],
+      "scope": "The endpoint sequence is a counterexample to a relative-error substitution, not an attainable Dicke receiver."
+    },
+    "finite_envelopes_and_limits": {
+      "cases": 18,
+      "finite": [
+        {
+          "N": 12,
+          "M": 4,
+          "lower": 0.7867772289229614,
+          "trial_worst": 0.9916213908831661,
+          "upper": 1.0
+        },
+        {
+          "N": 30,
+          "M": 8,
+          "lower": 0.81660571897611,
+          "trial_worst": 0.9921085553472299,
+          "upper": 1.0
+        },
+        {
+          "N": 60,
+          "M": 12,
+          "lower": 0.8657931418444572,
+          "trial_worst": 0.994702031270341,
+          "upper": 1.0
+        }
+      ],
+      "critical": [
+        {
+          "N": 1000,
+          "M": 100,
+          "c": 1,
+          "lower": 0.9310754020461484,
+          "upper": 1.0,
+          "epsilon": 0.03187476680583227,
+          "target": 0.9948052065178371
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "c": 1,
+          "lower": 0.9888924802663891,
+          "upper": 1.0,
+          "epsilon": 0.0029157586074698228,
+          "target": 0.9948052065178371
+        },
+        {
+          "N": 1000000000,
+          "M": 1000000,
+          "c": 1,
+          "lower": 0.9942184901312268,
+          "upper": 0.9953752299151436,
+          "epsilon": 0.00028896395090610043,
+          "target": 0.9948052065178371
+        },
+        {
+          "N": 1000000000000,
+          "M": 100000000,
+          "c": 1,
+          "lower": 0.9947465803413487,
+          "upper": 0.9948621502378918,
+          "epsilon": 2.887040035214243e-05,
+          "target": 0.9948052065178371
+        },
+        {
+          "N": 1000,
+          "M": 200,
+          "c": 2,
+          "lower": 0.8031723492374779,
+          "upper": 1.0,
+          "epsilon": 0.07185182927298021,
+          "target": 0.9591894571091382
+        },
+        {
+          "N": 1000000,
+          "M": 20000,
+          "c": 2,
+          "lower": 0.9460482743275849,
+          "upper": 0.9697384590753926,
+          "epsilon": 0.005891150423699823,
+          "target": 0.9591894571091382
+        },
+        {
+          "N": 1000000000,
+          "M": 2000000,
+          "c": 2,
+          "lower": 0.9578963950660784,
+          "upper": 0.9602227807909495,
+          "epsilon": 0.0005785071143494755,
+          "target": 0.9591894571091382
+        },
+        {
+          "N": 1000000000000,
+          "M": 200000000,
+          "c": 2,
+          "lower": 0.959060358296622,
+          "upper": 0.959292578281438,
+          "epsilon": 5.774657606571452e-05,
+          "target": 0.9591894571091382
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "c": 3,
+          "lower": 0.552908994461932,
+          "upper": 1.0,
+          "epsilon": 0.12310120785095982,
+          "target": 0.8688150562628432
+        },
+        {
+          "N": 1000000,
+          "M": 30000,
+          "c": 3,
+          "lower": 0.8446846059087837,
+          "upper": 0.880782563965624,
+          "epsilon": 0.008927849986429136,
+          "target": 0.8688150562628432
+        },
+        {
+          "N": 1000000000,
+          "M": 3000000,
+          "c": 3,
+          "lower": 0.866461127986953,
+          "upper": 0.8699752646951606,
+          "epsilon": 0.000868631070109382,
+          "target": 0.8688150562628432
+        },
+        {
+          "N": 1000000000000,
+          "M": 300000000,
+          "c": 3,
+          "lower": 0.8685802410723826,
+          "upper": 0.868930723849875,
+          "epsilon": 8.662852871139447e-05,
+          "target": 0.8688150562628432
+        }
+      ],
+      "supercritical": [
+        {
+          "N": 100000000,
+          "M": 1000000,
+          "two_sector_upper": 0.5946201547511913,
+          "source_error": 0.0029159058639725483
+        },
+        {
+          "N": 1000000000000,
+          "M": 1000000000,
+          "two_sector_upper": 0.005477937918016091,
+          "source_error": 0.0002889640955326633
+        },
+        {
+          "N": 10000000000000000,
+          "M": 1000000000000,
+          "two_sector_upper": 8.335003068728078e-10,
+          "source_error": 2.8870400496508868e-05
+        }
+      ],
+      "scope": "Huge N entries evaluate scalar inequalities only, not physical simulations."
+    },
+    "isometry_and_collection": {
+      "cases": 5,
+      "code_operator_error": 0.040000000000000625,
+      "largest_sector_error": 0.04,
+      "scope": "Block-orthogonality and occupation/fidelity controls, not a new mode-selection theorem."
+    }
+  },
+  "scope": "Author-side finite proof diagnostics; neither independent review nor a new physical model."
+}

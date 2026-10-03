@@ -31,6 +31,7 @@ The new finite two-sector calculation is in [the scope note](research/TWO_SECTOR
 | Document | Role |
 |---|---|
 | [Model and proof](research/THEOREM.md) | The source, fidelity convention, uniform state approximation, all-waveform converse, and mean-collection comparison |
+| [Proof audit and correction](research/PROOF_AUDIT.md) | Endpoint-safe finite bounds, answers to the proof checklist, and explicit author-side review limits |
 | [Two-sector witness](research/TWO_SECTOR_WITNESS.md) | Why one logical qubit suffices; finite constructive and converse bounds |
 | [Physical scope](research/PHYSICAL_SCOPE.md) | Passive reception, two-mode error structure, loss, bandwidth, and known ways outside the theorem |
 | [Prior results and open comparisons](literature/PRIOR_ART.md) | Exact attribution and access status, not a priority certificate |
@@ -48,7 +49,7 @@ python verify.py --integrity-only
 python verify.py --output verification-report.json
 ```
 
-The seven standalone suites cover waveform overlap, common-mode optimization, passive capture, the leading second temporal mode, photon collection, source-rate consistency, and the two-sector witness. Six suites are byte-for-byte copies of the preceding research calculations; the seventh is the current scope audit. The runner never overwrites their saved reference results.
+The eight standalone suites cover waveform overlap, common-mode optimization, passive capture, the leading second temporal mode, photon collection, source-rate consistency, the two-sector witness, and the endpoint-safe proof audit. The seven pre-existing scripts and reference results are preserved byte-for-byte; the eighth supplies explicit finite proof controls. The runner never overwrites saved reference results.
 
 The reference environment is Python 3.13.5 with the pinned dependencies. Exact-byte equality is a reproducibility property of that environment, not a proof of analytical claims. Numerical tails and integration tolerances are distinguished in the tests. Neither code execution nor this repository substitutes for independent scientific assessment.
 
