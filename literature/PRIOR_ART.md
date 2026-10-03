@@ -4,7 +4,7 @@
 
 ## Follow-up evidence pass
 
-The post-activation [direct comparison](COMPARISON.md) and [primary evidence register](SOURCE_EVIDENCE.md) now provide equation-level locations and premise-specific counts. They preserve the theorem and distinguish full text from abstract-only access. In particular, the Gorshkov linearized-memory comparison, Kiilerich-Molmer selected-mode formalism, and Malz atomic-state scope are now explicit. Law-Lee remains a specified missing full text, not a closed priority question. The earlier preparation-pass paragraph below is retained as a dated access record.
+The post-activation [direct comparison](COMPARISON.md) and [primary evidence register](SOURCE_EVIDENCE.md) now provide equation-level locations and premise-specific counts. They preserve the theorem and distinguish full text from abstract-only access. In particular, the Gorshkov linearized-memory comparison, Kiilerich-Molmer selected-mode formalism, and Malz atomic-state scope are now explicit. The author has now supplied Law–Lee in full; the [completed comparison](LAW_LEE_FULL_TEXT.md) supersedes the earlier abstract-only status. The named access gap is closed, while general priority and separate critical reading remain open. The preparation-pass paragraph below is historical.
 
 ## Central comparisons
 
@@ -12,14 +12,14 @@ The post-activation [direct comparison](COMPARISON.md) and [primary evidence reg
 |---|---|---|
 | Paulisch, *Waveguide Quantum Electrodynamics*, dissertation, 2018, Chapter 1 | Exact emitted cascade, conventional-pulse overlap, number-state mapping and useful-channel probability | The present result optimizes one waveform over a growing number code and controls the approximation uniformly. The conventional cubic error already suggests the critical scale. |
 | Khanahmadi et al., Physical Review Research 5, 043071 (2023) | Number-dependent temporal modes, selected Fock/cat-state transfer and capture-cavity analysis | The inspected work does not state the same all-waveform Dicke-code minimax. Its qualitative explanation is a direct predecessor, not an observation to claim anew. |
-| Law and Lee, Physical Review A 75, 033813 (2007) | Dynamical modes and optimized occupations, according to its primary abstract | Full text remains unavailable through the routes tested. Exact construction-level overlap is unresolved. |
+| Law and Lee, Physical Review A 75, 033813 (2007) | Full-text-checked natural-mode optimization, mode purity, oscillator comparator, dominant two-mode occupation and semiclassical sech pulse | The supplied six pages do not state the uniform growing-code isometry estimate or all-waveform common-code converse. Exact rank-one correlation does imply single-mode support; approximate occupation needs a photon-number-dependent fidelity estimate. See the completed comparison. |
 | Lemberger and Mølmer, Physical Review A 103, 033713 (2021) | Radiation eigenmodes and dominant average occupations | Mean occupation is not worst-input canonical state-transfer fidelity. A complete comparison must preserve that distinction without claiming that changing metrics is itself novel. |
 | Yamamoto and James, arXiv:1403.1698 | Passive linear memory framework | The one-retained-mode reduction is an application of established input-output theory. |
 | Nurdin, James, Yamamoto, arXiv:1609.05643 | Tunable capture and singular-onset control issue | The finite regularized receiver is a concrete implementation check, not a new capture principle. |
 
 ### What was checked in the repository-preparation pass
 
-The 2023 nonlinear-cavity primary PDF was reopened, especially Sections IV–V and Eq. (17). Its state-specific readout and the vacuum-versus-populated-number discussion agree with the earlier source comparison. No numerical value was read from a graph. The Law–Lee primary abstract was retrieved again, but publisher/harvest full-text requests did not return a readable article. Their full method has **not** been ruled out. The arXiv records of the passive-memory, capture, radiation-mode, source-generation, and cavity-amplification references were checked for title, authors, and scope.
+The 2023 nonlinear-cavity primary PDF was reopened, especially Sections IV–V and Eq. (17). Its state-specific readout and the vacuum-versus-populated-number discussion agree with the earlier source comparison. No numerical value was read from a graph. The Law–Lee primary abstract was retrieved again, but publisher/harvest full-text requests did not return a readable article. That earlier access attempt did not settle the full construction. The later user-supplied article and completed comparison above supersede this historical gap. The arXiv records of the passive-memory, capture, radiation-mode, source-generation, and cavity-amplification references were checked for title, authors, and scope.
 
 The current two-sector witness is a consequence of the already recorded converse. It should not be counted as a second independent publication-level discovery. Its purpose is to distinguish growing excitation energy from growing logical dimension.
 

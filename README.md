@@ -34,6 +34,7 @@ The new finite two-sector calculation is in [the scope note](research/TWO_SECTOR
 | [Two-sector witness](research/TWO_SECTOR_WITNESS.md) | Why one logical qubit suffices; finite constructive and converse bounds |
 | [Physical scope](research/PHYSICAL_SCOPE.md) | Passive reception, two-mode error structure, loss, bandwidth, and known ways outside the theorem |
 | [Prior results and open comparisons](literature/PRIOR_ART.md) | Exact attribution and access status, not a priority certificate |
+| [Law–Lee full-text comparison](literature/LAW_LEE_FULL_TEXT.md) | Completed equation-level comparison; inherited oscillator, few-mode and pulse results, and the remaining interface claim |
 | [Assumption register](literature/ASSUMPTIONS.md) | Model idealizations, receiver restrictions, and unfinished implementation checks |
 | [Status](STATUS.md) | Completed author-side results and remaining research tasks |
 

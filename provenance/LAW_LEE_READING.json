@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-03",
+  "source_doi": "10.1103/PhysRevA.75.033813",
+  "source_title": "Dynamic photon-mode selection in Dicke superradiance",
+  "source_authors": [
+    "C. K. Law",
+    "S. K. Y. Lee"
+  ],
+  "access": "Complete user-supplied six-page PDF",
+  "supplied_pdf_sha256": "4f4702fd272b364046ec68d0abb49476800b98a550b24ec68473e6eda6b12fd0",
+  "pages_read": 6,
+  "equations_read": "1–30; additional notes 16–17",
+  "rendered_for_equation_and_figure_inspection": true,
+  "pdf_redistributed": false,
+  "outcome": "Named source comparison closed; no theorem correction or subsumption established; direct attribution expanded. Not exhaustive priority or independent proof review.",
+  "unchanged_canonical_scientific_files": [
+    "research/THEOREM.md",
+    "research/PHYSICAL_SCOPE.md",
+    "research/TWO_SECTOR_WITNESS.md"
+  ],
+  "unchanged_test_suites": "01 through 07, including original scripts and saved results",
+  "live_base_commit": "3a9aa735f5cc4d10145fdc8d1dde4631f875d8f4",
+  "prior_source_register_preserved_as": "literature/SOURCE_EVIDENCE_PRE_UPLOAD.md",
+  "prior_source_register_git_blob": "9634a6b2f10530bc491667c0b62174e8c6513fe6",
+  "new_model_or_receiver": false,
+  "outside_contact": false,
+  "baseline_execution_report": "LAW_LEE_BASELINE_VERIFICATION.json"
+}

@@ -1,47 +1,41 @@
 # Direct comparison of the fixed interface theorem
 
-**3 October 2026. Evidence pass after repository activation.** The source, receiver, code, fidelity definition and all canonical scientific files are unchanged. This is a literature/scope assessment, not an independent proof review. Source identifiers below refer to [the evidence register](SOURCE_EVIDENCE.md).
+**Updated 3 October 2026 after the supplied Law–Lee full text.** The source, receiver, target map, canonical proof and all seven scientific suites are unchanged. This is a construction-level literature comparison, not independent proof review or exhaustive priority certification. Identifiers refer to the [source register](SOURCE_EVIDENCE.md).
 
-## Question being compared
+## The exact question
 
-The result under evaluation concerns the exact finite-spin Dicke decay ladder, one waveform chosen before the state is known, canonical number-state transfer into one retained linear oscillator, worst-input entanglement fidelity over a growing code, and a uniform error bound. All five qualifiers matter. A different phrase in a paper's title does not demonstrate a difference in mathematical content.
+The result concerns the finite-spin Dicke decay ladder, one waveform chosen before the input is known, canonical number transfer into one retained linear oscillator, worst-input entanglement fidelity over a growing code, and a uniform error estimate. A terminology change or a different objective alone does not establish originality.
 
-## 1. The strongest apparent counterexample: universal photon storage
+## Universal linearized quantum memory
 
-Gorshkov et al. (R04), Sec. IV, Eq. (14), give a retrieval efficiency C/(1+C), independent of control shape for complete retrieval. Appendix A explicitly assumes almost all atoms remain in the ground state, replaces the ground population by N, and works to first order in the field before obtaining Eqs. (3)-(5). Eqs. (A17)-(A18) then give bosonic commutators; Eqs. (A20)-(A23) use one initially occupied field envelope.
+Gorshkov et al. (R04), Sec. IV, Eq. (14), derive retrieval efficiency $C/(1+C)$, independent of control shape for complete retrieval. Appendix A replaces the ground population by $N$ and works to first order in the signal before Eqs. (3)–(5); Eqs. (A17)–(A18) give bosonic commutators and Eqs. (A20)–(A23) specify an occupied field envelope.
 
-This is not merely a one-photon calculation: within that linear vacuum-noise model, it characterizes transfer of the quantum state occupying the specified mode. It would be incorrect to dismiss it solely because its efficiency is written as a number ratio.
+This is not just a one-photon or intensity result: the linear vacuum-noise model transfers the quantum state of that mode. Our question retains the number-dependent finite-spin rates discarded in that linearization and asks for uniform channel accuracy. The earlier memory result neither supplies that estimate nor is contradicted by its absence. Our bound is not automatically a theorem about their different Lambda-control protocol.
 
-The comparison instead turns on the retained source dynamics. Our theorem keeps the number-dependent finite-spin rates and asks whether one envelope works uniformly over the code. The linearized equations already discard that dependence. Their correct result therefore does not by itself supply or contradict the needed uniform error estimate for our source. A vanishing excitation fraction and a uniform approximation in the relevant channel norm are different statements. No claim is made that the storage paper is erroneous, or that our limit applies to its different Lambda-control protocol without a separate derivation.
+## Nonlinear emission and selected-mode capture
 
-## 2. The closest physical explanation is already published
+Khanahmadi et al. (A02), Sec. IV, already distinguish vacuum plus one populated number from two populated numbers. Sec. V, Eqs. (15)–(16), models a capture oscillator; Eq. (17) evaluates selected Fock/cat fidelities, with target cat amplitude varied. Sec. V A optimizes a drive parameter for selected inputs. Number-dependent pulse shapes, degraded superposition transfer, and state-specific optimization are inherited.
 
-Khanahmadi et al. (A02), Sec. IV, explicitly distinguish vacuum plus one populated number from superpositions involving two populated numbers. Sec. V, Eqs. (15)-(16), introduces a linear capture oscillator for the most occupied output mode. Eq. (17) evaluates selected Fock/cat-state fidelities; for cats the target amplitude is varied. Sec. V A optimizes a drive parameter for the chosen cat states.
+Kiilerich and Molmer (R03), Eqs. (2)–(6), supply full quantum-state calculations for any selected output pulse through virtual cascaded oscillators, not only intensity. Our numerical capture calculations apply that method. Neither inspected construction states the present all-waveform worst-Dicke-code converse and controlled joint limit. This does not mean those methods cannot be extended to investigate it.
 
-Consequently, number-dependent temporal shapes, degraded superposition transfer, capture cavities, and state-specific optimization are not new claims here. What the inspected construction does not furnish is the present Dicke-ladder supremum over every common waveform, infimum over the canonical code, and controlled joint limit. This is a scoped comparison of the inspected methods, not proof of exhaustive novelty or inability to extend those methods.
+## Law–Lee: the missing comparison is now complete
 
-## 3. Full selected-mode simulation is not itself the missing theorem
+The entire six-page article (A03) has been inspected. Its Eqs. (10)–(17) optimize mean photon occupation by diagonalizing a first-order field correlation kernel; Eqs. (18)–(21) define its normalized purity and effective mode number. Its regression formula covers general diagonal Dicke preparations, and its examples include both full inversion and half excitation. It is inaccurate to dismiss the paper as only a fixed-mode or fully inverted calculation.
 
-Kiilerich and Molmer (R03), Eqs. (2)-(6), already provide a full quantum-state calculation for any chosen output pulse through virtual cascaded oscillators, not just low-order mean values. Their output-mode discussion proposes the two-time correlation eigenmodes as a way to find heavily occupied modes.
+The [full-text comparison](LAW_LEE_FULL_TEXT.md) identifies the precise differences and overlap. The article does not contain the common-waveform worst-code optimization, a uniform emitted-isometry error over the growing code, or the matching critical converse. Exact rank-one correlation does imply genuine single-mode support; approximate concentration must be translated with a photon-number-dependent error bound. The half-excited semiclassical pulse matches the $a\to1/2$ shape limit of our reference family, but that does not extend our $m=o(N)$ norm theorem to half filling.
 
-Our numerical capture calculations are applications of that formalism. Their availability could be used to optimize finite examples. They do not automatically give the uniform field approximation or a converse that rules out all receiving waveforms at once. We should claim neither a new computational description of a selected pulse nor that previous theory could only compute intensity.
+Direct attribution now includes its harmonic-oscillator argument (opening of Sec. III and note [16]), dominant two-mode occupation (Sec. III B), and semiclassical hyperbolic-secant pulse (Sec. III C). None is advertised as a new discovery. Its time-dependent modes at a fixed collection time also define receiving envelopes, so 'dynamic versus fixed' is not our novelty distinction.
 
-## 4. Controlled superradiance and dominant modes
+## Other controlled limits and attribution anchors
 
-Lemberger and Molmer (S04), Sec. 2.2, Eq. (7), diagonalize the radiation correlation kernel and identify mean occupations. Malz et al. (S06) prove a controlled large-N reduced atomic evolution from full inversion. These are substantive predecessors. A reduced-state convergence result does not, without another estimate, control the emitted-field isometry on a different family of inputs; mean occupations do not determine its worst canonical fidelity.
+Lemberger–Molmer (S04), Sec. 2.2, Eq. (7), analyze mean radiation eigenmode occupations. Malz–Trivedi–Cirac (S06) establish controlled large-$N$ reduced atomic dynamics from full inversion. Without additional bounds those observables do not give a uniform outgoing-field isometry or the present worst-input transfer fidelity.
 
-Paulisch's exact cascade and standard pulse overlap (A01) remain the starting point, not a result discovered in this repository. In particular, the conventional cubic correction already suggests the N^(2/3) scale. The prospective advance is that optimizing every common waveform still leaves a sharp boundary with a uniform state-level statement, not the first appearance of that exponent.
+Paulisch (A01) supplies the exact cascade, conventional exponential overlap, useful-channel collection product, and prior discussion of number-state mapping and pulse shaping. The conventional cubic correction already suggests the $N^{2/3}$ scale. The candidate advance is the optimized uniform boundary, not the first appearance of that exponent.
 
-## 5. The unresolved comparison is specific
+## Outcome
 
-Law and Lee (A03) remain **abstract-only** in the available record. Its dynamical-mode and correlation-separability claims establish relevance, not the details needed to test subsumption. Repeated publisher and delivery-endpoint failures do not close priority. The full six-page article is the outstanding source item. Stop treating another failed fetch as scientific progress; resume that comparison when a legitimate readable copy is supplied or found.
+**The core is preserved against the inspected full-text comparisons, including Law–Lee; no correction or subsumption was established.** The earlier missing-source item is resolved, not left pending. This does not establish exhaustive novelty or submission readiness.
 
-## 6. Outcome and remaining work
+The strongest remaining contribution is the sharp optimized uniform distinction between faithful canonical state transfer and mean-photon collection for the stated collective source and one linear memory. Explicitly excluded claims include a new Dicke cascade, first mode optimization, first recognition of number-dependent pulses, first two-mode description, a new oscillator comparator or capture formalism, failure of established linearized memory theory, and limits on unrestricted nonlinear decoding.
 
-**Outcome: preserved within the inspected comparisons; no theorem correction or subsumption was established in this pass.** This is not a completed originality determination. The combined preparation/realization evidence and an independent critical-reader report also remain open.
-
-The strongest remaining contribution is the optimized, uniform difference between faithful canonical state transfer and mean-photon collection for a specified collective source and one linear memory.
-
-Claims explicitly excluded: a new Dicke cascade; a newly discovered critical exponent by itself; first recognition of number-dependent output modes; a new virtual-cavity formalism; failure of established linear memory theory; universal bounds on nonlinear decoders or alternative encodings; a jointly demonstrated large-code apparatus.
-
-The next external item is Law-Lee's complete text. The next reading should test the actual uniform approximation and unrestricted converse in [THEOREM.md](../research/THEOREM.md), not only the source summaries. No outside contact has occurred. The manuscript remains on hold, and no new noise model or receiver family is added to avoid these unresolved questions.
+Remaining work is a separate critical reading of [THEOREM.md](../research/THEOREM.md) and the specific preparation/realization evidence deficits. No outside contact has occurred. Manuscript writing remains on hold; no new Hamiltonian or receiver class has been introduced to avoid those questions.
