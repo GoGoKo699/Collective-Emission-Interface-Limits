@@ -6,6 +6,8 @@ This project studies a symmetric ensemble of two-level emitters releasing an unk
 
 Start with [the physical story](research/STORY.md): the same weakly excited source can satisfy a photon-collection criterion and fail a whole-state transfer criterion. The proof and resource boundaries below make that distinction quantitative.
 
+For the surrounding science, use the [background dossier](literature/BACKGROUND.md), [notation and convention map](research/CONVENTIONS.md), and [curated bibliography](literature/REFERENCES.bib). The [three single-source tutorial options](literature/TUTORIAL_OPTIONS.md) are alternatives, not a combined syllabus; the learning anchor has not yet been selected. The [background audit](literature/BACKGROUND_AUDIT.md) records a newly identified close collective-light paper whose full construction remains to be compared.
+
 ## The central result
 
 Let $N$ be the number of emitters and let the stored state occupy Dicke excitation numbers $0,\ldots,M$. For complete ideal collective decay and a predetermined, photon-number-preserving linear receiver with vacuum auxiliaries, define $\mathcal F_{N,M}$ as the best worst-input entanglement fidelity for the canonical number map into one oscillator.
