@@ -5,3 +5,5 @@ __pycache__/
 *.egg-info/
 verification-report.json
 rerun.json
+
+verification-artifacts/

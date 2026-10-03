@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-03",
+  "outcome": "Retained recurrence classified; original historical output still missing.",
+  "base_commit": "4ef1323a5288f24407270d59965b12aee6d6a6c0",
+  "preserved_tests_tree": "217d1d8d07fc74d9b94e52f47b953df6dce3845e",
+  "preserved_suite_registry_blob": "7ccd0c5afe254603d69c70ce6d056666c6dc0000",
+  "historical_PR6": {
+    "run": 37138835832,
+    "artifact": 11279691529,
+    "summary_sha256": "09b3515980b8384a31e004ec982e8bd36610eff4c48d026e3561672b6aab99a3",
+    "raw_generated_files_recovered": false,
+    "causal_identity_with_recurrence_proven": false
+  },
+  "initial_exact_runs": [
+    {
+      "run": 37140146773,
+      "head": "c65d1493556c75b939e27ac7f10017654257293e",
+      "artifact": 11279539806,
+      "artifact_sha256": "3ed3e86e2868374f23be8da69a0632b5dcb09787335aaddbd59e90eedc795329",
+      "all_eight_byte_identical": true
+    },
+    {
+      "run": 37140435037,
+      "head": "d4b19f81ba54c8d911f82f28f7bd2b48ccbde8a8",
+      "artifact": 11280535590,
+      "artifact_sha256": "76076273e286690c57713adf60c2a753b52bcdd4f9a0beeffa1b706a31b1c01f",
+      "original_runner_and_new_runner_all_eight_exact": true,
+      "original_runner_blob": "be56c4cd9971405b75e2363a49c88a27378c20ef"
+    }
+  ],
+  "recurrence": {
+    "run_id": 37140915684,
+    "head_sha": "ce1aba4270292626c1f5aec2dbb183979df594ac",
+    "artifact_id": 11279509209,
+    "artifact_sha256": "782b690988df7f224dd4b5e5821774c6a871a376ab5faf1000bba257bd35068a",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "scientific_assertions_passed": true,
+    "original_reference_gate_failed": true,
+    "scientific_suites": 8,
+    "scientific_groups": 39,
+    "scientific_cases": 612,
+    "numeric_fields_compared": 2440,
+    "differing_numeric_fields": 431,
+    "floating_value_differences": 429,
+    "solver_work_counter_differences": 2,
+    "metadata_differences": 0,
+    "other_scientific_differences": 0,
+    "raw_alerts": 13,
+    "rescaled_infidelity_alerts": 11,
+    "max_rescaled_absolute_difference": "1.6875390E-8",
+    "corresponding_original_infidelity_difference": "4.21884750E-15",
+    "all_recurrence_values_accepted_after_source_review": true,
+    "causal_scope": "Different processors and numerical paths were observed. The exact library operation causing the differences has not been isolated. This does not recover PR6 raw outputs."
+  },
+  "suites": [
+    {
+      "suite": "01_pulse_matching",
+      "reference_sha256": "8fb87ab0064160a40c0b16b02be26b8bee08a2ad99b53bb6f39f12f2b479a3c4",
+      "observed_sha256": "ac2cb707df76da217fb2867c69affc4e851e7f5aaa27616e8732b2ff46a2654f",
+      "differing_numeric_fields": 89,
+      "raw_regression_alerts": 11,
+      "reviewed_acceptance": true
+    },
+    {
+      "suite": "02_common_mode_limit",
+      "reference_sha256": "6e32c9be74a51a9002ade7c914caa2f094f5a50c6dc1de49b36c181af3a98501",
+      "observed_sha256": "01b9ddab8bcac1e7bf735a5fc3be76f7858fd2f85a46924a94faf0f638a477ab",
+      "differing_numeric_fields": 75,
+      "raw_regression_alerts": 0,
+      "reviewed_acceptance": true
+    },
+    {
+      "suite": "03_passive_receiver",
+      "reference_sha256": "591b70beeaf4add0df1074fd7bfca6fc7cb12730f9a7c01b761ad3062ffbc237",
+      "observed_sha256": "665cef6febdf2e2eb7c482b5019e79462fa64ee43fb20162fe974acce32f0389",
+      "differing_numeric_fields": 101,
+      "raw_regression_alerts": 0,
+      "reviewed_acceptance": true
+    },
+    {
+      "suite": "04_two_mode_structure",
+      "reference_sha256": "3591d855b47395964a2461341ed18e67453a3a659e419c328fa523e4abf7b005",
+      "observed_sha256": "d0028649a3b9c2def6fd34ac62fb059bd2cde6d3d1e71727ae2d25e2aa3bddb0",
+      "differing_numeric_fields": 67,
+      "raw_regression_alerts": 0,
+      "reviewed_acceptance": true
+    },
+    {
+      "suite": "05_photon_collection",
+      "reference_sha256": "df2145b4ee4b91fd31115a65e1e2aacea889eacf8d7bebc044de4604a0edee0f",
+      "observed_sha256": "bab2b10fd5307883bc20801404728cecd2e8c0e931a70dd9865e02c077235075",
+      "differing_numeric_fields": 47,
+      "raw_regression_alerts": 2,
+      "reviewed_acceptance": true
+    },
+    {
+      "suite": "06_source_realization",
+      "reference_sha256": "04af735e743a46c8673d329f48a33b366e866911177a7354585a7a8520c73744",
+      "observed_sha256": "197a92cbb7c5a01e3abca0b34d8ac6a071ee7d0efbb8efd687a57910d690cef8",
+      "differing_numeric_fields": 24,
+      "raw_regression_alerts": 0,
+      "reviewed_acceptance": true
+    },
+    {
+      "suite": "07_two_sector_scope",
+      "reference_sha256": "6c67418f3ba89e6c5f30e7f7474c11f610dc137f83b5de92f91cb53d873ac64e",
+      "observed_sha256": "7dd87983aad09069e2e894f813403d581b1e56fe041e35fe8cad5d08aecdafa1",
+      "differing_numeric_fields": 24,
+      "raw_regression_alerts": 0,
+      "reviewed_acceptance": true
+    },
+    {
+      "suite": "08_uniform_proof_audit",
+      "reference_sha256": "bb647bfe5a4fd171829b9b48b61717a7b2a07b04c1917000b96a4854e86d1ef1",
+      "observed_sha256": "32726880f5bad3a3829f58d75060b7cdcc11634527f72c41303209306f83ed63",
+      "differing_numeric_fields": 4,
+      "raw_regression_alerts": 0,
+      "reviewed_acceptance": true
+    }
+  ],
+  "policy": {
+    "general_atol": 1e-10,
+    "general_rtol": 1e-09,
+    "general_tolerances_unchanged": true,
+    "source_unit_and_work_rules_added_after_inspection": true,
+    "raw_failure_flags_preserved": true,
+    "policy_id": "source-reviewed-fields-v1",
+    "accuracy_certificate": false
+  },
+  "source_locations": {
+    "N_squared_infidelity": "tests/01_pulse_matching/checks.py:142-148,184-189",
+    "solver_work": "tests/05_photon_collection/checks.py:90"
+  },
+  "work_counters": [
+    {
+      "path": "/groups/finite_mean_and_fidelity/finite_rows/3/mean/nfev",
+      "reference": 30422,
+      "observed": 30290
+    },
+    {
+      "path": "/groups/finite_mean_and_fidelity/refined_largest_case/nfev",
+      "reference": 37634,
+      "observed": 37610
+    }
+  ],
+  "benchmark": {
+    "N": 1000,
+    "M": 300,
+    "m": 300,
+    "mean_fraction_reference": 0.9991012722790275,
+    "mean_fraction_observed": 0.999101272279029,
+    "all_in_probability_reference": 0.786518745124638,
+    "all_in_probability_observed": 0.7865187451246546
+  },
+  "infrastructure_unit_tests": 15,
+  "end_to_end_replay": {
+    "status": "PASS",
+    "scope": "Infrastructure replay of captured JSON; not rerunning scientific equations.",
+    "cases": [
+      {
+        "case": "retained_recurrence",
+        "returncode": 0,
+        "report_status": "PASS",
+        "scientific_assertions_in_replayed_JSON": true,
+        "reference_comparison_passed": true,
+        "raw_byte_flags_preserved": true,
+        "reference_files_preserved": true
+      },
+      {
+        "case": "changed_fidelity_negative_control",
+        "returncode": 1,
+        "report_status": "FAIL",
+        "scientific_assertions_in_replayed_JSON": true,
+        "reference_comparison_passed": false,
+        "raw_byte_flags_preserved": true,
+        "reference_files_preserved": true
+      }
+    ]
+  },
+  "local_scope": "Scientific-only tree reconstructed from supplied starter and retained hosted evidence, matched to live tree and registry; no full repository checkout. One enclosing-command timeout was followed by a complete successful eight-suite original-runner execution.",
+  "scientific_scripts_changed": false,
+  "saved_references_changed": false,
+  "theorem_changed": false,
+  "independent_reader_report_received": false,
+  "scope": "Retained-run numerical review, not exact cross-platform reproduction or independent proof review."
+}

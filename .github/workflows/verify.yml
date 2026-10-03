@@ -32,17 +32,22 @@ jobs:
           python-version: "3.13.5"
       - name: Install pinned numerical dependencies
         run: python -m pip install -r requirements.txt
+      - name: Test the reproduction comparator
+        run: python tools/test_reproduction.py
       - name: Check preserved identities and local documentation links
         run: python verify.py --integrity-only
       - name: Run all standalone scientific suites
-        run: python verify.py --output verification-report.json
+        run: python verify.py --output verification-report.json --artifacts-dir verification-artifacts --require-reference
       - name: Confirm that reference evidence was not rewritten
+        if: always()
         run: git diff --exit-code -- tests provenance/SUITES.json
-      - name: Preserve the execution report
+      - name: Preserve raw outputs and field comparisons
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: verification-report
-          path: verification-report.json
+          name: verification-evidence
+          path: |
+            verification-report.json
+            verification-artifacts/
           if-no-files-found: warn
           retention-days: 14

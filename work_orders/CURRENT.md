@@ -1,29 +1,25 @@
-# Current work order: separate critical reading of the consolidated result
+# Current work order: separate critical reading of the fixed result
 
-**Updated 3 October 2026 after the preparation-source checks.** Keep the source, canonical number map, code, one-linear-memory receiver and theorem unchanged unless a specific defect is found. No new Hamiltonian, decoder, encoding, detector family or manuscript is authorized.
+**Updated 3 October 2026 after classifying the retained hosted recurrence.** Preserve the source, canonical number map, code, receiver and theorem unless a precise defect is established. No new model, encoding, decoder, detector campaign or manuscript is authorized.
 
 ## Completed bounded tasks
 
-The [Law–Lee full-text comparison](../literature/LAW_LEE_FULL_TEXT.md) is complete. The [author-side proof audit](../research/PROOF_AUDIT.md) records the endpoint correction and answers the original mathematical checklist. The named P03/P04 [preparation-source readings](../literature/PREPARATION_EVIDENCE.md) are now complete at their stated versions and access depths. Do not describe these documents as missing or repeat the same access search.
+The Law–Lee full-text comparison, named preparation readings, physical story and author-side proof audit are complete at their recorded scope. The endpoint repair remains explicit. Do not repeat the same readings or call them missing.
 
-[STORY.md](../research/STORY.md) is the short physical account, not a manuscript. The central result is one optimized interface boundary and its mean-collection comparison. The two-mode explanation, preparation evidence and realization audits support it rather than enlarging its claim count.
+Issue #7's investigation is in [HOSTED_REPRODUCTION.md](../provenance/HOSTED_REPRODUCTION.md). Initial exact runs did not explain the old discrepancy. A later retained recurrence was caught before merging: small floating differences, amplified rescaled-infidelity diagnostics, and two solver-work counts were identified. A narrow source-derived review accepts them without changing scientific references or the general tolerance. The actual discarded PR #6 values remain unavailable; their precise cause is not retrospectively proven.
 
-## The next substantive assessment
+The [reproduction policy](../provenance/REPRODUCTION_POLICY.md) retains raw and reviewed comparisons separately. An accepted review is not exact bytes or an error bound. A future changed benchmark or unresolved alert is new evidence and must be investigated on its own merits; another exact rerun is not a new research result.
 
-A genuinely separate mathematical/physical reading is still absent. The existing [checklist](../research/CRITICAL_READING.md), canonical [proof](../research/THEOREM.md), explicit correction and [direct comparisons](../literature/COMPARISON.md) are the reading basis. A report must distinguish proof validity, prior-art subsumption, physical relevance and device assumptions. No reader should need to reconstruct the result from the exploratory archives.
+## Next substantive assessment
 
-Do not initiate outside contact without the user's explicit instruction. Until a separate report or a specific new objection arrives, do not count another routine rerun or retelling as scientific progress. Reader selection or outreach can be a next human commitment, but is not authorized implicitly by this work order. Any actual objection should be answered against the same task, not evaded by changing the receiver.
+A genuinely separate mathematical/physical report remains absent. Use [CRITICAL_READING.md](../research/CRITICAL_READING.md), [THEOREM.md](../research/THEOREM.md), [PROOF_AUDIT.md](../research/PROOF_AUDIT.md), [STORY.md](../research/STORY.md) and [COMPARISON.md](../literature/COMPARISON.md). The report should distinguish proof validity, prior-art subsumption, significance and device assumptions.
 
-## What preparation evidence does not settle
+Do not initiate outside contact without explicit user instruction. Address an actual report or precise new objection against the same task, rather than changing its receiver. Repeated author-side checks are not a separate assessment. The reader need not reconstruct the research from exploratory archives.
 
-Five related construction-level readings do not establish five demonstrations of uniformly accurate arbitrary-state preparation in the emitting device. P03's bosonic approximation and conditioning, P04's heralded carving, and state-dependent controls remain visible. Distinguish known-target preparation from a state-independent isometry preserving an external reference; do not assert that all heralded protocols necessarily fail the latter.
-
-Joint preparation/emission/reception, atom-number calibration, bandwidth, duration and unwanted rates remain physical obligations for a device claim. A conditional source-to-memory theorem may be judged without fabricating that implementation. Do not add a new model merely to satisfy a paper count.
+Whole-code preparation, reference-preserving input encoding, atom-number calibration, bandwidth, duration and unwanted rates remain implementation obligations. Known-target/heralded preparation papers do not automatically supply them. A conditional theory result need not fabricate a joint prototype.
 
 ## Integrity
 
-Read WORKSPACE.md and AGENTS.md before edits. Run `python verify.py`; preserve discrepancies and original references. The eight suites and historical manifests have separate roles. Scientific code and references are unchanged by the preparation/story pass. Any correction must remain explicit.
+Read WORKSPACE.md and AGENTS.md before edits. Run `python verify.py` before modifying science code. Retain raw evidence with `python verify.py --artifacts-dir verification-artifacts --require-reference`, using a fresh directory. Keep the suite registry and historical import manifests distinct.
 
-## Completion criterion
-
-The present bounded internal work is consolidated. The next report should respond to a concrete mathematical, attribution or significance objection, or to an explicitly authorized separate reading. It should say whether the same core is preserved, corrected or subsumed. Manuscript drafting and outreach remain on hold; no automatic branch into further phenomena is requested.
+For a mismatch, preserve both outputs and inspect the exact fields before changing a formula, tolerance or reference. Only the documented rescaled-infidelity and solver-work paths have source-specific review. Do not add exceptions merely to restore green CI. Until a new objection or separate report exists, keep the core consolidated rather than producing another phenomenon. Manuscript writing and outreach stay on hold.
