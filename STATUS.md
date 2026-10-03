@@ -2,42 +2,42 @@
 
 **3 October 2026 · Dedicated development candidate · Manuscript on hold.**
 
-The fixed object is optimized canonical transfer of a Dicke number code into one prechosen linear optical memory mode. The source, receiver and target are not broadened by this update.
+The fixed object is optimized canonical transfer of a Dicke number code into one prechosen linear optical memory mode. The source, receiver, target and excitation regimes are unchanged.
+
+## Current proof outcome
+
+**The main theorem is preserved; a converse proof step has been repaired.** The [author-side audit](research/PROOF_AUDIT.md) answers the normalization, channel-positivity, uniform-isometry, endpoint, photon-count and two-sector questions in the existing checklist. It is not an independent reader report.
+
+The former asymptotic passage did not justify its multiplicative-error replacement when a putative optimal fidelity approached one. The [canonical proof](research/THEOREM.md) now first derives finite constructive and all-waveform bounds, then takes their common limit. This includes both fidelity endpoints and does not assume that an optimizing waveform exists. The critical law, coefficient, code, receiver scope, previously reported finite angle bounds and physical conclusions are unchanged.
+
+The new finite bounds clarify the proof; they are not advertised as stronger finite numerical estimates or a second scientific centerpiece. The exact correction and the original commit identifier are recorded in the audit. THEOREM.md's stale abstract-only Law–Lee status is also corrected to match the completed reading.
 
 ## Recorded results
 
-| Result | Current status |
+| Result | Status |
 |---|---|
-| Uniform individually matched pulse approximation | Analytic derivation, independent counting-process formulation and numerical checks |
-| All-waveform common-code critical limit | Constructive waveform and matching converse; author-side audit |
-| Uniform mean-photon collection bound | Analytic proof and regression checks; distinct from transfer fidelity |
-| Two-temporal-mode structure | Uniform code approximation at the critical scale and finite counting checks |
+| Uniform individually matched pulse approximation | Analytic proof, counting-process formulation and numerical checks |
+| All-waveform common-code critical limit | Construction and converse; now with endpoint-safe finite envelopes |
+| Uniform mean-photon collection bound | Analytic proof and regression checks; distinct from full-state fidelity |
+| Two-temporal-mode structure | Prior uniform critical-scale derivation and finite checks; no new regime claimed |
 | Passive receiver interpretation | Application of established linear input-output theory |
-| Source-realization scope | Independent-loss identity and finite cavity checks; no uniform microscopic realization theorem |
-| Two-sector logical-qubit witness | Corollary of the common-code converse, with finite witnesses |
+| Source-realization scope | Independent-loss identity and finite cavity checks; no uniform microscopic field theorem |
+| Two-sector logical-qubit witness | The same critical converse applies directly; the finite envelope also covers its stated supercritical example |
 
-These are the present derivations and author-side checks, not independent validation or a complete originality determination. The numerical suites do not prove the all-code statements.
+These are author-side results, not independent validation, exhaustive priority certification or a device demonstration.
 
-## Completed Law–Lee full-text comparison
+## Literature and remaining work
 
-The author supplied the complete six-page article. All sections, equations, captions and explanatory notes have now been read, with rendered-page checks. The [comparison](literature/LAW_LEE_FULL_TEXT.md) closes the specific missing-paper task.
+The [Law–Lee full-text comparison](literature/LAW_LEE_FULL_TEXT.md) is complete. Its mean-occupation optimization, oscillator comparator, few-mode behavior and semiclassical pulse retain direct credit. The proof audit does not repeat that reading or count a new inequality as evidence of novelty. The [current source register](literature/SOURCE_EVIDENCE.md) and [assumption matrix](literature/ASSUMPTIONS.md) remain unchanged.
 
-**Outcome: the core survives this construction-level comparison; no theorem correction or subsumption was established.** The paper explicitly receives credit for mean-occupation mode optimization, the exactly single-mode oscillator comparator, dominant two-mode behavior, and the semiclassical hyperbolic-secant pulse. Our claimed contribution is not the first occurrence of any of those ingredients.
+A genuinely separate mathematical/physical report is still absent; no researcher has been contacted. The arbitrary-symmetric-preparation row still has three inspected full-text constructions and two abstract-only leads. The full P03/P04 construction checks, preparation costs, known-N calibration and a compatible joint realization remain open. These do not authorize a new Hamiltonian, decoder, encoding or manuscript.
 
-The meaningful difference is not 'dynamic versus fixed' or 'optimized versus unoptimized' pulses. It is the optimized worst canonical transfer over an unknown growing number code, with uniform full-state control. Exact correlation-kernel separability remains sufficient for single-mode support; approximate occupation cannot be converted into a growing-photon-number fidelity guarantee without the appropriate error bound.
+The [current work order](work_orders/CURRENT.md) identifies the next evidence task rather than asking for another repetition of the same author-side proof audit.
 
-The prior component-level source table is preserved as a [pre-upload snapshot](literature/SOURCE_EVIDENCE_PRE_UPLOAD.md); only its A03 access status is superseded. The [current register](literature/SOURCE_EVIDENCE.md), [comparison](literature/COMPARISON.md), and [assumption matrix](literature/ASSUMPTIONS.md) reflect the completed reading. General priority is not certified by resolving this one source.
+## Verification and preservation
 
-## Remaining scientific work
+The seven pre-existing scripts and all seven saved result files are unchanged. Their tests subtree and runner were matched to the live base revision before a fresh execution: all 34 groups and 521 cases passed with byte-identical reference outputs. A new standalone suite checks five groups and 91 finite proof controls without importing previous scientific modules. Large-N examples evaluate scalar bounds, not large quantum systems.
 
-A genuinely separate mathematical/physical reading of the uniform proof is still outstanding. No external report has been received and no outside researcher has been contacted. The existing [critical-reading checklist](research/CRITICAL_READING.md) is a preparation document, not such a report.
+The active suite register now includes the new eighth suite; historical import manifests remain untouched. The MIT license, workflow and unrelated repositories are unchanged. See [the proof-pass provenance](provenance/PROOF_AUDIT.json) for exactly which local checks ran. Hosted verification must be read from its actual workflow run; this file does not predeclare it.
 
-The arbitrary-symmetric-preparation evidence still has three inspected full-text constructions and two abstract-only leads. Whole-code preparation, atom-number calibration and a compatible joint realization remain unestablished. The [current work order](work_orders/CURRENT.md) targets those precise evidence and proof questions, not another Hamiltonian or decoder.
-
-## Repository and verification
-
-The original MIT license, copyright 2026 Ruge Lin, is unchanged. The three canonical scientific notes and all seven scripts and saved result files are unchanged by this source-comparison pass. No third-party PDF, private correspondence, or parked project has been uploaded.
-
-Before the documentation edits, all seven suites were freshly executed: 34 groups and 521 cases passed, with byte-identical saved outputs in the pinned reference environment. The report is in [the reading provenance](provenance/LAW_LEE_READING.json). Hosted branch and merge checks must be read from their actual workflow runs; this status file does not predeclare them.
-
-Historical starter manifests and activation records remain historical, not silently regenerated descriptions of the current tree. Manuscript writing stays on hold. No submission or collaboration outreach has been initiated.
+Manuscript writing and outreach remain on hold.

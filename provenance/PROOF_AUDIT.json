@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-03",
+  "status": "PASS",
+  "base_commit": "1e64a433150e63ea2dcfb8a49b94d4bf4efb2e3b",
+  "base_root_tree": "afc976f009b4cfec1dafe2670f4cd8d73670445b",
+  "scope": "Author-side proof correction and diagnostics; not independent review, exhaustive priority, or a new physical model.",
+  "mathematical_outcome": "Main theorem preserved. Replace an endpoint-sensitive relative-error step with finite constructive and all-waveform inequalities. No critical coefficient or physical premise changed.",
+  "preserved_tests_tree": "50d89c83de0df9e4b2df3fdac3bfe848ac6e5c84",
+  "preserved_runner_blob": "be56c4cd9971405b75e2363a49c88a27378c20ef",
+  "original_theorem_blob": "e25ccc8f692f5ca739d995dca66cd414c95b5c9a",
+  "first_seven_registry_entries_unchanged": true,
+  "baseline_run": "PROOF_AUDIT_BASELINE.json",
+  "local_execution_scope": "Original seven suites and runner were recovered from the supplied starter and matched to the live Git trees/blobs. The added eighth suite and updated register were then run with them in a scientific-only local tree, not a full live repository checkout.",
+  "local_transport_limits": "Container Git clone failed on DNS resolution; the generic archive-download attempt did not supply a checkout. All repository reads and writes use the GitHub connector. These failures did not change the scientific inputs.",
+  "suite_count": 8,
+  "group_count": 39,
+  "case_count": 612,
+  "all_eight_saved_results_byte_identical": true,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0"
+  },
+  "new_suite_checks_sha256": "b033ddaadeca8e9d494a47ad6cc8c5bc4e99813cfc79393a80eddfbe4131847f",
+  "new_suite_results_sha256": "bb647bfe5a4fd171829b9b48b61717a7b2a07b04c1917000b96a4854e86d1ef1",
+  "new_suite_independent_rerun_byte_identical": true,
+  "runs": [
+    {
+      "name": "01_pulse_matching",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 71,
+      "result_byte_identical": true,
+      "elapsed_seconds": 4.495
+    },
+    {
+      "name": "02_common_mode_limit",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 6,
+      "cases": 62,
+      "result_byte_identical": true,
+      "elapsed_seconds": 8.196
+    },
+    {
+      "name": "03_passive_receiver",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 37,
+      "result_byte_identical": true,
+      "elapsed_seconds": 3.498
+    },
+    {
+      "name": "04_two_mode_structure",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 97,
+      "result_byte_identical": true,
+      "elapsed_seconds": 5.936
+    },
+    {
+      "name": "05_photon_collection",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 4,
+      "cases": 86,
+      "result_byte_identical": true,
+      "elapsed_seconds": 3.367
+    },
+    {
+      "name": "06_source_realization",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 144,
+      "result_byte_identical": true,
+      "elapsed_seconds": 1.409
+    },
+    {
+      "name": "07_two_sector_scope",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 4,
+      "cases": 24,
+      "result_byte_identical": true,
+      "elapsed_seconds": 5.152
+    },
+    {
+      "name": "08_uniform_proof_audit",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 91,
+      "result_byte_identical": true,
+      "elapsed_seconds": 1.478
+    }
+  ],
+  "documentation_check_scope": "Changed Markdown links checked against new local files and previously retrieved live repository paths; the entire final-tree runner is separately executed by hosted verification.",
+  "hosted_result": "Not predeclared. Inspect the pull-request and main-branch workflow runs.",
+  "independent_reader_report_received": false,
+  "outreach": false,
+  "manuscript_created": false,
+  "older_scientific_results_changed": false,
+  "historical_manifests_changed": false
+}
