@@ -1,0 +1,576 @@
+{
+  "status": "PASS",
+  "date": "2026-10-02",
+  "seed": 2026100204,
+  "group_count": 5,
+  "cases": 97,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0"
+  },
+  "groups": {
+    "proof_identity_audit": {
+      "cases": 27,
+      "maximum_integral_error": 2.220446049250313e-16,
+      "entropy_rows": [
+        {
+          "N": 5,
+          "m": 2,
+          "exact_KL": 0.008291961827887802,
+          "upper_KL": 0.010416666666666664
+        },
+        {
+          "N": 16,
+          "m": 3,
+          "exact_KL": 0.002229158877068881,
+          "upper_KL": 0.002551020408163265
+        },
+        {
+          "N": 40,
+          "m": 10,
+          "exact_KL": 0.006013106870456168,
+          "upper_KL": 0.007804370447450571
+        },
+        {
+          "N": 1000,
+          "m": 300,
+          "exact_KL": 0.010530216198783615,
+          "upper_KL": 0.015211609255984417
+        },
+        {
+          "N": 1000000,
+          "m": 30000,
+          "exact_KL": 7.730975854057398e-05,
+          "upper_KL": 7.970809370413275e-05
+        }
+      ],
+      "scope": "Finite checks of stated identities; the all-N proof is analytical."
+    },
+    "arbitrary_waveform_diagnostic": {
+      "cases": 3,
+      "rows": [
+        {
+          "N": 50,
+          "M": 12,
+          "trial_product_fidelity": 0.9945233118298079,
+          "finite_grid_product_optimum": 0.9952246135080761,
+          "photon_pair_used": [
+            3,
+            12
+          ],
+          "angle_slack": -2.3398540049957006e-11,
+          "minimum_constraint": -6.221689829999377e-13,
+          "grid_dimension": 64
+        },
+        {
+          "N": 128,
+          "M": 32,
+          "trial_product_fidelity": 0.9833924272277941,
+          "finite_grid_product_optimum": 0.9856165105808803,
+          "photon_pair_used": [
+            8,
+            32
+          ],
+          "angle_slack": 4.0860207394410875e-05,
+          "minimum_constraint": -5.551115123125783e-15,
+          "grid_dimension": 64
+        },
+        {
+          "N": 1000,
+          "M": 100,
+          "trial_product_fidelity": 0.9937773064160984,
+          "finite_grid_product_optimum": 0.9940970319505398,
+          "photon_pair_used": [
+            25,
+            100
+          ],
+          "angle_slack": 2.9616884609610927e-06,
+          "minimum_constraint": -4.884981308350689e-14,
+          "grid_dimension": 64
+        }
+      ],
+      "scope": "Finite-dimensional product-state optimization is a diagnostic, not the exact Dicke optimum or proof of the infinite-dimensional converse."
+    },
+    "critical_error_mechanism": {
+      "cases": 27,
+      "rows": [
+        {
+          "N": 1000,
+          "M": 100,
+          "m": 25,
+          "c": 1.0,
+          "x": 0.25,
+          "product_photons_in_tangent_mean": 0.00575967237619676,
+          "limiting_poisson_parameter": 0.005208333333333333,
+          "binomial_Poisson_TV": 0.0005489835475653033,
+          "product_no_tangent_probability": 0.9942562229702729,
+          "guaranteed_all_code_two_mode_retention": 0.9986367671337852,
+          "all_code_isometry_norm_error_bound": 0.03901260911922601
+        },
+        {
+          "N": 1000,
+          "M": 100,
+          "m": 75,
+          "c": 1.0,
+          "x": 0.75,
+          "product_photons_in_tangent_mean": 0.0,
+          "limiting_poisson_parameter": 0.0,
+          "binomial_Poisson_TV": 0.0,
+          "product_no_tangent_probability": 1.0,
+          "guaranteed_all_code_two_mode_retention": 0.9986367671337852,
+          "all_code_isometry_norm_error_bound": 0.03901260911922601
+        },
+        {
+          "N": 1000,
+          "M": 100,
+          "m": 100,
+          "c": 1.0,
+          "x": 1.0,
+          "product_photons_in_tangent_mean": 0.006241628742002155,
+          "limiting_poisson_parameter": 0.005208333333333333,
+          "binomial_Poisson_TV": 0.0010275903444900388,
+          "product_no_tangent_probability": 0.9937776161733504,
+          "guaranteed_all_code_two_mode_retention": 0.9986367671337852,
+          "all_code_isometry_norm_error_bound": 0.03901260911922601
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "m": 2500,
+          "c": 1.0,
+          "x": 0.25,
+          "product_photons_in_tangent_mean": 0.005260805979995812,
+          "limiting_poisson_parameter": 0.005208333333333333,
+          "binomial_Poisson_TV": 5.220419876598007e-05,
+          "product_no_tangent_probability": 0.994753002319055,
+          "guaranteed_all_code_two_mode_retention": 0.9999884428403716,
+          "all_code_isometry_norm_error_bound": 0.0035999885965385396
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "m": 7500,
+          "c": 1.0,
+          "x": 0.75,
+          "product_photons_in_tangent_mean": 0.0,
+          "limiting_poisson_parameter": 0.0,
+          "binomial_Poisson_TV": 0.0,
+          "product_no_tangent_probability": 1.0,
+          "guaranteed_all_code_two_mode_retention": 0.9999884428403716,
+          "all_code_isometry_norm_error_bound": 0.0035999885965385396
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "m": 10000,
+          "c": 1.0,
+          "x": 1.0,
+          "product_photons_in_tangent_mean": 0.00530068055759509,
+          "limiting_poisson_parameter": 0.005208333333333333,
+          "binomial_Poisson_TV": 9.186465521345733e-05,
+          "product_no_tangent_probability": 0.9947133418624017,
+          "guaranteed_all_code_two_mode_retention": 0.9999884428403716,
+          "all_code_isometry_norm_error_bound": 0.0035999885965385396
+        },
+        {
+          "N": 1000000000,
+          "M": 1000000,
+          "m": 250000,
+          "c": 1.0,
+          "x": 0.25,
+          "product_photons_in_tangent_mean": 0.005213545630324696,
+          "limiting_poisson_parameter": 0.005208333333333333,
+          "binomial_Poisson_TV": 5.185260751186192e-06,
+          "product_no_tangent_probability": 0.9948000212643776,
+          "guaranteed_all_code_two_mode_retention": 0.9999998864091252,
+          "all_code_isometry_norm_error_bound": 0.0003569430793536184
+        },
+        {
+          "N": 1000000000,
+          "M": 1000000,
+          "m": 750000,
+          "c": 1.0,
+          "x": 0.75,
+          "product_photons_in_tangent_mean": 0.0,
+          "limiting_poisson_parameter": 0.0,
+          "binomial_Poisson_TV": 0.0,
+          "product_no_tangent_probability": 1.0,
+          "guaranteed_all_code_two_mode_retention": 0.9999998864091252,
+          "all_code_isometry_norm_error_bound": 0.0003569430793536184
+        },
+        {
+          "N": 1000000000,
+          "M": 1000000,
+          "m": 1000000,
+          "c": 1.0,
+          "x": 1.0,
+          "product_photons_in_tangent_mean": 0.005217459899418347,
+          "limiting_poisson_parameter": 0.005208333333333333,
+          "binomial_Poisson_TV": 9.079127568401044e-06,
+          "product_no_tangent_probability": 0.9947961273811771,
+          "guaranteed_all_code_two_mode_retention": 0.9999998864091252,
+          "all_code_isometry_norm_error_bound": 0.0003569430793536184
+        },
+        {
+          "N": 1000,
+          "M": 200,
+          "m": 50,
+          "c": 2.0,
+          "x": 0.25,
+          "product_photons_in_tangent_mean": 0.051357871883021315,
+          "limiting_poisson_parameter": 0.041666666666666664,
+          "binomial_Poisson_TV": 0.009275876465341932,
+          "product_no_tangent_probability": 0.9499135806437943,
+          "guaranteed_all_code_two_mode_retention": 0.9893315916254221,
+          "all_code_isometry_norm_error_bound": 0.11630927067401448
+        },
+        {
+          "N": 1000,
+          "M": 200,
+          "m": 150,
+          "c": 2.0,
+          "x": 0.75,
+          "product_photons_in_tangent_mean": 0.0,
+          "limiting_poisson_parameter": 0.0,
+          "binomial_Poisson_TV": 0.0,
+          "product_no_tangent_probability": 1.0,
+          "guaranteed_all_code_two_mode_retention": 0.9893315916254221,
+          "all_code_isometry_norm_error_bound": 0.11630927067401448
+        },
+        {
+          "N": 1000,
+          "M": 200,
+          "m": 200,
+          "c": 2.0,
+          "x": 1.0,
+          "product_photons_in_tangent_mean": 0.06108129868157968,
+          "limiting_poisson_parameter": 0.041666666666666664,
+          "binomial_Poisson_TV": 0.018451478298140814,
+          "product_no_tangent_probability": 0.9407379788109909,
+          "guaranteed_all_code_two_mode_retention": 0.9893315916254221,
+          "all_code_isometry_norm_error_bound": 0.11630927067401448
+        },
+        {
+          "N": 1000000,
+          "M": 20000,
+          "m": 5000,
+          "c": 2.0,
+          "x": 0.25,
+          "product_photons_in_tangent_mean": 0.04251279977254321,
+          "limiting_poisson_parameter": 0.041666666666666664,
+          "binomial_Poisson_TV": 0.0008114319019632562,
+          "product_no_tangent_probability": 0.9583780252069841,
+          "guaranteed_all_code_two_mode_retention": 0.9999251906795578,
+          "all_code_isometry_norm_error_bound": 0.009791675481558652
+        },
+        {
+          "N": 1000000,
+          "M": 20000,
+          "m": 15000,
+          "c": 2.0,
+          "x": 0.75,
+          "product_photons_in_tangent_mean": 0.0,
+          "limiting_poisson_parameter": 0.0,
+          "binomial_Poisson_TV": 0.0,
+          "product_no_tangent_probability": 1.0,
+          "guaranteed_all_code_two_mode_retention": 0.9999251906795578,
+          "all_code_isometry_norm_error_bound": 0.009791675481558652
+        },
+        {
+          "N": 1000000,
+          "M": 20000,
+          "m": 20000,
+          "c": 2.0,
+          "x": 1.0,
+          "product_photons_in_tangent_mean": 0.043164162465914487,
+          "limiting_poisson_parameter": 0.041666666666666664,
+          "binomial_Poisson_TV": 0.001435351842139434,
+          "product_no_tangent_probability": 0.9577541052664144,
+          "guaranteed_all_code_two_mode_retention": 0.9999251906795578,
+          "all_code_isometry_norm_error_bound": 0.009791675481558652
+        },
+        {
+          "N": 1000000000,
+          "M": 2000000,
+          "m": 500000,
+          "c": 2.0,
+          "x": 0.25,
+          "product_photons_in_tangent_mean": 0.04175012717497921,
+          "limiting_poisson_parameter": 0.041666666666666664,
+          "binomial_Poisson_TV": 8.005277085693739e-05,
+          "product_no_tangent_probability": 0.9591094043250575,
+          "guaranteed_all_code_two_mode_retention": 0.9999992764316715,
+          "all_code_isometry_norm_error_bound": 0.000963344439171094
+        },
+        {
+          "N": 1000000000,
+          "M": 2000000,
+          "m": 1500000,
+          "c": 2.0,
+          "x": 0.75,
+          "product_photons_in_tangent_mean": 0.0,
+          "limiting_poisson_parameter": 0.0,
+          "binomial_Poisson_TV": 0.0,
+          "product_no_tangent_probability": 1.0,
+          "guaranteed_all_code_two_mode_retention": 0.9999992764316715,
+          "all_code_isometry_norm_error_bound": 0.000963344439171094
+        },
+        {
+          "N": 1000000000,
+          "M": 2000000,
+          "m": 2000000,
+          "c": 2.0,
+          "x": 1.0,
+          "product_photons_in_tangent_mean": 0.041812884148410064,
+          "limiting_poisson_parameter": 0.041666666666666664,
+          "binomial_Poisson_TV": 0.00014024043309291252,
+          "product_no_tangent_probability": 0.9590492167761462,
+          "guaranteed_all_code_two_mode_retention": 0.9999992764316715,
+          "all_code_isometry_norm_error_bound": 0.000963344439171094
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "m": 75,
+          "c": 3.0,
+          "x": 0.25,
+          "product_photons_in_tangent_mean": 0.19448241028054852,
+          "limiting_poisson_parameter": 0.140625,
+          "binomial_Poisson_TV": 0.045762320673952486,
+          "product_no_tangent_probability": 0.8230527355888871,
+          "guaranteed_all_code_two_mode_retention": 0.9523785354668453,
+          "all_code_isometry_norm_error_bound": 0.25762434168524384
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "m": 225,
+          "c": 3.0,
+          "x": 0.75,
+          "product_photons_in_tangent_mean": 0.0,
+          "limiting_poisson_parameter": 0.0,
+          "binomial_Poisson_TV": 0.0,
+          "product_no_tangent_probability": 1.0,
+          "guaranteed_all_code_two_mode_retention": 0.9523785354668453,
+          "all_code_isometry_norm_error_bound": 0.25762434168524384
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "m": 300,
+          "c": 3.0,
+          "x": 1.0,
+          "product_photons_in_tangent_mean": 0.2579798273143088,
+          "limiting_poisson_parameter": 0.140625,
+          "binomial_Poisson_TV": 0.09628998312315251,
+          "product_no_tangent_probability": 0.7725250731396952,
+          "guaranteed_all_code_two_mode_retention": 0.9523785354668453,
+          "all_code_isometry_norm_error_bound": 0.25762434168524384
+        },
+        {
+          "N": 1000000,
+          "M": 30000,
+          "m": 7500,
+          "c": 3.0,
+          "x": 0.25,
+          "product_photons_in_tangent_mean": 0.14494199293232207,
+          "limiting_poisson_parameter": 0.140625,
+          "binomial_Poisson_TV": 0.003743795878102955,
+          "product_no_tangent_probability": 0.865071260385046,
+          "guaranteed_all_code_two_mode_retention": 0.9997248808295021,
+          "all_code_isometry_norm_error_bound": 0.019759123148623502
+        },
+        {
+          "N": 1000000,
+          "M": 30000,
+          "m": 22500,
+          "c": 3.0,
+          "x": 0.75,
+          "product_photons_in_tangent_mean": 0.0,
+          "limiting_poisson_parameter": 0.0,
+          "binomial_Poisson_TV": 0.0,
+          "product_no_tangent_probability": 1.0,
+          "guaranteed_all_code_two_mode_retention": 0.9997248808295021,
+          "all_code_isometry_norm_error_bound": 0.019759123148623502
+        },
+        {
+          "N": 1000000,
+          "M": 30000,
+          "m": 30000,
+          "c": 3.0,
+          "x": 1.0,
+          "product_photons_in_tangent_mean": 0.14830916517698395,
+          "limiting_poisson_parameter": 0.140625,
+          "binomial_Poisson_TV": 0.00665084984128163,
+          "product_no_tangent_probability": 0.8621642064228431,
+          "guaranteed_all_code_two_mode_retention": 0.9997248808295021,
+          "all_code_isometry_norm_error_bound": 0.019759123148623502
+        },
+        {
+          "N": 1000000000,
+          "M": 3000000,
+          "m": 750000,
+          "c": 3.0,
+          "x": 0.25,
+          "product_photons_in_tangent_mean": 0.1410478417538301,
+          "limiting_poisson_parameter": 0.140625,
+          "binomial_Poisson_TV": 0.0003673051413521442,
+          "product_no_tangent_probability": 0.8684477511338251,
+          "guaranteed_all_code_two_mode_retention": 0.9999973786044735,
+          "all_code_isometry_norm_error_bound": 0.0019299154159372572
+        },
+        {
+          "N": 1000000000,
+          "M": 3000000,
+          "m": 2250000,
+          "c": 3.0,
+          "x": 0.75,
+          "product_photons_in_tangent_mean": 0.0,
+          "limiting_poisson_parameter": 0.0,
+          "binomial_Poisson_TV": 0.0,
+          "product_no_tangent_probability": 1.0,
+          "guaranteed_all_code_two_mode_retention": 0.9999973786044735,
+          "all_code_isometry_norm_error_bound": 0.0019299154159372572
+        },
+        {
+          "N": 1000000000,
+          "M": 3000000,
+          "m": 3000000,
+          "c": 3.0,
+          "x": 1.0,
+          "product_photons_in_tangent_mean": 0.14136620215375498,
+          "limiting_poisson_parameter": 0.140625,
+          "binomial_Poisson_TV": 0.0006437318864348208,
+          "product_no_tangent_probability": 0.8681713244424202,
+          "guaranteed_all_code_two_mode_retention": 0.9999973786044735,
+          "all_code_isometry_norm_error_bound": 0.0019299154159372572
+        }
+      ],
+      "caution": "Poisson convergence is in distribution/TV, not by itself convergence of the unbounded exact finite-N photon-count mean. These rows evaluate the controlled product approximants and separate rigorous approximation bounds."
+    },
+    "full_output_amplitudes": {
+      "cases": 11,
+      "independent_integrals": [
+        {
+          "N": 8,
+          "M": 4,
+          "error": 1.63202784619898e-14,
+          "amplitudes": [
+            0.9973705347243463,
+            -0.05991933754480852,
+            0.03648585666178444
+          ]
+        },
+        {
+          "N": 20,
+          "M": 10,
+          "error": 2.342223637263885e-14,
+          "amplitudes": [
+            0.9903574493582735,
+            -0.13590327541385192,
+            0.023167423719725706
+          ]
+        }
+      ],
+      "finite_Dicke_rows": [
+        {
+          "N": 128,
+          "M": 50,
+          "m": 12,
+          "max_tangent_count_evaluated": 8,
+          "all_photons_in_main_mode": 0.9424009249819835,
+          "probability_all_photons_in_two_modes_lower": 0.9996971040326779,
+          "main_mode_mean_photon_fraction_lower": 0.9946468264326477,
+          "resolved_probabilities": [
+            0.9424009249819835,
+            0.05412531503764987,
+            0.0030394222077376946,
+            0.0001267376393526816,
+            4.565520851126571e-06,
+            1.351963739497562e-07,
+            3.378386421765817e-09,
+            6.92006847602948e-11,
+            1.1478230234112346e-12
+          ],
+          "maximum_amplitude_late_time_bound": 3.4833348345411134e-15
+        },
+        {
+          "N": 128,
+          "M": 50,
+          "m": 50,
+          "max_tangent_count_evaluated": 8,
+          "all_photons_in_main_mode": 0.9142843628392209,
+          "probability_all_photons_in_two_modes_lower": 0.9971023607347602,
+          "main_mode_mean_photon_fraction_lower": 0.9949904736018511,
+          "resolved_probabilities": [
+            0.9142843628392209,
+            0.06311971346403615,
+            0.017152713651194588,
+            0.002087822721548765,
+            0.00039445796999776697,
+            5.3341565443284646e-05,
+            8.60347170689354e-06,
+            1.1732927927346848e-06,
+            1.717664790505708e-07
+          ],
+          "maximum_amplitude_late_time_bound": 3.0745026104468927e-12
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "m": 75,
+          "max_tangent_count_evaluated": 8,
+          "all_photons_in_main_mode": 0.8257267086526806,
+          "probability_all_photons_in_two_modes_lower": 0.9995510270821738,
+          "main_mode_mean_photon_fraction_lower": 0.996952945999444,
+          "resolved_probabilities": [
+            0.8257267086526806,
+            0.15457334050226895,
+            0.017597726480817158,
+            0.0015337632212489545,
+            0.00011190125596273774,
+            7.15259499177847e-06,
+            4.116037549445056e-07,
+            2.1708084931218015e-08,
+            1.062396401609611e-09
+          ],
+          "maximum_amplitude_late_time_bound": 1.2010143499277705e-14
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "m": 300,
+          "max_tangent_count_evaluated": 8,
+          "all_photons_in_main_mode": 0.7865187451251555,
+          "probability_all_photons_in_two_modes_lower": 0.9984300726195847,
+          "main_mode_mean_photon_fraction_lower": 0.9975440626993901,
+          "resolved_probabilities": [
+            0.7865187451251555,
+            0.16760057791009858,
+            0.03634678224222324,
+            0.006604455230180832,
+            0.0011413195923567526,
+            0.0001845279673761375,
+            2.8730011673599436e-05,
+            4.306700758806411e-06,
+            6.278499689086856e-07
+          ],
+          "maximum_amplitude_late_time_bound": 3.2174362264403948e-12
+        }
+      ],
+      "refinement_probability_error": 3.5275225993000996e-12,
+      "scope": "No trajectory or photon-count postselection. The count cutoff produces a conservative subevent sum, not a renormalized distribution. These numbers are numerical rather than interval-certified bounds."
+    },
+    "reference_safe_encoding": {
+      "cases": 29,
+      "N": 80,
+      "M": 12,
+      "maximum_exact_isometry_error": 0.03193198899631615,
+      "analytic_uniform_isometry_error": 0.05269696111271765,
+      "explanation": "The exact error norm is evaluated through continuum overlap amplitudes; reference-safe extension follows from orthogonality of distinct total-photon-number sectors."
+    }
+  },
+  "scope": "Author-side independent formulations and new limiting-mode consequences. No external peer review, exhaustive priority certificate, or physical device observation."
+}
