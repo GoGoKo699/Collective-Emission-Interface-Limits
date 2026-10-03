@@ -4,6 +4,8 @@
 
 This project studies a symmetric ensemble of two-level emitters releasing an unknown quantum state into a traveling field. A receiver is chosen before the input is known and retains one bosonic memory mode. We determine when the finite spin can be treated as a linear oscillator for that task—not merely for its average emitted intensity.
 
+Start with [the physical story](research/STORY.md): the same weakly excited source can satisfy a photon-collection criterion and fail a whole-state transfer criterion. The proof and resource boundaries below make that distinction quantitative.
+
 ## The central result
 
 Let $N$ be the number of emitters and let the stored state occupy Dicke excitation numbers $0,\ldots,M$. For complete ideal collective decay and a predetermined, photon-number-preserving linear receiver with vacuum auxiliaries, define $\mathcal F_{N,M}$ as the best worst-input entanglement fidelity for the canonical number map into one oscillator.
@@ -24,18 +26,20 @@ This is a distinction between an intensity observable and a quantum channel. It 
 
 The critical limit is already witnessed by the two-dimensional code spanned by excitation numbers $\lfloor M/4\rfloor$ and $M$. Its two states become individually well matched to different pulses, but no single pulse handles both better than the critical bound. The number of logical basis states need not grow. Their excitation energies do grow.
 
-The new finite two-sector calculation is in [the scope note](research/TWO_SECTOR_WITNESS.md). This is a corollary of the existing two-sector converse, not a separate claimed physical mechanism or an optimization over all encodings.
+The finite two-sector calculation is in [the scope note](research/TWO_SECTOR_WITNESS.md). This is a corollary of the existing two-sector converse, not a separate claimed physical mechanism or an optimization over all encodings.
 
 ## Read the science
 
 | Document | Role |
 |---|---|
+| [The physical story](research/STORY.md) | One question, mechanism, optimized boundary and consequence; no new model or manuscript |
 | [Model and proof](research/THEOREM.md) | The source, fidelity convention, uniform state approximation, all-waveform converse, and mean-collection comparison |
 | [Proof audit and correction](research/PROOF_AUDIT.md) | Endpoint-safe finite bounds, answers to the proof checklist, and explicit author-side review limits |
 | [Two-sector witness](research/TWO_SECTOR_WITNESS.md) | Why one logical qubit suffices; finite constructive and converse bounds |
 | [Physical scope](research/PHYSICAL_SCOPE.md) | Passive reception, two-mode error structure, loss, bandwidth, and known ways outside the theorem |
 | [Prior results and open comparisons](literature/PRIOR_ART.md) | Exact attribution and access status, not a priority certificate |
-| [Law–Lee full-text comparison](literature/LAW_LEE_FULL_TEXT.md) | Completed equation-level comparison; inherited oscillator, few-mode and pulse results, and the remaining interface claim |
+| [Law–Lee full-text comparison](literature/LAW_LEE_FULL_TEXT.md) | Completed equation-level comparison and the remaining interface claim |
+| [Preparation evidence](literature/PREPARATION_EVIDENCE.md) | Completed P03/P04 reading; known-target and heralded preparation are not a demonstrated unknown-input interface |
 | [Assumption register](literature/ASSUMPTIONS.md) | Model idealizations, receiver restrictions, and unfinished implementation checks |
 | [Status](STATUS.md) | Completed author-side results and remaining research tasks |
 
