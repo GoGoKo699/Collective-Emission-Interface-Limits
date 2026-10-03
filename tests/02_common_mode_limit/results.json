@@ -1,0 +1,699 @@
+{
+  "status": "PASS",
+  "date": "2026-10-02",
+  "seed": 2026100202,
+  "groups": {
+    "entropy_and_waveforms": {
+      "cases": 15,
+      "entropy": [
+        {
+          "N": 10,
+          "m": 2,
+          "exact_relative_entropy": 0.0018497974986997233,
+          "entropy_upper_bound": 0.00205761316872428,
+          "guaranteed_matched_fidelity": 0.9981519123222568,
+          "independent_counting_process_integral": 0.0018497974986997096,
+          "exact_cascade_fidelity": 0.9990587442938346,
+          "late_tail_bound": 1.979652253720263e-17
+        },
+        {
+          "N": 12,
+          "m": 4,
+          "exact_relative_entropy": 0.00919987565673645,
+          "entropy_upper_bound": 0.012345679012345678,
+          "guaranteed_matched_fidelity": 0.9908423137211746,
+          "independent_counting_process_integral": 0.009199875656736491,
+          "exact_cascade_fidelity": 0.9951741812001338,
+          "late_tail_bound": 1.0121319753792882e-15
+        },
+        {
+          "N": 50,
+          "m": 10,
+          "exact_relative_entropy": 0.0036455813517888864,
+          "entropy_upper_bound": 0.004461629982153479,
+          "guaranteed_matched_fidelity": 0.996361055712139,
+          "independent_counting_process_integral": 0.003645581351788816,
+          "exact_cascade_fidelity": 0.998116708482903,
+          "late_tail_bound": 5.564010887420188e-16
+        },
+        {
+          "N": 100,
+          "m": 10,
+          "exact_relative_entropy": 0.0008235155078178816,
+          "entropy_upper_bound": 0.000905687718874532,
+          "guaranteed_matched_fidelity": 0.9991768234880154,
+          "independent_counting_process_integral": 0.0008235155078179296,
+          "exact_cascade_fidelity": 0.999581754733128,
+          "late_tail_bound": 7.97916838949368e-17
+        },
+        {
+          "N": 1000,
+          "m": 100,
+          "exact_relative_entropy": 0.0009146647321302982,
+          "entropy_upper_bound": 0.0010162589107429038,
+          "guaranteed_matched_fidelity": 0.9990857534461485,
+          "exact_cascade_fidelity": 0.9995347427418392,
+          "late_tail_bound": 9.687184875208673e-16
+        },
+        {
+          "N": 1000,
+          "m": 200,
+          "exact_relative_entropy": 0.0041204313671256085,
+          "entropy_upper_bound": 0.0051693601890687,
+          "guaranteed_matched_fidelity": 0.9958880459627844,
+          "exact_cascade_fidelity": 0.9978641957666147,
+          "late_tail_bound": 1.6780006828395898e-14
+        },
+        {
+          "N": 10000,
+          "m": 300,
+          "exact_relative_entropy": 7.704683555203741e-05,
+          "entropy_upper_bound": 7.942883410765732e-05,
+          "guaranteed_matched_fidelity": 0.9999229561324792,
+          "exact_cascade_fidelity": 0.9999612818173916,
+          "late_tail_bound": 6.562484087338758e-16
+        }
+      ],
+      "mode_overlaps": [
+        {
+          "a": 0.0,
+          "b": 0.1,
+          "integral": 0.9995376147856944,
+          "formula": 0.9995376147856945
+        },
+        {
+          "a": 0.2,
+          "b": 0.5,
+          "integral": 0.9908546513079007,
+          "formula": 0.9908546513079006
+        },
+        {
+          "a": 0.7,
+          "b": 0.9,
+          "integral": 0.9514261508963456,
+          "formula": 0.951426150896346
+        },
+        {
+          "a": 0.1,
+          "b": 0.10001,
+          "integral": 0.9999999999948559,
+          "formula": 0.9999999999948559
+        }
+      ]
+    },
+    "finite_code_fidelity": {
+      "cases": 8,
+      "small_codes": [
+        {
+          "N": 20,
+          "M": 6,
+          "analytic_lower": 0.9751576998684274,
+          "analytic_upper": 0.9989424702051038,
+          "evaluated_all_numbers": true,
+          "fixed_mode_worst_fidelity": 0.9913612172069802,
+          "minimizing_number": 6,
+          "a": 0.175
+        },
+        {
+          "N": 50,
+          "M": 12,
+          "analytic_lower": 0.9779827905374127,
+          "analytic_upper": 0.9988055811801597,
+          "evaluated_all_numbers": true,
+          "fixed_mode_worst_fidelity": 0.9919011472096483,
+          "minimizing_number": 12,
+          "a": 0.16
+        },
+        {
+          "N": 100,
+          "M": 24,
+          "analytic_lower": 0.9668777794866246,
+          "analytic_upper": 0.9961107050584092,
+          "evaluated_all_numbers": true,
+          "fixed_mode_worst_fidelity": 0.9864199991253041,
+          "minimizing_number": 24,
+          "a": 0.17
+        }
+      ],
+      "finite_brackets": [
+        {
+          "N": 1000,
+          "M": 100,
+          "constructive_lower": 0.9881211208846041,
+          "all_modes_upper": 0.9961556900657359,
+          "chosen_a": 0.074,
+          "sampled_numbers": [
+            {
+              "m": 1,
+              "fidelity": 0.9995075876189913,
+              "amplitude": 0.999753763493287,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.1949679639579658e-18,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 25,
+              "fidelity": 0.9942652202753359,
+              "amplitude": 0.9971284873452047,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 4.945163896929062e-17,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 50,
+              "fidelity": 0.9969779046898665,
+              "amplitude": 0.998487808984099,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.67191921324971e-16,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 100,
+              "fidelity": 0.9934746403004359,
+              "amplitude": 0.9967319801734245,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 9.555523618108646e-16,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            }
+          ],
+          "scope": "Bounds cover all m; displayed ODEs cover only listed m, not a finite-N global optimization."
+        },
+        {
+          "N": 1000,
+          "M": 200,
+          "constructive_lower": 0.9068769741941726,
+          "all_modes_upper": 0.9600311763833138,
+          "chosen_a": 0.149,
+          "sampled_numbers": [
+            {
+              "m": 1,
+              "fidelity": 0.9978335195907778,
+              "amplitude": 0.9989161724543145,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.2465134693474997e-18,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 50,
+              "fidelity": 0.9504023530529632,
+              "amplitude": 0.9748858153922249,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.7440382351956903e-16,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 100,
+              "fidelity": 0.973464371686514,
+              "amplitude": 0.9866429808631458,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 9.967705625503752e-16,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 200,
+              "fidelity": 0.9419514938179004,
+              "amplitude": 0.9705418557784617,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.6279595555264097e-14,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            }
+          ],
+          "scope": "Bounds cover all m; displayed ODEs cover only listed m, not a finite-N global optimization."
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "constructive_lower": 0.6813053870578556,
+          "all_modes_upper": 0.8439477954750071,
+          "chosen_a": 0.224,
+          "sampled_numbers": [
+            {
+              "m": 1,
+              "fidelity": 0.9946576609105506,
+              "amplitude": 0.9973252533203752,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.3053617871063532e-18,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 75,
+              "fidelity": 0.8257267086526923,
+              "amplitude": 0.9086950581205404,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 4.631117322785489e-16,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 150,
+              "fidelity": 0.9021075279260677,
+              "amplitude": 0.9497934132884202,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 4.474346237906279e-15,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 300,
+              "fidelity": 0.786518745115541,
+              "amplitude": 0.8868589206381932,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 2.0882726553056801e-13,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            }
+          ],
+          "scope": "Bounds cover all m; displayed ODEs cover only listed m, not a finite-N global optimization."
+        },
+        {
+          "N": 8000,
+          "M": 400,
+          "constructive_lower": 0.9918836681344366,
+          "all_modes_upper": 0.9955012632528705,
+          "chosen_a": 0.037375,
+          "sampled_numbers": [
+            {
+              "m": 1,
+              "fidelity": 0.999879096185542,
+              "amplitude": 0.999939546265444,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.1720150472397037e-18,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 100,
+              "fidelity": 0.9945475650072046,
+              "amplitude": 0.997270056207046,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.519831585967754e-16,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 200,
+              "fidelity": 0.9972206304869842,
+              "amplitude": 0.9986093482873992,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 3.9520985273089396e-16,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 400,
+              "fidelity": 0.9942844969383943,
+              "amplitude": 0.9971381533861766,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.3361719850310729e-15,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            }
+          ],
+          "scope": "Bounds cover all m; displayed ODEs cover only listed m, not a finite-N global optimization."
+        },
+        {
+          "N": 8000,
+          "M": 800,
+          "constructive_lower": 0.9372783788562502,
+          "all_modes_upper": 0.9597672572606281,
+          "chosen_a": 0.074875,
+          "sampled_numbers": [
+            {
+              "m": 1,
+              "fidelity": 0.999495406912321,
+              "amplitude": 0.9997476716213551,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.1955329415821633e-18,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 200,
+              "fidelity": 0.9551295257418595,
+              "amplitude": 0.9773072831724214,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 4.03140214701514e-16,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 400,
+              "fidelity": 0.9767714621512544,
+              "amplitude": 0.9883174905622456,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 1.3629838861592402e-15,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            },
+            {
+              "m": 800,
+              "fidelity": 0.9520163284125777,
+              "amplitude": 0.9757132408718135,
+              "cutoff": 42.0,
+              "omitted_fidelity_bound": 7.789864852370077e-15,
+              "ode_rtol": 1e-10,
+              "ode_atol": 2e-15
+            }
+          ],
+          "scope": "Bounds cover all m; displayed ODEs cover only listed m, not a finite-N global optimization."
+        }
+      ]
+    },
+    "joint_limit": {
+      "cases": 11,
+      "critical_sequences": [
+        {
+          "N": 1000,
+          "M": 100,
+          "c": 1,
+          "guaranteed_lower": 0.9875234994615045,
+          "guaranteed_upper": 0.9961556900657359,
+          "limiting_value": 0.9948052065178371,
+          "bracket_width": 0.008632190604231371
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "c": 1,
+          "guaranteed_lower": 0.9942681991169405,
+          "guaranteed_upper": 0.9949473057199395,
+          "limiting_value": 0.9948052065178371,
+          "bracket_width": 0.000679106602998969
+        },
+        {
+          "N": 1000000000,
+          "M": 1000000,
+          "c": 1,
+          "guaranteed_lower": 0.9947531588010673,
+          "guaranteed_upper": 0.9948194756071149,
+          "limiting_value": 0.9948052065178371,
+          "bracket_width": 6.631680604762824e-05
+        },
+        {
+          "N": 1000,
+          "M": 200,
+          "c": 2,
+          "guaranteed_lower": 0.8978438770750115,
+          "guaranteed_upper": 0.9600311763833138,
+          "limiting_value": 0.9591894571091382,
+          "bracket_width": 0.06218729930830236
+        },
+        {
+          "N": 1000000,
+          "M": 20000,
+          "c": 2,
+          "guaranteed_lower": 0.9551356726392344,
+          "guaranteed_upper": 0.9593273612023543,
+          "limiting_value": 0.9591894571091382,
+          "bracket_width": 0.004191688563119911
+        },
+        {
+          "N": 1000000000,
+          "M": 2000000,
+          "c": 2,
+          "guaranteed_lower": 0.9587994710519961,
+          "guaranteed_upper": 0.9592037192658681,
+          "limiting_value": 0.9591894571091382,
+          "bracket_width": 0.00040424821387197163
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "c": 3,
+          "guaranteed_lower": 0.6381109586930039,
+          "guaranteed_upper": 0.8439477954750071,
+          "limiting_value": 0.8688150562628432,
+          "bracket_width": 0.20583683678200315
+        },
+        {
+          "N": 1000000,
+          "M": 30000,
+          "c": 3,
+          "guaranteed_lower": 0.8549437772985617,
+          "guaranteed_upper": 0.8670926141560688,
+          "limiting_value": 0.8688150562628432,
+          "bracket_width": 0.012148836857507006
+        },
+        {
+          "N": 1000000000,
+          "M": 3000000,
+          "c": 3,
+          "guaranteed_lower": 0.8674905406191059,
+          "guaranteed_upper": 0.8686486329924812,
+          "limiting_value": 0.8688150562628432,
+          "bracket_width": 0.0011580923733752746
+        }
+      ],
+      "subcritical_examples": [
+        {
+          "N": 1000000,
+          "M": 100,
+          "lower": 0.9999999898188698
+        },
+        {
+          "N": 1000000000,
+          "M": 10000,
+          "lower": 0.9999999943665756
+        }
+      ],
+      "scope": "Scalar evaluations of proved finite bounds, not huge-emitter simulations or a fitted exponent."
+    },
+    "source_controls": {
+      "cases": 7,
+      "time_change": [
+        {
+          "N": 30,
+          "m": 1,
+          "lab_end_time": 50.0,
+          "common_clock_horizon": 42.462022576916766,
+          "ordinary_fidelity": 0.9986393310412586,
+          "controlled_fidelity": 0.998639331041259,
+          "amplitude_error": 2.664148613101503e-16
+        },
+        {
+          "N": 30,
+          "m": 3,
+          "lab_end_time": 50.0,
+          "common_clock_horizon": 42.462022576916766,
+          "ordinary_fidelity": 0.9988551616367173,
+          "controlled_fidelity": 0.9988551616367342,
+          "amplitude_error": 1.0672228338886482e-14
+        },
+        {
+          "N": 30,
+          "m": 8,
+          "lab_end_time": 50.0,
+          "common_clock_horizon": 42.462022576916766,
+          "ordinary_fidelity": 0.9846483847373736,
+          "controlled_fidelity": 0.9846483847373824,
+          "amplitude_error": 1.2127359580406394e-14
+        }
+      ],
+      "linearized_ladder_scope": "An algebraic control outside the allowed scalar class, not a hardware implementation or new oscillator-emission principle."
+    },
+    "receiver_channel": {
+      "cases": 18,
+      "generic_number_conserving_channels": [
+        {
+          "cutoff": 2,
+          "min_no_environment_amplitude_squared": 0.20485366458552695,
+          "saturating_number": 2,
+          "entanglement_fidelity": 0.20485366458552695
+        },
+        {
+          "cutoff": 2,
+          "min_no_environment_amplitude_squared": 0.1036265796852846,
+          "saturating_number": 1,
+          "entanglement_fidelity": 0.1036265796852846
+        },
+        {
+          "cutoff": 2,
+          "min_no_environment_amplitude_squared": 0.05803136394657921,
+          "saturating_number": 2,
+          "entanglement_fidelity": 0.05803136394657921
+        },
+        {
+          "cutoff": 2,
+          "min_no_environment_amplitude_squared": 0.15786450659214118,
+          "saturating_number": 2,
+          "entanglement_fidelity": 0.15786450659214118
+        },
+        {
+          "cutoff": 2,
+          "min_no_environment_amplitude_squared": 0.462459851976709,
+          "saturating_number": 1,
+          "entanglement_fidelity": 0.462459851976709
+        },
+        {
+          "cutoff": 2,
+          "min_no_environment_amplitude_squared": 0.3863495460200512,
+          "saturating_number": 2,
+          "entanglement_fidelity": 0.3863495460200512
+        },
+        {
+          "cutoff": 4,
+          "min_no_environment_amplitude_squared": 0.5096367556617443,
+          "saturating_number": 2,
+          "entanglement_fidelity": 0.5096367556617443
+        },
+        {
+          "cutoff": 4,
+          "min_no_environment_amplitude_squared": 0.37377732169311173,
+          "saturating_number": 1,
+          "entanglement_fidelity": 0.37377732169311173
+        },
+        {
+          "cutoff": 4,
+          "min_no_environment_amplitude_squared": 0.11463235319743147,
+          "saturating_number": 2,
+          "entanglement_fidelity": 0.11463235319743147
+        },
+        {
+          "cutoff": 4,
+          "min_no_environment_amplitude_squared": 0.05598410913628714,
+          "saturating_number": 3,
+          "entanglement_fidelity": 0.05598410913628714
+        },
+        {
+          "cutoff": 4,
+          "min_no_environment_amplitude_squared": 0.16680198095117843,
+          "saturating_number": 4,
+          "entanglement_fidelity": 0.16680198095117843
+        },
+        {
+          "cutoff": 4,
+          "min_no_environment_amplitude_squared": 0.06261867881489286,
+          "saturating_number": 3,
+          "entanglement_fidelity": 0.06261867881489286
+        },
+        {
+          "cutoff": 8,
+          "min_no_environment_amplitude_squared": 0.08335801545883427,
+          "saturating_number": 6,
+          "entanglement_fidelity": 0.08335801545883427
+        },
+        {
+          "cutoff": 8,
+          "min_no_environment_amplitude_squared": 0.18983210364767247,
+          "saturating_number": 7,
+          "entanglement_fidelity": 0.18983210364767247
+        },
+        {
+          "cutoff": 8,
+          "min_no_environment_amplitude_squared": 0.046088831032347684,
+          "saturating_number": 6,
+          "entanglement_fidelity": 0.046088831032347684
+        },
+        {
+          "cutoff": 8,
+          "min_no_environment_amplitude_squared": 0.046069468652796465,
+          "saturating_number": 7,
+          "entanglement_fidelity": 0.046069468652796465
+        },
+        {
+          "cutoff": 8,
+          "min_no_environment_amplitude_squared": 0.04395032939264955,
+          "saturating_number": 8,
+          "entanglement_fidelity": 0.04395032939264955
+        },
+        {
+          "cutoff": 8,
+          "min_no_environment_amplitude_squared": 0.2415022164656949,
+          "saturating_number": 3,
+          "entanglement_fidelity": 0.2415022164656949
+        }
+      ],
+      "scope": "Tests the general Kraus argument with constructed channels; these are not substituted for an exact Dicke reduced-field simulation."
+    },
+    "numerical_refinement": {
+      "cases": 3,
+      "rows": [
+        {
+          "N": 1000,
+          "m": 100,
+          "a": 0.074,
+          "first": {
+            "fidelity": 0.9934746403004359,
+            "amplitude": 0.9967319801734245,
+            "cutoff": 42.0,
+            "omitted_fidelity_bound": 9.555523618108646e-16,
+            "ode_rtol": 1e-10,
+            "ode_atol": 2e-15
+          },
+          "refined": {
+            "fidelity": 0.9934746403008413,
+            "amplitude": 0.9967319801736279,
+            "cutoff": 48.0,
+            "omitted_fidelity_bound": 3.1876678330645226e-18,
+            "ode_rtol": 2e-12,
+            "ode_atol": 2e-15
+          },
+          "fidelity_difference": 4.0545344859310717e-13
+        },
+        {
+          "N": 1000,
+          "m": 200,
+          "a": 0.149,
+          "first": {
+            "fidelity": 0.9419514938179004,
+            "amplitude": 0.9705418557784617,
+            "cutoff": 42.0,
+            "omitted_fidelity_bound": 1.6279595555264097e-14,
+            "ode_rtol": 1e-10,
+            "ode_atol": 2e-15
+          },
+          "refined": {
+            "fidelity": 0.9419514938227049,
+            "amplitude": 0.9705418557809369,
+            "cutoff": 48.0,
+            "omitted_fidelity_bound": 7.330785725110364e-17,
+            "ode_rtol": 2e-12,
+            "ode_atol": 2e-15
+          },
+          "fidelity_difference": 4.804490139065365e-12
+        },
+        {
+          "N": 1000,
+          "m": 300,
+          "a": 0.224,
+          "first": {
+            "fidelity": 0.786518745115541,
+            "amplitude": 0.8868589206381932,
+            "cutoff": 42.0,
+            "omitted_fidelity_bound": 2.0882726553056801e-13,
+            "ode_rtol": 1e-10,
+            "ode_atol": 2e-15
+          },
+          "refined": {
+            "fidelity": 0.7865187451267348,
+            "amplitude": 0.8868589206445041,
+            "cutoff": 48.0,
+            "omitted_fidelity_bound": 1.2693531366938741e-15,
+            "ode_rtol": 2e-12,
+            "ode_atol": 2e-15
+          },
+          "fidelity_difference": 1.1193823645783141e-11
+        }
+      ],
+      "scope": "Tail bounds are analytic; solve_ivp integration error is assessed by convergence, not enclosed by the tail bound."
+    }
+  },
+  "group_count": 6,
+  "cases": 62,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0"
+  },
+  "scope": "Independent author-side diagnostics for the stated derivation. No independent review, experimental observation, or exhaustive novelty certification."
+}

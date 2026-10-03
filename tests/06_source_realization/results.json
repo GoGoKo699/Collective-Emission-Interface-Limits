@@ -1,0 +1,729 @@
+{
+  "status": "PASS",
+  "date": "2026-10-03",
+  "seed": 2026100306,
+  "groups": {
+    "exact_source_branch": {
+      "cases": 47,
+      "max_amplitude_residual": 2.9103830456733704e-11,
+      "parameter_cases": [
+        {
+          "N": 2,
+          "m": 1,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 2,
+          "m": 1,
+          "r": 0.1,
+          "all_collected_probability": 0.9523809523809523
+        },
+        {
+          "N": 2,
+          "m": 1,
+          "r": 1.0,
+          "all_collected_probability": 0.6666666666666666
+        },
+        {
+          "N": 2,
+          "m": 1,
+          "r": 4.0,
+          "all_collected_probability": 0.3333333333333333
+        },
+        {
+          "N": 2,
+          "m": 2,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 2,
+          "m": 2,
+          "r": 0.1,
+          "all_collected_probability": 0.8658008658008658
+        },
+        {
+          "N": 2,
+          "m": 2,
+          "r": 1.0,
+          "all_collected_probability": 0.33333333333333337
+        },
+        {
+          "N": 2,
+          "m": 2,
+          "r": 4.0,
+          "all_collected_probability": 0.06666666666666667
+        },
+        {
+          "N": 5,
+          "m": 1,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 5,
+          "m": 1,
+          "r": 0.1,
+          "all_collected_probability": 0.9803921568627451
+        },
+        {
+          "N": 5,
+          "m": 1,
+          "r": 1.0,
+          "all_collected_probability": 0.8333333333333333
+        },
+        {
+          "N": 5,
+          "m": 1,
+          "r": 4.0,
+          "all_collected_probability": 0.5555555555555555
+        },
+        {
+          "N": 5,
+          "m": 2,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 5,
+          "m": 2,
+          "r": 0.1,
+          "all_collected_probability": 0.9564801530368244
+        },
+        {
+          "N": 5,
+          "m": 2,
+          "r": 1.0,
+          "all_collected_probability": 0.6666666666666666
+        },
+        {
+          "N": 5,
+          "m": 2,
+          "r": 4.0,
+          "all_collected_probability": 0.27777777777777773
+        },
+        {
+          "N": 5,
+          "m": 5,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 5,
+          "m": 5,
+          "r": 0.1,
+          "all_collected_probability": 0.8014077528586715
+        },
+        {
+          "N": 5,
+          "m": 5,
+          "r": 1.0,
+          "all_collected_probability": 0.16666666666666669
+        },
+        {
+          "N": 5,
+          "m": 5,
+          "r": 4.0,
+          "all_collected_probability": 0.007936507936507936
+        },
+        {
+          "N": 20,
+          "m": 1,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 20,
+          "m": 1,
+          "r": 0.1,
+          "all_collected_probability": 0.9950248756218906
+        },
+        {
+          "N": 20,
+          "m": 1,
+          "r": 1.0,
+          "all_collected_probability": 0.9523809523809523
+        },
+        {
+          "N": 20,
+          "m": 1,
+          "r": 4.0,
+          "all_collected_probability": 0.8333333333333333
+        },
+        {
+          "N": 20,
+          "m": 2,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 20,
+          "m": 2,
+          "r": 0.1,
+          "all_collected_probability": 0.9898153212992629
+        },
+        {
+          "N": 20,
+          "m": 2,
+          "r": 1.0,
+          "all_collected_probability": 0.9047619047619048
+        },
+        {
+          "N": 20,
+          "m": 2,
+          "r": 4.0,
+          "all_collected_probability": 0.6884057971014492
+        },
+        {
+          "N": 20,
+          "m": 5,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 20,
+          "m": 5,
+          "r": 0.1,
+          "all_collected_probability": 0.9725121140350257
+        },
+        {
+          "N": 20,
+          "m": 5,
+          "r": 1.0,
+          "all_collected_probability": 0.7619047619047619
+        },
+        {
+          "N": 20,
+          "m": 5,
+          "r": 4.0,
+          "all_collected_probability": 0.3647656691134953
+        },
+        {
+          "N": 100,
+          "m": 1,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 100,
+          "m": 1,
+          "r": 0.1,
+          "all_collected_probability": 0.999000999000999
+        },
+        {
+          "N": 100,
+          "m": 1,
+          "r": 1.0,
+          "all_collected_probability": 0.9900990099009901
+        },
+        {
+          "N": 100,
+          "m": 1,
+          "r": 4.0,
+          "all_collected_probability": 0.9615384615384616
+        },
+        {
+          "N": 100,
+          "m": 2,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 100,
+          "m": 2,
+          "r": 0.1,
+          "all_collected_probability": 0.9979929253390404
+        },
+        {
+          "N": 100,
+          "m": 2,
+          "r": 1.0,
+          "all_collected_probability": 0.9801980198019802
+        },
+        {
+          "N": 100,
+          "m": 2,
+          "r": 4.0,
+          "all_collected_probability": 0.9241971620612397
+        },
+        {
+          "N": 100,
+          "m": 5,
+          "r": 0.0,
+          "all_collected_probability": 1.0
+        },
+        {
+          "N": 100,
+          "m": 5,
+          "r": 0.1,
+          "all_collected_probability": 0.9949124847295562
+        },
+        {
+          "N": 100,
+          "m": 5,
+          "r": 1.0,
+          "all_collected_probability": 0.9504950495049505
+        },
+        {
+          "N": 100,
+          "m": 5,
+          "r": 4.0,
+          "all_collected_probability": 0.8186761302321859
+        }
+      ],
+      "independent_integrals": [
+        {
+          "N": 3,
+          "r": 0.2,
+          "beta": 2.0,
+          "numerical_overlap_squared": 0.8050557501106951,
+          "analytic": 0.805055750110695
+        },
+        {
+          "N": 7,
+          "r": 4.0,
+          "beta": 5.0,
+          "numerical_overlap_squared": 0.29166666666666674,
+          "analytic": 0.2916666666666667
+        },
+        {
+          "N": 20,
+          "r": 1.0,
+          "beta": 14.0,
+          "numerical_overlap_squared": 0.8415224913494809,
+          "analytic": 0.841522491349481
+        }
+      ],
+      "scope": "Complete-emission maximal collected-number branch; no experimental postselection."
+    },
+    "physical_atomic_space": {
+      "cases": 18,
+      "full_spin_cases": [
+        {
+          "N": 2,
+          "m": 1,
+          "r": 0.1,
+          "full_spin_ground_probability": 0.9523809523809517,
+          "product_probability": 0.9523809523809523
+        },
+        {
+          "N": 2,
+          "m": 1,
+          "r": 1.0,
+          "full_spin_ground_probability": 0.6666666666666663,
+          "product_probability": 0.6666666666666666
+        },
+        {
+          "N": 2,
+          "m": 2,
+          "r": 0.1,
+          "full_spin_ground_probability": 0.8658008658008652,
+          "product_probability": 0.8658008658008658
+        },
+        {
+          "N": 2,
+          "m": 2,
+          "r": 1.0,
+          "full_spin_ground_probability": 0.3333333333333333,
+          "product_probability": 0.33333333333333337
+        },
+        {
+          "N": 2,
+          "m": 2,
+          "r": 0.1,
+          "full_spin_ground_probability": 0.8658008658008652,
+          "product_probability": 0.8658008658008658
+        },
+        {
+          "N": 2,
+          "m": 2,
+          "r": 1.0,
+          "full_spin_ground_probability": 0.3333333333333333,
+          "product_probability": 0.33333333333333337
+        },
+        {
+          "N": 3,
+          "m": 1,
+          "r": 0.1,
+          "full_spin_ground_probability": 0.9677419354838712,
+          "product_probability": 0.967741935483871
+        },
+        {
+          "N": 3,
+          "m": 1,
+          "r": 1.0,
+          "full_spin_ground_probability": 0.7500000000000002,
+          "product_probability": 0.75
+        },
+        {
+          "N": 3,
+          "m": 2,
+          "r": 0.1,
+          "full_spin_ground_probability": 0.9216589861751157,
+          "product_probability": 0.9216589861751152
+        },
+        {
+          "N": 3,
+          "m": 2,
+          "r": 1.0,
+          "full_spin_ground_probability": 0.5000000000000001,
+          "product_probability": 0.5
+        },
+        {
+          "N": 3,
+          "m": 3,
+          "r": 0.1,
+          "full_spin_ground_probability": 0.8378718056137398,
+          "product_probability": 0.8378718056137411
+        },
+        {
+          "N": 3,
+          "m": 3,
+          "r": 1.0,
+          "full_spin_ground_probability": 0.25000000000000006,
+          "product_probability": 0.25
+        },
+        {
+          "N": 4,
+          "m": 1,
+          "r": 0.1,
+          "full_spin_ground_probability": 0.975609756097561,
+          "product_probability": 0.975609756097561
+        },
+        {
+          "N": 4,
+          "m": 1,
+          "r": 1.0,
+          "full_spin_ground_probability": 0.8000000000000018,
+          "product_probability": 0.7999999999999999
+        },
+        {
+          "N": 4,
+          "m": 2,
+          "r": 0.1,
+          "full_spin_ground_probability": 0.9441384736428016,
+          "product_probability": 0.9441384736428009
+        },
+        {
+          "N": 4,
+          "m": 2,
+          "r": 1.0,
+          "full_spin_ground_probability": 0.6000000000000012,
+          "product_probability": 0.6
+        },
+        {
+          "N": 4,
+          "m": 4,
+          "r": 0.1,
+          "full_spin_ground_probability": 0.8174359079158441,
+          "product_probability": 0.817435907915845
+        },
+        {
+          "N": 4,
+          "m": 4,
+          "r": 1.0,
+          "full_spin_ground_probability": 0.19999999999999965,
+          "product_probability": 0.19999999999999998
+        }
+      ],
+      "scope": "A trace-decreasing no-uncollected-photon block of the full Lindblad channel. Missing trace is retained as failure, not normalized away."
+    },
+    "finite_cavity": {
+      "cases": 19,
+      "one_excitation": [
+        {
+          "N": 1,
+          "kappa": 1.0,
+          "formula": 0.8869179600886918,
+          "lyapunov": 0.8869179600886921
+        },
+        {
+          "N": 1,
+          "kappa": 4.0,
+          "formula": 0.8869179600886918,
+          "lyapunov": 0.8869179600886917
+        },
+        {
+          "N": 1,
+          "kappa": 20.0,
+          "formula": 0.6633499170812603,
+          "lyapunov": 0.6633499170812602
+        },
+        {
+          "N": 4,
+          "kappa": 1.0,
+          "formula": 0.9034443817052512,
+          "lyapunov": 0.9034443817052513
+        },
+        {
+          "N": 4,
+          "kappa": 4.0,
+          "formula": 0.9518143961927426,
+          "lyapunov": 0.9518143961927426
+        },
+        {
+          "N": 4,
+          "kappa": 20.0,
+          "formula": 0.8844665561083471,
+          "lyapunov": 0.884466556108348
+        },
+        {
+          "N": 16,
+          "kappa": 1.0,
+          "formula": 0.9076726705431855,
+          "lyapunov": 0.9076726705431852
+        },
+        {
+          "N": 16,
+          "kappa": 4.0,
+          "formula": 0.9695500681714891,
+          "lyapunov": 0.969550068171489
+        },
+        {
+          "N": 16,
+          "kappa": 20.0,
+          "formula": 0.9648726066636514,
+          "lyapunov": 0.9648726066636516
+        }
+      ],
+      "independent_physical_ODE": [
+        {
+          "N": 2,
+          "m": 1,
+          "kappa": 3.0,
+          "hilbert_dimension": 4,
+          "full_ODE": 0.9327633113099087,
+          "effect_recursion": 0.9327633113097549
+        },
+        {
+          "N": 2,
+          "m": 2,
+          "kappa": 4.0,
+          "hilbert_dimension": 8,
+          "full_ODE": 0.8091614027070703,
+          "effect_recursion": 0.809161402707286
+        },
+        {
+          "N": 3,
+          "m": 2,
+          "kappa": 5.0,
+          "hilbert_dimension": 12,
+          "full_ODE": 0.8621387092208305,
+          "effect_recursion": 0.8621387092208282
+        }
+      ],
+      "finite_bandwidth_table": [
+        {
+          "N": 16,
+          "m": 4,
+          "g": 1.0,
+          "gamma_i": 0.01,
+          "R": 1.0,
+          "kappa": 4.0,
+          "single_emitter_cooperativity": 100.0,
+          "eliminated_all_collected_probability": 0.9972296294701463,
+          "full_cavity_all_collected_probability": 0.9868885267023506,
+          "effect_residual": 1.6840242145408943e-14
+        },
+        {
+          "N": 16,
+          "m": 4,
+          "g": 1.0,
+          "gamma_i": 0.01,
+          "R": 3.0,
+          "kappa": 12.0,
+          "single_emitter_cooperativity": 33.333333333333336,
+          "eliminated_all_collected_probability": 0.9917176440582911,
+          "full_cavity_all_collected_probability": 0.9881519243749386,
+          "effect_residual": 3.553897262129691e-14
+        },
+        {
+          "N": 16,
+          "m": 4,
+          "g": 1.0,
+          "gamma_i": 0.01,
+          "R": 10.0,
+          "kappa": 40.0,
+          "single_emitter_cooperativity": 10.0,
+          "eliminated_all_collected_probability": 0.9727234774901733,
+          "full_cavity_all_collected_probability": 0.9716490118382282,
+          "effect_residual": 9.947598300641403e-14
+        },
+        {
+          "N": 16,
+          "m": 4,
+          "g": 1.0,
+          "gamma_i": 0.01,
+          "R": 30.0,
+          "kappa": 120.0,
+          "single_emitter_cooperativity": 3.3333333333333335,
+          "eliminated_all_collected_probability": 0.9209073008955247,
+          "full_cavity_all_collected_probability": 0.9205674905879089,
+          "effect_residual": 2.2737367544323206e-13
+        },
+        {
+          "N": 16,
+          "m": 4,
+          "g": 1.0,
+          "gamma_i": 0.01,
+          "R": 100.0,
+          "kappa": 400.0,
+          "single_emitter_cooperativity": 1.0,
+          "eliminated_all_collected_probability": 0.7647058823529412,
+          "full_cavity_all_collected_probability": 0.7646215802028132,
+          "effect_residual": 6.821210263296962e-13
+        }
+      ],
+      "scope": "Output photon-number success only. No temporal-mode fidelity or uniform all-code elimination claim is inferred from this check."
+    },
+    "rate_family_consistency": {
+      "cases": 15,
+      "fixed_cooperativity": [
+        {
+          "N": 1000,
+          "M": 200,
+          "C": 1.0,
+          "all_collected_probability": 0.8001998001998002,
+          "exponent_first_order": 0.2
+        },
+        {
+          "N": 1000,
+          "M": 200,
+          "C": 10.0,
+          "all_collected_probability": 0.9779462091608403,
+          "exponent_first_order": 0.02
+        },
+        {
+          "N": 1000,
+          "M": 200,
+          "C": 100.0,
+          "all_collected_probability": 0.9977723114932088,
+          "exponent_first_order": 0.002
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "C": 1.0,
+          "all_collected_probability": 0.9900000099999899,
+          "exponent_first_order": 0.01
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "C": 10.0,
+          "all_collected_probability": 0.9989954718467473,
+          "exponent_first_order": 0.001
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "C": 100.0,
+          "all_collected_probability": 0.9998995017427633,
+          "exponent_first_order": 0.0001
+        }
+      ],
+      "fixed_microscopic_ratios": [
+        {
+          "N": 1000,
+          "M": 100,
+          "R": 10.0,
+          "g_over_gamma_i": 100.0,
+          "r": 0.7905694150420948,
+          "eliminated_probability": 0.9201521613469661,
+          "leading_negative_log_probability": 0.07905694150420947,
+          "label": "Formal effective-rate consistency test, not a proved large-code limit of the full cavity."
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "R": 10.0,
+          "g_over_gamma_i": 100.0,
+          "r": 25.0,
+          "eliminated_probability": 0.7778239128136685,
+          "leading_negative_log_probability": 0.25,
+          "label": "Formal effective-rate consistency test, not a proved large-code limit of the full cavity."
+        },
+        {
+          "N": 1000000000,
+          "M": 1000000,
+          "R": 10.0,
+          "g_over_gamma_i": 100.0,
+          "r": 790.5694150420948,
+          "eliminated_probability": 0.45340720487635966,
+          "leading_negative_log_probability": 0.7905694150420947,
+          "label": "Formal effective-rate consistency test, not a proved large-code limit of the full cavity."
+        }
+      ],
+      "telescoping_control": [
+        {
+          "N": 1000,
+          "M": 100,
+          "C": 1.0,
+          "probability": 0.9000999000999
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "C": 1.0,
+          "probability": 0.9900000099999899
+        },
+        {
+          "N": 1000000000,
+          "M": 1000000,
+          "C": 1.0,
+          "probability": 0.999000000001
+        }
+      ],
+      "propagation_control": [
+        {
+          "eta": 0.99,
+          "M": 200,
+          "all_photon_transmission": 0.13397967485796172
+        },
+        {
+          "eta": 0.999,
+          "M": 200,
+          "all_photon_transmission": 0.8186488294786356
+        },
+        {
+          "eta": 0.9999,
+          "M": 200,
+          "all_photon_transmission": 0.9801976930432228
+        }
+      ],
+      "scope": "No hardware parameter set or changed source-control design is asserted experimentally available."
+    },
+    "unconditional_code": {
+      "cases": 45,
+      "minimum_fidelity": 0.7744,
+      "minimum_sampled_fidelity": 0.8680817606760101,
+      "oscillator": [
+        {
+          "m": 1,
+          "all_collected_probability": 0.8695652173913044,
+          "common_pulse_rate": 2.3
+        },
+        {
+          "m": 2,
+          "all_collected_probability": 0.7561436672967865,
+          "common_pulse_rate": 2.3
+        },
+        {
+          "m": 5,
+          "all_collected_probability": 0.49717673529829,
+          "common_pulse_rate": 2.3
+        }
+      ],
+      "scope": "Structural test with arbitrary lowering Kraus operators. It is not a full many-photon field simulation."
+    }
+  },
+  "group_count": 5,
+  "cases": 144,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "qualification": "Author-side checks of an assumption audit; inherited ideal theorem remains separate and no uniform microscopic realization is claimed."
+}

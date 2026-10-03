@@ -1,0 +1,480 @@
+{
+  "status": "PASS",
+  "date": "2026-10-02",
+  "group_count": 5,
+  "cases": 71,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "groups": {
+    "independent_overlap_checks": {
+      "cases": 25,
+      "product_controls": [
+        {
+          "N": 2,
+          "m": 2,
+          "speed": 1.0,
+          "fidelity": 0.8888888888888834,
+          "product": 0.8888888888888888,
+          "error": 5.440092820663267e-15
+        },
+        {
+          "N": 2,
+          "m": 2,
+          "speed": 0.7071067811865467,
+          "fidelity": 0.941992048731499,
+          "product": 0.9419920487315016,
+          "error": 2.55351295663786e-15
+        },
+        {
+          "N": 10,
+          "m": 2,
+          "speed": 1.0,
+          "fidelity": 0.9972299168975023,
+          "product": 0.997229916897507,
+          "error": 4.6629367034256575e-15
+        },
+        {
+          "N": 10,
+          "m": 2,
+          "speed": 0.9486832980505141,
+          "fidelity": 0.9986135176977161,
+          "product": 0.9986135176977182,
+          "error": 2.1094237467877974e-15
+        },
+        {
+          "N": 20,
+          "m": 5,
+          "speed": 1.0,
+          "fidelity": 0.9778001534940296,
+          "product": 0.9778001534940659,
+          "error": 3.630429290524262e-14
+        },
+        {
+          "N": 20,
+          "m": 5,
+          "speed": 0.8972148972274036,
+          "fidelity": 0.9922546182489643,
+          "product": 0.9922546182489917,
+          "error": 2.7422508708241367e-14
+        },
+        {
+          "N": 100,
+          "m": 10,
+          "speed": 1.0,
+          "fidelity": 0.9923620915547278,
+          "product": 0.9923620915547255,
+          "error": 2.220446049250313e-15
+        },
+        {
+          "N": 100,
+          "m": 10,
+          "speed": 0.9545678892320608,
+          "fidelity": 0.9977384390064268,
+          "product": 0.997738439006426,
+          "error": 7.771561172376096e-16
+        },
+        {
+          "N": 100,
+          "m": 50,
+          "speed": 1.0,
+          "fidelity": 0.2041445971279487,
+          "product": 0.20414459712793787,
+          "error": 1.0824674490095276e-14
+        },
+        {
+          "N": 100,
+          "m": 50,
+          "speed": 0.7409742617851038,
+          "fidelity": 0.6186592713795918,
+          "product": 0.6186592713796071,
+          "error": 1.532107773982716e-14
+        },
+        {
+          "N": 1000,
+          "m": 100,
+          "speed": 1.0,
+          "fidelity": 0.915145243259998,
+          "product": 0.9151452432600993,
+          "error": 1.0125233984581428e-13
+        },
+        {
+          "N": 1000,
+          "m": 100,
+          "speed": 0.9500614960193831,
+          "fidelity": 0.9771787788670514,
+          "product": 0.9771787788671243,
+          "error": 7.294165271787278e-14
+        }
+      ],
+      "two_photon_integrals": [
+        {
+          "N": 3,
+          "shape": 0.0,
+          "fidelity": 0.9599999999999951,
+          "quadrature": 0.9599999999999995,
+          "error": 4.440892098500626e-15
+        },
+        {
+          "N": 3,
+          "shape": 0.3333333333333333,
+          "fidelity": 0.9854079217062827,
+          "quadrature": 0.9854079217062827,
+          "error": 0.0
+        },
+        {
+          "N": 3,
+          "shape": 0.3,
+          "fidelity": 0.9848645576794351,
+          "quadrature": 0.984864557679434,
+          "error": 1.1102230246251565e-15
+        },
+        {
+          "N": 10,
+          "shape": 0.0,
+          "fidelity": 0.9972299168975023,
+          "quadrature": 0.9972299168975072,
+          "error": 4.884981308350689e-15
+        },
+        {
+          "N": 10,
+          "shape": 0.1,
+          "fidelity": 0.9990587442938077,
+          "quadrature": 0.999058744293801,
+          "error": 6.661338147750939e-15
+        },
+        {
+          "N": 10,
+          "shape": 0.3,
+          "fidelity": 0.9889687607563717,
+          "quadrature": 0.9889687607563736,
+          "error": 1.887379141862766e-15
+        },
+        {
+          "N": 50,
+          "shape": 0.0,
+          "fidelity": 0.9998979695949368,
+          "quadrature": 0.9998979695949395,
+          "error": 2.6645352591003757e-15
+        },
+        {
+          "N": 50,
+          "shape": 0.02,
+          "fidelity": 0.9999658730735798,
+          "quadrature": 0.9999658730735813,
+          "error": 1.5543122344752192e-15
+        },
+        {
+          "N": 50,
+          "shape": 0.3,
+          "fidelity": 0.9813937871362256,
+          "quadrature": 0.9813937871362247,
+          "error": 8.881784197001252e-16
+        }
+      ],
+      "meaning": "Oscillator rates k*Gamma give exactly one common mode for every initial photon number."
+    },
+    "orthogonal_error_components": {
+      "cases": 12,
+      "var_h1": 0.08333333333333333,
+      "var_h2": 0.08333333333333329,
+      "fixed_m_checks": [
+        {
+          "N": 1000,
+          "m": 2,
+          "fidelity": 0.9999999165693434,
+          "scaled_loss": 0.08343065660554316,
+          "predicted_fixed_m_coefficient": 0.08333333333333333
+        },
+        {
+          "N": 2000,
+          "m": 2,
+          "fidelity": 0.9999999791545046,
+          "scaled_loss": 0.08338198176360834,
+          "predicted_fixed_m_coefficient": 0.08333333333333333
+        },
+        {
+          "N": 1000,
+          "m": 5,
+          "fidelity": 0.9999991627619342,
+          "scaled_loss": 0.837238065765078,
+          "predicted_fixed_m_coefficient": 0.8333333333333334
+        },
+        {
+          "N": 2000,
+          "m": 5,
+          "fidelity": 0.9999997911795677,
+          "scaled_loss": 0.8352817291168435,
+          "predicted_fixed_m_coefficient": 0.8333333333333334
+        },
+        {
+          "N": 1000,
+          "m": 10,
+          "fidelity": 0.9999962102680312,
+          "scaled_loss": 3.7897319687951736,
+          "predicted_fixed_m_coefficient": 3.75
+        },
+        {
+          "N": 2000,
+          "m": 10,
+          "fidelity": 0.9999990575559135,
+          "scaled_loss": 3.769776346196352,
+          "predicted_fixed_m_coefficient": 3.75
+        }
+      ],
+      "limitation": "Fixed-m expansion; not a uniform large-m theorem."
+    },
+    "finite_same_source_comparator": {
+      "cases": 5,
+      "rows": [
+        {
+          "N": 100,
+          "m": 10,
+          "fixed_exponential": 0.9923620915547255,
+          "best_exponential": 0.997738439006426,
+          "best_exponential_speed": 0.9545678892320608,
+          "reshaped_mode_parameter": 0.09,
+          "reshaped_fidelity": 0.9995817547331252,
+          "tail_fidelity_bound": 7.97916838949368e-17,
+          "refinement_difference": 2.220446049250313e-16
+        },
+        {
+          "N": 100,
+          "m": 50,
+          "fixed_exponential": 0.20414459712793787,
+          "best_exponential": 0.6186592713796071,
+          "best_exponential_speed": 0.7409742617851038,
+          "reshaped_mode_parameter": 0.49,
+          "reshaped_fidelity": 0.9787846437634362,
+          "tail_fidelity_bound": 2.3699374882873427e-12,
+          "refinement_difference": 6.106226635438361e-15
+        },
+        {
+          "N": 1000,
+          "m": 100,
+          "fixed_exponential": 0.9151452432600993,
+          "best_exponential": 0.9771787788671243,
+          "best_exponential_speed": 0.9500614960193831,
+          "reshaped_mode_parameter": 0.099,
+          "reshaped_fidelity": 0.999534742742144,
+          "tail_fidelity_bound": 9.687184875208673e-16,
+          "refinement_difference": 5.939693181744587e-14
+        },
+        {
+          "N": 1000,
+          "m": 200,
+          "fixed_exponential": 0.45986807188719253,
+          "best_exponential": 0.8133003398390258,
+          "best_exponential_speed": 0.8986457866155092,
+          "reshaped_mode_parameter": 0.199,
+          "reshaped_fidelity": 0.9978641957704079,
+          "tail_fidelity_bound": 1.6780006828395898e-14,
+          "refinement_difference": 8.042455590384634e-13
+        },
+        {
+          "N": 1000,
+          "m": 300,
+          "fixed_exponential": 0.056354003091075106,
+          "best_exponential": 0.454528976234738,
+          "best_exponential_speed": 0.8460701128823114,
+          "reshaped_mode_parameter": 0.299,
+          "reshaped_fidelity": 0.9944281448519295,
+          "tail_fidelity_bound": 2.1971466913590707e-13,
+          "refinement_difference": 2.111089081324735e-12
+        }
+      ],
+      "meaning": "Same emitted state, different normalized receiving mode. No filtering or selection of successful runs is used."
+    },
+    "one_mode_number_superpositions": {
+      "cases": 21,
+      "common_shapes": [
+        0.099,
+        0.199,
+        0.299
+      ],
+      "number_rows": [
+        {
+          "m": 1,
+          "fidelities": [
+            0.9990948196867931,
+            0.9959069903008739,
+            0.9895493042511759
+          ]
+        },
+        {
+          "m": 10,
+          "fidelities": [
+            0.9924885646601015,
+            0.9630432397452438,
+            0.9052446011916263
+          ]
+        },
+        {
+          "m": 100,
+          "fidelities": [
+            0.999534742742144,
+            0.893450264387784,
+            0.6000270664219752
+          ]
+        },
+        {
+          "m": 200,
+          "fidelities": [
+            0.8026681841484954,
+            0.9978641957704079,
+            0.7549761520470865
+          ]
+        },
+        {
+          "m": 300,
+          "fidelities": [
+            0.23753663745734716,
+            0.6640626811623696,
+            0.9944281448519295
+          ]
+        }
+      ],
+      "equal_superposition_numbers": [
+        100,
+        200
+      ],
+      "equal_superposition_fidelity_common_shape_0199": 0.9449361318019308,
+      "local_minimax_coefficients": [
+        {
+          "M": 4,
+          "b": 2.585786415323724,
+          "coefficient": 0.5571909645767902,
+          "coefficient_over_Mcubed": 0.008706108821512347,
+          "active_numbers": [
+            1,
+            4
+          ]
+        },
+        {
+          "M": 10,
+          "b": 7.101020557630922,
+          "coefficient": 6.7551026823433205,
+          "coefficient_over_Mcubed": 0.0067551026823433205,
+          "active_numbers": [
+            3,
+            10
+          ]
+        },
+        {
+          "M": 30,
+          "b": 22.11712384635965,
+          "coefficient": 154.68496036587743,
+          "coefficient_over_Mcubed": 0.005729072606143608,
+          "active_numbers": [
+            8,
+            30
+          ]
+        },
+        {
+          "M": 100,
+          "b": 74.62389285714359,
+          "coefficient": 5364.121933357404,
+          "coefficient_over_Mcubed": 0.005364121933357404,
+          "active_numbers": [
+            25,
+            100
+          ]
+        },
+        {
+          "M": 1000,
+          "b": 749.624887714498,
+          "coefficient": 5223953.885617229,
+          "coefficient_over_Mcubed": 0.005223953885617229,
+          "active_numbers": [
+            250,
+            1000
+          ]
+        },
+        {
+          "M": 10000,
+          "b": 7499.624943415731,
+          "coefficient": 5209895977.89635,
+          "coefficient_over_Mcubed": 0.00520989597789635,
+          "active_numbers": [
+            2498,
+            2499,
+            2500,
+            2501,
+            2502,
+            2503,
+            10000
+          ]
+        }
+      ],
+      "small_code": {
+        "N": 2000,
+        "M": 10,
+        "b": 7.101020557630922,
+        "leading_coefficient": 6.7551026823433205,
+        "exact_scaled_losses": [
+          4.217006518647537,
+          6.311468865760617,
+          6.78324989333845,
+          6.132961222427014,
+          4.861966238056681,
+          3.4723825730331725,
+          2.4670838318918697,
+          2.3497007606287923,
+          3.624621803144379,
+          6.796992995106166
+        ]
+      },
+      "limitation": "The 1/192 coefficient is an ordered fixed-M then large-M limit; no uniform finite-N minimax claim."
+    },
+    "normalizations_and_known_limit": {
+      "cases": 8,
+      "mode_norms": [
+        {
+          "shape": 0.0,
+          "norm": 1.0000000000000002
+        },
+        {
+          "shape": 0.1,
+          "norm": 0.9999999999999998
+        },
+        {
+          "shape": 0.3,
+          "norm": 1.0000000000000002
+        },
+        {
+          "shape": 0.7,
+          "norm": 1.0
+        }
+      ],
+      "known_reference_asymptotics": [
+        {
+          "m": 2,
+          "N": 20000,
+          "exact_scaled_loss": 0.2500125440008105,
+          "coefficient": 0.25
+        },
+        {
+          "m": 5,
+          "N": 20000,
+          "exact_scaled_loss": 7.501250156101925,
+          "coefficient": 7.5
+        },
+        {
+          "m": 10,
+          "N": 20000,
+          "exact_scaled_loss": 71.27531453937688,
+          "coefficient": 71.25
+        },
+        {
+          "m": 20,
+          "N": 20000,
+          "exact_scaled_loss": 617.9510806590699,
+          "coefficient": 617.5
+        }
+      ]
+    }
+  },
+  "scope": "Fresh analytic scout with finite diagnostics. No old research package imported, no external proof review, no experimental or priority certificate."
+}

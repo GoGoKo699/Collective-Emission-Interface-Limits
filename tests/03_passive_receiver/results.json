@@ -1,0 +1,454 @@
+{
+  "status": "PASS",
+  "date": "2026-10-02",
+  "seed": 2026100203,
+  "group_count": 5,
+  "parameter_cases": 37,
+  "groups": {
+    "passive_network_reduction": {
+      "cases": 6,
+      "rows": [
+        {
+          "signal_transmissivity": 0.9263262763276693,
+          "joint_memory_reference_error": 8.331209836180726e-17
+        },
+        {
+          "signal_transmissivity": 0.42956726987217464,
+          "joint_memory_reference_error": 1.8041392804875005e-16
+        },
+        {
+          "signal_transmissivity": 0.30130044222060703,
+          "joint_memory_reference_error": 6.206335383118183e-17
+        },
+        {
+          "signal_transmissivity": 0.9931862117798709,
+          "joint_memory_reference_error": 7.152448122690996e-17
+        },
+        {
+          "signal_transmissivity": 0.7523581624235265,
+          "joint_memory_reference_error": 1.390295048107827e-16
+        },
+        {
+          "signal_transmissivity": 0.7683541312199612,
+          "joint_memory_reference_error": 9.341771812940339e-17
+        }
+      ],
+      "scope": "Finite tests of the general one-row passive-dilation proof, including number superpositions and temporal-mode correlations."
+    },
+    "bounded_cavity_kernel": {
+      "cases": 3,
+      "rows": [
+        {
+          "a": 0.0,
+          "epsilon": 0.1,
+          "horizon": 8.0,
+          "target_mode_mass": 0.9996645373720975,
+          "mode_transmissivity": 0.9090631764492715,
+          "coupling_rate_at_start": 10.0,
+          "initial_memory_vacuum_weight": 0.09093682355072852
+        },
+        {
+          "a": 0.2,
+          "epsilon": 0.01,
+          "horizon": 16.0,
+          "target_mode_mass": 0.9999998593310355,
+          "mode_transmissivity": 0.9900990085220176,
+          "coupling_rate_at_start": 80.0,
+          "initial_memory_vacuum_weight": 0.009900991477982402
+        },
+        {
+          "a": 0.6,
+          "epsilon": 0.001,
+          "horizon": 32.0,
+          "target_mode_mass": 0.9999999999999684,
+          "mode_transmissivity": 0.9990009990009989,
+          "coupling_rate_at_start": 400.0,
+          "initial_memory_vacuum_weight": 0.0009990009990010762
+        }
+      ],
+      "scope": "Explicit regularization, not an optimized bounded-coupling control."
+    },
+    "dicke_source_and_receiver": {
+      "cases": 7,
+      "rows": [
+        {
+          "N": 40,
+          "M": 10,
+          "a": 0.1625,
+          "epsilon": 0.1,
+          "horizon": 32.0,
+          "mode_capture_efficiency": 0.9090909090909077,
+          "peak_rate_candidate": 8.375,
+          "minimum_input_fidelity": 0.38251059542725596,
+          "values": [
+            {
+              "m": 0,
+              "finite_mode_fidelity": 1.0,
+              "actual_memory_fidelity": 1.0,
+              "prediction": 1.0
+            },
+            {
+              "m": 1,
+              "finite_mode_fidelity": 0.9973835026822172,
+              "actual_memory_fidelity": 0.9067122751663593,
+              "prediction": 0.9067122751656507
+            },
+            {
+              "m": 2,
+              "finite_mode_fidelity": 0.9961308480139778,
+              "actual_memory_fidelity": 0.8232486347228016,
+              "prediction": 0.823248634722293
+            },
+            {
+              "m": 3,
+              "finite_mode_fidelity": 0.9959306036767802,
+              "actual_memory_fidelity": 0.7482574032136969,
+              "prediction": 0.748257403213205
+            },
+            {
+              "m": 4,
+              "finite_mode_fidelity": 0.9964498705569549,
+              "actual_memory_fidelity": 0.6805886691875074,
+              "prediction": 0.6805886691871791
+            },
+            {
+              "m": 5,
+              "finite_mode_fidelity": 0.9973288788510275,
+              "actual_memory_fidelity": 0.6192627669815352,
+              "prediction": 0.6192627669812792
+            },
+            {
+              "m": 6,
+              "finite_mode_fidelity": 0.998176194238063,
+              "actual_memory_fidelity": 0.563444439247848,
+              "prediction": 0.5634444392476773
+            },
+            {
+              "m": 7,
+              "finite_mode_fidelity": 0.9985648260835935,
+              "actual_memory_fidelity": 0.512421647084529,
+              "prediction": 0.5124216470844244
+            },
+            {
+              "m": 8,
+              "finite_mode_fidelity": 0.9980296292370867,
+              "actual_memory_fidelity": 0.4655881877071403,
+              "prediction": 0.4655881877070793
+            },
+            {
+              "m": 9,
+              "finite_mode_fidelity": 0.9960664993422261,
+              "actual_memory_fidelity": 0.42242943011168743,
+              "prediction": 0.42242943011165074
+            },
+            {
+              "m": 10,
+              "finite_mode_fidelity": 0.9921339727977827,
+              "actual_memory_fidelity": 0.38251059542725596,
+              "prediction": 0.38251059542724086
+            }
+          ]
+        },
+        {
+          "N": 40,
+          "M": 10,
+          "a": 0.1625,
+          "epsilon": 0.01,
+          "horizon": 32.0,
+          "mode_capture_efficiency": 0.99009900990099,
+          "peak_rate_candidate": 83.75,
+          "minimum_input_fidelity": 0.8981659428822086,
+          "values": [
+            {
+              "m": 0,
+              "finite_mode_fidelity": 1.0,
+              "actual_memory_fidelity": 1.0,
+              "prediction": 1.0
+            },
+            {
+              "m": 1,
+              "finite_mode_fidelity": 0.9973835026822172,
+              "actual_memory_fidelity": 0.9875084184980164,
+              "prediction": 0.9875084184972446
+            },
+            {
+              "m": 2,
+              "finite_mode_fidelity": 0.9961308480139778,
+              "actual_memory_fidelity": 0.9765031350014461,
+              "prediction": 0.9765031350004681
+            },
+            {
+              "m": 3,
+              "finite_mode_fidelity": 0.9959306036767802,
+              "actual_memory_fidelity": 0.9666404319497404,
+              "prediction": 0.9666404319483142
+            },
+            {
+              "m": 4,
+              "finite_mode_fidelity": 0.9964498705569549,
+              "actual_memory_fidelity": 0.9575687398688091,
+              "prediction": 0.9575687398676797
+            },
+            {
+              "m": 5,
+              "finite_mode_fidelity": 0.9973288788510275,
+              "actual_memory_fidelity": 0.9489242074871537,
+              "prediction": 0.94892420748606
+            },
+            {
+              "m": 6,
+              "finite_mode_fidelity": 0.998176194238063,
+              "actual_memory_fidelity": 0.9403271277272884,
+              "prediction": 0.9403271277261442
+            },
+            {
+              "m": 7,
+              "finite_mode_fidelity": 0.9985648260835935,
+              "actual_memory_fidelity": 0.931379442084652,
+              "prediction": 0.9313794420836574
+            },
+            {
+              "m": 8,
+              "finite_mode_fidelity": 0.9980296292370867,
+              "actual_memory_fidelity": 0.9216636181415266,
+              "prediction": 0.9216636181406912
+            },
+            {
+              "m": 9,
+              "finite_mode_fidelity": 0.9960664993422261,
+              "actual_memory_fidelity": 0.9107432679405625,
+              "prediction": 0.9107432679398356
+            },
+            {
+              "m": 10,
+              "finite_mode_fidelity": 0.9921339727977827,
+              "actual_memory_fidelity": 0.8981659428822086,
+              "prediction": 0.8981659428815546
+            }
+          ]
+        },
+        {
+          "N": 40,
+          "M": 10,
+          "a": 0.1625,
+          "epsilon": 0.001,
+          "horizon": 32.0,
+          "mode_capture_efficiency": 0.9990009990009991,
+          "peak_rate_candidate": 837.5,
+          "minimum_input_fidelity": 0.9822669828773143,
+          "values": [
+            {
+              "m": 0,
+              "finite_mode_fidelity": 1.0,
+              "actual_memory_fidelity": 1.0,
+              "prediction": 1.0
+            },
+            {
+              "m": 1,
+              "finite_mode_fidelity": 0.9973835026822172,
+              "actual_memory_fidelity": 0.9963871155673603,
+              "prediction": 0.9963871155666507
+            },
+            {
+              "m": 2,
+              "finite_mode_fidelity": 0.9961308480139778,
+              "actual_memory_fidelity": 0.9941415707319358,
+              "prediction": 0.9941415707309456
+            },
+            {
+              "m": 3,
+              "finite_mode_fidelity": 0.9959306036767802,
+              "actual_memory_fidelity": 0.9929487775065096,
+              "prediction": 0.9929487775049846
+            },
+            {
+              "m": 4,
+              "finite_mode_fidelity": 0.9964498705569549,
+              "actual_memory_fidelity": 0.9924740156805415,
+              "prediction": 0.992474015679256
+            },
+            {
+              "m": 5,
+              "finite_mode_fidelity": 0.9973288788510275,
+              "actual_memory_fidelity": 0.9923571595544068,
+              "prediction": 0.9923571595531328
+            },
+            {
+              "m": 6,
+              "finite_mode_fidelity": 0.998176194238063,
+              "actual_memory_fidelity": 0.9922080430017667,
+              "prediction": 0.9922080430003668
+            },
+            {
+              "m": 7,
+              "finite_mode_fidelity": 0.9985648260835935,
+              "actual_memory_fidelity": 0.9916027484472524,
+              "prediction": 0.9916027484459325
+            },
+            {
+              "m": 8,
+              "finite_mode_fidelity": 0.9980296292370867,
+              "actual_memory_fidelity": 0.990081201836047,
+              "prediction": 0.9900812018348492
+            },
+            {
+              "m": 9,
+              "finite_mode_fidelity": 0.9960664993422261,
+              "actual_memory_fidelity": 0.9871465599825513,
+              "prediction": 0.9871465599814193
+            },
+            {
+              "m": 10,
+              "finite_mode_fidelity": 0.9921339727977827,
+              "actual_memory_fidelity": 0.9822669828773143,
+              "prediction": 0.9822669828762307
+            }
+          ]
+        }
+      ],
+      "scope": "Complete cascade amplitudes, no discarded successful-only normalization; actual minimum scanned over all eleven code number states."
+    },
+    "unconditional_master_equation": {
+      "cases": 3,
+      "fock_rows": [
+        {
+          "m": 1,
+          "memory_fock_fidelity": 0.9699761585761655,
+          "amplitude_prediction": 0.9699761585761821
+        },
+        {
+          "m": 3,
+          "memory_fock_fidelity": 0.9118459727449334,
+          "amplitude_prediction": 0.911845972745782
+        }
+      ],
+      "entangled_reference_fidelity": 0.9554146251127273,
+      "entangled_reference_prediction": 0.9554146251129683,
+      "scope": "No output-field measurement, heralding, or subsequent nonlinear recovery."
+    },
+    "loss_and_bandwidth_accounting": {
+      "cases": 18,
+      "loss_ceilings": [
+        {
+          "M": 10,
+          "independent_extra_transmissivity": 0.99,
+          "loss_only_fidelity_ceiling": 0.9043820750088044
+        },
+        {
+          "M": 10,
+          "independent_extra_transmissivity": 0.999,
+          "loss_only_fidelity_ceiling": 0.9900448802097482
+        },
+        {
+          "M": 10,
+          "independent_extra_transmissivity": 0.9999,
+          "loss_only_fidelity_ceiling": 0.9990004498800211
+        },
+        {
+          "M": 100,
+          "independent_extra_transmissivity": 0.99,
+          "loss_only_fidelity_ceiling": 0.3660323412732292
+        },
+        {
+          "M": 100,
+          "independent_extra_transmissivity": 0.999,
+          "loss_only_fidelity_ceiling": 0.9047921471137089
+        },
+        {
+          "M": 100,
+          "independent_extra_transmissivity": 0.9999,
+          "loss_only_fidelity_ceiling": 0.9900493386913719
+        },
+        {
+          "M": 200,
+          "independent_extra_transmissivity": 0.99,
+          "loss_only_fidelity_ceiling": 0.13397967485796172
+        },
+        {
+          "M": 200,
+          "independent_extra_transmissivity": 0.999,
+          "loss_only_fidelity_ceiling": 0.8186488294786356
+        },
+        {
+          "M": 200,
+          "independent_extra_transmissivity": 0.9999,
+          "loss_only_fidelity_ceiling": 0.9801976930432228
+        },
+        {
+          "M": 300,
+          "independent_extra_transmissivity": 0.99,
+          "loss_only_fidelity_ceiling": 0.04904089407128572
+        },
+        {
+          "M": 300,
+          "independent_extra_transmissivity": 0.999,
+          "loss_only_fidelity_ceiling": 0.7407070321560992
+        },
+        {
+          "M": 300,
+          "independent_extra_transmissivity": 0.9999,
+          "loss_only_fidelity_ceiling": 0.9704440777842511
+        }
+      ],
+      "necessary_requirements": [
+        {
+          "M": 100,
+          "target": 0.9,
+          "necessary_transmissivity": 0.9989469496904544
+        },
+        {
+          "M": 200,
+          "target": 0.9,
+          "necessary_transmissivity": 0.9994733361578259
+        },
+        {
+          "M": 300,
+          "target": 0.9,
+          "necessary_transmissivity": 0.9996488599452452
+        }
+      ],
+      "finite_receiver_lower_bounds": [
+        {
+          "N": 1000,
+          "M": 100,
+          "baseline_mode_lower": 0.98812112,
+          "epsilon": 1e-05,
+          "horizon": 32.0,
+          "capture_efficiency": 0.999990000099999,
+          "rate_at_start": 92600.0,
+          "truncated_pulse_penalty_bound": 1.168577905100444e-06,
+          "complete_receiver_lower": 0.9871323303016372
+        },
+        {
+          "N": 1000,
+          "M": 200,
+          "baseline_mode_lower": 0.90687697,
+          "epsilon": 1e-05,
+          "horizon": 32.0,
+          "capture_efficiency": 0.9999900000999989,
+          "rate_at_start": 85099.99999999999,
+          "truncated_pulse_penalty_bound": 1.7249341164216734e-06,
+          "complete_receiver_lower": 0.9050633161682419
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "baseline_mode_lower": 0.68130538,
+          "epsilon": 1e-05,
+          "horizon": 32.0,
+          "capture_efficiency": 0.999990000099999,
+          "rate_at_start": 77600.0,
+          "truncated_pulse_penalty_bound": 2.2127095468219368e-06,
+          "complete_receiver_lower": 0.6792623307781465
+        }
+      ],
+      "scope": "Loss-only necessary condition for the uncorrected canonical code, not a fault-tolerant logical bound or an optimized rate-limited receiver."
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "scope": "Independent finite receiver checks of the documented model; no experimental results, universal decoder no-go, or independent novelty certification."
+}

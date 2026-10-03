@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "date": "2026-10-03",
+  "seed": 2026100305,
+  "group_count": 4,
+  "cases": 86,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "groups": {
+    "uniform_collection_bound": {
+      "cases": 29,
+      "rows": [
+        {
+          "N": 2,
+          "M": 2,
+          "common_mode_a": 0.25,
+          "guaranteed_photon_fraction": 0.47916666666666663
+        },
+        {
+          "N": 10,
+          "M": 3,
+          "common_mode_a": 0.125,
+          "guaranteed_photon_fraction": 0.981689453125
+        },
+        {
+          "N": 40,
+          "M": 10,
+          "common_mode_a": 0.1625,
+          "guaranteed_photon_fraction": 0.9864507457509538
+        },
+        {
+          "N": 128,
+          "M": 50,
+          "common_mode_a": 0.28515625,
+          "guaranteed_photon_fraction": 0.9478415585109224
+        },
+        {
+          "N": 1000,
+          "M": 100,
+          "common_mode_a": 0.074,
+          "guaranteed_photon_fraction": 0.998396056012085
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "common_mode_a": 0.224,
+          "guaranteed_photon_fraction": 0.9761523684322987
+        },
+        {
+          "N": 10000,
+          "M": 1000,
+          "common_mode_a": 0.0749,
+          "guaranteed_photon_fraction": 0.998392846876914
+        }
+      ],
+      "maximum_overlap_integral_error": 1.1102230246251565e-16,
+      "scope": "Checks of analytic inequalities, not an enumeration proof for all N."
+    },
+    "regression_controls": {
+      "cases": 10,
+      "controls": [
+        {
+          "control": "one photon",
+          "N": 2,
+          "a": 0.0,
+          "fraction": 0.9999999999999591,
+          "analytic": 1.0,
+          "error": 4.085620730620576e-14
+        },
+        {
+          "control": "one photon",
+          "N": 10,
+          "a": 0.2,
+          "fraction": 0.995860889862751,
+          "analytic": 0.9958608898623471,
+          "error": 4.0389913635863195e-13
+        },
+        {
+          "control": "one photon",
+          "N": 100,
+          "a": 0.75,
+          "fraction": 0.8541386914099824,
+          "analytic": 0.8541386914101358,
+          "error": 1.5332179970073412e-13
+        },
+        {
+          "control": "two-photon marginal",
+          "N": 2,
+          "fraction": 0.9166666666665817,
+          "analytic": 0.9166666666666667,
+          "error": 8.504308368628699e-14
+        },
+        {
+          "control": "two-photon marginal",
+          "N": 3,
+          "fraction": 0.9714285714285401,
+          "analytic": 0.9714285714285715,
+          "error": 3.141931159689193e-14
+        },
+        {
+          "control": "two-photon marginal",
+          "N": 10,
+          "fraction": 0.99812030075188,
+          "analytic": 0.9981203007518796,
+          "error": 3.3306690738754696e-16
+        },
+        {
+          "control": "two-photon marginal",
+          "N": 100,
+          "fraction": 0.999983137162327,
+          "analytic": 0.9999831371623216,
+          "error": 5.440092820663267e-15
+        },
+        {
+          "control": "linear oscillator",
+          "m": 2,
+          "a": 0.0,
+          "fraction": 1.0000000000000053,
+          "analytic": 1.0,
+          "error": 5.329070518200751e-15
+        },
+        {
+          "control": "linear oscillator",
+          "m": 8,
+          "a": 0.0,
+          "fraction": 1.0000000000000016,
+          "analytic": 1.0,
+          "error": 1.5543122344752192e-15
+        },
+        {
+          "control": "linear oscillator",
+          "m": 20,
+          "a": 0.2,
+          "fraction": 0.9958608898623487,
+          "analytic": 0.9958608898623471,
+          "error": 1.5543122344752192e-15
+        }
+      ],
+      "scope": "QRT mean occupation checked against exact one- and two-photon formulas and linear emission."
+    },
+    "finite_mean_and_fidelity": {
+      "cases": 5,
+      "finite_rows": [
+        {
+          "N": 128,
+          "M": 50,
+          "m": 12,
+          "receiving_mode_a": 0.28515625,
+          "mean": {
+            "fraction": 0.9949204194165269,
+            "T": 70.0,
+            "rtol": 2e-10,
+            "nfev": 2210,
+            "one_photon_mode_tail": 5.56128487646237e-31,
+            "absolute_fraction_tail_allowance": 1.4914804559849083e-15,
+            "remaining_source_mean": 8.06215845135874e-27,
+            "source_probability_residual": 0.0
+          },
+          "all_in_mode_probability": 0.9424009249819865,
+          "uniform_code_mean_fraction_lower": 0.9478415585109224
+        },
+        {
+          "N": 128,
+          "M": 50,
+          "m": 50,
+          "receiving_mode_a": 0.28515625,
+          "mean": {
+            "fraction": 0.9977583841494423,
+            "T": 70.0,
+            "rtol": 2e-10,
+            "nfev": 5390,
+            "one_photon_mode_tail": 5.56128487646237e-31,
+            "absolute_fraction_tail_allowance": 1.4914804559849083e-15,
+            "remaining_source_mean": -1.3570970876150089e-25,
+            "source_probability_residual": 0.0
+          },
+          "all_in_mode_probability": 0.9142843628392016,
+          "uniform_code_mean_fraction_lower": 0.9478415585109224
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "m": 75,
+          "receiving_mode_a": 0.224,
+          "mean": {
+            "fraction": 0.9973950294470753,
+            "T": 70.0,
+            "rtol": 2e-10,
+            "nfev": 10934,
+            "one_photon_mode_tail": 5.123002236995679e-31,
+            "absolute_fraction_tail_allowance": 1.4315030194862578e-15,
+            "remaining_source_mean": 9.686945997533804e-26,
+            "source_probability_residual": 5.551115123125783e-16
+          },
+          "all_in_mode_probability": 0.825726708652688,
+          "uniform_code_mean_fraction_lower": 0.9761523684322987
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "m": 300,
+          "receiving_mode_a": 0.224,
+          "mean": {
+            "fraction": 0.9991012722790275,
+            "T": 70.0,
+            "rtol": 2e-10,
+            "nfev": 30422,
+            "one_photon_mode_tail": 5.123002236995679e-31,
+            "absolute_fraction_tail_allowance": 1.4315030194862578e-15,
+            "remaining_source_mean": 4.8596860987490376e-24,
+            "source_probability_residual": 3.3306690738754696e-16
+          },
+          "all_in_mode_probability": 0.786518745124638,
+          "uniform_code_mean_fraction_lower": 0.9761523684322987
+        }
+      ],
+      "refined_largest_case": {
+        "fraction": 0.9991012722790275,
+        "T": 80.0,
+        "rtol": 2e-12,
+        "nfev": 37634,
+        "one_photon_mode_tail": 2.3258394173265656e-35,
+        "absolute_fraction_tail_allowance": 9.64539147432921e-18,
+        "remaining_source_mean": -7.108583389127582e-26,
+        "source_probability_residual": 1.887379141862766e-15
+      },
+      "refinement_difference": 0.0,
+      "scope": "Known exact model solved numerically; not interval-certified decimals or experimental data."
+    },
+    "state_independent_extension": {
+      "cases": 42,
+      "minimum_triangle_slack": 0.10201825303090428,
+      "mixed_code_minimum_photon_fraction": 0.9996438109083399,
+      "scope": "The analytical block-diagonal argument, not sampled states, covers arbitrary reference entanglement."
+    }
+  },
+  "scope": "New mean-collection corollary and finite checks; inherited optimization theorem remains separately attributed. Not external review, novelty certification, or hardware data."
+}

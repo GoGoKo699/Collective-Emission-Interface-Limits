@@ -1,0 +1,213 @@
+{
+  "status": "PASS",
+  "date": "2026-10-03",
+  "group_count": 4,
+  "cases": 24,
+  "groups": {
+    "two_point_geometry": {
+      "cases": 7,
+      "rows": [
+        {
+          "lower_number_fraction": 0.01,
+          "compromise_fraction": 0.91,
+          "weighted_radius_squared": 0.008100000000000001
+        },
+        {
+          "lower_number_fraction": 0.04,
+          "compromise_fraction": 0.8400000000000001,
+          "weighted_radius_squared": 0.025600000000000005
+        },
+        {
+          "lower_number_fraction": 0.1,
+          "compromise_fraction": 0.783772233983162,
+          "weighted_radius_squared": 0.046754446796632404
+        },
+        {
+          "lower_number_fraction": 0.25,
+          "compromise_fraction": 0.75,
+          "weighted_radius_squared": 0.0625
+        },
+        {
+          "lower_number_fraction": 0.5,
+          "compromise_fraction": 0.7928932188134524,
+          "weighted_radius_squared": 0.04289321881345246
+        },
+        {
+          "lower_number_fraction": 0.81,
+          "compromise_fraction": 0.91,
+          "weighted_radius_squared": 0.008099999999999996
+        }
+      ]
+    },
+    "finite_pair_code": {
+      "cases": 2,
+      "rows": [
+        {
+          "N": 100,
+          "M": 24,
+          "lower_number": 6,
+          "trial_mode_a": 0.1794264676222466,
+          "trial_number_fidelities": [
+            0.9893492174265296,
+            0.9893492174265318
+          ],
+          "trial_worst_entanglement_fidelity": 0.9893492174265296,
+          "all_waveforms_upper": 0.9961107050584094,
+          "maximally_reference_entangled_trial_fidelity": 0.9893492174265307,
+          "original_trial_fidelities": [
+            0.9909188012779409,
+            0.9864199991253215
+          ],
+          "refinement_amplitude_error": 7.993605777301127e-15,
+          "analytic_fidelity_tail_allowance": 1.8851803044384695e-17,
+          "scope": "Constructive numerical trial, not an exact finite-N optimum or interval enclosure."
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "lower_number": 75,
+          "trial_mode_a": 0.22964923849349195,
+          "trial_number_fidelities": [
+            0.81251247862016,
+            0.812512478619741
+          ],
+          "trial_worst_entanglement_fidelity": 0.812512478619741,
+          "all_waveforms_upper": 0.8439477954750001,
+          "maximally_reference_entangled_trial_fidelity": 0.8125124786199504,
+          "original_trial_fidelities": [
+            0.8257267086526913,
+            0.786518745123426
+          ],
+          "refinement_amplitude_error": 1.8693935288638386e-12,
+          "analytic_fidelity_tail_allowance": 1.2739989294508577e-15,
+          "scope": "Constructive numerical trial, not an exact finite-N optimum or interval enclosure."
+        }
+      ]
+    },
+    "joint_limit_and_encoding_control": {
+      "cases": 12,
+      "critical_sequences": [
+        {
+          "N": 1000,
+          "M": 100,
+          "q": 25,
+          "lower": 0.9881211208846902,
+          "upper": 0.9961556900657382,
+          "target": 0.9948052065178371
+        },
+        {
+          "N": 1000000,
+          "M": 10000,
+          "q": 2500,
+          "lower": 0.9942842519455473,
+          "upper": 0.9949473057205147,
+          "target": 0.9948052065178371
+        },
+        {
+          "N": 1000000000,
+          "M": 1000000,
+          "q": 250000,
+          "lower": 0.9947544837487559,
+          "upper": 0.9948194756071149,
+          "target": 0.9948052065178371
+        },
+        {
+          "N": 1000,
+          "M": 200,
+          "q": 50,
+          "lower": 0.906876974194207,
+          "upper": 0.9600311763833141,
+          "target": 0.9591894571091382
+        },
+        {
+          "N": 1000000,
+          "M": 20000,
+          "q": 5000,
+          "lower": 0.9553768061391483,
+          "upper": 0.9593273612018539,
+          "target": 0.9591894571091382
+        },
+        {
+          "N": 1000000000,
+          "M": 2000000,
+          "q": 500000,
+          "lower": 0.9588198461452325,
+          "upper": 0.959203719181697,
+          "target": 0.9591894571091382
+        },
+        {
+          "N": 1000,
+          "M": 300,
+          "q": 75,
+          "lower": 0.6813053870579755,
+          "upper": 0.8439477954750001,
+          "target": 0.8688150562628432
+        },
+        {
+          "N": 1000000,
+          "M": 30000,
+          "q": 7500,
+          "lower": 0.8560459466333779,
+          "upper": 0.8670926141556239,
+          "target": 0.8688150562628432
+        },
+        {
+          "N": 1000000000,
+          "M": 3000000,
+          "q": 750000,
+          "lower": 0.8675839251621658,
+          "upper": 0.8686486332559836,
+          "target": 0.8688150562628432
+        }
+      ],
+      "vacuum_plus_number_controls": [
+        {
+          "N": 100,
+          "m": 10,
+          "known_number_lower": 0.9991768234880154
+        },
+        {
+          "N": 1000,
+          "m": 300,
+          "known_number_lower": 0.9895250324310859
+        },
+        {
+          "N": 1000000,
+          "m": 10000,
+          "known_number_lower": 0.9999915834622441
+        }
+      ]
+    },
+    "reference_channel_structure": {
+      "cases": 3,
+      "rows": [
+        {
+          "q": 1,
+          "M": 4,
+          "entangled_input_fidelity": 0.765625,
+          "worst_fidelity": 0.7224999999999999
+        },
+        {
+          "q": 2,
+          "M": 8,
+          "entangled_input_fidelity": 0.765625,
+          "worst_fidelity": 0.7224999999999999
+        },
+        {
+          "q": 3,
+          "M": 12,
+          "entangled_input_fidelity": 0.765625,
+          "worst_fidelity": 0.7224999999999999
+        }
+      ],
+      "scope": "Structural channel example; not a new optical simulation."
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0"
+  },
+  "scope": "Consequences and finite checks of the existing source theorem; no new code-capacity or hardware claim."
+}
