@@ -33,11 +33,11 @@ For $u=-\ln(1-a)$ the notation $f_u$ means the same pulse family reparameterized
 | Quantity | Definition and meaning |
 |---|---|
 | Pulse overlap amplitude | $\langle f,g\rangle$; one-photon Hilbert-space overlap |
-| Product $m$-photon fidelity | $|\langle f,g\rangle|^{2m}$; only for two product-mode Fock states |
+| Product $m$-photon fidelity | $\lvert\langle f,g\rangle\rvert^{2m}$; only for two product-mode Fock states |
 | Mean collected fraction | $\langle n_f\rangle/\langle n_{\rm total}\rangle$; undefined for vacuum-only input |
 | Canonical transfer fidelity | Squared entanglement fidelity relative to the prescribed number map, minimized over code inputs and optimized over one prechosen receiver |
 
-The exact dependent emission does not acquire a product form by notation. Its replacement by an individually matched product pulse requires the uniform theorem. For fixed $m$, the probability $\Pr(n_f=m)$ equals the overlap with $|m_f\rangle$; the natural-mode eigenvalue is instead $\langle n_f\rangle$.
+The exact dependent emission does not acquire a product form by notation. Its replacement by an individually matched product pulse requires the uniform theorem. For a pure field with fixed total photon number $m$, the probability $\Pr(n_f=m)$ is the squared modulus of its overlap with $|m_f\rangle$; the natural-mode eigenvalue is instead $\langle n_f\rangle$.
 
 For superpositions, number-state fidelities alone do not determine channel fidelity. The positive diagonal/no-number-gain Kraus structure is what makes the optimized reduction work here. An input-dependent phase correction is not implicit in choosing a phase convention. The target oscillator states share one consistent phase reference.
 
