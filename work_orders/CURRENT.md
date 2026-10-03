@@ -25,3 +25,9 @@ Produce one compact mathematical note that contains the uniform approximation an
 ## Completion criterion
 
 Deliver an evidence-backed assessment of the same core: preserved, corrected, or subsumed. Give the strongest truthful remaining contribution in one sentence and specify the unsupported claims that were removed. Avoid a new theory branch as a substitute for completing this order.
+
+## Activation progress — 3 October 2026
+
+The starter import and initial seven-suite reproduction are complete. No scientific files or expected numerical outputs were changed. A read-only verification workflow and a [specific reader checklist](../research/CRITICAL_READING.md) have been added. The full primary-source comparison, row-by-row assumption audit, and genuinely separate critical reading are not marked complete by this setup pass.
+
+Begin the next scientific pass with the primary-source comparison above. Keep the same model, receiver, and target. Use the checklist to test the proof rather than creating another nearby theoretical branch. Do not contact an outside reader without the user's explicit instruction.

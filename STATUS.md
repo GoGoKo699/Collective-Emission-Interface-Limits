@@ -30,4 +30,12 @@ These are the first work order, not a list of invitations to invent additional m
 
 The README and canonical research notes are new edited consolidations. The six inherited scientific scripts and result files are byte-for-byte preserved and their hashes are recorded. The seventh suite checks the current two-sector clarification. Historical project-status paragraphs are not copied into the public documentation as if they were active work orders.
 
-The original aggregate archive remains unchanged in the conversation. No unrelated research, source PDF, journal-target language, or credentials are included in the repository seed. Licensing is to be set when the repository is created.
+The original aggregate archive remains unchanged in the conversation. No unrelated research, source PDF, journal-target language, or credentials are included in the repository seed. The repository's existing MIT license, copyright 2026 Ruge Lin, is preserved unchanged.
+
+## Repository activation
+
+The validated starter is now imported into `GoGoKo699/Collective-Emission-Interface-Limits`. The exact import commit preserves every starter file and the pre-existing MIT license. The original startup checksum manifest remains a historical snapshot of that import, not a manifest to regenerate silently after editorial changes. See [the import record](provenance/IMPORT.md).
+
+The seven suites were executed before onboarding changes; all 34 diagnostic groups and 521 parameterized cases passed and all saved scientific outputs matched byte-for-byte. The canonical scientific notes and test files are unchanged by activation. Workflow automation reruns the same integrity checks and scientific suites on pull requests and main-branch changes; its live result must be read from the corresponding Actions run, not inferred from this status paragraph.
+
+A [critical-reading checklist](research/CRITICAL_READING.md) now identifies the specific proof and scope questions. It is preparation for review, not an independent reader report. The substantive source-comparison and assumption-evidence tasks above remain open. Manuscript writing remains on hold.

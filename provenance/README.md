@@ -9,3 +9,9 @@ The canonical README and research documents are **edited standalone consolidatio
 `VERIFICATION.json` records the completed local execution of all seven suites. The reference environment is pinned in `requirements.txt`. The runner writes outputs to temporary files and compares them with references without overwriting them. Exact numerical equality in that environment is evidence of reproducibility, not proof of universal statements or prior-art independence.
 
 If a future change is needed, make it explicit in this ledger and preserve the corresponding original file or its source hash. A failed numerical check must not be “fixed” by silently replacing its expected output. No formal proof assistant or independent reviewer has certified the results.
+
+## Activation in the live repository
+
+The initial import commit is `ff4e1577b18cbfbf759e11c61cc86efe268eb59e`. At that revision, every one of the 32 starter files matches the supplied package byte-for-byte; the pre-existing MIT license is the only additional file. `FILE_MANIFEST.json`, `VERIFICATION.json`, and `DELIVERY_VALIDATION.json` describe that original starter. In particular, the historical `new_remote_repository_created: false` field describes preparation of the seed, not the current repository state.
+
+Later onboarding edits are recorded separately in [IMPORT.md](IMPORT.md). The starter file manifest is intentionally not relabeled as a current-tree or CI-success certificate. `SUITES.json` remains the active per-script/per-reference integrity check. The automated workflow writes its own execution report and never refreshes reference results. Numerical tests can pass on another environment without exact-byte agreement; the runner records that distinction explicitly.
