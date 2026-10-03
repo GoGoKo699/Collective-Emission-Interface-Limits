@@ -4,46 +4,28 @@
 
 The fixed object is optimized canonical transfer of a Dicke number code into one prechosen linear optical memory mode. The source, receiver, target and excitation regimes are unchanged.
 
-## Central account
+## Current reproducibility outcome
 
-[STORY.md](research/STORY.md) separates the physical question and consequence from the supporting derivations. It adds no theorem: a dilute collective source can approach an oscillator for mean-photon collection without admitting faithful transfer of its whole excitation code into one fixed linear memory. The all-waveform optimization, rather than failure of a selected exponential, is essential to that claim.
+The follow-up to issue #7 is recorded in [HOSTED_REPRODUCTION.md](provenance/HOSTED_REPRODUCTION.md). The newly retained hosted outputs reproduce all eight references byte-for-byte. A separate hosted execution of the exact original runner, with only temporary-output capture added externally, also reproduces all eight references. Each execution covers 39 scientific groups and 612 cases. None of the 2440 recorded numeric fields differs.
 
-## Proof and source-comparison status
+**The historical PR #6 mismatch was not reproduced; its cause remains undetermined.** Its raw outputs were discarded, so it cannot be retrospectively classified as rounding or metadata. The old summary is preserved. Current exact agreement is not an explanation of that missing evidence.
 
-The main theorem is preserved after the explicit endpoint repair in [PROOF_AUDIT.md](research/PROOF_AUDIT.md). [THEOREM.md](research/THEOREM.md) derives finite envelopes before taking the limit, including the near-unit-fidelity endpoint and a supremum that need not be attained. The coefficient, source, receiver, old finite angle brackets and photon-collection result are unchanged. This remains author-side work, not an independent report.
+The runner and workflow now retain generated results, reference copies, field differences and numerical environment details. Structural or out-of-tolerance scientific differences fail the reference gate. The [policy](provenance/REPRODUCTION_POLICY.md) distinguishes these operational checks from proofs and numerical error certificates. The eight scientific scripts, saved references and suite registry remain unchanged; twelve infrastructure unit tests are not counted as new scientific groups.
 
-The [Law–Lee full-text comparison](literature/LAW_LEE_FULL_TEXT.md) is complete. The paper receives direct credit for occupation optimization, the oscillator comparator, few-mode behavior and the semiclassical pulse. Its inspected construction did not subsume the uniform common-code theorem; exhaustive priority is not certified by that outcome.
+## Scientific core and its boundaries
 
-## Completed preparation-source reading
+[STORY.md](research/STORY.md) states the physical account: a dilute collective source can approach an oscillator for mean-photon collection without admitting faithful transfer of its whole excitation code into one fixed linear memory. The all-waveform optimization is essential; the claim is not failure of an arbitrary exponential.
 
-The named P03/P04 tasks are now closed in [PREPARATION_EVIDENCE.md](literature/PREPARATION_EVIDENCE.md). P03 was inspected in its ten-page author preprint; P04 in the five-page published article from the authors' MIT group site. The assessment uses their equations and parsed text; failed page-rendering attempts are recorded and no plot values are imported.
+[THEOREM.md](research/THEOREM.md) includes the explicit endpoint-safe converse correction recorded in [PROOF_AUDIT.md](research/PROOF_AUDIT.md). The uniform approximation, optimized boundary, mean-collection comparison and two-sector witness are unchanged by this maintenance pass. The two-mode explanation and source-realization analyses remain supporting results with their stated regimes, not new claims introduced to expand the project.
 
-Five related preparation approaches have construction-level reading records, counting the three preceding S01/P01/P02 readings. This is **not five demonstrations of the same apparatus premise**. P03 uses an oscillator approximation and conditional filters; P04 uses heralded finite-spin carving. Their known-target controls do not supply a uniformly accurate input-independent preparation isometry for our growing, reference-entangled code. The [assumption register](literature/ASSUMPTIONS.md) retains that distinction. The old source snapshot is unchanged; its former access labels are explicitly superseded.
+The [Law–Lee comparison](literature/LAW_LEE_FULL_TEXT.md) is complete. The paper retains credit for mean-occupation optimization, the oscillator comparator, few-mode behavior and the semiclassical pulse. No subsumption was established in that comparison; exhaustive priority was not certified.
 
-## Recorded results
+The named preparation readings are complete in [PREPARATION_EVIDENCE.md](literature/PREPARATION_EVIDENCE.md), at the recorded versions and access depths. Five related construction-level readings are not five demonstrations of one reference-preserving input preparation and emitting apparatus. The [assumption register](literature/ASSUMPTIONS.md) keeps those distinctions explicit.
 
-| Result | Status |
-|---|---|
-| Uniform individually matched pulse approximation | Analytic proof, counting-process formulation and numerical checks |
-| All-waveform common-code critical limit | Construction and converse, with endpoint-safe finite envelopes |
-| Uniform mean-photon collection bound | Analytic proof and regression checks; distinct from full-state fidelity |
-| Two-temporal-mode structure | Prior uniform critical-scale derivation and finite checks; no new regime claimed |
-| Passive receiver interpretation | Application of established linear input-output theory |
-| Source-realization scope | Independent-loss identity and finite cavity checks; no uniform microscopic field theorem |
-| Two-sector logical-qubit witness | Direct critical converse and finite witnesses; no change of encoding to evade the result |
+## Remaining substantive step
 
-These are author-side results, not independent validation, exhaustive priority certification or a device demonstration.
+A genuinely separate mathematical/physical reading remains absent. The [checklist](research/CRITICAL_READING.md), proof, correction and direct literature comparisons are ready for it. No outside researcher has been contacted. Repeated internal tests are not that reading.
 
-## Remaining commitments
+Whole-code preparation cost, known-N calibration, microscopic bandwidth/rate scaling and a compatible joint realization remain conditional for a device claim. No quantum-capacity claim, alternative encoding, nonlinear decoder or new source is introduced. The [work order](work_orders/CURRENT.md) does not authorize expansion to avoid those questions.
 
-A genuinely separate mathematical/physical report remains absent. No outside researcher has been contacted. The current core and its correction are ready for that reading; its absence must not be replaced by another routine self-audit.
-
-Whole-code preparation cost, known-N calibration, microscopic bandwidth/rate scaling and a compatible joint realization remain conditional. A device claim would require those resources. The theorem is not a proposed universal quantum interface, an error-corrected capacity bound or a fixed-time scalability result.
-
-The [work order](work_orders/CURRENT.md) preserves these finite tasks. No additional geometry, receiver family, detector model or manuscript has been introduced to avoid a significance question.
-
-## Verification and preservation
-
-This preparation-and-story pass changes documentation only. The canonical proof, its audit, the two-sector and physical-scope notes, all eight scientific scripts and saved outputs, suite register, runner, historical manifests, workflow and MIT license are preserved. No source-paper PDF or unrelated project is uploaded.
-
-The previous proof-pass record contains the eight-suite, 39-group, 612-case execution. Fresh full-tree execution for this pass is recorded by the actual pull-request and main-branch workflow results, not assumed from unchanged files. See [PREPARATION_READING.json](provenance/PREPARATION_READING.json) for the local access and validation scope. Manuscript writing and outreach remain on hold.
+The scientific and literature files, MIT license and historical manifests remain unchanged. This pass changes only verification infrastructure and its status/evidence documents. Hosted run identities, downloaded-artifact hashes and the limited local reconstruction are recorded in the reproduction note. Manuscript writing and outreach remain on hold.

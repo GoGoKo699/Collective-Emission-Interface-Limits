@@ -36,12 +36,6 @@ jobs:
         run: python tools/test_reproduction.py
       - name: Check preserved identities and local documentation links
         run: python verify.py --integrity-only
-      - name: Capture the original runner for this audit
-        run: |
-          git fetch --no-tags --depth=1 origin 4ef1323a5288f24407270d59965b12aee6d6a6c0
-          git show 4ef1323a5288f24407270d59965b12aee6d6a6c0:verify.py > legacy-verify.py
-          python tools/capture_previous_runner.py --runner legacy-verify.py --capture-dir verification-legacy
-          rm legacy-verify.py
       - name: Run all standalone scientific suites
         run: python verify.py --output verification-report.json --artifacts-dir verification-artifacts --require-reference
       - name: Confirm that reference evidence was not rewritten
@@ -55,6 +49,5 @@ jobs:
           path: |
             verification-report.json
             verification-artifacts/
-            verification-legacy/
           if-no-files-found: warn
           retention-days: 14

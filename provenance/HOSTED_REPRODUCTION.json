@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-03",
+  "resolution": "Not reproduced with complete retained evidence; historical cause undetermined.",
+  "historical_run": 37138835832,
+  "historical_artifact": 11279691529,
+  "historical_raw_per_suite_outputs_available": false,
+  "historical_summary_sha256": "09b3515980b8384a31e004ec982e8bd36610eff4c48d026e3561672b6aab99a3",
+  "base_commit": "4ef1323a5288f24407270d59965b12aee6d6a6c0",
+  "preserved_tests_tree": "217d1d8d07fc74d9b94e52f47b953df6dce3845e",
+  "preserved_suite_registry_blob": "7ccd0c5afe254603d69c70ce6d056666c6dc0000",
+  "initial_instrumented_run": {
+    "run_id": 37140146773,
+    "head_sha": "c65d1493556c75b939e27ac7f10017654257293e",
+    "artifact_id": 11279539806,
+    "artifact_sha256": "3ed3e86e2868374f23be8da69a0632b5dcb09787335aaddbd59e90eedc795329",
+    "all_results_byte_identical": true
+  },
+  "original_and_current_runner_run": {
+    "run_id": 37140435037,
+    "head_sha": "d4b19f81ba54c8d911f82f28f7bd2b48ccbde8a8",
+    "artifact_id": 11280535590,
+    "artifact_sha256": "76076273e286690c57713adf60c2a753b52bcdd4f9a0beeffa1b706a31b1c01f",
+    "original_runner_blob": "be56c4cd9971405b75e2363a49c88a27378c20ef",
+    "both_paths_byte_identical_to_references": true,
+    "downloaded_outputs_compared_locally": true
+  },
+  "per_execution": {
+    "suite_count": 8,
+    "diagnostic_groups": 39,
+    "parameter_cases": 612,
+    "numeric_fields_compared": 2440,
+    "max_absolute_numeric_difference": 0,
+    "max_symmetric_relative_numeric_difference": 0,
+    "metadata_differences": 0,
+    "other_scientific_differences": 0,
+    "all_results_byte_identical": true
+  },
+  "suites": [
+    {
+      "name": "01_pulse_matching",
+      "reference_sha256": "8fb87ab0064160a40c0b16b02be26b8bee08a2ad99b53bb6f39f12f2b479a3c4",
+      "observed_sha256": "8fb87ab0064160a40c0b16b02be26b8bee08a2ad99b53bb6f39f12f2b479a3c4",
+      "byte_identical": true,
+      "numeric_fields_compared": 306,
+      "differing_numeric_fields": 0,
+      "differing_metadata_fields": 0,
+      "differing_nonnumeric_scientific_fields": 0,
+      "regression_alerts": 0
+    },
+    {
+      "name": "02_common_mode_limit",
+      "reference_sha256": "6e32c9be74a51a9002ade7c914caa2f094f5a50c6dc1de49b36c181af3a98501",
+      "observed_sha256": "6e32c9be74a51a9002ade7c914caa2f094f5a50c6dc1de49b36c181af3a98501",
+      "byte_identical": true,
+      "numeric_fields_compared": 474,
+      "differing_numeric_fields": 0,
+      "differing_metadata_fields": 0,
+      "differing_nonnumeric_scientific_fields": 0,
+      "regression_alerts": 0
+    },
+    {
+      "name": "03_passive_receiver",
+      "reference_sha256": "591b70beeaf4add0df1074fd7bfca6fc7cb12730f9a7c01b761ad3062ffbc237",
+      "observed_sha256": "591b70beeaf4add0df1074fd7bfca6fc7cb12730f9a7c01b761ad3062ffbc237",
+      "byte_identical": true,
+      "numeric_fields_compared": 277,
+      "differing_numeric_fields": 0,
+      "differing_metadata_fields": 0,
+      "differing_nonnumeric_scientific_fields": 0,
+      "regression_alerts": 0
+    },
+    {
+      "name": "04_two_mode_structure",
+      "reference_sha256": "3591d855b47395964a2461341ed18e67453a3a659e419c328fa523e4abf7b005",
+      "observed_sha256": "3591d855b47395964a2461341ed18e67453a3a659e419c328fa523e4abf7b005",
+      "byte_identical": true,
+      "numeric_fields_compared": 438,
+      "differing_numeric_fields": 0,
+      "differing_metadata_fields": 0,
+      "differing_nonnumeric_scientific_fields": 0,
+      "regression_alerts": 0
+    },
+    {
+      "name": "05_photon_collection",
+      "reference_sha256": "df2145b4ee4b91fd31115a65e1e2aacea889eacf8d7bebc044de4604a0edee0f",
+      "observed_sha256": "df2145b4ee4b91fd31115a65e1e2aacea889eacf8d7bebc044de4604a0edee0f",
+      "byte_identical": true,
+      "numeric_fields_compared": 149,
+      "differing_numeric_fields": 0,
+      "differing_metadata_fields": 0,
+      "differing_nonnumeric_scientific_fields": 0,
+      "regression_alerts": 0
+    },
+    {
+      "name": "06_source_realization",
+      "reference_sha256": "04af735e743a46c8673d329f48a33b366e866911177a7354585a7a8520c73744",
+      "observed_sha256": "04af735e743a46c8673d329f48a33b366e866911177a7354585a7a8520c73744",
+      "byte_identical": true,
+      "numeric_fields_compared": 477,
+      "differing_numeric_fields": 0,
+      "differing_metadata_fields": 0,
+      "differing_nonnumeric_scientific_fields": 0,
+      "regression_alerts": 0
+    },
+    {
+      "name": "07_two_sector_scope",
+      "reference_sha256": "6c67418f3ba89e6c5f30e7f7474c11f610dc137f83b5de92f91cb53d873ac64e",
+      "observed_sha256": "6c67418f3ba89e6c5f30e7f7474c11f610dc137f83b5de92f91cb53d873ac64e",
+      "byte_identical": true,
+      "numeric_fields_compared": 125,
+      "differing_numeric_fields": 0,
+      "differing_metadata_fields": 0,
+      "differing_nonnumeric_scientific_fields": 0,
+      "regression_alerts": 0
+    },
+    {
+      "name": "08_uniform_proof_audit",
+      "reference_sha256": "bb647bfe5a4fd171829b9b48b61717a7b2a07b04c1917000b96a4854e86d1ef1",
+      "observed_sha256": "bb647bfe5a4fd171829b9b48b61717a7b2a07b04c1917000b96a4854e86d1ef1",
+      "byte_identical": true,
+      "numeric_fields_compared": 194,
+      "differing_numeric_fields": 0,
+      "differing_metadata_fields": 0,
+      "differing_nonnumeric_scientific_fields": 0,
+      "regression_alerts": 0
+    }
+  ],
+  "policy": {
+    "atol": 1e-10,
+    "rtol": 1e-09,
+    "declared_before_inspecting_hosted_results": true,
+    "thresholds_needed_to_accept_current_results": false,
+    "interpretation": "Regression alert, not scientific error bounds"
+  },
+  "local_scope": "Scientific-only tree reconstructed from supplied starter and retained hosted evidence, matched to live tree and registry; no full repository checkout. One enclosing-command timeout was followed by a complete successful eight-suite original-runner execution.",
+  "infrastructure_unit_tests": 12,
+  "end_to_end_negative_control": "A synthetic fidelity change 0.9 to 0.901 fails the reference gate despite a PASS from its dummy script; outputs preserved.",
+  "scientific_scripts_or_references_changed": false,
+  "theorem_changed": false,
+  "independent_reader_report_received": false,
+  "scope": "Execution evidence and preservation only; neither independent proof review nor an explanation of discarded historical differences."
+}
