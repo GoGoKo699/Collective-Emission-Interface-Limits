@@ -2,6 +2,10 @@
 
 **Updated 3 October 2026.** This is a targeted attribution map, not a systematic-review or novelty certificate. Primary references are used. A failed download is an access gap, not evidence that a construction is absent.
 
+## Follow-up evidence pass
+
+The post-activation [direct comparison](COMPARISON.md) and [primary evidence register](SOURCE_EVIDENCE.md) now provide equation-level locations and premise-specific counts. They preserve the theorem and distinguish full text from abstract-only access. In particular, the Gorshkov linearized-memory comparison, Kiilerich-Molmer selected-mode formalism, and Malz atomic-state scope are now explicit. Law-Lee remains a specified missing full text, not a closed priority question. The earlier preparation-pass paragraph below is retained as a dated access record.
+
 ## Central comparisons
 
 | Source | Established ingredient | Difference that still requires evaluation |
@@ -45,4 +49,4 @@ The two-emitter observation by Mlynek et al. supports a realizable collective-de
 
 [P9] J. A. Mlynek, A. A. Abdumalikov, C. Eichler, and A. Wallraff, *Observation of Dicke superradiance for two artificial atoms in a cavity with high decay rate*, Nature Communications 5, 5186 (2014). https://doi.org/10.1038/ncomms6186
 
-Additional primary comparisons from the source exploration remain to be integrated at full-text depth where they matter: Malz–Trivedi–Cirac's controlled large-$N$ atomic evolution; Belliardo and colleagues' simple-measurement metrology from superradiant radiation; full-field coherent absorber theory; and experimental cavity-to-cavity transfers. These are not counted as completed construction-level comparisons in this register.
+The new register adds direct Malz-Trivedi-Cirac and cavity-memory scope checks. Additional comparisons with Belliardo and colleagues' metrological extraction and full-field coherent absorbers remain supplementary: they are different tasks, and no complete construction-level subsumption audit for them is claimed in this pass.
