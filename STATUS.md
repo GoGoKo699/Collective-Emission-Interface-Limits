@@ -4,13 +4,28 @@
 
 The source, canonical number map, excitation code, receiver class and theorem are unchanged.
 
-## Current background and tutorial work
+## Current tutorial and presentation
 
-The owner requested the scientific background needed for eventual manuscript writing and up to three single-source tutorial choices. The [background dossier](literature/BACKGROUND.md) now maps the collective ladder, temporal-mode field, cascaded receiver, fidelity objective, uniform proof ingredients, preparation and realization boundaries. A [convention map](research/CONVENTIONS.md) and [core bibliography](literature/REFERENCES.bib) make the source-to-proof translations explicit.
+The owner selected **Kiilerich–Mølmer (2020), Quantum interactions with pulses of radiation**
+as the single teaching anchor. The [reading guide](docs/README.md) follows the source's
+pulse/input-output/occupation/capture organization. The [technical bridge](REVIEW.md)
+adds the Dicke ladder, canonical fidelity and uniform-bound steps locally, without
+requiring a second external tutorial. [TUTORIAL_OPTIONS.md](literature/TUTORIAL_OPTIONS.md)
+now records the completed choice and keeps the alternatives as optional references.
 
-The [tutorial comparison](literature/TUTORIAL_OPTIONS.md) recommends Kiilerich–Mølmer (2020) as the shortest operational route, with Raymer–Walmsley (2020) and the SLH review (2017) as distinct alternatives. These are one-source options; no anchor has been selected and the repository has not been refurnished around a choice.
+The front page presents the physical task, theorem and reading routes before the audit
+records. GitHub-native inline math and display blocks are checked separately from the
+scientific suites. The [presentation record](provenance/TUTORIAL_FURNISHING.json) identifies
+typography-only changes to existing research notes and the actual validation scope.
 
-**A newly identified close comparison remains open:** Tziperman et al., ACS Nano 19, 21260–21270 (2025), with preprint arXiv:2306.11348. Its abstract concerns collective emission into quantum pulse states, but its complete construction was not retrieved. The [reading audit](literature/BACKGROUND_AUDIT.md) records the exact access depth and comparison questions. It is neither ignored nor declared subsumed. The previous completed Law–Lee and other comparisons retain their documented scope; they do not certify novelty against this new source.
+The [background dossier](literature/BACKGROUND.md), [convention map](research/CONVENTIONS.md)
+and [bibliography](literature/REFERENCES.bib) remain the source-to-proof support. The anchor
+is not credited with the project-specific uniform theorem.
+
+**Still open:** the full construction-level comparison with Tziperman et al., ACS Nano 19,
+21260–21270 (2025), arXiv:2306.11348. The [background audit](literature/BACKGROUND_AUDIT.md)
+records the accessible abstracts and missing complete reading. Furnishing the repository
+does not resolve this priority question or create a separate critical-reader report.
 
 ## Reproducibility outcome already established
 
@@ -32,6 +47,6 @@ The [Law–Lee reading](literature/LAW_LEE_FULL_TEXT.md) and [preparation readin
 
 A separate mathematical/physical report is still absent. Reader candidates were identified privately, but no invitation or report is implied by this public repository. Whole-code preparation, reference-preserving encoding, atom-number calibration, microscopic bandwidth/rate scaling and joint realization remain conditional for a device claim.
 
-The [work order](work_orders/CURRENT.md) now separates the owner's tutorial choice, the new full-text comparison and the existing separate-reading task. No new model or manuscript is introduced to avoid those questions.
+The [work order](work_orders/CURRENT.md) records the completed teaching route and retains the close-source comparison and separate-reading tasks. No new model or manuscript is introduced to avoid those questions.
 
-This background pass changes documentation and bibliography only. All eight scientific scripts/results, suite registry, proof and physical-scope notes, verification tools, workflow, MIT license and historical manifests remain unchanged. Manuscript writing and outreach remain on hold.
+This furnishing pass changes navigation, explanatory material and mathematical presentation, and adds a separate presentation checker plus tracked-source retention in CI. All eight scientific scripts/results, the suite registry, numerical comparison policy, MIT license and historical manifests remain unchanged. Existing proof statements, equations and arguments are not altered by the delimiter changes; their source identities are recorded separately. Manuscript writing and outreach remain on hold.

@@ -6,27 +6,27 @@
 
 When is a weakly excited collective spin an adequate oscillator for transferring an unknown quantum state?
 
-Take a symmetric ensemble of N two-level emitters. Its stored excitations radiate into one useful spatial channel. A receiver is configured in advance and retains one oscillator, corresponding to one temporal pulse shape. The receiver must preserve an unknown superposition of excitation numbers, not merely capture its average photon number. A single spatial channel still contains many temporal modes.
+Take a symmetric ensemble of $`N`$ two-level emitters. Its stored excitations radiate into one useful spatial channel. A receiver is configured in advance and retains one oscillator, corresponding to one temporal pulse shape. The receiver must preserve an unknown superposition of excitation numbers, not merely capture its average photon number. A single spatial channel still contains many temporal modes.
 
 ## The mechanism
 
-The ideal collective ladder has decay rates gamma k(N-k+1), rather than the oscillator's gamma N k. The finite-spin correction slightly changes the pulse as the excitation number changes. An individually known subextensive number m can be matched to its own excellent pulse. This does not imply one pulse works equally well for several possible populated numbers.
+The ideal collective ladder has decay rates $`\gamma k(N-k+1)`$, rather than the oscillator's $`\gamma Nk`$. The finite-spin correction slightly changes the pulse as the excitation number changes. An individually known subextensive number $`m`$ can be matched to its own excellent pulse. This does not imply one pulse works equally well for several possible populated numbers.
 
-The intuitive scaling is simple. A pulse-shape difference of order M/N gives a missed fraction of order (M/N)^2. A many-photon state is sensitive to whether even one photon occupies a different mode; a number of order M amplifies that small mismatch to an effect of order M^3/N^2. This is an explanation of the proved result, not a substitute for its all-waveform converse. The exact photons are not assumed independent; the uniform approximation justifies the product-pulse comparison.
+The intuitive scaling is simple. A pulse-shape difference of order $`M/N`$ gives a missed fraction of order $`(M/N)^2`$. A many-photon state is sensitive to whether even one photon occupies a different mode; a number of order $`M`$ amplifies that small mismatch to an effect of order $`M^3/N^2`$. This is an explanation of the proved result, not a substitute for its all-waveform converse. The exact photons are not assumed independent; the uniform approximation justifies the product-pulse comparison.
 
 ## The result
 
-For the complete code of excitation numbers 0 through M, optimize the worst-input entanglement fidelity over every common receiving waveform. Within the declared ideal source and passive linear receiver class,
+For the complete code of excitation numbers $`0`$ through $`M`$, optimize the worst-input entanglement fidelity over every common receiving waveform. Within the declared ideal source and passive linear receiver class,
 
-$$
+```math
 M/N^{2/3}\longrightarrow c>0
 \quad\Longrightarrow\quad
 \mathcal F_{N,M}\longrightarrow e^{-c^3/192}.
-$$
+```
 
-The fidelity tends to one below this scale and to zero above it. In contrast, one fixed waveform collects a mean photon fraction tending to one throughout M=o(N). Choosing M=floor(N^(3/4)) simultaneously makes the excitation density vanish, the mean collected fraction approach one, and the optimized worst-input state-transfer fidelity approach zero. The failing statement is a uniform channel guarantee, not a claim that every input fails.
+The fidelity tends to one below this scale and to zero above it. In contrast, one fixed waveform collects a mean photon fraction tending to one throughout $`M=o(N)`$. Choosing $`M=\lfloor N^{3/4}\rfloor`$ simultaneously makes the excitation density vanish, the mean collected fraction approach one, and the optimized worst-input state-transfer fidelity approach zero. The failing statement is a uniform channel guarantee, not a claim that every input fails.
 
-This is not an artifact of a badly chosen exponential pulse: the converse allows every waveform. Nor must logical dimension grow: the two populated numbers floor(M/4) and M already witness the critical limit. Their physical excitation numbers do grow. Vacuum plus one populated number is a different, successful sparse-code comparator; see [TWO_SECTOR_WITNESS.md](TWO_SECTOR_WITNESS.md).
+This is not an artifact of a badly chosen exponential pulse: the converse allows every waveform. Nor must logical dimension grow: the two populated numbers $`\lfloor M/4\rfloor`$ and $`M`$ already witness the critical limit. Their physical excitation numbers do grow. Vacuum plus one populated number is a different, successful sparse-code comparator; see [TWO_SECTOR_WITNESS.md](TWO_SECTOR_WITNESS.md).
 
 ## What the result changes
 

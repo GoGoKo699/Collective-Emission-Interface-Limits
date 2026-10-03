@@ -2,67 +2,130 @@
 
 **Almost complete photon collection does not guarantee faithful quantum-state transfer.**
 
-This project studies a symmetric ensemble of two-level emitters releasing an unknown quantum state into a traveling field. A receiver is chosen before the input is known and retains one bosonic memory mode. We determine when the finite spin can be treated as a linear oscillator for that task—not merely for its average emitted intensity.
+A symmetric ensemble stores an unknown quantum state and releases its excitations as light.
+A receiver, configured before the input is known, retains one oscillator. The question is
+when the collective spin can be treated as a harmonic oscillator for this transfer—not
+merely for the average number of photons it delivers.
 
-Start with [the physical story](research/STORY.md): the same weakly excited source can satisfy a photon-collection criterion and fail a whole-state transfer criterion. The proof and resource boundaries below make that distinction quantitative.
+| Task | What one receiving pulse must preserve |
+|---|---|
+| Photon collection | Nearly all the mean photon number |
+| Canonical quantum-state transfer | Every number amplitude and coherence in the declared input space, including correlations with an external reference |
 
-For the surrounding science, use the [background dossier](literature/BACKGROUND.md), [notation and convention map](research/CONVENTIONS.md), and [curated bibliography](literature/REFERENCES.bib). The [three single-source tutorial options](literature/TUTORIAL_OPTIONS.md) are alternatives, not a combined syllabus; the learning anchor has not yet been selected. The [background audit](literature/BACKGROUND_AUDIT.md) records a newly identified close collective-light paper whose full construction remains to be compared.
+The source has $`N`$ emitters and supports excitation numbers $`0,\ldots,M`$, with $`M\leq N`$.
+The intended map uses the **same** normalized temporal mode $`f`$ for every input:
 
-## The central result
+```math
+\sum_{m=0}^{M}c_m\lvert D_N^m\rangle
+\longmapsto
+\sum_{m=0}^{M}c_m\lvert m\rangle_f.
+```
 
-Let $N$ be the number of emitters and let the stored state occupy Dicke excitation numbers $0,\ldots,M$. For complete ideal collective decay and a predetermined, photon-number-preserving linear receiver with vacuum auxiliaries, define $\mathcal F_{N,M}$ as the best worst-input entanglement fidelity for the canonical number map into one oscillator.
+One spatial output channel can contain many temporal modes. Capturing the beam is not
+therefore the same operation as storing its state in one oscillator.
 
-The recorded derivation gives
+## The common-mode boundary
 
-$$
+Let $`\mathcal F_{N,M}`$ be the optimized worst-input squared entanglement fidelity for
+complete ideal collective decay and a predetermined, photon-number-preserving linear
+receiver with vacuum auxiliaries. The optimization allows **every common waveform**.
+
+```math
+\boxed{
 \frac{M}{N^{2/3}}\longrightarrow c>0
 \quad\Longrightarrow\quad
-\mathcal F_{N,M}\longrightarrow e^{-c^3/192}.
-$$
+\mathcal F_{N,M}\longrightarrow e^{-c^3/192}
+}
+```
 
-The optimum tends to one for $M=o(N^{2/3})$ and to zero when $M/N^{2/3}\to\infty$. Nevertheless, one fixed waveform collects a mean photon fraction tending to one throughout every $M=o(N)$ code. For example, $M=\lfloor N^{3/4}\rfloor$ has vanishing excitation density and asymptotically complete mean collection, but vanishing worst-input one-mode transfer fidelity.
+The fidelity tends to one for $`M=o(N^{2/3})`$ and to zero when
+$`M/N^{2/3}\to\infty`$. In contrast, one fixed waveform collects a mean photon fraction
+tending to one throughout $`M=o(N)`$. Taking $`M=\lfloor N^{3/4}\rfloor`$ gives
 
-This is a distinction between an intensity observable and a quantum channel. It is not destruction of information in the complete emitted field, a quantum-capacity bound, or a limitation on every possible nonlinear receiver.
+```math
+\begin{aligned}
+M/N &\longrightarrow 0,\\
+\text{mean collected photon fraction} &\longrightarrow 1,\\
+\text{optimal worst-input fidelity} &\longrightarrow 0.
+\end{aligned}
+```
 
-## A small logical code already exposes the limitation
+This is a uniform channel limitation, not a statement that every input fails. The
+[standalone theorem](research/THEOREM.md) supplies the construction, unrestricted-waveform
+converse and finite bounds; the [explicit proof correction](research/PROOF_AUDIT.md)
+remains part of the record.
 
-The critical limit is already witnessed by the two-dimensional code spanned by excitation numbers $\lfloor M/4\rfloor$ and $M$. Its two states become individually well matched to different pulses, but no single pulse handles both better than the critical bound. The number of logical basis states need not grow. Their excitation energies do grow.
+## Why the two criteria differ
 
-The finite two-sector calculation is in [the scope note](research/TWO_SECTOR_WITNESS.md). This is a corollary of the existing two-sector converse, not a separate claimed physical mechanism or an optimization over all encodings.
+The collective ladder decays at $`\gamma k(N-k+1)`$, rather than the oscillator rate
+$`\gamma Nk`$. Each known subextensive photon number can be matched to an excellent
+individual pulse. But different numbers prefer slightly different pulses.
 
-## Read the science
+A pulse difference of order $`M/N`$ produces a one-photon mismatch of order
+$`(M/N)^2`$. Requiring all photons in a many-photon component to occupy the receiving
+mode amplifies this into the scale $`M^3/N^2`$. The proof controls the correlated emitted
+field before making that product-pulse comparison; independence is not assumed.
 
-| Document | Role |
-|---|---|
-| [The physical story](research/STORY.md) | One question, mechanism, optimized boundary and consequence; no new model or manuscript |
-| [Model and proof](research/THEOREM.md) | The source, fidelity convention, uniform state approximation, all-waveform converse, and mean-collection comparison |
-| [Proof audit and correction](research/PROOF_AUDIT.md) | Endpoint-safe finite bounds, answers to the proof checklist, and explicit author-side review limits |
-| [Two-sector witness](research/TWO_SECTOR_WITNESS.md) | Why one logical qubit suffices; finite constructive and converse bounds |
-| [Physical scope](research/PHYSICAL_SCOPE.md) | Passive reception, two-mode error structure, loss, bandwidth, and known ways outside the theorem |
-| [Prior results and open comparisons](literature/PRIOR_ART.md) | Exact attribution and access status, not a priority certificate |
-| [Law–Lee full-text comparison](literature/LAW_LEE_FULL_TEXT.md) | Completed equation-level comparison and the remaining interface claim |
-| [Preparation evidence](literature/PREPARATION_EVIDENCE.md) | Completed P03/P04 reading; known-target and heralded preparation are not a demonstrated unknown-input interface |
-| [Assumption register](literature/ASSUMPTIONS.md) | Model idealizations, receiver restrictions, and unfinished implementation checks |
-| [Status](STATUS.md) | Completed author-side results and remaining research tasks |
+Even one logical qubit can witness the critical limit: use the populated numbers
+$`\lfloor M/4\rfloor`$ and $`M`$. Their physical excitation numbers grow. Vacuum plus one
+populated number is a different, successful comparator. See the
+[two-sector witness](research/TWO_SECTOR_WITNESS.md).
+
+## One tutorial, then this result
+
+The selected learning anchor is:
+
+> A. H. Kiilerich and K. Mølmer, **Quantum interactions with pulses of radiation**,  
+> *Physical Review A* **102**, 023717 (2020).  
+> [Author tutorial, arXiv:2003.04573](https://arxiv.org/abs/2003.04573) ·
+> [Published article](https://doi.org/10.1103/PhysRevA.102.023717)
+
+Its virtual input/output cavities give the physical language of the interface. The
+[reading guide](docs/README.md) maps its sections to this repository. The
+[tutorial-to-theorem bridge](REVIEW.md) supplies the missing Dicke-ladder, fidelity and
+uniform-bound steps locally; no second external tutorial is required.
+
+## Read in three passes
+
+| Pass | Route | Purpose |
+|---|---|---|
+| Orientation | This page | Task, result and mechanism |
+| From the selected tutorial | [Reading guide](docs/README.md) → [technical bridge](REVIEW.md) | Translate the pulse formalism into the fixed interface problem |
+| Full audit | [Proof](research/THEOREM.md), [scope](research/PHYSICAL_SCOPE.md), [critical-reading questions](research/CRITICAL_READING.md) | Check the uniform estimates, resources and attribution |
+
+The [documentation map](docs/README.md#repository-map) keeps the supporting physics,
+literature and verification records accessible without putting every audit on the front page.
+
+## Boundaries and prior work
+
+The ideal source is symmetric, has known $`N`$, and emits completely into one vacuum
+Markov channel. The receiver retains one oscillator after fixed passive processing.
+The full emitted field retains the information; several retained modes, nonlinear
+decoding or a different encoding change the task. Preparation, loss, duration and
+bandwidth are real resources, not a demonstrated joint apparatus.
+
+The Dicke cascade, conventional-pulse cubic mismatch, number-dependent temporal modes,
+mean-occupation optimization and pulse-capture formalism have direct predecessors.
+The [comparison](literature/COMPARISON.md) and [background dossier](literature/BACKGROUND.md)
+separate those ingredients from the optimized uniform limit. The newly identified
+[Tziperman full-text comparison](literature/BACKGROUND_AUDIT.md#the-newly-open-close-source-task)
+and a separate critical-reader report remain open. Tutorial furnishing does not settle them.
 
 ## Reproduce
 
-The numerical work consists of small exact cascades, finite matrices, scalar bounds, and analytical controls. No external service, large many-body simulation, or quantum random-access memory is required.
-
 ```sh
 python -m pip install -r requirements.txt
+python tools/check_presentation.py
 python verify.py --integrity-only
-python verify.py --output verification-report.json
+python verify.py --artifacts-dir verification-artifacts --require-reference
 ```
 
-The eight standalone suites cover waveform overlap, common-mode optimization, passive capture, the leading second temporal mode, photon collection, source-rate consistency, the two-sector witness, and the endpoint-safe proof audit. The seven pre-existing scripts and reference results are preserved byte-for-byte; the eighth supplies explicit finite proof controls. The runner never overwrites saved reference results.
-
-The reference environment is Python 3.13.5 with the pinned dependencies. Exact-byte equality is a reproducibility property of that environment, not a proof of analytical claims. Numerical tails and integration tolerances are distinguished in the tests. Neither code execution nor this repository substitutes for independent scientific assessment.
-
-## Boundaries that stay visible
-
-The ideal theorem assumes a known symmetric source, one accessible vacuum Markov channel, and a particular downstream receiver class. Individually matched emissions, sparse encodings, parameter estimation, and full-field nonlinear decoding are different tasks. The preparation and receiving controls are not free, and the large-$N$ limit is not a fixed-bandwidth, fixed-time device claim.
-
-The fidelity exponent suggested by a standard exponential pulse, the Dicke cascade, nonlinear-emission mode dependence, and passive-capture theory all have direct predecessors. The candidate contribution is the optimized **uniform** interface boundary and the comparison with mean photon collection.
+The eight scientific suites cover 39 groups and 612 cases. The scientific scripts and
+saved results are preserved; generated outputs are compared without rewriting references.
+The [reproduction policy](provenance/REPRODUCTION_POLICY.md) distinguishes exact bytes,
+reviewed numerical agreement and passing assertions. None is independent proof review.
+The presentation check is separate from the scientific test count.
 
 **Manuscript writing is on hold.** Collaboration inquiries are welcome; contact Ruge Lin.
+The [workspace](WORKSPACE.md) and [current work order](work_orders/CURRENT.md) describe
+continuing work.
