@@ -31,3 +31,11 @@ Deliver an evidence-backed assessment of the same core: preserved, corrected, or
 The starter import and initial seven-suite reproduction are complete. No scientific files or expected numerical outputs were changed. A read-only verification workflow and a [specific reader checklist](../research/CRITICAL_READING.md) have been added. The full primary-source comparison, row-by-row assumption audit, and genuinely separate critical reading are not marked complete by this setup pass.
 
 Begin the next scientific pass with the primary-source comparison above. Keep the same model, receiver, and target. Use the checklist to test the proof rather than creating another nearby theoretical branch. Do not contact an outside reader without the user's explicit instruction.
+
+## Evidence-pass outcome — 3 October 2026
+
+The [source register](../literature/SOURCE_EVIDENCE.md), [assumption matrix](../literature/ASSUMPTIONS.md), and [direct comparison](../literature/COMPARISON.md) now replace broad topic labels with specific primary-source locations and limits. The core is preserved against the inspected comparisons; neither correction nor subsumption was established. The theorem and all scientific code/results remain unchanged.
+
+The outstanding external item is the full six-page Law-Lee article, *Dynamic photon-mode selection in Dicke superradiance*, PRA 75, 033813 (2007), DOI 10.1103/PhysRevA.75.033813. Once a legitimate readable copy is available, compare its actual field-mode construction and optimization with the same five qualifiers above. Do not continue counting unsuccessful retrieval attempts as progress.
+
+The preparation row still has only three full-text-checked constructions and two abstract-only leads. A uniform growing-code preparation/realization guarantee and a separate critical-reader report remain absent. A conditional theorem is not stalled merely because a prototype is absent, but it must not be described as a demonstrated apparatus. Manuscript writing stays on hold. Further work should close these specific evidence or proof questions, not introduce more receiver modes, noise parameters, or alternate encodings.
