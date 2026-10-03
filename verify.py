@@ -16,6 +16,7 @@ import subprocess
 import sys
 import tempfile
 import time
+from tools.reproduction import compare_results, numerical_environment, write_suite_evidence, DEFAULT_ATOL, DEFAULT_RTOL
 
 ROOT=Path(__file__).resolve().parent
 
@@ -53,7 +54,12 @@ def main():
     parser.add_argument('--suite',help='Run one suite, by its exact directory name')
     parser.add_argument('--timeout',type=float,default=240.,help='Seconds permitted for each suite')
     parser.add_argument('--output',type=Path,default=Path.cwd()/'verification-report.json')
+    parser.add_argument('--artifacts-dir',type=Path,help='New directory for raw outputs, comparisons and allowlisted environment')
+    parser.add_argument('--require-reference',action='store_true',help='Fail on structural or out-of-tolerance scientific differences')
+    parser.add_argument('--atol',type=float,default=DEFAULT_ATOL,help='Absolute regression-alert tolerance, not an accuracy certificate')
+    parser.add_argument('--rtol',type=float,default=DEFAULT_RTOL,help='Symmetric relative regression-alert tolerance')
     args=parser.parse_args()
+    compare_results(b'{}',b'{}',args.atol,args.rtol) # Validate tolerances before running suites.
     if args.timeout<=0:parser.error('--timeout must be positive')
     manifest,links=integrity()
     suites=manifest['suites']
@@ -66,6 +72,16 @@ def main():
     if destination.is_relative_to((ROOT/'tests').resolve()):
         parser.error('Output cannot overwrite test code or reference data')
     env={**os.environ,'OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1','PYTHONDONTWRITEBYTECODE':'1'}
+    artifacts=args.artifacts_dir.resolve() if args.artifacts_dir else None
+    if artifacts:
+        if artifacts == ROOT or ROOT.is_relative_to(artifacts):
+            parser.error('Artifacts must not overwrite the repository or an ancestor')
+        if any(artifacts.is_relative_to((ROOT/p).resolve()) for p in ['tests','provenance','research','literature','tools','.github']):
+            parser.error('Artifacts cannot be written into maintained source or evidence directories')
+        artifacts.mkdir(parents=True,exist_ok=False)
+        environment=numerical_environment()
+        environment['revision']={key:os.environ.get(key) for key in ['GITHUB_SHA','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT']}
+        (artifacts/'environment.json').write_text(json.dumps(environment,indent=2,allow_nan=False)+'\n')
     rows=[]
     with tempfile.TemporaryDirectory(prefix='collective-interface-verify-') as tempdir:
         temp=Path(tempdir)
@@ -84,18 +100,29 @@ def main():
                 stderr+=f'\nPer-suite timeout of {args.timeout} seconds exceeded.'
             observed=output.read_bytes() if output.exists() else None
             saved=(folder/'results.json').read_bytes()
-            parsed=json.loads(observed) if observed else {}
+            comparison=compare_results(saved,observed,args.atol,args.rtol)
+            try:parsed=json.loads(observed) if observed else {}
+            except (ValueError,UnicodeError):parsed={}
+            if not isinstance(parsed,dict):parsed={}
+            if artifacts:
+                write_suite_evidence(artifacts/suite['name'],(folder/'checks.py').read_bytes(),saved,observed,comparison)
             clean=lambda s:s.replace(str(temp),'[TEMP]').replace(str(ROOT),'[REPOSITORY]')
             row=dict(name=suite['name'],returncode=returncode,status=parsed.get('status','NO RESULT'),
                      groups=parsed.get('group_count'),cases=parsed.get('cases',parsed.get('parameter_cases')),
                      result_byte_identical=observed==saved,result_JSON_identical=parsed==json.loads(saved),
-                     elapsed_seconds=round(time.monotonic()-start,3),stdout=clean(stdout),stderr=clean(stderr))
+                     elapsed_seconds=round(time.monotonic()-start,3),stdout=clean(stdout),stderr=clean(stderr),
+                     comparison={k:v for k,v in comparison.items() if k!='differences'})
             rows.append(row)
             print(f'{row["name"]}: {row["status"]}; saved results identical: {row["result_byte_identical"]}',flush=True)
+            print(f'  reference comparison: {comparison["verdict"]}; scientific numeric differences: {comparison["differing_numeric_fields"]}',flush=True)
             if returncode:break
     integrity()
     passed=len(rows)==len(suites) and all(r['returncode']==0 and r['status']=='PASS' for r in rows)
-    report=dict(status='PASS' if passed else 'FAIL',date='2026-10-03',python=platform.python_version(),
+    reference_ok=all(r['comparison']['verdict']!='REVIEW_REQUIRED' for r in rows)
+    assertions_passed=passed
+    if args.require_reference:passed=passed and reference_ok
+    report=dict(scientific_assertions_passed=assertions_passed,reference_comparison_passed=reference_ok,
+                reference_comparison_required=args.require_reference,status='PASS' if passed else 'FAIL',date='2026-10-03',python=platform.python_version(),
                 suite_count=len(rows),group_count=sum(r['groups'] or 0 for r in rows),
                 case_count=sum(r['cases'] or 0 for r in rows),
                 all_reference_results_byte_identical=all(r['result_byte_identical'] for r in rows),
@@ -103,9 +130,10 @@ def main():
                 scope='Author-side reproducibility and source preservation, not independent mathematical or priority review.')
     destination.parent.mkdir(parents=True,exist_ok=True)
     destination.write_text(json.dumps(report,indent=2,allow_nan=False)+'\n')
+    if artifacts:(artifacts/'verification-report.json').write_bytes(destination.read_bytes())
     print('WROTE',destination,flush=True)
     if not passed:raise SystemExit(1)
     if not report['all_reference_results_byte_identical']:
-        print('Note: calculations passed but exact reference bytes differ. Check environment and report numerical differences explicitly.')
+        print('Exact reference bytes differ; field-level verdicts are reported separately. Raw evidence is retained when --artifacts-dir is provided.')
 
 if __name__=='__main__':main()
