@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-03",
+  "suites": [
+    {
+      "name": "01_pulse_matching",
+      "source_package": "collective_emission_mode_matching_scout",
+      "source_archive_sha256": "6729e29e6c86e328d9c493d12557415752877aca9e22a5bc2d9b7b00b20a2bc3",
+      "checks_sha256": "b0a7a0c5181d12d11f30806fdf52d0c0896b2ecb0b6867e1fbe1b8c724359fa3",
+      "results_sha256": "8fb87ab0064160a40c0b16b02be26b8bee08a2ad99b53bb6f39f12f2b479a3c4",
+      "groups": 5,
+      "cases": 71
+    },
+    {
+      "name": "02_common_mode_limit",
+      "source_package": "collective_emission_shared_mode_limit",
+      "source_archive_sha256": "cba617aefbb115abe293e49db79001e95fc76009f4ab5b3e79d023bc37ea16dd",
+      "checks_sha256": "18e1df008ea6b27af1de80ba5ca1c8de8b361aa53439a8036da3b8f0567e6931",
+      "results_sha256": "6e32c9be74a51a9002ade7c914caa2f094f5a50c6dc1de49b36c181af3a98501",
+      "groups": 6,
+      "cases": 62
+    },
+    {
+      "name": "03_passive_receiver",
+      "source_package": "collective_emission_receiver_audit",
+      "source_archive_sha256": "5a8d7271dd61529a54b4a927b3d0ff62e0e80db99e60069efd425a2a0a383343",
+      "checks_sha256": "2202a4323ad75217dd4e0ef815c63f88ddcba34d94e44562a4a846203b93af92",
+      "results_sha256": "591b70beeaf4add0df1074fd7bfca6fc7cb12730f9a7c01b761ad3062ffbc237",
+      "groups": 5,
+      "cases": 37
+    },
+    {
+      "name": "04_two_mode_structure",
+      "source_package": "collective_emission_theorem_audit",
+      "source_archive_sha256": "dcd83d822c859e3226fd6bd331e3bfd82c9a7789e8af5e5de05bb3c5d9d7db7c",
+      "checks_sha256": "bae14def19006380714ecd32d30cd635310f1e0b400d583397eef4c5df38e9cb",
+      "results_sha256": "3591d855b47395964a2461341ed18e67453a3a659e419c328fa523e4abf7b005",
+      "groups": 5,
+      "cases": 97
+    },
+    {
+      "name": "05_photon_collection",
+      "source_package": "collective_emission_critical_core",
+      "source_archive_sha256": "febaa52a531900afe6d7f78dec78b6bf3ec22f733022bdb03f0d8346c9e0b1d6",
+      "checks_sha256": "80b044d7cc37d06f74627ea4f893fb2f854eec5261592a8f4e8c859707452561",
+      "results_sha256": "df2145b4ee4b91fd31115a65e1e2aacea889eacf8d7bebc044de4604a0edee0f",
+      "groups": 4,
+      "cases": 86
+    },
+    {
+      "name": "06_source_realization",
+      "source_package": "collective_emission_source_audit",
+      "source_archive_sha256": "5ceecb1dc2348ee9faa013587ada84150ef373068859edba89f8dc91aa946b7a",
+      "checks_sha256": "a50fe7296de76ef189573d62c4036881163ba47a5bc9e2abf156bdcd6b1e9de1",
+      "results_sha256": "04af735e743a46c8673d329f48a33b366e866911177a7354585a7a8520c73744",
+      "groups": 5,
+      "cases": 144
+    },
+    {
+      "name": "07_two_sector_scope",
+      "source_package": "current_two_sector_scope_audit",
+      "checks_sha256": "2e9659488c81ead87fa8fe20c7c98947d0315a3f5a72b2c35f98dc0f5a69a4b1",
+      "results_sha256": "6c67418f3ba89e6c5f30e7f7474c11f610dc137f83b5de92f91cb53d873ac64e",
+      "groups": 4,
+      "cases": 24
+    }
+  ],
+  "aggregate_input_sha256": "5ceecb1dc2348ee9faa013587ada84150ef373068859edba89f8dc91aa946b7a",
+  "original_scientific_scripts_unchanged": true,
+  "canonical_documents": "Edited standalone consolidation; original source archive remains unmodified in the conversation and is not redistributed in this repository seed."
+}

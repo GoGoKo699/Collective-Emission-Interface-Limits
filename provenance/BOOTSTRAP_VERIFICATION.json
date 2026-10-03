@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "date": "2026-10-03",
+  "python": "3.13.5",
+  "suite_count": 7,
+  "group_count": 34,
+  "case_count": 521,
+  "all_reference_results_byte_identical": true,
+  "originals_unchanged": true,
+  "runs": [
+    {
+      "name": "01_pulse_matching",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 71,
+      "result_byte_identical": true,
+      "result_JSON_identical": true,
+      "elapsed_seconds": 13.74,
+      "stdout": "PASS independent_overlap_checks\nPASS orthogonal_error_components\nPASS finite_same_source_comparator\nPASS one_mode_number_superpositions\nPASS normalizations_and_known_limit\nWROTE [TEMP]/01_pulse_matching.json\n",
+      "stderr": ""
+    },
+    {
+      "name": "02_common_mode_limit",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 6,
+      "cases": 62,
+      "result_byte_identical": true,
+      "result_JSON_identical": true,
+      "elapsed_seconds": 21.133,
+      "stdout": "PASS entropy_and_waveforms\nPASS finite_code_fidelity\nPASS joint_limit\nPASS source_controls\nPASS receiver_channel\nPASS numerical_refinement\nWROTE [TEMP]/02_common_mode_limit.json\n",
+      "stderr": ""
+    },
+    {
+      "name": "03_passive_receiver",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 37,
+      "result_byte_identical": true,
+      "result_JSON_identical": true,
+      "elapsed_seconds": 5.609,
+      "stdout": "PASS passive_network_reduction\nPASS bounded_cavity_kernel\nPASS dicke_source_and_receiver\nPASS unconditional_master_equation\nPASS loss_and_bandwidth_accounting\nWROTE [TEMP]/03_passive_receiver.json\n",
+      "stderr": ""
+    },
+    {
+      "name": "04_two_mode_structure",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 97,
+      "result_byte_identical": true,
+      "result_JSON_identical": true,
+      "elapsed_seconds": 10.605,
+      "stdout": "PASS proof_identity_audit\nPASS arbitrary_waveform_diagnostic\nPASS critical_error_mechanism\nPASS full_output_amplitudes\nPASS reference_safe_encoding\nWROTE [TEMP]/04_two_mode_structure.json\n",
+      "stderr": ""
+    },
+    {
+      "name": "05_photon_collection",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 4,
+      "cases": 86,
+      "result_byte_identical": true,
+      "result_JSON_identical": true,
+      "elapsed_seconds": 5.472,
+      "stdout": "PASS uniform_collection_bound\nPASS regression_controls\nPASS finite_mean_and_fidelity\nPASS state_independent_extension\nWROTE [TEMP]/05_photon_collection.json\n",
+      "stderr": ""
+    },
+    {
+      "name": "06_source_realization",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 144,
+      "result_byte_identical": true,
+      "result_JSON_identical": true,
+      "elapsed_seconds": 1.797,
+      "stdout": "PASS exact_source_branch\nPASS physical_atomic_space\nPASS finite_cavity\nPASS rate_family_consistency\nPASS unconditional_code\nWROTE [TEMP]/06_source_realization.json\n",
+      "stderr": ""
+    },
+    {
+      "name": "07_two_sector_scope",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 4,
+      "cases": 24,
+      "result_byte_identical": true,
+      "result_JSON_identical": true,
+      "elapsed_seconds": 10.605,
+      "stdout": "PASS two_point_geometry\nPASS finite_pair_code\nPASS joint_limit_and_encoding_control\nPASS reference_channel_structure\nWROTE [TEMP]/07_two_sector_scope.json\n",
+      "stderr": ""
+    }
+  ],
+  "scope": "Author-side reproducibility and source preservation, not independent mathematical or priority review."
+}
