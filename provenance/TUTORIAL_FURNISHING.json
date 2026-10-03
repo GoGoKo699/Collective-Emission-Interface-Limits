@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-03",
+  "task": "Owner-selected Kiilerich–Molmer tutorial anchor and mathematical presentation",
+  "base_main_commit": "54ea4f88c716b565cd6a3f4c65256c3a879283e4",
+  "staging_commit": "36d6baa0290cc5e92548a143d6fd458b0a432e1f",
+  "anchor": {
+    "authors": "Alexander Holm Kiilerich and Klaus Molmer",
+    "title": "Quantum interactions with pulses of radiation",
+    "year": 2020,
+    "arxiv": "2003.04573v1",
+    "doi": "10.1103/PhysRevA.102.023717",
+    "selected_by_owner": true,
+    "route": "Introduction; II A-C; emitter-only opening of II D; optional III",
+    "read_scope": "Source text and equations retrieved again for the section mapping; no new figure-based numerical claim."
+  },
+  "style_reference": {
+    "repository": "GoGoKo699/Hopf-Frame-Compilation",
+    "use": "Read-only README presentation reference: task comparison, displayed theorem, three-pass reading map, separate verification boundary. No scientific content or images imported.",
+    "modified": false
+  },
+  "core_files_byte_unchanged": {
+    "research/THEOREM.md": "d3940b8ee1a5e0775f107d24199b5613d9f6a98d8968fed3739ae887ec12e754",
+    "research/PROOF_AUDIT.md": "95d21e0cb2110252c57666dc854f58074d6638adf16921c723394e9d227af2b2",
+    "research/TWO_SECTOR_WITNESS.md": "db38e8b1b18bb50816726d4437e6356ece89e4c479270f0cc729faeae505ab85",
+    "research/PHYSICAL_SCOPE.md": "f324652ed03b7207a89888a69647d6ea8e452939591da10124cb6f74b89c7d5e",
+    "provenance/SUITES.json": "1831b7a385c7a9006ed67fbe910d57e5b86f0fa3312a3c7388d3e3d083d1ebeb",
+    "verify.py": "73cda551ede928f39af1bd87555ecf9e53718c06ead4111f58c60c37838e5193",
+    "requirements.txt": "e5698b55553133cbcdbcb05c5b953f60c8246df0b65930d95e8ea77112e09e52",
+    "LICENSE": "a92600540b1ab7a18301e2632a29334b3df227ad836e88df9967d69e3c86db66"
+  },
+  "all_scientific_scripts_and_references_unchanged": true,
+  "existing_note_changes": {
+    "research/STORY.md": "Render existing plain-text ladder rates, scaling expressions and floor notation as inline mathematics; change the one display delimiter. No claim changed.",
+    "research/CONVENTIONS.md": "GitHub-safe delimiters, a split mode-definition display, and the selected anchor notation dictionary."
+  },
+  "new_teaching_documents": [
+    "docs/README.md",
+    "REVIEW.md"
+  ],
+  "presentation_validation": {
+    "markdown_files": 28,
+    "expressions_compiled": 514,
+    "structural_unit_tests": 12,
+    "mathjax_version": "3.2.1",
+    "mathjax_errors": 0,
+    "preview_pages": [
+      "README.md",
+      "REVIEW.md",
+      "docs/README.md",
+      "research/CONVENTIONS.md"
+    ],
+    "viewport_widths_px": [
+      390,
+      1120
+    ],
+    "layout": "No page-level overflow or overwide inline mathematics in the local previews; new long displays were split.",
+    "visual_scope": "Local GFM-style Markdown plus MathJax SVG in Chromium, not a screenshot of the production GitHub renderer. Representative desktop/mobile screenshots inspected.",
+    "ci_scope": "The committed checker checks structure and tables, not visual rendering or proofs."
+  },
+  "source_access": {
+    "local_git_clone": "Failed: container DNS could not resolve github.com.",
+    "local_tree": "Recovered the complete tracked-source ZIP from hosted staging artifact 11283720377; outer SHA-256 verified. No credentials or untracked files exported.",
+    "local_baseline_execution": "Enclosing command timed out after six completed suites. Their retained outputs matched references, but no completed local eight-suite run is claimed.",
+    "staging_hosted_execution": "Run 37149340428 passed all eight suites (39 groups, 612 cases); downloaded report records exact reference equality. Final PR and main runs must be checked separately."
+  },
+  "new_scientific_claim": false,
+  "source_or_receiver_changed": false,
+  "scientific_tolerances_changed": false,
+  "third_party_PDFs_or_font_files_added": false,
+  "manuscript_drafted": false,
+  "outreach_performed": false,
+  "remaining_science": [
+    "Tziperman et al. 2025 complete construction-level comparison",
+    "Separate critical-reader report",
+    "Conditional combined preparation/realization assumptions"
+  ],
+  "historical_records": "BACKGROUND_RESEARCH.json and the earlier access/reproduction snapshots are preserved; their earlier unselected-anchor state is historical.",
+  "final_validation": "Do not infer final branch/merge success from this record; use the actual hosted checks and retained artifacts."
+}

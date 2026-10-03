@@ -1,35 +1,63 @@
-# Current work order: choose the tutorial anchor and close the new comparison
+# Current work order: preserve the teaching route and resolve the close-source comparison
 
-**Updated 3 October 2026 for the owner's background-research request.** Preserve the source, canonical number map, code, receiver and theorem unless a precise defect is established. The request authorizes background integration and tutorial selection support, not a new source model or manuscript draft.
+**Updated 3 October 2026 after the owner's tutorial selection.** The learning anchor is
+Kiilerich–Mølmer, *Quantum interactions with pulses of radiation* (2020). The source,
+canonical number map, code, receiver and theorem remain fixed.
 
-## Completed background integration
+## Completed pedagogical work
 
-Read [BACKGROUND.md](../literature/BACKGROUND.md), [BACKGROUND_AUDIT.md](../literature/BACKGROUND_AUDIT.md), [CONVENTIONS.md](../research/CONVENTIONS.md) and the [curated bibliography](../literature/REFERENCES.bib). They map the fixed result's dependencies and identify what the inspected sources do and do not support. The prior Law–Lee and preparation full-text readings remain completed. Do not call those sources inaccessible again.
+[README.md](../README.md) gives the task and main result. [docs/README.md](../docs/README.md)
+maps the selected source's Sections I–II D and optional III to the repository.
+[REVIEW.md](../REVIEW.md) supplies the missing Dicke cascade, canonical fidelity and
+uniform-bound bridge. These are an explanation of the existing result, not a manuscript
+or a second external syllabus. The alternatives in TUTORIAL_OPTIONS.md are no longer a
+pending choice.
 
-The [tutorial options](../literature/TUTORIAL_OPTIONS.md) are alternatives. The recommended source is Kiilerich–Mølmer, *Quantum interactions with pulses of radiation* (2020); alternatives are Raymer–Walmsley and Combes–Kerckhoff–Sarovar. No source has yet been selected by the owner.
+Preserve source terminology and distinguish the virtual output-cavity construction from
+an unlimited-bandwidth apparatus. The [convention map](../research/CONVENTIONS.md)
+translates pulse labels, ladder operators, rates, normalization and fidelity. The canonical
+proof and physical-scope notes remain byte-for-byte unchanged; the notation bridge and
+explanatory story receive the documented presentation edits, not new scientific claims. The explicit earlier proof repair remains visible.
 
-## Pedagogical next stage, after the owner's choice
+Use GitHub-supported inline math and fenced display math. Avoid literal vertical bars
+inside table cells, code-formatted equations and long unbroken inline formulas. Run
+`python tools/check_presentation.py` and inspect rendered mathematics after future edits.
+The structural checker is not a substitute for rendering or a proof audit.
 
-Use exactly the chosen source as the external teaching anchor. Furnish the repository with its natural terminology and a short local bridge covering only the missing collective-ladder, canonical-fidelity and uniform-proof steps. Preserve correct convention translations and the separation between modes and quantum states. Do not turn the three alternatives into a compulsory reading stack or make the Paulisch dissertation a hidden second prerequisite.
+## Required construction-level comparison
 
-The theorem, receiver class and scientific evidence are not to be altered merely to fit a tutorial's examples. Source-faithful explanation is not a new scientific claim. Manuscript drafting remains on hold.
+Obtain and inspect Tziperman et al., *Nonlinear Quantum Light Generation in Collective
+Spontaneous Emission*, ACS Nano 19, 21260–21270 (2025), DOI 10.1021/acsnano.4c15257;
+author preprint arXiv:2306.11348, *The quantum state of light in collective spontaneous
+emission*. The [background audit](../literature/BACKGROUND_AUDIT.md) records the abstract-level
+access and the failed full-text routes. The complete Law–Lee and preparation readings
+remain completed; they are not fresh missing-source tasks.
 
-## Newly identified construction-level comparison
+Identify the new paper's source ladder, input space, pulse-selection rule, target and
+fidelity, receiving resources, and any controlled growing-code/all-waveform conclusion.
+Keep a genuine subsumption or a precise distinction. Do not infer novelty from inaccessible
+text or repeat failed retrievals as progress. This furnishing pass did not claim to close
+that comparison.
 
-Obtain the complete primary text for Tziperman et al., *Nonlinear Quantum Light Generation in Collective Spontaneous Emission*, ACS Nano 19, 21260–21270 (2025), DOI 10.1021/acsnano.4c15257; author preprint arXiv:2306.11348, *The quantum state of light in collective spontaneous emission*. The present audit accessed abstracts and metadata, not the complete construction. The roughly 15 MB preprint exceeded available text-retrieval size and other tested routes did not supply readable full text.
+## Separate critical reading
 
-Identify its source ladder, input class, pulse-selection rule, target and fidelity, receiving resources, and any controlled growing-code or all-waveform result. The abstract's cat/GKP examples and multimode claims cannot settle those questions. Retain either a true subsumption or a precise distinction. Do not treat another repetition of failed retrievals as progress or infer novelty from inaccessible text. No outside contact without explicit permission.
+Use [CRITICAL_READING.md](../research/CRITICAL_READING.md), [THEOREM.md](../research/THEOREM.md),
+[PROOF_AUDIT.md](../research/PROOF_AUDIT.md), [STORY.md](../research/STORY.md) and the source
+comparisons. Distinguish correctness, inherited results, significance and device assumptions.
+An identified candidate is not a received report; another internal rerun is not a separate
+reading. No outside contact without explicit user instruction.
 
-## Separate critical reading remains a scientific task
+Whole-code/reference-preserving preparation, calibrated atom number, consistent
+bandwidth/rates, duration and losses remain conditional for a joint device claim.
 
-Use [CRITICAL_READING.md](../research/CRITICAL_READING.md), [THEOREM.md](../research/THEOREM.md), [PROOF_AUDIT.md](../research/PROOF_AUDIT.md), [STORY.md](../research/STORY.md) and the completed direct comparisons. Distinguish proof validity, prior-art subsumption, significance and device assumptions. No separate report exists merely because a candidate list or checklist exists.
+## Evidence preservation
 
-Whole-code preparation, reference-preserving input encoding, atom-number calibration, bandwidth, duration and unwanted rates remain implementation obligations. Known-target/heralded preparation papers do not automatically supply them. A conditional theory result need not fabricate a joint prototype.
+Read WORKSPACE.md and AGENTS.md. Before changing scientific code, run `python verify.py`.
+Retain outputs with `python verify.py --artifacts-dir verification-artifacts --require-reference`
+in a fresh directory. Do not rewrite references or widen tolerances for green CI. The
+source-informed numerical review and the historical missing PR #6 values remain documented
+in [HOSTED_REPRODUCTION.md](../provenance/HOSTED_REPRODUCTION.md).
 
-## Integrity and scope
-
-Read WORKSPACE.md and AGENTS.md before edits. Run `python verify.py` before modifying scientific code. For complete diagnostic evidence use `python verify.py --artifacts-dir verification-artifacts --require-reference` with a fresh directory. Keep suite identities and historical import manifests separate from editable explanatory documents.
-
-Issue #7's retained numerical recurrence is classified in [HOSTED_REPRODUCTION.md](../provenance/HOSTED_REPRODUCTION.md); the original discarded PR #6 values remain unavailable. Preserve raw discrepancies, inspect exact fields and apply only the documented review policy. Do not regenerate references or widen a tolerance merely for green CI.
-
-No new Hamiltonian, encoding, nonlinear decoder, detector campaign, outreach or manuscript is part of this order. The immediate scientific scope is the same result with a completed background comparison, not a broader project.
+The eight scientific suites are distinct from presentation and reproduction-infrastructure
+checks. Tutorial selection does not authorize another Hamiltonian, decoder, encoding,
+noise campaign, manuscript or outreach. Preserve the compact source-to-memory claim.
