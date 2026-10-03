@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-03",
+  "base_commit": "f22373163fe01a88b21fc1c05186a229d568a6ca",
+  "base_tree": "c7d665f52eb68e3f387d757ea4878286616783cc",
+  "scope": "Preparation-source assessment and explanatory story, not a new theorem or manuscript.",
+  "scientific_files_changed": false,
+  "tests_tree_preserved": "217d1d8d07fc74d9b94e52f47b953df6dce3845e",
+  "runner_preserved": "be56c4cd9971405b75e2363a49c88a27378c20ef",
+  "P03": {
+    "version": "arXiv:0812.0507v1, ten-page author preprint",
+    "url": "https://arxiv.org/pdf/0812.0507",
+    "sections": "II-VII, conclusions; Eqs. (2)-(7), (10), (17)-(25), (26)-(35), (36)-(40)",
+    "access": "Full parsed text inspected. Final publisher text not compared line by line.",
+    "boundary": "Oscillator reduction, known target and conditional preparation; no uniform finite-spin upload guarantee."
+  },
+  "P04": {
+    "version": "PRL 115, 250502 (2015), five-page published article",
+    "url": "https://eapg.mit.edu/wp-content/uploads/2018/03/prl115_quantum_state_carving.pdf",
+    "sections": "Complete main text, Eqs. (1)-(12)",
+    "access": "Full parsed text found through author group publication list.",
+    "boundary": "Heralded target carving; no deterministic unknown-input realization."
+  },
+  "visual_checks": "Web screenshot requests failed. No image-only claim, graph measurement or visual typography inspection is claimed.",
+  "PDFs_redistributed": false,
+  "new_local_Markdown_links_checked": 44,
+  "local_Git_checkout": "Unavailable: clone failed DNS; generic archive download did not supply a checkout. Live reads and writes use the GitHub connector.",
+  "numerical_scope": "No local full-current-tree execution claimed in this documentation-only pass. The unchanged eight suites and full-tree link/integrity checks are executed by the PR and main hosted workflow; record actual completed runs rather than predeclare success.",
+  "independent_review_received": false,
+  "outreach": false,
+  "manuscript_started": false
+}

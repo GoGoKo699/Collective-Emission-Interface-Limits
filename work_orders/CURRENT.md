@@ -1,31 +1,29 @@
-# Current work order: remaining preparation evidence and separate reading
+# Current work order: separate critical reading of the consolidated result
 
-**Updated 3 October 2026 after the endpoint-safe proof audit.** Keep the same source, canonical number map, code and one-linear-memory receiver. No new Hamiltonian, detector family, encoding, nonlinear decoder or manuscript is authorized by this order.
+**Updated 3 October 2026 after the preparation-source checks.** Keep the source, canonical number map, code, one-linear-memory receiver and theorem unchanged unless a specific defect is found. No new Hamiltonian, decoder, encoding, detector family or manuscript is authorized.
 
 ## Completed bounded tasks
 
-The [Law–Lee full-text comparison](../literature/LAW_LEE_FULL_TEXT.md) is complete. Its occupation-mode optimization, oscillator argument, few-mode behavior and semiclassical pulse are inherited ingredients. Do not reopen the source-access search or describe that paper as unavailable.
+The [Law–Lee full-text comparison](../literature/LAW_LEE_FULL_TEXT.md) is complete. The [author-side proof audit](../research/PROOF_AUDIT.md) records the endpoint correction and answers the original mathematical checklist. The named P03/P04 [preparation-source readings](../literature/PREPARATION_EVIDENCE.md) are now complete at their stated versions and access depths. Do not describe these documents as missing or repeat the same access search.
 
-The [author-side proof audit](../research/PROOF_AUDIT.md) has addressed all six mathematical checklist items. It identified an insufficiently justified near-unit-fidelity replacement in the compressed converse and replaced it with finite inequalities in [THEOREM.md](../research/THEOREM.md). The main theorem, coefficient, physical scope and older finite numerical brackets are preserved. The correction is explicit; this is not an independent report.
+[STORY.md](../research/STORY.md) is the short physical account, not a manuscript. The central result is one optimized interface boundary and its mean-collection comparison. The two-mode explanation, preparation evidence and realization audits support it rather than enlarging its claim count.
 
-Do not treat another routine reproduction or another presentation of the same proof as fresh scientific progress. If a new objection appears, address it specifically; otherwise proceed to the remaining evidence below.
+## The next substantive assessment
 
-## Next source-evidence task
+A genuinely separate mathematical/physical reading is still absent. The existing [checklist](../research/CRITICAL_READING.md), canonical [proof](../research/THEOREM.md), explicit correction and [direct comparisons](../literature/COMPARISON.md) are the reading basis. A report must distinguish proof validity, prior-art subsumption, physical relevance and device assumptions. No reader should need to reconstruct the result from the exploratory archives.
 
-Read the current [assumption register](../literature/ASSUMPTIONS.md), [source register](../literature/SOURCE_EVIDENCE.md), and its clearly labeled [pre-upload evidence snapshot](../literature/SOURCE_EVIDENCE_PRE_UPLOAD.md). The outstanding arbitrary-symmetric-preparation leads are P03, Lemr–Fiurasek's conditional preparation of Dicke superpositions, and P04, Chen et al.'s single-photon carving construction.
+Do not initiate outside contact without the user's explicit instruction. Until a separate report or a specific new objection arrives, do not count another routine rerun or retelling as scientific progress. Reader selection or outreach can be a next human commitment, but is not authorized implicitly by this work order. Any actual objection should be answered against the same task, not evaded by changing the receiver.
 
-Obtain and inspect their full constructions through legitimate available sources. Record exact sections, controls, whether the target is known, whether heralding is required, and the difference between preparing a selected state and transmitting an unknown/reference-entangled input. Do not turn five component constructions into five demonstrations of our complete device. Preserve an access deficit if a full text remains unavailable rather than substituting an abstract or unrelated paper.
+## What preparation evidence does not settle
 
-Fixed N, rate and bandwidth scaling, duration and whole-code preparation still require distinct accounting. A conditional theorem does not require a prototype, but a device claim does require its own evidence. No new source model is needed merely to improve a citation count.
+Five related construction-level readings do not establish five demonstrations of uniformly accurate arbitrary-state preparation in the emitting device. P03's bosonic approximation and conditioning, P04's heralded carving, and state-dependent controls remain visible. Distinguish known-target preparation from a state-independent isometry preserving an external reference; do not assert that all heralded protocols necessarily fail the latter.
 
-## Separate critical reading
+Joint preparation/emission/reception, atom-number calibration, bandwidth, duration and unwanted rates remain physical obligations for a device claim. A conditional source-to-memory theorem may be judged without fabricating that implementation. Do not add a new model merely to satisfy a paper count.
 
-The original [checklist](../research/CRITICAL_READING.md) remains suitable for a genuinely separate reader. The author-side answers and explicit correction are now accessible in one note. A report exists only when a separate reader actually returns one; neither software tests nor this assistant's repeated checks count as that report. Do not contact outside researchers without explicit permission.
+## Integrity
 
-A separate reader should evaluate the full theorem and its physical significance, not merely validate individual identities or the headline exponent. Preserve an actual objection even if it reduces the result's claimed scope or novelty.
+Read WORKSPACE.md and AGENTS.md before edits. Run `python verify.py`; preserve discrepancies and original references. The eight suites and historical manifests have separate roles. Scientific code and references are unchanged by the preparation/story pass. Any correction must remain explicit.
 
-## Integrity and completion
+## Completion criterion
 
-Read WORKSPACE.md and AGENTS.md before edits. Run `python verify.py`; preserve any mismatch. All existing references, the active suite identities and historical manifests have separate roles. Do not silently regenerate expected results. The new suite is `08_uniform_proof_audit`.
-
-The next pass should report which specific preparation claims are supported, which remain conditional, and whether that evidence changes the fixed result's interpretation. There is no invitation to expand the theory to avoid a remaining evidence or significance question. Manuscript writing and outreach stay on hold.
+The present bounded internal work is consolidated. The next report should respond to a concrete mathematical, attribution or significance objection, or to an explicitly authorized separate reading. It should say whether the same core is preserved, corrected or subsumed. Manuscript drafting and outreach remain on hold; no automatic branch into further phenomena is requested.
