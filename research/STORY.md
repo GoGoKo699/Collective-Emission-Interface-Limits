@@ -1,6 +1,6 @@
 # One source, two notions of an accurate interface
 
-**3 October 2026. Explanatory research note; not a manuscript or a new result.** The model, code, receiver and fidelity convention are those of [THEOREM.md](THEOREM.md), including the recorded [proof correction](PROOF_AUDIT.md).
+**Updated 5 October 2026. Explanatory research note; not a manuscript or a new result.** The model, code, receiver and fidelity convention are those of [THEOREM.md](THEOREM.md), including the recorded [proof correction](PROOF_AUDIT.md).
 
 ## The question
 
@@ -32,7 +32,27 @@ This is not an artifact of a badly chosen exponential pulse: the converse allows
 
 A measurement showing nearly complete mean-photon collection does not establish a faithful canonical one-oscillator interface. Low excitation density is not a sufficient uniform criterion for that task. The result supplies the optimized boundary and a constructive receiver waveform on the successful side, rather than merely describing one source of distortion.
 
+For an explicit excitation budget, fix a target squared entanglement fidelity $`F_0\in(0,1)`$ independent of $`N`$. Let $`K_N(F_0)`$ be the largest integer $`0\leq M\leq N`$ for which the ideal optimized fidelity satisfies $`\mathcal F_{N,M}\geq F_0`$. The critical law implies
+
+```math
+\begin{gathered}
+\frac{K_N(F_0)}{N^{2/3}}\longrightarrow c_0,
+\\
+c_0=(-192\ln F_0)^{1/3}.
+\end{gathered}
+```
+
+To see this, choose any fixed $`0<c_-<c_0<c_+`$. The critical limits at $`M=\lfloor c_-N^{2/3}\rfloor`$ and $`M=\lfloor c_+N^{2/3}\rfloor`$ lie strictly above and below $`F_0`$, respectively. The optimized fidelity cannot increase when the code is enlarged, so these cutoffs bracket $`K_N(F_0)`$ for sufficiently large $`N`$. Letting the margins approach zero gives the limit. Below a fixed margin, the constructive common pulse reaches the target; above a fixed margin, no allowed waveform does.
+
+This is an asymptotic corollary of the existing theorem. It supplies neither a finite-$`N`$ pass/fail decision at the boundary nor a relative-error estimate for a target tending to one with $`N`$. A finite system must use the bounds in THEOREM.md. The source, calibration, preparation, capture and loss assumptions remain necessary; this is not a hardware specification.
+
 The intended contribution is a domain-of-validity statement for a physical approximation and a recognized memory resource. It is not a universal quantum-capacity limit. The complete emitted field retains the input information, and additional retained modes or nonlinear decoding change the task. Receiver controls, bandwidth, source preparation and loss remain real resources; [PHYSICAL_SCOPE.md](PHYSICAL_SCOPE.md) states those boundaries.
+
+## The significance question that remains
+
+The excitation budget makes the operational meaning explicit; it does not add a second novelty claim. The strongest objection is that the conventional cubic mismatch and number-dependent pulse distortion already make multiphoton error accumulation familiar. A sharp uniform minimax theorem may therefore be judged a technical completion of known physics. The unresolved question is whether excluding every common receiving waveform changes the assessment of a useful one-oscillator interface enough to constitute a substantive advance.
+
+The inspected sources do not establish that their authors claimed a uniform unknown-input guarantee from low excitation density or near-unit mean occupation alone. This result should not be framed as overturning those papers. Its candidate contribution is a controlled answer to the different, explicitly common-receiver question. The internal significance reading preserves that narrow claim, but does not settle its importance or replace the separate [critical reading](CRITICAL_READING.md).
 
 ## What belongs in the supporting evidence
 

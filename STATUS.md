@@ -1,6 +1,6 @@
 # Research status
 
-**5 October 2026 · Internal sanity check completed · Manuscript on hold.**
+**5 October 2026 · Internal sanity and bounded significance readings completed · Manuscript on hold.**
 
 The source, canonical number map, excitation code, receiver class and main theorem
 are unchanged. The [sanity-check record](research/SANITY_CHECK_2026_10_05.md) separates
@@ -46,6 +46,15 @@ missing historical PR #6 outputs are not recovered by this check. New hosted res
 must be read from their actual workflow runs.
 
 ## Remaining limits and next step
+
+The bounded internal significance reading makes the fixed-fidelity excitation budget
+explicit in [STORY.md](research/STORY.md). It follows directly from the existing critical
+law and code monotonicity, and is not a new mechanism or an additional novelty claim.
+The narrow candidate contribution survives: a uniform guarantee with an all-waveform
+converse. Its importance beyond familiar multiphoton mismatch remains unresolved.
+The [critical-reading questions](research/CRITICAL_READING.md) now separate that judgment
+from mathematical validity and scoped non-subsumption. No scientific code or saved
+reference result was changed by this clarification.
 
 A separate external mathematical/physical critical-reader report is still absent.
 No invitation or outreach is implied by the internal review. Whole-code preparation,
