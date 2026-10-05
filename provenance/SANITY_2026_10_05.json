@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-05",
+  "task": "Full internal sanity check before continuation",
+  "repository": "GoGoKo699/Collective-Emission-Interface-Limits",
+  "base_main_commit": "9595a88db8a695fefcd3d5d3016afdbd2307fd73",
+  "scientific_tests_tree": "217d1d8d07fc74d9b94e52f47b953df6dce3845e",
+  "verdict": "Core survives internal proof/physical/literature audit; scope and reporting corrections made. No external independent report claimed.",
+  "preserved_sha256": {
+    "provenance/SUITES.json": "1831b7a385c7a9006ed67fbe910d57e5b86f0fa3312a3c7388d3e3d083d1ebeb",
+    "tools/reviewed_fields.py": "3676ba3fc8f2485746268922a32ad7223ee9790c0db7d6d9aafada2ae995db13",
+    "requirements.txt": "e5698b55553133cbcdbcb05c5b953f60c8246df0b65930d95e8ea77112e09e52",
+    "LICENSE": "a92600540b1ab7a18301e2632a29334b3df227ad836e88df9967d69e3c86db66",
+    "research/PROOF_AUDIT.md": "95d21e0cb2110252c57666dc854f58074d6638adf16921c723394e9d227af2b2",
+    "research/TWO_SECTOR_WITNESS.md": "db38e8b1b18bb50816726d4437e6356ece89e4c479270f0cc729faeae505ab85"
+  },
+  "scientific_scripts_and_references_unchanged": true,
+  "tolerances_unchanged": true,
+  "runs": {
+    "baseline": {
+      "report_archive_member": "baseline/verification-report.json",
+      "report_sha256": "6efbc6de88009cd85107b8f4258b4781153b50a45889ff108b2a1828e98ccaf5",
+      "status": "PASS",
+      "date_as_recorded": "2026-10-03",
+      "started_at": null,
+      "finished_at": null,
+      "python": "3.12.14",
+      "suites": 8,
+      "groups": 39,
+      "cases": 612,
+      "scientific_assertions_passed": true,
+      "reference_comparison_passed": true,
+      "all_reference_bytes_identical": false,
+      "differing_scientific_numeric_fields": 0,
+      "comparison_verdicts": [
+        "METADATA_ONLY"
+      ]
+    },
+    "final": {
+      "report_archive_member": "final/verification-report.json",
+      "report_sha256": "61dc02a412133b84f3296876ced4a655feef83a9a014d10b4cf68fc6302b3064",
+      "status": "PASS",
+      "date_as_recorded": "2026-10-05",
+      "started_at": "2026-10-05T04:58:02.202138+00:00",
+      "finished_at": "2026-10-05T04:59:22.521027+00:00",
+      "python": "3.12.14",
+      "suites": 8,
+      "groups": 39,
+      "cases": 612,
+      "scientific_assertions_passed": true,
+      "reference_comparison_passed": true,
+      "all_reference_bytes_identical": false,
+      "differing_scientific_numeric_fields": 0,
+      "comparison_verdicts": [
+        "METADATA_ONLY"
+      ]
+    }
+  },
+  "baseline_provenance_limit": "Old runner hardcodes 2026-10-03 and records parent thread settings; retained verbatim. Executed 2026-10-05; no actual baseline start/end timestamps were recorded. The suite child environment forced OPENBLAS_NUM_THREADS=OMP_NUM_THREADS=1.",
+  "final_runner_sha256": {
+    "verify.py": "47e4dac542d18401894afd28f05618e09d5e0ef1931755e92fdbae1544109f6b",
+    "tools/reproduction.py": "82aae1db061497c836eb34a0ab6efc97bfde95323cc8a1f519a091f10a38efa5",
+    "tools/test_reproduction.py": "8a2794af22e960f0f543673debf07b2d061e55ed064f2322c6b082f089a34366",
+    "tools/test_verifier.py": "6dafcdc59b98a2abb8bb4bd95e4c520801c6f2aa14f7ec255edd6d01eb1c9833"
+  },
+  "infrastructure_tests": {
+    "reproduction": 17,
+    "verifier_fixtures": 5,
+    "passed": true,
+    "includes_negative_controls": true
+  },
+  "presentation_tests": {
+    "structural": 12,
+    "markdown_files": 30,
+    "math_expressions": 530,
+    "passed": true
+  },
+  "additional_entropy_diagnostic": {
+    "cases": 6,
+    "decimal_precision": 60,
+    "max_absolute_discrepancy": "1.76875839513816923228933578403584488303104774776005438875887e-60",
+    "scope": "Internal check; not added to 612 scientific cases; script and output in raw evidence archive."
+  },
+  "raw_evidence": {
+    "path": "sanity_2026_10_05/raw-evidence.zip",
+    "sha256": "9643602847586733073def2745ef7effaad3a0bc0d72a36e205869e64b98bdaf",
+    "bytes": 1887397
+  },
+  "tziperman_reading": {
+    "note": "literature/TZIPERMAN_FULL_TEXT.md",
+    "main": {
+      "url": "https://kaminer.net.technion.ac.il/files/2025/06/tziperman-et-al-2025-nonlinear-quantum-light-generation-in-collective-spontaneous-emission.pdf",
+      "sha256": "f9d98752e12a9462c3ff356bebe3a969c2c98b199321b3b21cf78f9d6ad30268",
+      "bytes": 7884233,
+      "pages": 11,
+      "version": "Author-hosted publisher-formatted early-online copy with A-K pagination; final issue PDF not compared."
+    },
+    "supplement": {
+      "url": "https://kaminer.net.technion.ac.il/files/2025/06/nn4c15257_si_001.pdf",
+      "sha256": "1c9296ce7f66495bd9678ab4f7407b199354b639c10467e194f1811106a2e542",
+      "bytes": 2734763,
+      "pages": 23
+    },
+    "pdfs_redistributed": false,
+    "fidelity_root_or_squared_convention": "Unresolved; no percentage conversion or comparison claimed.",
+    "outcome": "No all-waveform growing-code subsumption found in inspected constructions; not exhaustive novelty."
+  },
+  "remaining": [
+    "Separate external critical-reader report",
+    "Conditional whole-code preparation and joint microscopic realization"
+  ],
+  "manuscript_drafted": false,
+  "outreach_performed": false,
+  "hosted_gate": "Inspect actual final branch and post-merge workflow outcomes; local evidence does not certify them.",
+  "rendering_validation": {
+    "scope": "Internal mathematical rendering QA; local MathJax/marked preview, not a production GitHub rendering or independent proof report.",
+    "strict_compile": {
+      "expressions": 530,
+      "files_with_mathematics": 16,
+      "errors": 0,
+      "fallback_error_packages_disabled": true
+    },
+    "rendered_documents": {
+      "research/PHYSICAL_SCOPE.md": 44,
+      "research/THEOREM.md": 114
+    },
+    "viewports": {
+      "desktop": [
+        1280,
+        1300
+      ],
+      "mobile": [
+        390,
+        844
+      ]
+    },
+    "visual_inspection": [
+      "PHYSICAL_SCOPE receiver rate and phase clarification",
+      "PHYSICAL_SCOPE critical sequence and final shortened Poisson display",
+      "PHYSICAL_SCOPE scalar complete-emission assumptions and time-isometry formula",
+      "THEOREM nonnegative-waveform attenuation sentence"
+    ],
+    "outcome": "Changed formulas and supporting text display correctly at both viewports. Final shortened Poisson display fits the mobile content width. No raw math delimiters remain in either rendered document.",
+    "limits": [
+      "Not a complete visual review of every repository expression; all 530 expressions were strictly compiled.",
+      "Existing long THEOREM display equations use horizontal scrolling in this preview.",
+      "Bare reference URLs overflow the simplified preview at mobile width (417px and 603px document widths). This is a preview-style limitation, not an established production GitHub defect."
+    ],
+    "files": [
+      "compile-report.json",
+      "visual-report.json",
+      "rendered-source-sha256.json",
+      "physical-desktop-0.png",
+      "physical-desktop-1.png",
+      "physical-desktop-2.png",
+      "physical-mobile-0.png",
+      "physical-mobile-1.png",
+      "physical-mobile-2.png",
+      "theorem-desktop-0.png",
+      "theorem-desktop-attenuation.png",
+      "theorem-mobile-0.png",
+      "theorem-mobile-attenuation.png"
+    ],
+    "screenshots_retained_in_archive": true,
+    "mathjax_version": "3.2.1"
+  }
+}

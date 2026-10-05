@@ -268,6 +268,6 @@ remain necessary for a device claim.
 KM supplies the operational language and full selected-pulse state calculation. Existing
 Dicke, pulse-shape and occupation results remain credited. The uniform optimization is
 the candidate additional contribution, not the discovery that mode shape and photon
-number can be correlated. The open [close-source comparison](literature/BACKGROUND_AUDIT.md#the-newly-open-close-source-task)
-and separate critical reading are not resolved by this exposition. Manuscript writing
-remains on hold.
+number can be correlated. The later [close-source comparison](literature/TZIPERMAN_FULL_TEXT.md)
+is complete at its documented versions; separate external critical reading remains
+open. Manuscript writing remains on hold.

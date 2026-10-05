@@ -1,5 +1,19 @@
 # Provenance and reproducibility
 
+## Current audit
+
+The active registry contains **eight scientific suites, 39 groups and 612 cases**.
+The [5 October sanity record](../research/SANITY_CHECK_2026_10_05.md) and
+[machine-readable evidence map](SANITY_2026_10_05.json) document fresh baseline and
+repaired-runner verification. All scientific scripts and references are preserved.
+The reporting tools now have 22 focused infrastructure tests; mathematical presentation
+has a separate 12-test checker. These counts are not added to the scientific cases.
+
+The eighth suite and endpoint proof repair are recorded in [PROOF_AUDIT.json](PROOF_AUDIT.json).
+The following import account and its seven-suite execution record are historical.
+
+## Original import account
+
 The six original scientific scripts and their `results.json` files under `tests/01_*` through `tests/06_*` are exact copies from the supplied aggregate archive. `SUITES.json` records each source package hash and the per-file hashes. All six nested source archives were also compared to their separately uploaded versions and matched.
 
 The seventh suite is the new two-sector scope audit. Its analytic statement is a corollary of the preceding converse; its finite trial calculation and controls are newly executed. None of the old scientific modules is imported by that suite.

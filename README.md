@@ -107,9 +107,12 @@ bandwidth are real resources, not a demonstrated joint apparatus.
 The Dicke cascade, conventional-pulse cubic mismatch, number-dependent temporal modes,
 mean-occupation optimization and pulse-capture formalism have direct predecessors.
 The [comparison](literature/COMPARISON.md) and [background dossier](literature/BACKGROUND.md)
-separate those ingredients from the optimized uniform limit. The newly identified
-[Tziperman full-text comparison](literature/BACKGROUND_AUDIT.md#the-newly-open-close-source-task)
-and a separate critical-reader report remain open. Tutorial furnishing does not settle them.
+separate those ingredients from the optimized uniform limit. The
+[Tziperman full-text comparison](literature/TZIPERMAN_FULL_TEXT.md) is complete at its
+documented versions; no subsumption was found. A separate external critical-reader
+report and joint-device evidence remain absent. The
+[5 October sanity check](research/SANITY_CHECK_2026_10_05.md) records the internal review,
+scope clarifications and verification repairs.
 
 ## Reproduce
 

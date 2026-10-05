@@ -17,7 +17,7 @@ import math
 import os
 from pathlib import Path
 import platform
-from typing import Any
+from typing import Any, Mapping
 
 DEFAULT_ATOL = 1e-10
 DEFAULT_RTOL = 1e-9
@@ -31,6 +31,13 @@ def _reject_constant(value: str) -> None:
     raise ValueError(f'Nonfinite JSON constant: {value}')
 
 
+def _finite_float(value: str) -> float:
+    number = float(value)
+    if not math.isfinite(number):
+        raise ValueError(f'Nonfinite JSON number: {value}')
+    return number
+
+
 def _unique_object(items: list[tuple[str, Any]]) -> dict[str, Any]:
     result: dict[str, Any] = {}
     for key, value in items:
@@ -41,7 +48,8 @@ def _unique_object(items: list[tuple[str, Any]]) -> dict[str, Any]:
 
 
 def load_json(data: bytes) -> Any:
-    return json.loads(data, parse_constant=_reject_constant, object_pairs_hook=_unique_object)
+    return json.loads(data, parse_constant=_reject_constant, parse_float=_finite_float,
+                      object_pairs_hook=_unique_object)
 
 
 def _pointer(parts: tuple[str, ...]) -> str:
@@ -163,13 +171,14 @@ def compare_results(reference: bytes, observed: bytes | None,
     return result
 
 
-def numerical_environment() -> dict[str, Any]:
+def numerical_environment(env: Mapping[str, str] | None = None) -> dict[str, Any]:
     """Allowlisted runtime details; never dump credentials or the full environment."""
+    settings = os.environ if env is None else env
     result: dict[str, Any] = {
         'python': platform.python_version(), 'python_implementation': platform.python_implementation(),
         'platform_system': platform.system(), 'platform_release': platform.release(),
         'machine': platform.machine(), 'processor': platform.processor(),
-        'thread_settings': {key:os.environ.get(key) for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS')},
+        'thread_settings': {key:settings.get(key) for key in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS')},
         'packages': {},
     }
     for name in ('numpy','scipy','mpmath'):

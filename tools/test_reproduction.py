@@ -6,6 +6,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from tools.reproduction import compare_results, numerical_environment, write_suite_evidence
 from tools.reviewed_fields import review_field_differences
@@ -50,6 +51,16 @@ class ReproductionTests(unittest.TestCase):
         for r in [b'{"a":NaN}', b'{"a":Infinity}',b'{"a":1,"a":2}',b'bad', None]:
             self.assertEqual(compare_results(b'{}',r)['verdict'],'REVIEW_REQUIRED')
         self.assertEqual(compare_results(b'{"a":1e999}',b'{"a":1e999}')['verdict'],'REVIEW_REQUIRED')
+
+    def test_nonfinite_metadata_is_invalid_before_metadata_filtering(self):
+        reference=b'{"date":0,"environment":{},"value":1}'
+        for observed in [b'{"date":1e999,"environment":{},"value":1}',
+                         b'{"date":0,"environment":{"added":[-1e999]},"value":1}']:
+            r=compare_results(reference,observed)
+            self.assertEqual(r['verdict'],'REVIEW_REQUIRED')
+            self.assertTrue(r['invalid_inputs'])
+            self.assertFalse(review_field_differences(r,'dummy',reference,observed)['accepted'])
+            json.dumps(r,allow_nan=False)
 
     def test_extreme_numbers(self):
         r=compare_results(raw({'x':1e-300}),raw({'x':1e100}))
@@ -101,6 +112,12 @@ class ReproductionTests(unittest.TestCase):
         self.assertNotIn('hostname',r)
         self.assertEqual(set(r['thread_settings']),{'OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'})
         json.dumps(r,allow_nan=False)
+
+    def test_environment_uses_explicit_thread_settings(self):
+        effective={'OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1','MKL_NUM_THREADS':'2'}
+        with patch.dict('os.environ',{'OPENBLAS_NUM_THREADS':'17','OMP_NUM_THREADS':'23'}):
+            self.assertEqual(numerical_environment(env=effective)['thread_settings'],effective)
+            self.assertEqual(numerical_environment()['thread_settings']['OPENBLAS_NUM_THREADS'],'17')
 
 
 if __name__=='__main__':unittest.main(verbosity=2)

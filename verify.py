@@ -6,6 +6,7 @@ Numerical reproduction is not independent proof or priority verification.
 """
 from __future__ import annotations
 import argparse
+from datetime import datetime, timezone
 import hashlib
 import json
 import os
@@ -20,10 +21,24 @@ from tools.reproduction import compare_results, numerical_environment, write_sui
 from tools.reviewed_fields import review_field_differences
 
 ROOT=Path(__file__).resolve().parent
+MAINTAINED_DIRECTORIES=('tests','provenance','research','literature','tools','.github','docs','work_orders','.git')
 
 
 def digest(path:Path)->str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def validate_output_destination(destination:Path, artifacts:Path|None=None)->None:
+    """Keep a summary from replacing source files or the raw evidence it summarizes."""
+    if destination == ROOT or ROOT.is_relative_to(destination):
+        raise ValueError('Output cannot overwrite the repository or an ancestor')
+    if any(destination.is_relative_to((ROOT/p).resolve()) for p in MAINTAINED_DIRECTORIES):
+        raise ValueError('Output cannot overwrite maintained source or evidence directories')
+    generated_reports={ROOT/'verification-report.json',ROOT/'rerun.json'}
+    if destination.is_relative_to(ROOT) and destination.exists() and destination not in generated_reports:
+        raise ValueError('Output cannot replace an existing repository file; choose a new report path')
+    if artifacts and destination.is_relative_to(artifacts) and destination != artifacts/'verification-report.json':
+        raise ValueError('Output inside artifacts must be verification-report.json, preserving raw suite evidence')
 
 
 def integrity():
@@ -50,6 +65,7 @@ def integrity():
 
 
 def main():
+    started_at=datetime.now(timezone.utc)
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--integrity-only',action='store_true')
     parser.add_argument('--suite',help='Run one suite, by its exact directory name')
@@ -70,17 +86,17 @@ def main():
     print(f'PASS integrity: {len(manifest["suites"])} suite identities; {links} local links',flush=True)
     if args.integrity_only:return
     destination=args.output.resolve()
-    if destination.is_relative_to((ROOT/'tests').resolve()):
-        parser.error('Output cannot overwrite test code or reference data')
     env={**os.environ,'OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1','PYTHONDONTWRITEBYTECODE':'1'}
     artifacts=args.artifacts_dir.resolve() if args.artifacts_dir else None
+    try:validate_output_destination(destination,artifacts)
+    except ValueError as error:parser.error(str(error))
     if artifacts:
         if artifacts == ROOT or ROOT.is_relative_to(artifacts):
             parser.error('Artifacts must not overwrite the repository or an ancestor')
-        if any(artifacts.is_relative_to((ROOT/p).resolve()) for p in ['tests','provenance','research','literature','tools','.github']):
+        if any(artifacts.is_relative_to((ROOT/p).resolve()) for p in MAINTAINED_DIRECTORIES):
             parser.error('Artifacts cannot be written into maintained source or evidence directories')
         artifacts.mkdir(parents=True,exist_ok=False)
-        environment=numerical_environment()
+        environment=numerical_environment(env=env)
         environment['revision']={key:os.environ.get(key) for key in ['GITHUB_SHA','GITHUB_RUN_ID','GITHUB_RUN_ATTEMPT']}
         (artifacts/'environment.json').write_text(json.dumps(environment,indent=2,allow_nan=False)+'\n')
     rows=[]
@@ -125,8 +141,11 @@ def main():
     reference_ok=all(r['review']['accepted'] for r in rows)
     assertions_passed=passed
     if args.require_reference:passed=passed and reference_ok
+    finished_at=datetime.now(timezone.utc)
     report=dict(scientific_assertions_passed=assertions_passed,reference_comparison_passed=reference_ok,
-                reference_comparison_required=args.require_reference,status='PASS' if passed else 'FAIL',date='2026-10-03',python=platform.python_version(),
+                reference_comparison_required=args.require_reference,status='PASS' if passed else 'FAIL',
+                date=started_at.date().isoformat(),started_at=started_at.isoformat(),finished_at=finished_at.isoformat(),
+                python=platform.python_version(),
                 suite_count=len(rows),group_count=sum(r['groups'] or 0 for r in rows),
                 case_count=sum(r['cases'] or 0 for r in rows),
                 all_reference_results_byte_identical=all(r['result_byte_identical'] for r in rows),
