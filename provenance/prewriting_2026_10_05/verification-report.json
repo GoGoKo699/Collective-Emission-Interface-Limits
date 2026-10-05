@@ -1,0 +1,394 @@
+{
+  "scientific_assertions_passed": true,
+  "reference_comparison_passed": true,
+  "reference_comparison_required": true,
+  "status": "PASS",
+  "date": "2026-10-05",
+  "started_at": "2026-10-05T06:44:36.835294+00:00",
+  "finished_at": "2026-10-05T06:45:32.328277+00:00",
+  "python": "3.12.14",
+  "suite_count": 8,
+  "group_count": 39,
+  "case_count": 612,
+  "all_reference_results_byte_identical": false,
+  "originals_unchanged": true,
+  "runs": [
+    {
+      "name": "01_pulse_matching",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 71,
+      "result_byte_identical": false,
+      "result_JSON_identical": false,
+      "elapsed_seconds": 6.96,
+      "stdout": "PASS independent_overlap_checks\nPASS orthogonal_error_components\nPASS finite_same_source_comparator\nPASS one_mode_number_superpositions\nPASS normalizations_and_known_limit\nWROTE [TEMP]/01_pulse_matching.json\n",
+      "stderr": "",
+      "comparison": {
+        "reference_sha256": "8fb87ab0064160a40c0b16b02be26b8bee08a2ad99b53bb6f39f12f2b479a3c4",
+        "observed_sha256": "3db3d684278c361434ff0d8777189b70ad0230d4d67924014dfa1738b9c27f3e",
+        "byte_identical": false,
+        "absolute_tolerance": 1e-10,
+        "relative_tolerance": 1e-09,
+        "tolerance_rule": "abs(a-b) <= atol + rtol*max(abs(a),abs(b))",
+        "metadata_paths": [
+          "/environment",
+          "/date"
+        ],
+        "scope": "Field comparison and regression alert; not a numerical error proof or independent review.",
+        "verdict": "METADATA_ONLY",
+        "json_identical": false,
+        "scientific_values_identical": true,
+        "numeric_fields_compared": 306,
+        "differing_numeric_fields": 0,
+        "differing_metadata_fields": 1,
+        "differing_nonnumeric_scientific_fields": 0,
+        "regression_alerts": 0,
+        "max_absolute": null,
+        "max_symmetric_relative": null,
+        "difference_kinds": {
+          "value": 1
+        },
+        "invalid_inputs": []
+      },
+      "review": {
+        "policy": "source-reviewed-fields-v1",
+        "accepted": true,
+        "raw_alerts": 0,
+        "unresolved_paths": [],
+        "reviewed_fields": [],
+        "scope": "Only declared source-derived units/work counters are interpreted; every raw difference and raw verdict remains unchanged."
+      }
+    },
+    {
+      "name": "02_common_mode_limit",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 6,
+      "cases": 62,
+      "result_byte_identical": false,
+      "result_JSON_identical": false,
+      "elapsed_seconds": 13.299,
+      "stdout": "PASS entropy_and_waveforms\nPASS finite_code_fidelity\nPASS joint_limit\nPASS source_controls\nPASS receiver_channel\nPASS numerical_refinement\nWROTE [TEMP]/02_common_mode_limit.json\n",
+      "stderr": "",
+      "comparison": {
+        "reference_sha256": "6e32c9be74a51a9002ade7c914caa2f094f5a50c6dc1de49b36c181af3a98501",
+        "observed_sha256": "80025073272a3836d84ac88f5da61ba31aece9e455e8acc26f7c75a4aea8e384",
+        "byte_identical": false,
+        "absolute_tolerance": 1e-10,
+        "relative_tolerance": 1e-09,
+        "tolerance_rule": "abs(a-b) <= atol + rtol*max(abs(a),abs(b))",
+        "metadata_paths": [
+          "/environment",
+          "/date"
+        ],
+        "scope": "Field comparison and regression alert; not a numerical error proof or independent review.",
+        "verdict": "METADATA_ONLY",
+        "json_identical": false,
+        "scientific_values_identical": true,
+        "numeric_fields_compared": 474,
+        "differing_numeric_fields": 0,
+        "differing_metadata_fields": 1,
+        "differing_nonnumeric_scientific_fields": 0,
+        "regression_alerts": 0,
+        "max_absolute": null,
+        "max_symmetric_relative": null,
+        "difference_kinds": {
+          "value": 1
+        },
+        "invalid_inputs": []
+      },
+      "review": {
+        "policy": "source-reviewed-fields-v1",
+        "accepted": true,
+        "raw_alerts": 0,
+        "unresolved_paths": [],
+        "reviewed_fields": [],
+        "scope": "Only declared source-derived units/work counters are interpreted; every raw difference and raw verdict remains unchanged."
+      }
+    },
+    {
+      "name": "03_passive_receiver",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 37,
+      "result_byte_identical": false,
+      "result_JSON_identical": false,
+      "elapsed_seconds": 6.031,
+      "stdout": "PASS passive_network_reduction\nPASS bounded_cavity_kernel\nPASS dicke_source_and_receiver\nPASS unconditional_master_equation\nPASS loss_and_bandwidth_accounting\nWROTE [TEMP]/03_passive_receiver.json\n",
+      "stderr": "",
+      "comparison": {
+        "reference_sha256": "591b70beeaf4add0df1074fd7bfca6fc7cb12730f9a7c01b761ad3062ffbc237",
+        "observed_sha256": "44965a9c4956fa12c9e384a5e900779d251381574254bdc4666cec7745eb54e2",
+        "byte_identical": false,
+        "absolute_tolerance": 1e-10,
+        "relative_tolerance": 1e-09,
+        "tolerance_rule": "abs(a-b) <= atol + rtol*max(abs(a),abs(b))",
+        "metadata_paths": [
+          "/environment",
+          "/date"
+        ],
+        "scope": "Field comparison and regression alert; not a numerical error proof or independent review.",
+        "verdict": "METADATA_ONLY",
+        "json_identical": false,
+        "scientific_values_identical": true,
+        "numeric_fields_compared": 277,
+        "differing_numeric_fields": 0,
+        "differing_metadata_fields": 1,
+        "differing_nonnumeric_scientific_fields": 0,
+        "regression_alerts": 0,
+        "max_absolute": null,
+        "max_symmetric_relative": null,
+        "difference_kinds": {
+          "value": 1
+        },
+        "invalid_inputs": []
+      },
+      "review": {
+        "policy": "source-reviewed-fields-v1",
+        "accepted": true,
+        "raw_alerts": 0,
+        "unresolved_paths": [],
+        "reviewed_fields": [],
+        "scope": "Only declared source-derived units/work counters are interpreted; every raw difference and raw verdict remains unchanged."
+      }
+    },
+    {
+      "name": "04_two_mode_structure",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 97,
+      "result_byte_identical": false,
+      "result_JSON_identical": false,
+      "elapsed_seconds": 12.141,
+      "stdout": "PASS proof_identity_audit\nPASS arbitrary_waveform_diagnostic\nPASS critical_error_mechanism\nPASS full_output_amplitudes\nPASS reference_safe_encoding\nWROTE [TEMP]/04_two_mode_structure.json\n",
+      "stderr": "",
+      "comparison": {
+        "reference_sha256": "3591d855b47395964a2461341ed18e67453a3a659e419c328fa523e4abf7b005",
+        "observed_sha256": "fbeb4d9856a9359c284616f4477dc20c6c8e17b352ba36e604af564f4bccc2d9",
+        "byte_identical": false,
+        "absolute_tolerance": 1e-10,
+        "relative_tolerance": 1e-09,
+        "tolerance_rule": "abs(a-b) <= atol + rtol*max(abs(a),abs(b))",
+        "metadata_paths": [
+          "/environment",
+          "/date"
+        ],
+        "scope": "Field comparison and regression alert; not a numerical error proof or independent review.",
+        "verdict": "METADATA_ONLY",
+        "json_identical": false,
+        "scientific_values_identical": true,
+        "numeric_fields_compared": 438,
+        "differing_numeric_fields": 0,
+        "differing_metadata_fields": 1,
+        "differing_nonnumeric_scientific_fields": 0,
+        "regression_alerts": 0,
+        "max_absolute": null,
+        "max_symmetric_relative": null,
+        "difference_kinds": {
+          "value": 1
+        },
+        "invalid_inputs": []
+      },
+      "review": {
+        "policy": "source-reviewed-fields-v1",
+        "accepted": true,
+        "raw_alerts": 0,
+        "unresolved_paths": [],
+        "reviewed_fields": [],
+        "scope": "Only declared source-derived units/work counters are interpreted; every raw difference and raw verdict remains unchanged."
+      }
+    },
+    {
+      "name": "05_photon_collection",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 4,
+      "cases": 86,
+      "result_byte_identical": false,
+      "result_JSON_identical": false,
+      "elapsed_seconds": 5.376,
+      "stdout": "PASS uniform_collection_bound\nPASS regression_controls\nPASS finite_mean_and_fidelity\nPASS state_independent_extension\nWROTE [TEMP]/05_photon_collection.json\n",
+      "stderr": "",
+      "comparison": {
+        "reference_sha256": "df2145b4ee4b91fd31115a65e1e2aacea889eacf8d7bebc044de4604a0edee0f",
+        "observed_sha256": "e1cd9fde59ae05ec3b729665c8cf1fa699eb26eb35d9a72e0ce1a6a3da365125",
+        "byte_identical": false,
+        "absolute_tolerance": 1e-10,
+        "relative_tolerance": 1e-09,
+        "tolerance_rule": "abs(a-b) <= atol + rtol*max(abs(a),abs(b))",
+        "metadata_paths": [
+          "/environment",
+          "/date"
+        ],
+        "scope": "Field comparison and regression alert; not a numerical error proof or independent review.",
+        "verdict": "METADATA_ONLY",
+        "json_identical": false,
+        "scientific_values_identical": true,
+        "numeric_fields_compared": 149,
+        "differing_numeric_fields": 0,
+        "differing_metadata_fields": 1,
+        "differing_nonnumeric_scientific_fields": 0,
+        "regression_alerts": 0,
+        "max_absolute": null,
+        "max_symmetric_relative": null,
+        "difference_kinds": {
+          "value": 1
+        },
+        "invalid_inputs": []
+      },
+      "review": {
+        "policy": "source-reviewed-fields-v1",
+        "accepted": true,
+        "raw_alerts": 0,
+        "unresolved_paths": [],
+        "reviewed_fields": [],
+        "scope": "Only declared source-derived units/work counters are interpreted; every raw difference and raw verdict remains unchanged."
+      }
+    },
+    {
+      "name": "06_source_realization",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 144,
+      "result_byte_identical": false,
+      "result_JSON_identical": false,
+      "elapsed_seconds": 1.371,
+      "stdout": "PASS exact_source_branch\nPASS physical_atomic_space\nPASS finite_cavity\nPASS rate_family_consistency\nPASS unconditional_code\nWROTE [TEMP]/06_source_realization.json\n",
+      "stderr": "",
+      "comparison": {
+        "reference_sha256": "04af735e743a46c8673d329f48a33b366e866911177a7354585a7a8520c73744",
+        "observed_sha256": "863599a53b2b6db89d0fc39195c26b5c9c68088e329b84e9043cb942d037c287",
+        "byte_identical": false,
+        "absolute_tolerance": 1e-10,
+        "relative_tolerance": 1e-09,
+        "tolerance_rule": "abs(a-b) <= atol + rtol*max(abs(a),abs(b))",
+        "metadata_paths": [
+          "/environment",
+          "/date"
+        ],
+        "scope": "Field comparison and regression alert; not a numerical error proof or independent review.",
+        "verdict": "METADATA_ONLY",
+        "json_identical": false,
+        "scientific_values_identical": true,
+        "numeric_fields_compared": 477,
+        "differing_numeric_fields": 0,
+        "differing_metadata_fields": 1,
+        "differing_nonnumeric_scientific_fields": 0,
+        "regression_alerts": 0,
+        "max_absolute": null,
+        "max_symmetric_relative": null,
+        "difference_kinds": {
+          "value": 1
+        },
+        "invalid_inputs": []
+      },
+      "review": {
+        "policy": "source-reviewed-fields-v1",
+        "accepted": true,
+        "raw_alerts": 0,
+        "unresolved_paths": [],
+        "reviewed_fields": [],
+        "scope": "Only declared source-derived units/work counters are interpreted; every raw difference and raw verdict remains unchanged."
+      }
+    },
+    {
+      "name": "07_two_sector_scope",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 4,
+      "cases": 24,
+      "result_byte_identical": false,
+      "result_JSON_identical": false,
+      "elapsed_seconds": 8.16,
+      "stdout": "PASS two_point_geometry\nPASS finite_pair_code\nPASS joint_limit_and_encoding_control\nPASS reference_channel_structure\nWROTE [TEMP]/07_two_sector_scope.json\n",
+      "stderr": "",
+      "comparison": {
+        "reference_sha256": "6c67418f3ba89e6c5f30e7f7474c11f610dc137f83b5de92f91cb53d873ac64e",
+        "observed_sha256": "475dc4ebebc4a854e78074051548244429f46f02131c85d90508c9f5a7a2d4e2",
+        "byte_identical": false,
+        "absolute_tolerance": 1e-10,
+        "relative_tolerance": 1e-09,
+        "tolerance_rule": "abs(a-b) <= atol + rtol*max(abs(a),abs(b))",
+        "metadata_paths": [
+          "/environment",
+          "/date"
+        ],
+        "scope": "Field comparison and regression alert; not a numerical error proof or independent review.",
+        "verdict": "METADATA_ONLY",
+        "json_identical": false,
+        "scientific_values_identical": true,
+        "numeric_fields_compared": 125,
+        "differing_numeric_fields": 0,
+        "differing_metadata_fields": 1,
+        "differing_nonnumeric_scientific_fields": 0,
+        "regression_alerts": 0,
+        "max_absolute": null,
+        "max_symmetric_relative": null,
+        "difference_kinds": {
+          "value": 1
+        },
+        "invalid_inputs": []
+      },
+      "review": {
+        "policy": "source-reviewed-fields-v1",
+        "accepted": true,
+        "raw_alerts": 0,
+        "unresolved_paths": [],
+        "reviewed_fields": [],
+        "scope": "Only declared source-derived units/work counters are interpreted; every raw difference and raw verdict remains unchanged."
+      }
+    },
+    {
+      "name": "08_uniform_proof_audit",
+      "returncode": 0,
+      "status": "PASS",
+      "groups": 5,
+      "cases": 91,
+      "result_byte_identical": false,
+      "result_JSON_identical": false,
+      "elapsed_seconds": 1.985,
+      "stdout": "PASS normalization_and_entropy_identity\nPASS channel_and_reference\nPASS endpoint_safe_geometry\nPASS finite_envelopes_and_limits\nPASS isometry_and_collection\nWROTE [TEMP]/08_uniform_proof_audit.json\n",
+      "stderr": "",
+      "comparison": {
+        "reference_sha256": "bb647bfe5a4fd171829b9b48b61717a7b2a07b04c1917000b96a4854e86d1ef1",
+        "observed_sha256": "0aa3e15e4a99f6fd00c855963075a66dea96075b754279c31d5843b3f0fd18da",
+        "byte_identical": false,
+        "absolute_tolerance": 1e-10,
+        "relative_tolerance": 1e-09,
+        "tolerance_rule": "abs(a-b) <= atol + rtol*max(abs(a),abs(b))",
+        "metadata_paths": [
+          "/environment",
+          "/date"
+        ],
+        "scope": "Field comparison and regression alert; not a numerical error proof or independent review.",
+        "verdict": "METADATA_ONLY",
+        "json_identical": false,
+        "scientific_values_identical": true,
+        "numeric_fields_compared": 194,
+        "differing_numeric_fields": 0,
+        "differing_metadata_fields": 1,
+        "differing_nonnumeric_scientific_fields": 0,
+        "regression_alerts": 0,
+        "max_absolute": null,
+        "max_symmetric_relative": null,
+        "difference_kinds": {
+          "value": 1
+        },
+        "invalid_inputs": []
+      },
+      "review": {
+        "policy": "source-reviewed-fields-v1",
+        "accepted": true,
+        "raw_alerts": 0,
+        "unresolved_paths": [],
+        "reviewed_fields": [],
+        "scope": "Only declared source-derived units/work counters are interpreted; every raw difference and raw verdict remains unchanged."
+      }
+    }
+  ],
+  "scope": "Author-side reproducibility and source preservation, not independent mathematical or priority review."
+}

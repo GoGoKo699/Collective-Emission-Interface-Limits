@@ -1,6 +1,6 @@
 # Research status
 
-**5 October 2026 · Internal sanity and bounded significance readings completed · Manuscript on hold.**
+**5 October 2026 · Internal prewriting research completed for the conditional theorem · Manuscript on hold.**
 
 The source, canonical number map, excitation code, receiver class and main theorem
 are unchanged. The [sanity-check record](research/SANITY_CHECK_2026_10_05.md) separates
@@ -24,6 +24,19 @@ complete for the documented main-article and supplement versions. Their source o
 ours, and their full-state calculations receive direct credit. No subsumption of the
 common-receiver growing-code theorem was found. This resolves the named access task,
 not exhaustive priority or publication readiness.
+
+The requested prewriting pass is organized in the [claim and evidence map](research/CLAIM_EVIDENCE_MAP.md).
+An additional claim-level proof reading found no outstanding obligation for the ideal
+theorem. The [loss-competition proof](research/LOSS_COMPETITION.md) now determines
+when ordinary transmission loss masks the common-mode penalty, including optimization
+over every waveform and finite certificates. The [physical-scope note](research/PHYSICAL_SCOPE.md)
+quantifies finite-window capture and the tolerances required across a growing code.
+These close supporting physical questions within the established model.
+
+A [bounded source refresh](literature/PREWRITING_SEARCH_2026_10_05.md) adds direct
+Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al. comparisons with reading
+scope and versions. Their full-state mapping, few-mode projections and parameter
+readout receive credit. No subsumption was found in those inspected constructions.
 
 ## Teaching and verification
 
@@ -62,7 +75,10 @@ reference-preserving encoding, atom-number calibration, consistent microscopic
 bandwidth/rate scaling, duration, loss and combined realization remain conditional
 for a device claim.
 
-The [current work order](work_orders/CURRENT.md) now calls for a precise external
-objection/report or newly identified subsuming result. Routine reruns alone do not
-close those gaps. Manuscript writing and outreach remain on hold; the current task
-does not introduce a new source, encoding or receiver.
+The [current work order](work_orders/CURRENT.md) records the completed internal
+research and a finite stopping rule. Further scientific work should answer a precise
+objection, newly identified subsuming construction or newly authorized device claim.
+The absence of a joint device is an explicit limit of the theoretical claims, not a
+premise silently supplied by the literature. Manuscript writing and outreach remain
+on hold. The [prewriting provenance](provenance/PREWRITING_2026_10_05.json) records
+the supplementary checks separately from the preserved scientific baseline.

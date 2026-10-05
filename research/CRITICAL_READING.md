@@ -24,6 +24,13 @@ Compare the actual claim with the sources in [PRIOR_ART.md](../literature/PRIOR_
 
 The source audit is conditional on its own rate model. Confirm that an effective-size parameter is not being interpreted as additional physical atoms, and that cavity photon-collection checks are not presented as a uniform emitted-field theorem. The fixed-rate and fixed-microscopic-device scaling families must remain distinct.
 
+The [loss-competition consequence](LOSS_COMPETITION.md) adds only prescribed,
+mode-independent vacuum attenuation. Check that its arbitrary-waveform converse
+survives the uniform approximation before taking the limit, and that the loss ceiling
+is not mistaken for disappearance of mode mismatch. The finite-window bound in
+PHYSICAL_SCOPE.md must charge both truncation and capture error across the code;
+its finite amplitudes do not establish fixed modulation bandwidth.
+
 ## A separate significance judgment
 
 Does the all-waveform converse change how a specialist would assess a collective source feeding one preconfigured linear memory, beyond the already known accumulation of number-dependent mode mismatch? The fixed-fidelity excitation budget in [STORY.md](STORY.md) states the operational consequence, but is only an inversion of the existing critical law. Do not count it as a second result.

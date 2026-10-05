@@ -1,6 +1,6 @@
 # Direct comparison of the fixed interface theorem
 
-**Updated 5 October 2026 after the Tziperman full-text comparison.** The source, receiver, target map and theorem are unchanged; the repository now preserves eight scientific suites. This is a construction-level literature comparison, not independent proof review or exhaustive priority certification. Identifiers refer to the [source register](SOURCE_EVIDENCE.md).
+**Updated 5 October 2026 after the bounded prewriting source refresh.** The source, receiver, target map and theorem are unchanged; the repository preserves eight scientific suites. This is a construction-level literature comparison, not independent proof review or exhaustive priority certification. Identifiers refer to the [source register](SOURCE_EVIDENCE.md).
 
 ## The exact question
 
@@ -38,6 +38,13 @@ then calculate its full quantum state. No subsumption of the present theorem was
 found in these inspected constructions; that is a scoped conclusion.
 
 ## Other controlled limits and attribution anchors
+
+The [prewriting comparison](PREWRITING_SEARCH_2026_10_05.md) adds Porras–Cirac's
+bosonic atom-to-light mapping, Perarnau-Llobet et al.'s full-state few-mode
+projections, and Belliardo et al.'s optimized parameter readout. It records their
+equations and source versions, credits the inherited capabilities, and explains
+why these inspected constructions do not supply the present common-code theorem.
+The result does not imply failure of useful metrological readout.
 
 Lemberger–Molmer (S04), Sec. 2.2, Eq. (7), analyze mean radiation eigenmode occupations. Malz–Trivedi–Cirac (S06) establish controlled large-$N$ reduced atomic dynamics from full inversion. Without additional bounds those observables do not give a uniform outgoing-field isometry or the present worst-input transfer fidelity.
 
