@@ -1,65 +1,83 @@
-# Current work order: preserve the audited core and obtain a separate critical reading
+# Current work order: preserve the completed conditional research package
 
-**Updated 5 October 2026 after the full sanity check and bounded significance reading.** The source,
-canonical number map, code, receiver and optimized uniform theorem remain fixed.
-The selected single teaching anchor remains Kiilerich–Mølmer (2020).
+**Updated 5 October 2026 after the requested prewriting scientific-research pass.**
+The source, canonical number map, code and receiver remain fixed. The main ideal
+theorem is unchanged. The selected single teaching anchor remains Kiilerich–Mølmer
+(2020). Manuscript drafting has not begun.
 
-## Completed and preserved
+## Completed research
 
-- The [reading guide](../docs/README.md) and [local bridge](../REVIEW.md) implement the
-  owner's tutorial choice with GitHub-compatible mathematical presentation.
-- The Law–Lee and P03/P04 preparation readings remain complete at their recorded versions.
-- The [Tziperman main-article and supplement comparison](../literature/TZIPERMAN_FULL_TEXT.md)
-  closes the named full-text access task. Its collective source and full selected-mode
-  state calculations overlap this project; no uniform common-receiver subsumption was
-  found in the inspected constructions.
-- The [sanity check](../research/SANITY_CHECK_2026_10_05.md) records the internal proof
-  review, explicit scope qualifications, reporting repairs and fresh verification.
-  Eight scientific suites, 39 groups and 612 cases remain the scientific baseline.
-- The [story](../research/STORY.md) gives the fixed-fidelity excitation budget as a
-  corollary of the existing theorem. The bounded internal significance reading preserves
-  the narrow uniform/all-waveform claim, while leaving its physical importance open.
-  This interpretation is not a new result or a substitute for a separate critical reader.
+The [claim and evidence map](../research/CLAIM_EVIDENCE_MAP.md) is the entry point.
+It separates the main result, essential proof lemmas, supporting consequences,
+inherited ingredients, and stronger claims that the project does not make.
 
-The earlier access failures, proof correction and numerical-reproduction history remain
-visible. None is silently replaced by a newly favorable result.
+- The ideal uniform field approximation, channel reduction, arbitrary-waveform
+  converse, excitation boundary and photon-collection contrast have internal
+  claim-level proof reviews. The historical [proof correction](../research/PROOF_AUDIT.md)
+  remains visible.
+- The [two-sector witness](../research/TWO_SECTOR_WITNESS.md) and
+  [fixed-target excitation budget](../research/STORY.md) delimit the result's meaning.
+- The [loss-competition proof](../research/LOSS_COMPETITION.md) resolves whether
+  ordinary transmission loss masks the common-mode penalty. It includes finite
+  certificates and a new, separately counted supplementary checker.
+- [Physical scope A](../research/PHYSICAL_SCOPE.md#a-what-the-receiver-restriction-means)
+  now derives the finite-window and regularization error across the entire code,
+  using the receiver construction already tested in the preserved suite.
+- The Law–Lee, preparation and Tziperman readings remain preserved. The
+  [dated additional comparison](../literature/PREWRITING_SEARCH_2026_10_05.md) adds
+  Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al., with source versions,
+  actual reading scope and screened recent titles.
+- The [reading guide](../docs/README.md) and [local bridge](../REVIEW.md) retain the
+  owner's tutorial choice. The [sanity record](../research/SANITY_CHECK_2026_10_05.md)
+  and [prewriting provenance](../provenance/PREWRITING_2026_10_05.json) distinguish
+  analytic review, numerical execution and literature evidence.
 
-## Next scientific gate
+## Scientific closure and remaining decisions
 
-Use [CRITICAL_READING.md](../research/CRITICAL_READING.md), [THEOREM.md](../research/THEOREM.md),
-[PROOF_AUDIT.md](../research/PROOF_AUDIT.md), [STORY.md](../research/STORY.md) and the source
-comparisons for a genuinely separate mathematical/physical reading. No external report
-has yet been received. The internal agent review is useful checking but does not meet
-that external gate. No outside contact without explicit user instruction.
+No outstanding internal proof obligation or subsuming construction was identified
+for the fixed conditional theorem. The supporting loss and capture questions are
+now quantified. This completes the bounded internal research required for those
+claims; it is not an external validation or exhaustive priority certificate.
 
-The report should explicitly judge whether excluding every common pulse changes a
-useful interface assessment beyond the known multiphoton mismatch. Correctness,
-non-subsumption by inspected sources, and physical significance are separate judgments.
-If the last is unconvincing, record that conclusion without enlarging the model or
-counting excitation-budget arithmetic as additional scientific progress.
+The external mathematical/physical critical-reader report remains absent. Use
+[CRITICAL_READING.md](../research/CRITICAL_READING.md), the theorem, the claim map
+and the source comparisons for that separate judgment. Correctness, non-subsumption
+by inspected sources, and physical significance remain distinct.
 
-Respond to a precise objection with a proof location, correction, or counterexample.
-If a new source subsumes the result, record that outcome directly. Do not expand the
-model, receiver resources or encoding to avoid it. Without such new evidence, another
-routine numerical rerun or supporting appendix is not scientific progress.
+Unknown reference-preserving upload, calibration robustness, uniform microscopic
+elimination, fixed control bandwidth and a compatible joint device remain conditional
+and are not claimed. They are separate research tasks if a device claim is later
+requested; component references cannot establish them by accumulation.
 
-Whole-code/reference-preserving preparation, calibrated atom number, consistent
-bandwidth/rates, duration and losses remain conditional for a joint device claim.
-Manuscript drafting remains on hold.
+Respond to a precise objection with a proof location, correction or counterexample.
+Record a newly subsuming source directly. Without a new objection or changed claim,
+stop extending this package: more examples or broader receivers do not close the
+significance question. No manuscript, submission, invitation or outside contact
+without an explicit user instruction.
 
 ## Verification and evidence
 
 Read WORKSPACE.md and AGENTS.md. Before changing scientific code, run `python verify.py`.
 Keep inherited scripts and references unchanged unless an explicit correction is
-recorded. Never regenerate references or widen tolerances merely to obtain passing CI.
+recorded. Never regenerate references or widen tolerances to obtain passing CI.
 
-Run the reproduction and verifier infrastructure tests, the presentation checker, and
-`python verify.py --artifacts-dir verification-artifacts --require-reference` with a
-fresh artifact directory. Reports must not overwrite maintained files or raw outputs.
+Run:
+
+```sh
+python tools/test_reproduction.py
+python tools/test_verifier.py
+python tools/check_presentation.py --self-test
+python verify.py --integrity-only
+python verify.py --artifacts-dir verification-artifacts --require-reference
+python tools/check_loss_competition.py --output loss-competition-report.json
+```
+
+Use fresh output paths; the supplementary checker refuses to overwrite an existing
+report. The eight preserved scientific suites remain 39 groups and 612 cases. The
+50 loss checks are supplementary and do not silently revise that historical baseline.
 The [reproduction policy](../provenance/REPRODUCTION_POLICY.md) distinguishes assertions,
 exact bytes, reviewed numerical agreement and actual execution provenance.
 
 Use native GitHub inline and fenced display mathematics. Inspect rendered expressions
 after mathematical edits; structural checks do not substitute for rendering or proof
-review. No source-paper PDFs, private contacts, manuscript or unrelated project belongs
-in this repository.
+review. No source-paper PDFs, private contacts or unrelated projects belong here.

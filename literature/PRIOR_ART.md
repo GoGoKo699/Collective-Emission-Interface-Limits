@@ -15,6 +15,11 @@ mode choice does not state the uniform common-code theorem; no subsumption was f
 in the inspected versions. This closes that named access task while leaving external
 critical review and exhaustive priority separate.
 
+The [bounded prewriting refresh](PREWRITING_SEARCH_2026_10_05.md) additionally
+compares Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al. at the
+construction level and records screened recent titles. This is the current
+reading status for those sources.
+
 | Source | Established ingredient | Difference that still requires evaluation |
 |---|---|---|
 | Paulisch, *Waveguide Quantum Electrodynamics*, dissertation, 2018, Chapter 1 | Exact emitted cascade, conventional-pulse overlap, number-state mapping and useful-channel probability | The present result optimizes one waveform over a growing number code and controls the approximation uniformly. The conventional cubic error already suggests the critical scale. |
@@ -56,4 +61,7 @@ The two-emitter observation by Mlynek et al. supports a realizable collective-de
 
 [P9] J. A. Mlynek, A. A. Abdumalikov, C. Eichler, and A. Wallraff, *Observation of Dicke superradiance for two artificial atoms in a cavity with high decay rate*, Nature Communications 5, 5186 (2014). https://doi.org/10.1038/ncomms6186
 
-The new register adds direct Malz-Trivedi-Cirac and cavity-memory scope checks. Additional comparisons with Belliardo and colleagues' metrological extraction and full-field coherent absorbers remain supplementary: they are different tasks, and no complete construction-level subsumption audit for them is claimed in this pass.
+The source register adds direct Malz-Trivedi-Cirac and cavity-memory scope checks.
+The earlier Belliardo reading gap is superseded by the dated prewriting comparison
+linked above. Full-field coherent absorbers remain a different task; no complete
+construction-level subsumption audit for that broader resource is claimed here.

@@ -62,11 +62,14 @@ Neither occurrence of $`u`$ denotes a new physical input to our vacuum source.
 | Need | Read |
 |---|---|
 | The compact physical account | [Story](../research/STORY.md) |
+| Claims, proof dependencies and the boundary of research closure | [Claim and evidence map](../research/CLAIM_EVIDENCE_MAP.md) |
 | Exact model, uniform approximation and all-waveform theorem | [Theorem](../research/THEOREM.md) |
 | The correction and its finite-bound replacement | [Proof audit](../research/PROOF_AUDIT.md) |
 | Logical-qubit witness and successful sparse comparator | [Two-sector note](../research/TWO_SECTOR_WITNESS.md) |
 | Receivers, second mode, loss, rates and bandwidth | [Physical scope](../research/PHYSICAL_SCOPE.md) |
+| When transmission loss masks the common-mode limitation | [Loss competition](../research/LOSS_COMPETITION.md) |
 | Inherited ingredients and closest comparisons | [Background](../literature/BACKGROUND.md), [direct comparison](../literature/COMPARISON.md), [bibliography](../literature/REFERENCES.bib) |
+| Dated additional predecessor and recent-source checks | [Prewriting source comparison](../literature/PREWRITING_SEARCH_2026_10_05.md) |
 | What the assumptions have and have not established | [Assumptions](../literature/ASSUMPTIONS.md), [preparation evidence](../literature/PREPARATION_EVIDENCE.md) |
 | Review and evidence boundaries | [Reading checklist](../research/CRITICAL_READING.md), [status](../STATUS.md), [reproduction policy](../provenance/REPRODUCTION_POLICY.md) |
 

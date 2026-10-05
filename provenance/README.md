@@ -2,6 +2,14 @@
 
 ## Current audit
 
+The [prewriting research record](PREWRITING_2026_10_05.json) maps the subsequent
+claim audit, source refresh, finite-capture proof and loss-competition derivation.
+The new supporting checker has 50 supplementary cases, counted separately from
+the preserved eight-suite baseline. It imports the existing continuum-overlap ODE
+with attribution and checks new scalar optimization and finite bounds; it is not
+an independent derivation of that ODE or an interval-certified numerical proof.
+The raw new [loss-check result](prewriting_2026_10_05/loss-check.json) is retained.
+
 The active registry contains **eight scientific suites, 39 groups and 612 cases**.
 The [5 October sanity record](../research/SANITY_CHECK_2026_10_05.md) and
 [machine-readable evidence map](SANITY_2026_10_05.json) document fresh baseline and

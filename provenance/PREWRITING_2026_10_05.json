@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-05",
+  "base_commit": "94af4d357add1eda946e8e838067f0d293d5426b",
+  "scope": "Internal prewriting science for the fixed conditional theorem; no external report or manuscript drafting.",
+  "outcome": "No outstanding internal proof obligation or subsumption established. Supporting loss and finite-capture questions resolved; physical significance and joint device realization remain separate.",
+  "claims_map": "research/CLAIM_EVIDENCE_MAP.md",
+  "analytic_reviews": [
+    {
+      "topic": "Main proof completeness",
+      "result": "No required correction",
+      "type": "internal agent read of existing proof"
+    },
+    {
+      "topic": "Transmission-loss competition",
+      "result": "Independently derived by parent and two internal agents; arbitrary-waveform converse and closed finite bounds checked",
+      "proof": "research/LOSS_COMPETITION.md"
+    },
+    {
+      "topic": "Finite-window capture",
+      "result": "Projector penalty, q^M factor, pulse tail and onset scaling checked by two internal agents",
+      "proof": "research/PHYSICAL_SCOPE.md",
+      "existing_check": "tests/03_passive_receiver/checks.py"
+    }
+  ],
+  "literature": {
+    "record": "literature/PREWRITING_SEARCH_2026_10_05.md",
+    "new_construction_comparisons": 3,
+    "additional_scoped_screens": 4,
+    "coverage": "Targeted primary-source searches and located constructions; not systematic or exhaustive."
+  },
+  "preserved_suite_tree": "217d1d8d07fc74d9b94e52f47b953df6dce3845e",
+  "baseline": {
+    "status": "PASS",
+    "started_at": "2026-10-05T06:33:02.769886+00:00",
+    "finished_at": "2026-10-05T06:33:55.099175+00:00",
+    "suite_count": 8,
+    "group_count": 39,
+    "case_count": 612,
+    "originals_unchanged": true
+  },
+  "supplementary_loss_check": {
+    "file": "provenance/prewriting_2026_10_05/loss-check.json",
+    "sha256": "e6726c2879babc2d7657c56e5aee921944f7ae020cf99fedf20ba2d48a6179d1",
+    "cases": 50,
+    "status": "PASS",
+    "count_separate_from_preserved_612": true,
+    "methods": {
+      "precision_digits": 70,
+      "imported_ode": "tests/02_common_mode_limit/checks.py",
+      "minimax": "Exact cubic stationary points; bounded scalar minimization plus endpoints",
+      "angle_upper": "70-digit scalar bisection, 100 iterations"
+    },
+    "limitations": [
+      "Supplementary cases are separate from the eight preserved scientific suites.",
+      "Finite checks and numerical brackets are not proofs or interval enclosures.",
+      "The continuum ODE and entropy identity are inherited, not independent derivations.",
+      "No high-dimensional large-N simulation or exact finite-size optimization."
+    ],
+    "development_correction": "Initial floating-point evaluation exp(-lambda)*exp(lambda) overshot one at the loss ceiling. Replaced algebraically by a ratio exactly one at the endpoint; no clipping or tolerance change.",
+    "root_repeat": {
+      "file": "provenance/prewriting_2026_10_05/loss-final-check.json",
+      "status": "PASS"
+    }
+  },
+  "final_verification": {
+    "status": "PASS",
+    "started_at": "2026-10-05T06:44:36.835294+00:00",
+    "finished_at": "2026-10-05T06:45:32.328277+00:00",
+    "suite_count": 8,
+    "group_count": 39,
+    "case_count": 612,
+    "originals_unchanged": true,
+    "file": "provenance/prewriting_2026_10_05/verification-report.json",
+    "scientific_numeric_differences": 0,
+    "unresolved_paths": 0,
+    "infrastructure_tests": {
+      "reproduction": 17,
+      "verifier": 5,
+      "presentation": 12
+    }
+  },
+  "presentation": {
+    "status": "PASS",
+    "structural_markdown_files": 33,
+    "expressions": 679,
+    "mathjax_compilation": {
+      "expressions": 679,
+      "compiled": 679,
+      "errors": []
+    },
+    "inspected_sections": {
+      "research/LOSS_COMPETITION.md": [
+        "joint critical limit",
+        "finite certificates",
+        "interpretation"
+      ],
+      "research/PHYSICAL_SCOPE.md": [
+        "finite receiving window"
+      ],
+      "research/CLAIM_EVIDENCE_MAP.md": [
+        "claim table",
+        "premise table"
+      ],
+      "literature/PREWRITING_SEARCH_2026_10_05.md": [
+        "construction comparisons",
+        "fetch record"
+      ]
+    },
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 1300
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "limitations": "Local Markdown/MathJax preview, not a GitHub screenshot. Long formulas and wide tables scroll horizontally; no page-level horizontal overflow detected.",
+    "rendered_source_sha256": {
+      "research/LOSS_COMPETITION.md": "02d3d034ef8638e1a79183507fce4edf28e4f93c025fd278475082ea068d7f1b",
+      "research/PHYSICAL_SCOPE.md": "995cf92858323871b8f941995dba2f9d325fe32128ab401b874c2b9d70677a73",
+      "research/CLAIM_EVIDENCE_MAP.md": "63e23dadbc2390380c07bb2897cee1c8ae20bcdd4c91973cf91ab210baba25c0",
+      "literature/PREWRITING_SEARCH_2026_10_05.md": "f51cca57429ce15a7bdf45e5ee0d7e13358f56a41188e18bb8229dbe04a4fedf"
+    }
+  },
+  "source_sha256": {
+    "research/LOSS_COMPETITION.md": "02d3d034ef8638e1a79183507fce4edf28e4f93c025fd278475082ea068d7f1b",
+    "research/PHYSICAL_SCOPE.md": "995cf92858323871b8f941995dba2f9d325fe32128ab401b874c2b9d70677a73",
+    "research/CLAIM_EVIDENCE_MAP.md": "63e23dadbc2390380c07bb2897cee1c8ae20bcdd4c91973cf91ab210baba25c0",
+    "literature/PREWRITING_SEARCH_2026_10_05.md": "f51cca57429ce15a7bdf45e5ee0d7e13358f56a41188e18bb8229dbe04a4fedf",
+    "tools/check_loss_competition.py": "6e0c90cbce9b144c21bb282f12fa92283ff86e1b901090395fe832796ff9c540"
+  },
+  "evidence_sha256": {
+    "provenance/prewriting_2026_10_05/loss-check.json": "e6726c2879babc2d7657c56e5aee921944f7ae020cf99fedf20ba2d48a6179d1",
+    "provenance/prewriting_2026_10_05/loss-final-check.json": "c2a9997b0db869094307c41a2a4acd369a282040b86b9d6e5e23723ff30e1f5e",
+    "provenance/prewriting_2026_10_05/verification-report.json": "c81a3885e8bf8fe2f8ca324da3bf458042af5742fafd4613d396f1db12b9da19"
+  }
+}

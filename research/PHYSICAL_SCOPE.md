@@ -1,6 +1,6 @@
 # Physical scope, error mechanism, and realization limits
 
-**Consolidated 3 October 2026.** These are supporting consequences and assumption checks, not new independent headline claims. Their original numerical implementations are retained under `tests/03_passive_receiver` through `tests/06_source_realization`.
+**Consolidated 3 October 2026; finite-capture and loss scope completed 5 October 2026.** These are supporting consequences and assumption checks, not new independent headline claims. Their original numerical implementations are retained under `tests/03_passive_receiver` through `tests/06_source_realization`.
 
 ## A. What the receiver restriction means
 
@@ -9,6 +9,64 @@ A predetermined, number-preserving linear network maps annihilation operators li
 Finite coupling and time constraints reduce the realizable kernels. Adding auxiliaries may improve that constrained engineering problem, but it cannot exceed the optimum over all ideal normalized kernels. Active Gaussian processing, nonlinear decoding, nonvacuum resources, receiver-to-source feedback, or retaining multiple output modes changes the stated class.
 
 A receiving oscillator with coupling rate $\kappa_\varepsilon(t)=|f(t)|^2/[\varepsilon+F(t)]$, where $\varepsilon>0$ and $F(t)=\int_0^t|f(s)|^2ds$, and coupling phase matched to $f$, captures the normalized truncated pulse with transmission $q_T=F(T)/[\varepsilon+F(T)]$ when $F(T)>0$. The rate alone specifies capture of a nonnegative pulse; a general complex pulse also requires its phase. Perfect finite-time onset can require singular initial coupling. The ideal optimization is a supremum, not a hardware guarantee. Nurdin, James, and Yamamoto, arXiv:1609.05643, directly discuss this control issue.
+
+### A finite receiving window on the same code
+
+For the bounded constructive pulse used here, the ideal guarantee can be approached
+with finite coupling amplitude and duration for each finite code. This statement
+allows both bounds to change with the code size and imposes no slew-rate bound on
+switching the coupling. Let $f\geq0$ be the chosen normalized pulse, let
+$L\leq\min_{m\leq M}|A_m(f)|^2$ be any proved constructive lower bound, and write
+$P_T=\int_0^T|f(t)|^2dt>0$. Turn off the receiver after $T$. Its normalized mode
+and actual signal kernel are
+
+```math
+\begin{gathered}
+f_T(t)=\frac{f(t)\mathbf 1_{[0,T]}(t)}{\sqrt{P_T}},\\
+h_T(t)=\frac{f(t)\mathbf 1_{[0,T]}(t)}{\sqrt{\varepsilon+P_T}},\\
+q_T=\frac{P_T}{\varepsilon+P_T}.
+\end{gathered}
+```
+
+Since $\langle m_f|m_{f_T}\rangle=P_T^{m/2}$, the operator norm of the
+difference of their rank-one projectors is $\sqrt{1-P_T^m}$. Evaluating that
+difference in the true emitted state and applying the positive-pulse channel
+reduction gives the unconditional, reference-inclusive bound
+
+```math
+\begin{aligned}
+\mathcal F_{\rm cap}&\geq
+q_T^M\max\left\{0,L-\sqrt{1-P_T^M}\right\}\\
+&\geq q_T^M\max\left\{0,L-\sqrt{M(1-P_T)}\right\}.
+\end{aligned}
+```
+
+The weaker expression is the finite-receiver estimate already evaluated in
+[the preserved passive-receiver suite](../tests/03_passive_receiver/checks.py).
+This calculation truncates the receiving mode, not the source dynamics: later
+photons and any remaining source excitation are discarded. It does not condition
+on complete emission before $T$ or on a no-loss event.
+
+For the constructive pulse $f_a$ in the scaled time $\tau=N\gamma t$,
+
+```math
+\begin{gathered}
+1-P_T=\frac{e^{-T}}{1-a+a e^{-T}},\\
+\kappa_\varepsilon(0)=\frac{1-a}{\varepsilon}.
+\end{gathered}
+```
+
+Here $T$ and $\kappa_\varepsilon$ use that scaled clock; the physical duration is
+$T/(N\gamma)$ and the physical coupling rate is $N\gamma\kappa_\varepsilon$.
+For $a=a_*$ and $M=O(N^{2/3})$, choosing $M(1-P_T)\to0$ and
+$M\varepsilon\to0$ makes the truncation penalty vanish and $q_T^M\to1$.
+Any $T\geq(1+s)\ln M$ with fixed $s>0$ gives the required tail when $a$ stays
+bounded away from one. For example, $T=2\ln(M+1)$ and
+$\varepsilon=(M+1)^{-2}$ suffice along a growing
+critical code. The onset rate then grows as $M^2$ in scaled units. Thus finite
+coupling amplitudes exist at every finite size, but a fixed control limit is not shown to
+attain the asymptotic ideal fidelity. Scalar slowing can trade physical rate for
+duration as described below; it does not establish a joint microscopic device.
 
 ## B. The leading mismatch has a simple structure
 
@@ -68,6 +126,14 @@ Off-resonant mapping that slows useful and unwanted rates together is an existin
 ## F. External loss and source preparation
 
 An additional independent link transmission $\eta$ imposes $F_{\rm worst}\leq\eta^M$ on the uncorrected canonical target. Losing one photon from the highest number gives the wrong number. This simple ceiling can dominate practical experiments; it does not remove the ideal mode-mismatch limit.
+
+For mode-independent pure loss, [the loss-competition proof](LOSS_COMPETITION.md)
+now optimizes the common waveform with that penalty included. At critical code
+scaling and $-M\log\eta_N\to\lambda<\infty$, mismatch lowers the leading optimum
+beyond the ordinary-loss ceiling precisely when $\lambda<c^3/48$. The optimal
+pulse shifts toward the highest excitation as loss increases. This is a supporting
+effective-model result with finite certificates, not a joint hardware realization
+or a treatment of mode-dependent filtering or independent atomic loss.
 
 Symmetric preparation and the whole-code input promise are not established by reproducing intensity data or by demonstrating one excited state. The two-sector witness reduces the logical dimension needed to exhibit the mismatch, not the challenge of preparing high excitation numbers.
 

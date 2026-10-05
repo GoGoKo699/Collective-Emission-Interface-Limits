@@ -121,3 +121,9 @@ Fixed $N$, phase conventions, omitted interactions, propagation delay, control d
 The [full-text note](TZIPERMAN_FULL_TEXT.md) now records the source, input, mode-selection, target and asymptotic comparison. Their cavity-free collective source overlaps ours. Their selected-mode quantum-state calculations go beyond photon moments and must not be described as intensity-only work. The mode is selected from the first-order correlation of the specified input; the inspected construction does not supply a common-receiver minimax converse over a growing unknown code. [BACKGROUND_AUDIT.md](BACKGROUND_AUDIT.md) preserves the earlier access history, explicitly superseded by this reading.
 
 The named construction-level readings and tutorial furnishing are complete. A separate external critical-reader report remains absent, and the joint preparation/realization premises remain conditional. Manuscript drafting and outreach remain on hold.
+
+The subsequent [prewriting refresh](PREWRITING_SEARCH_2026_10_05.md) adds three
+direct comparisons and their bibliography entries. It supplements this background
+without changing the selected tutorial or upgrading scoped searches to priority
+certification. The [claim map](../research/CLAIM_EVIDENCE_MAP.md) connects these
+readings to the completed proof and physical-scope obligations.

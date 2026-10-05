@@ -95,6 +95,9 @@ uniform-bound steps locally; no second external tutorial is required.
 
 The [documentation map](docs/README.md#repository-map) keeps the supporting physics,
 literature and verification records accessible without putting every audit on the front page.
+The [claim and evidence map](research/CLAIM_EVIDENCE_MAP.md) records the completed
+internal research before writing, including the loss/capture bounds and the exact
+boundary between a conditional theorem and a device claim.
 
 ## Boundaries and prior work
 
@@ -119,6 +122,7 @@ scope clarifications and verification repairs.
 ```sh
 python -m pip install -r requirements.txt
 python tools/check_presentation.py
+python tools/check_loss_competition.py
 python verify.py --integrity-only
 python verify.py --artifacts-dir verification-artifacts --require-reference
 ```
@@ -128,6 +132,8 @@ saved results are preserved; generated outputs are compared without rewriting re
 The [reproduction policy](provenance/REPRODUCTION_POLICY.md) distinguishes exact bytes,
 reviewed numerical agreement and passing assertions. None is independent proof review.
 The presentation check is separate from the scientific test count.
+The supplementary loss-competition checks are also counted separately; their
+[execution record](provenance/PREWRITING_2026_10_05.json) identifies methods and limitations.
 
 **Manuscript writing is on hold.** Collaboration inquiries are welcome; contact Ruge Lin.
 The [workspace](WORKSPACE.md) and [current work order](work_orders/CURRENT.md) describe
