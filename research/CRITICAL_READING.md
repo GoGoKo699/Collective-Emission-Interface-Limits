@@ -1,6 +1,6 @@
 # Questions for a separate critical reading
 
-**Prepared 3 October 2026. No external report has been received.** This is a checklist for the fixed result in [THEOREM.md](THEOREM.md), not a request to extend the physical model. Each question should be answered with a precise proof location, a correction, or a counterexample. Passing numerical checks alone is not an answer to an all-code or all-waveform question.
+**Updated 5 October 2026. No external report has been received.** This is a checklist for the fixed result in [THEOREM.md](THEOREM.md), not a request to extend the physical model. Mathematical and attribution objections should identify a precise proof location, correction, counterexample or source construction. Passing numerical checks alone is not an answer to an all-code or all-waveform question.
 
 ## Mathematical checks
 
@@ -23,6 +23,12 @@ The receiver in [PHYSICAL_SCOPE.md](PHYSICAL_SCOPE.md) retains one oscillator af
 Compare the actual claim with the sources in [PRIOR_ART.md](../literature/PRIOR_ART.md): an optimized common waveform for a growing code is not automatically the same problem as a dominant mean-occupation mode of one selected state. Conversely, a change of fidelity objective does not prove novelty. An equation-level subsumption by existing work would be a substantive outcome, not something to evade by changing terminology.
 
 The source audit is conditional on its own rate model. Confirm that an effective-size parameter is not being interpreted as additional physical atoms, and that cavity photon-collection checks are not presented as a uniform emitted-field theorem. The fixed-rate and fixed-microscopic-device scaling families must remain distinct.
+
+## A separate significance judgment
+
+Does the all-waveform converse change how a specialist would assess a collective source feeding one preconfigured linear memory, beyond the already known accumulation of number-dependent mode mismatch? The fixed-fidelity excitation budget in [STORY.md](STORY.md) states the operational consequence, but is only an inversion of the existing critical law. Do not count it as a second result.
+
+Distinguish three judgments: the theorem is correct; it is not subsumed by the inspected sources; its added content matters physically. The first two do not imply the third. Identify a concrete interface claim or design decision affected by the common-receiver guarantee, or explain why the uniform optimization is mainly a technical completion. Do not impute an incorrect uniform-transfer claim to predecessors who studied selected states. A negative significance judgment is a valid outcome even without a counterexample to the proof.
 
 ## Expected output of a reading
 
