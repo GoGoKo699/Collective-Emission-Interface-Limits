@@ -8,7 +8,7 @@ A predetermined, number-preserving linear network maps annihilation operators li
 
 Finite coupling and time constraints reduce the realizable kernels. Adding auxiliaries may improve that constrained engineering problem, but it cannot exceed the optimum over all ideal normalized kernels. Active Gaussian processing, nonlinear decoding, nonvacuum resources, receiver-to-source feedback, or retaining multiple output modes changes the stated class.
 
-A receiving oscillator with coupling $\kappa_\varepsilon(t)=|f(t)|^2/[\varepsilon+F(t)]$, where $F(t)=\int_0^t|f(s)|^2ds$, captures the normalized truncated pulse with transmission $q_T=F(T)/[\varepsilon+F(T)]$. Perfect finite-time onset can require singular initial coupling. The ideal optimization is a supremum, not a hardware guarantee. Nurdin, James, and Yamamoto, arXiv:1609.05643, directly discuss this control issue.
+A receiving oscillator with coupling rate $\kappa_\varepsilon(t)=|f(t)|^2/[\varepsilon+F(t)]$, where $\varepsilon>0$ and $F(t)=\int_0^t|f(s)|^2ds$, and coupling phase matched to $f$, captures the normalized truncated pulse with transmission $q_T=F(T)/[\varepsilon+F(T)]$ when $F(T)>0$. The rate alone specifies capture of a nonnegative pulse; a general complex pulse also requires its phase. Perfect finite-time onset can require singular initial coupling. The ideal optimization is a supremum, not a hardware guarantee. Nurdin, James, and Yamamoto, arXiv:1609.05643, directly discuss this control issue.
 
 ## B. The leading mismatch has a simple structure
 
@@ -18,9 +18,9 @@ $$g_* = \sqrt{12}\,\partial_u f_u\big|_{u_*}.$$
 
 It is orthogonal to $f_*$. A number-specific reference pulse projects onto their span with coefficients $K(z_m)$ and $-\sqrt{12}K'(z_m)$, $z_m=u_m-u_*$. The missed one-photon weight is $z_m^4/180+O(z_m^6)$.
 
-At $M=O(N^{2/3})$, the whole code approaches a two-mode encoding, with an operator-norm isometry error of order at most $N^{-1/3}$. The second-mode photon count converges to a Poisson law with parameter
+At $M=O(N^{2/3})$, the whole code approaches a two-mode encoding, with an operator-norm isometry error of order at most $N^{-1/3}$. If $M/N^{2/3}\to c>0$ and $m/M\to x>0$, the second-mode photon count converges to a Poisson law with parameter
 
-$$\lambda(x)=\frac{c^3}{12}x(x-3/4)^2,\qquad m/M\to x>0.$$
+$$\lambda(x)=\frac{c^3}{12}x(x-3/4)^2.$$
 
 The smallest zero-count probability recovers $e^{-c^3/192}$. This explains the common-mode error without claiming that radiation spreads over an ever-growing number of unrelated modes.
 
@@ -28,7 +28,15 @@ Two retained modes are an additional quantum resource. Their occupied direction 
 
 ## C. Scalar source pulse shaping
 
-Prescribed controls $L(t)=e^{i\phi(t)}\sqrt{\Gamma(t)/N}\,S_-$ and $H(t)=\omega(t)\hat n$ reparametrize and rephase every emitted photon through the same one-particle isometry. Once the receiver optimization allows all waveforms, these controls do not change its value.
+Prescribed controls $L(t)=e^{i\phi(t)}\sqrt{\Gamma(t)/N}\,S_-$ and $H(t)=\omega(t)\hat n$ preserve the complete-emission problem when $\Gamma(t)\geq0$ and the accumulated clock $\tau(t)=\int_0^t\Gamma(s)\,ds$ tends to infinity. Under these conditions they reparametrize and rephase every emitted photon through the same one-particle isometry:
+
+```math
+f(\tau)\longmapsto
+\sqrt{\Gamma(t)}\,
+e^{i\phi(t)-i\int_0^t\omega(s)\,ds}\,f(\tau(t)).
+```
+
+Once the receiver optimization allows all waveforms, these controls do not change its value. A finite accumulated clock leaves residual source excitation and does not satisfy this complete-emission invariance statement.
 
 They can change duration or match a constrained receiver. A multilevel protocol must first be reduced to its actual ladder; it is not automatically described by this jump. A number-dependent coupling that makes the ladder rates linear is outside the scalar class. A harmonic oscillator is the successful simple comparator and emits all number states in one common exponential mode.
 

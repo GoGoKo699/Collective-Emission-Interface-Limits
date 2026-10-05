@@ -1,8 +1,8 @@
 # Scientific background for the fixed interface result
 
-**3 October 2026. Background research, not a manuscript.** This dossier covers the ingredients needed to explain the existing theorem and its physical scope. It does not change the source, receiver, encoding, or proof. Bibliographic keys refer to [REFERENCES.bib](REFERENCES.bib). The [reading audit](BACKGROUND_AUDIT.md) distinguishes newly inspected sources from the repository's previous full-text comparisons. [TUTORIAL_OPTIONS.md](TUTORIAL_OPTIONS.md) offers three alternative single-source entry points; none has yet been selected.
+**Updated 5 October 2026. Background research, not a manuscript.** This dossier covers the ingredients needed to explain the existing theorem and its physical scope. It does not change the source, receiver, encoding, or proof. Bibliographic keys refer to [REFERENCES.bib](REFERENCES.bib). The [reading audit](BACKGROUND_AUDIT.md) distinguishes newly inspected sources from the repository's previous full-text comparisons. The selected single tutorial is Kiilerich–Mølmer (2020); [TUTORIAL_OPTIONS.md](TUTORIAL_OPTIONS.md) records that choice and the optional alternatives. The [reading guide](../docs/README.md) and [local bridge](../REVIEW.md) implement the selected route.
 
-The coverage is organized by scientific dependency rather than citation count. A newly identified close paper, Tziperman et al. [Tziperman2025], still requires a complete construction-level comparison. Its abstract was accessible but its complete article was not readable through the available retrieval routes. Consequently this dossier is not a declaration that the manuscript's priority research is exhaustively complete.
+The coverage is organized by scientific dependency rather than citation count. The close paper by Tziperman et al. [Tziperman2025] now has a [construction-level comparison](TZIPERMAN_FULL_TEXT.md) based on its main article and supplement. Its full-state transfer examples and overlapping source model receive direct credit. No subsumption of the optimized uniform theorem was found in those inspected constructions; exhaustive priority remains unestablished.
 
 ## 1. Collective emission and the oscillator approximation
 
@@ -112,12 +112,12 @@ Fixed $N$, phase conventions, omitted interactions, propagation delay, control d
 | Quantum-channel benchmark | Schumacher plus the channel-specific proof here | Worst-input fidelity, not average fidelity, heralded success or capacity |
 | Uniform approximation and all-waveform critical limit | THEOREM.md and PROOF_AUDIT.md | Candidate new theorem, not established by counting citations |
 | Realization and preparation context | Existing S/R/P registers and PHYSICAL_SCOPE.md | Related ingredients are not a combined device |
-| Closest newly identified collective-light work | Tziperman et al. 2025: accessible abstract and metadata only | Full construction comparison remains open |
+| Closest collective-light comparison | Tziperman et al. 2025: main article and supplement inspected | Shared source and full-state method credited; no uniform common-code subsumption found in the documented versions |
 
-## 9. A newly identified close comparison is not yet closed
+## 9. The close Tziperman comparison
 
 [Tziperman2025], published as *Nonlinear Quantum Light Generation in Collective Spontaneous Emission*, has an arXiv precursor titled *The quantum state of light in collective spontaneous emission*. The publisher abstract explicitly concerns transferring emitter correlations to traveling single-mode non-Gaussian states, with cavity, waveguide and array examples, losses, interactions and beyond-Markov effects. It is directly relevant and must not be omitted merely because its title differs from ours.
 
-The retrieved abstract does not establish which mode is optimized, whether the target/input is selected, or whether a uniform all-waveform converse is proved. The full arXiv PDF exceeded the available text retrieval size; tested HTML and publisher routes did not supply a readable complete article. A supplement description is not a substitute. We therefore neither claim subsumption nor claim to have ruled it out. [BACKGROUND_AUDIT.md](BACKGROUND_AUDIT.md) records this concrete access gap and the exact comparison needed.
+The [full-text note](TZIPERMAN_FULL_TEXT.md) now records the source, input, mode-selection, target and asymptotic comparison. Their cavity-free collective source overlaps ours. Their selected-mode quantum-state calculations go beyond photon moments and must not be described as intensity-only work. The mode is selected from the first-order correlation of the specified input; the inspected construction does not supply a common-receiver minimax converse over a growing unknown code. [BACKGROUND_AUDIT.md](BACKGROUND_AUDIT.md) preserves the earlier access history, explicitly superseded by this reading.
 
-All other completed readings remain completed. This newly located item is the remaining background-research obligation, not a reason to repeat Law–Lee or alter the theorem. A separate reader report remains absent. Manuscript drafting, outreach and tutorial-based refurnishing remain on hold pending their respective decisions.
+The named construction-level readings and tutorial furnishing are complete. A separate external critical-reader report remains absent, and the joint preparation/realization premises remain conditional. Manuscript drafting and outreach remain on hold.

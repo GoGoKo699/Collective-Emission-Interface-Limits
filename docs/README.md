@@ -77,6 +77,7 @@ canonical transfer differ, why independently excellent pulses need not share one
 mode, and why the theorem must optimize over every waveform. They should also know what
 additional receivers or encodings the theorem does not restrict.
 
-The outstanding close-source comparison and separate critical reading are recorded in
-the [work order](../work_orders/CURRENT.md). This teaching route neither resolves them nor
-requires the reader to reconstruct the exploratory history.
+The completed [Tziperman comparison](../literature/TZIPERMAN_FULL_TEXT.md) and remaining
+external critical reading are recorded in the [work order](../work_orders/CURRENT.md).
+The [sanity-check record](../research/SANITY_CHECK_2026_10_05.md) separates the internal
+review from that external task; readers need not reconstruct the exploratory history.

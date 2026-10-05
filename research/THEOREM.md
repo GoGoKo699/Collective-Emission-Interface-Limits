@@ -41,7 +41,7 @@ $$\boxed{\mathcal F_{N,M}=\sup_{\|f\|_2=1}\min_{m\leq M}|\langle m_f|\Psi_{N,m}\
 
 For a complex $f$, replacing it by $|f|$ cannot reduce any overlap modulus, because the emitted amplitudes are positive. Fock-state inputs bound its worst fidelity from above, and the corresponding positive waveform realizes the resulting minimum. Optimizing over all complex waveforms thus does not evade the reduction.
 
-The environment decomposition is used only in the proof. There is no postselection. For a receiver with attenuation, the expression becomes $\min_m q^m|A_m(f)|^2$.
+The environment decomposition is used only in the proof. There is no postselection. For a nonnegative receiving waveform with attenuation, the worst-input fidelity is $\min_m q^m|A_m(f)|^2$. The same positivity argument permits this restriction when optimizing the attenuated receiver; this equality is not asserted for each arbitrary complex waveform.
 
 ## 3. A uniform individually matched pulse approximation
 

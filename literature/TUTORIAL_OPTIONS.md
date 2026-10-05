@@ -35,5 +35,6 @@ and explained in the bridge. The [background audit](BACKGROUND_AUDIT.md) preserv
 previous access and comparison record. Its unselected-anchor statements describe that
 earlier pass; the choice above is the current state.
 
-Selecting a tutorial is a pedagogical decision. The Tziperman full-construction comparison
-and separate critical reading remain open regardless of the selected source.
+Selecting a tutorial is a pedagogical decision. The later
+[Tziperman full-construction comparison](TZIPERMAN_FULL_TEXT.md) is now complete at
+its documented versions. Separate external critical reading remains open.

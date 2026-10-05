@@ -6,6 +6,7 @@
 
 ```sh
 python tools/test_reproduction.py
+python tools/test_verifier.py
 python verify.py --output verification-report.json \
   --artifacts-dir verification-artifacts --require-reference
 ```
@@ -38,7 +39,9 @@ With `--require-reference`, unresolved raw alerts fail the run. The two justifie
 
 ## Controls
 
-Fifteen tooling unit tests cover invalid data, duplicate keys, zeros, large integers, types, metadata, changes to N, scoped work counts, rescaled physical errors and evidence preservation. A local end-to-end replay of the captured output passes the declared review while retaining its false exact-byte flags. Altering an ordinary fidelity by 0.001 makes the gate fail even if the replayed script reports PASS. These fixtures test infrastructure, not the science.
+The original fifteen tooling unit tests covered invalid data, duplicate keys, zeros, large integers, types, metadata, changes to N, scoped work counts, rescaled physical errors and evidence preservation. The 5 October audit adds two comparator/environment tests and five verifier fixtures: **22 current infrastructure tests**. Nonfinite numeric overflow is rejected even inside metadata; reports carry real UTC start/end times and the effective suite thread settings. Summary output paths cannot replace maintained source files or retained raw evidence. The fixtures include a deliberately invalid result that reports PASS but must fail the reference gate while retaining its original bytes.
+
+The earlier local end-to-end replay of the captured output passes the declared review while retaining its false exact-byte flags. Altering an ordinary fidelity by 0.001 makes the gate fail even if the replayed script reports PASS. These fixtures test infrastructure, not the science. Historical execution reports remain unchanged, including their original dates and environment fields; the current audit identifies the provenance limitations of the old runner.
 
 The optional `tools/capture_previous_runner.py` verifies the old runner's blob and copies its temporary output immediately before cleanup. Its hosted cross-check reproduced all references exactly. It cannot recover values discarded by a historical job and is not run on every normal commit.
 

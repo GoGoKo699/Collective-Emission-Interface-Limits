@@ -1,6 +1,6 @@
 # Direct comparison of the fixed interface theorem
 
-**Updated 3 October 2026 after the supplied Law–Lee full text.** The source, receiver, target map, canonical proof and all seven scientific suites are unchanged. This is a construction-level literature comparison, not independent proof review or exhaustive priority certification. Identifiers refer to the [source register](SOURCE_EVIDENCE.md).
+**Updated 5 October 2026 after the Tziperman full-text comparison.** The source, receiver, target map and theorem are unchanged; the repository now preserves eight scientific suites. This is a construction-level literature comparison, not independent proof review or exhaustive priority certification. Identifiers refer to the [source register](SOURCE_EVIDENCE.md).
 
 ## The exact question
 
@@ -26,6 +26,17 @@ The [full-text comparison](LAW_LEE_FULL_TEXT.md) identifies the precise differen
 
 Direct attribution now includes its harmonic-oscillator argument (opening of Sec. III and note [16]), dominant two-mode occupation (Sec. III B), and semiclassical hyperbolic-secant pulse (Sec. III C). None is advertised as a new discovery. Its time-dependent modes at a fixed collection time also define receiving envelopes, so 'dynamic versus fixed' is not our novelty distinction.
 
+## Tziperman: full-state transfer with an input-selected mode
+
+The [main-article and supplement reading](TZIPERMAN_FULL_TEXT.md) directly credits
+their collective source, dominant-mode selection, full output density matrix and
+selected-state transfer calculations. The cavity-free symmetric limit overlaps our
+source. Their fixed-cat emitter-number study and constant-excitation discussion do
+not state the uniform growing-code/all-waveform boundary. The difference is not
+that they study only photon occupation: they use occupation to select a mode and
+then calculate its full quantum state. No subsumption of the present theorem was
+found in these inspected constructions; that is a scoped conclusion.
+
 ## Other controlled limits and attribution anchors
 
 Lemberger–Molmer (S04), Sec. 2.2, Eq. (7), analyze mean radiation eigenmode occupations. Malz–Trivedi–Cirac (S06) establish controlled large-$N$ reduced atomic dynamics from full inversion. Without additional bounds those observables do not give a uniform outgoing-field isometry or the present worst-input transfer fidelity.
@@ -34,7 +45,7 @@ Paulisch (A01) supplies the exact cascade, conventional exponential overlap, use
 
 ## Outcome
 
-**The core is preserved against the inspected full-text comparisons, including Law–Lee; no correction or subsumption was established.** The earlier missing-source item is resolved, not left pending. This does not establish exhaustive novelty or submission readiness.
+**The core is preserved against the inspected full-text comparisons, including Law–Lee and Tziperman; no theorem correction or subsumption was established.** The named missing-source tasks are resolved. This does not establish exhaustive novelty or submission readiness.
 
 The strongest remaining contribution is the sharp optimized uniform distinction between faithful canonical state transfer and mean-photon collection for the stated collective source and one linear memory. Explicitly excluded claims include a new Dicke cascade, first mode optimization, first recognition of number-dependent pulses, first two-mode description, a new oscillator comparator or capture formalism, failure of established linearized memory theory, and limits on unrestricted nonlinear decoding.
 

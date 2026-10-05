@@ -2,6 +2,13 @@
 
 **3 October 2026.** The owner's new instruction requests manuscript background research and up to three single-source teaching anchors. It does not request drafting the manuscript or selecting an anchor on the owner's behalf. The base revision is `9a340f9b052d6c2fe48a1e70e99800f2c8ed94e8`.
 
+**Historical access record; current update 5 October 2026:** the owner subsequently
+selected Kiilerich–Mølmer and the teaching route is complete. The main Tziperman
+article and its supplement have now been read through an author-hosted university
+copy; [the construction-level comparison](TZIPERMAN_FULL_TEXT.md) supersedes the
+access gap below. The earlier failed routes remain recorded as history, not a
+current claim that full text is missing.
+
 ## What this pass adds
 
 [BACKGROUND.md](BACKGROUND.md) maps each ingredient of the fixed argument to its scientific source and distinguishes inherited methods from the repository's derivations. [REFERENCES.bib](REFERENCES.bib) is a curated core bibliography, not a replacement for the detailed S/R/P preparation and implementation registers. [CONVENTIONS.md](../research/CONVENTIONS.md) records rate, time, field, fidelity and receiver translations. [TUTORIAL_OPTIONS.md](TUTORIAL_OPTIONS.md) evaluates exactly three alternative single-source routes, leaving their selection open.
