@@ -5,6 +5,11 @@ The source, canonical number map, code and receiver remain fixed. The main ideal
 theorem is unchanged. The selected single teaching anchor remains Kiilerich–Mølmer
 (2020). Manuscript drafting has not begun.
 
+**Teaching update, 6 October 2026.** The owner reconfirmed Kiilerich–Mølmer as the
+single external source. The reading guide and local bridge now furnish the route
+with worked calculations and a final lesson on the established loss/capture bounds.
+This pedagogical pass does not reopen the completed scientific work order.
+
 ## Completed research
 
 The [claim and evidence map](../research/CLAIM_EVIDENCE_MAP.md) is the entry point.

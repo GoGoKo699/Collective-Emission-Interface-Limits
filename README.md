@@ -84,6 +84,9 @@ Its virtual input/output cavities give the physical language of the interface. T
 [reading guide](docs/README.md) maps its sections to this repository. The
 [tutorial-to-theorem bridge](REVIEW.md) supplies the missing Dicke-ladder, fidelity and
 uniform-bound steps locally; no second external tutorial is required.
+The guide now provides a staged route, with worked one- and two-photon emission,
+mode-mismatch and coherence examples before the asymptotic proof. Loss and finite
+capture follow as supporting lessons.
 
 ## Read in three passes
 

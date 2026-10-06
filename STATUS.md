@@ -45,6 +45,11 @@ single teaching anchor. The [reading guide](docs/README.md), [local bridge](REVI
 and [convention map](research/CONVENTIONS.md) supply the route; no further anchor choice
 is pending. Stale statements elsewhere have been corrected or marked historical.
 
+On 6 October 2026 the owner reconfirmed this choice. The guide now has a staged
+learning route, and the bridge includes worked emission, mode-mismatch and coherence
+calculations, followed by the existing loss and finite-capture consequences. This
+is a teaching revision; the scientific claims, proof files and saved results are unchanged.
+
 All eight scientific suites pass: **39 groups, 612 cases**. The fresh local baseline
 has zero scientific-value differences from the saved references; only runtime metadata
 differs. Raw outputs are retained in the [audit evidence](provenance/SANITY_2026_10_05.json).

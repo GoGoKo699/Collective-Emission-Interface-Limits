@@ -2,6 +2,8 @@
 
 **Kiilerich–Mølmer (2020) is the owner-selected learning anchor.** The repository now uses
 that one source, followed by a local bridge, rather than a three-source reading stack.
+The owner reconfirmed Option 1 on 6 October 2026 after a comparison against the
+completed conditional research package. The alternatives below remain optional.
 
 > A. H. Kiilerich and K. Mølmer, *Quantum interactions with pulses of radiation*,  
 > Physical Review A **102**, 023717 (2020).  
