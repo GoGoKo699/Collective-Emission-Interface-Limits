@@ -9,6 +9,26 @@ It is a tutorial-style review-and-method article, not a textbook. The original
 [three-option comparison](../literature/TUTORIAL_OPTIONS.md) records the choice; the other
 sources are references, not additional prerequisites.
 
+The owner reconfirmed this single-source choice on 6 October 2026. A reader who
+knows ordinary quantum mechanics can use the sequence below to reach the physical
+statement, then decide how deeply to inspect its proof. Studying the source alone
+does not supply the sharp boundary: the project-specific steps are taught here.
+
+## A guided route
+
+| Stage | Read | Check your understanding |
+|---|---|---|
+| 1. A pulse carries a state | KM Introduction and II A; [bridge 1–2](../REVIEW.md#1-the-quantum-pulse) | Can one fixed envelope carry both a one-photon state and a superposition of number states? |
+| 2. The source is a finite spin | [Bridge 3](../REVIEW.md#3-the-exact-source-is-a-finite-collective-spin), including the one- and two-photon calculation | Why does the two-photon wavefunction contain a term depending on both detection times? |
+| 3. State the transfer task | KM II B–C and the opening of II D; [bridge 4](../REVIEW.md#4-photon-collection-is-not-the-transfer-objective) | Why can 99% mean photon collection coexist with much lower state fidelity? Why must one pulse serve every input? |
+| 4. Understand the boundary | [Bridge 5–7](../REVIEW.md#5-individually-matched-pulses-the-approximation-that-needs-proof), then [theorem](../research/THEOREM.md) | Which estimate justifies the product-pulse approximation, and which argument excludes every better common waveform? |
+| 5. Interpret the physical resources | [Bridge 8](../REVIEW.md#8-loss-and-finite-capture-after-the-ideal-theorem), then the linked loss and capture bounds | Why must loss and capture tolerances improve with the excitation cutoff? |
+
+The worked calculations in the bridge answer these questions. Stages 1–3 establish
+the model and the observable distinction. Stage 4 reaches the result; Stage 5
+explains its supporting physical qualifications. KM Section III is optional
+context for retaining more than one mode, which changes the transfer task.
+
 ## Start with the source's physical organization
 
 | Read in Kiilerich–Mølmer | What to carry forward | Where it enters here |
@@ -37,11 +57,23 @@ connects the exact correlated emission to the individually matched pulses and th
 common-waveform converse. Source-derived pulse/capture statements and project-specific
 proof steps are identified separately.
 
-The only assumed background is ordinary quantum mechanics with density matrices,
-creation and annihilation operators, and basic calculus. The needed dissipator,
-reference-system fidelity and entropy-to-overlap step are explained locally. The full
-counting-process estimate is in the proof; understanding the bridge does not substitute
-for checking it.
+To start, assume ordinary quantum mechanics with density matrices, creation and
+annihilation operators, and basic calculus. The bridge explains the dissipator,
+reference-system fidelity and entropy-to-overlap step. Checking the full proof also
+uses elementary probability, relative entropy and asymptotic estimates; its
+counting-process comparison is written in [Theorem, Section 3](../research/THEOREM.md#3-a-uniform-individually-matched-pulse-approximation).
+These are local proof obligations, not an unstated second external course.
+
+| Supplied by the tutorial | Supplied by this repository |
+|---|---|
+| Traveling-mode operators and virtual emission/capture cavities | Exact finite-spin ladder and correlated emitted wavefunction |
+| Occupation modes and full selected-mode quantum states | One receiver for the entire unknown input space, including a reference |
+| A framework for single- and multiple-output pulse calculations | Uniform product approximation, all-waveform converse and sharp excitation scale |
+| Ideal pulse-capture construction | Code-dependent finite-capture bounds and the optimized loss competition |
+
+The right column describes what this learning route must explain locally. It is
+not a list of novelty claims: inherited Dicke and receiver results retain their
+attributions in the bridge and literature comparisons.
 
 ## Translate notation before comparing formulas
 
