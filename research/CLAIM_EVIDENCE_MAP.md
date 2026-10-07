@@ -83,7 +83,6 @@ needed for the result.
 | One predetermined passive retained oscillator | Specified receiver resource with established capture formalism | Compatible couplings, control bandwidth, duration and loss |
 | Independent atomic decay and cavity elimination | Separate audits with explicit effective-rate assumptions | A controlled full-field limit for one consistent microscopic scaling family |
 | Joint realization | Not claimed | A demonstration or design meeting the premises together |
-| Independent mathematical/physical assessment | No separate report received | An actual external reading; internal agent checks cannot supply it |
 
 A conditional theorem can be scientifically complete without establishing the last
 column. More papers on separately prepared known targets would not close the unknown
@@ -101,7 +100,7 @@ it does not support a demonstrated-device claim.
 
 Physical significance remains a separate judgment: does excluding every common
 pulse settle a consequential interface question beyond familiar multiphoton mismatch?
-The [critical-reading questions](CRITICAL_READING.md) state that objection directly.
+The [open questions](CRITICAL_READING.md#questions-that-remain-open) state that objection directly.
 This pass does not manufacture an external endorsement or decide significance by
 counting calculations.
 

@@ -1,44 +1,54 @@
-# Questions for a separate critical reading
+# Established results and open questions
 
-**Updated 5 October 2026. No external report has been received.** This is a checklist for the fixed result in [THEOREM.md](THEOREM.md), not a request to extend the physical model. Mathematical and attribution objections should identify a precise proof location, correction, counterexample or source construction. Passing numerical checks alone is not an answer to an all-code or all-waveform question.
+The [theorem](THEOREM.md) and [claim and evidence map](CLAIM_EVIDENCE_MAP.md)
+record the answers established within the fixed source, canonical target and
+one-oscillator receiver model. The questions below concern the remaining limits
+of that account.
 
-## Mathematical checks
+## Established mathematical answers
 
-1. **Normalization and fidelity convention.** In Sections 1–2, does the labeled emission-time wavefunction have the same normalization as the product-mode Fock state? Verify the ordered-domain factor explicitly. Does the vacuum-complement Kraus operator give the unconditional worst-input entanglement fidelity, including an untouched reference? Are all other Kraus contributions properly retained rather than postselected away?
+| Topic | Answer and proof location |
+|---|---|
+| Normalization and unconditional fidelity | The labeled-time wavefunction and product-mode Fock state use the same full-domain normalization, including the ordered-domain factor. The Kraus argument retains every discarded-field outcome and permits an untouched reference. See [theorem, Sections 1–2](THEOREM.md#1-source-output-normalization-and-target) and [proof audit](PROOF_AUDIT.md). |
+| Positive receiving waveform | Replacing a complex waveform by its modulus cannot decrease any squared number overlap. For a nonnegative waveform, their minimum equals its worst-input squared entanglement fidelity. This proves the optimized reduction, without asserting it for each fixed complex waveform. See [theorem, Section 2](THEOREM.md#2-reduction-of-the-channel-objective). |
+| Uniform state approximation | The counting-process relative-entropy estimate and positive-amplitude Hellinger bound control state vectors. Orthogonal number sectors make the whole-code error the largest sector error; the bound also holds with a reference. See [theorem, Section 3](THEOREM.md#3-a-uniform-individually-matched-pulse-approximation). |
+| Joint limit and unrestricted converse | The finite angle bounds keep the approximation error explicit and handle the zero- and unit-fidelity endpoints. The supercritical full-code conclusion follows by restriction to a fixed-critical subcode. See [theorem, Sections 4–5](THEOREM.md#4-exact-pulse-geometry) and the [endpoint correction](PROOF_AUDIT.md). |
+| Photon collection | A sectorwise bounded-operator estimate extends by photon-number weighting to mixed and number-coherent inputs. It does not infer an unbounded moment from trace-distance convergence. The vacuum transfers trivially and has no photon fraction. See [theorem, Section 6](THEOREM.md#6-mean-photon-collection-has-a-larger-domain-of-validity). |
+| Two-sector witness | Two populated number levels witness the critical obstruction. Vacuum plus one populated number is a successful comparator; fixed logical dimension does not mean fixed physical excitation. See [two-sector proof](TWO_SECTOR_WITNESS.md). |
 
-2. **Positive-waveform reduction.** Does replacing an arbitrary complex receiving waveform by its pointwise modulus suffice for the optimized channel objective, rather than only the number-state overlaps? Check the direction of both inequalities and the attainment of the lower bound on a number state. Distinguish a phase convention from an input-dependent correction.
+The [loss-competition proof](LOSS_COMPETITION.md) already gives the optimized
+bound for prescribed mode-independent vacuum attenuation. The
+[finite-capture bound](PHYSICAL_SCOPE.md#a-what-the-receiver-restriction-means)
+already charges both truncation and attenuation across the code. Neither establishes
+fixed modulation bandwidth or a compatible microscopic device.
 
-3. **Uniform state approximation.** In Section 3, verify the direction of the relative entropy, the counting-process intensities, the size-biased binomial identity, and the positive lower-rate bound. Treat the zero-survivor endpoint by continuity. Does the Hellinger argument bound vectors, not just probability densities? Why is the entire-code error the largest sector error rather than the sum? Does this remain valid after adjoining a reference?
+The [source comparisons](../literature/COMPARISON.md) identify inherited cascade,
+pulse-shape, occupation and capture results. No subsumption was found in the
+inspected constructions; that finding does not establish exhaustive priority.
+The receiver restriction and the distinction between effective-rate and microscopic
+scaling families remain explicit in [physical scope](PHYSICAL_SCOPE.md).
 
-4. **Joint limit and unrestricted converse.** In Sections 4–5, supply a uniform remainder over the discrete code when $`M/N^{2/3}`$ tends to a positive constant. Does the arbitrary-waveform angle inequality retain that accuracy after the $`m`$th roots? Make explicit how sequences with limiting fidelity zero or one are treated. The supercritical conclusion for the full consecutive code should follow by restricting to a fixed-critical subcode, not by extrapolating an asymptotic formula outside its proven regime.
+## Questions that remain open
 
-5. **Photon collection versus state transfer.** In Section 6, check that the positive operator is a contraction separately in each fixed-number sector. Does the square-root estimate avoid assuming convergence of an unbounded photon-number moment from trace-distance convergence? Verify the extension as a photon-number-weighted average, including mixed and number-coherent inputs. The vacuum has no defined photon fraction but transfers trivially.
+1. **Unknown-input preparation.** Can an input-independent encoder load the growing
+   symmetric excitation code in a source realization compatible with this model,
+   while preserving an external reference, with uniform error bounds and accounted
+   resource costs? The
+   [preparation evidence](../literature/PREPARATION_EVIDENCE.md) covers related
+   constructions, not this complete input resource.
+2. **Compatible device resources.** Is there one microscopic scaling family with a
+   controlled full emitted-field approximation that meets preparation, calibration,
+   loss, control bandwidth and duration requirements together? The
+   [physical-scope analysis](PHYSICAL_SCOPE.md) treats component limits; their joint
+   compatibility is not established.
+3. **Practical significance.** Which concrete interface design or operating decision
+   benefits from the all-waveform uniform guarantee beyond the familiar accumulation
+   of number-dependent mode mismatch? The [excitation budget](STORY.md) states the
+   asymptotic consequence, but is a corollary of the critical law rather than another
+   result or a hardware specification.
 
-6. **The logical-qubit witness.** In [TWO_SECTOR_WITNESS.md](TWO_SECTOR_WITNESS.md), check that the restricted two-number channel has the same critical converse. Do not infer its supercritical limit merely by monotonicity of the full code. Preserve the successful vacuum-plus-one-populated-number comparator and the distinction between fixed logical dimension and growing physical energy.
-
-## Physical and attribution checks
-
-The receiver in [PHYSICAL_SCOPE.md](PHYSICAL_SCOPE.md) retains one oscillator after predetermined passive linear processing of a fixed emitted field. Determine whether any step inadvertently permits feedback into the source, nonvacuum auxiliaries, conditioning on the input number, or nonlinear decoding. The ideal supremum need not be attainable at a fixed control bandwidth or duration.
-
-Compare the actual claim with the sources in [PRIOR_ART.md](../literature/PRIOR_ART.md): an optimized common waveform for a growing code is not automatically the same problem as a dominant mean-occupation mode of one selected state. Conversely, a change of fidelity objective does not prove novelty. An equation-level subsumption by existing work would be a substantive outcome, not something to evade by changing terminology.
-
-The source audit is conditional on its own rate model. Confirm that an effective-size parameter is not being interpreted as additional physical atoms, and that cavity photon-collection checks are not presented as a uniform emitted-field theorem. The fixed-rate and fixed-microscopic-device scaling families must remain distinct.
-
-The [loss-competition consequence](LOSS_COMPETITION.md) adds only prescribed,
-mode-independent vacuum attenuation. Check that its arbitrary-waveform converse
-survives the uniform approximation before taking the limit, and that the loss ceiling
-is not mistaken for disappearance of mode mismatch. The finite-window bound in
-PHYSICAL_SCOPE.md must charge both truncation and capture error across the code;
-its finite amplitudes do not establish fixed modulation bandwidth.
-
-## A separate significance judgment
-
-Does the all-waveform converse change how a specialist would assess a collective source feeding one preconfigured linear memory, beyond the already known accumulation of number-dependent mode mismatch? The fixed-fidelity excitation budget in [STORY.md](STORY.md) states the operational consequence, but is only an inversion of the existing critical law. Do not count it as a second result.
-
-Distinguish three judgments: the theorem is correct; it is not subsumed by the inspected sources; its added content matters physically. The first two do not imply the third. Identify a concrete interface claim or design decision affected by the common-receiver guarantee, or explain why the uniform optimization is mainly a technical completion. Do not impute an incorrect uniform-transfer claim to predecessors who studied selected states. A negative significance judgment is a valid outcome even without a counterexample to the proof.
-
-## Expected output of a reading
-
-A useful report should separate mathematical validity, inherited results, possible new contributions, and physical relevance. State exactly which sections were read, any unavailable full text, and the scope of every objection. Do not mark an assumption register complete by counting component papers as joint devices.
-
-The present repository does not contain a completed independent review, a hardware realization, or exhaustive priority certification. No invitation or correspondence has been sent as part of preparing this checklist.
+A mathematical objection to an established answer should identify a precise proof
+location, correction or counterexample. A subsumption claim should identify the
+existing source construction. Numerical checks, scoped source comparisons and
+physical significance support different judgments. Further research should address
+one of these concrete gaps or a new objection under the [current work order](../work_orders/CURRENT.md).

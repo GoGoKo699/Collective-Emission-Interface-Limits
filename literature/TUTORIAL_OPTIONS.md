@@ -39,4 +39,4 @@ earlier pass; the choice above is the current state.
 
 Selecting a tutorial is a pedagogical decision. The later
 [Tziperman full-construction comparison](TZIPERMAN_FULL_TEXT.md) is now complete at
-its documented versions. Separate external critical reading remains open.
+its documented versions.

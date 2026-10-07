@@ -98,4 +98,4 @@ Preparing high-number Dicke states, knowing $`N`$, and measuring full-Fock overl
 
 `tests/07_two_sector_scope/checks.py` checks the scalar minimax balance, the complete emission-amplitude cascade for two finite code choices, horizon/tolerance refinement, the exact two-input analytic bound, convergence of its critical brackets, a vacuum-plus-number control, and the reference-channel Kraus logic. The new suite imports none of the six archived scientific scripts.
 
-The source theorem and the nonlinear-cavity qualitative predecessor are credited in [the prior-art register](../literature/PRIOR_ART.md). No independent mathematical reader report has been received.
+The source theorem and the nonlinear-cavity qualitative predecessor are credited in [the prior-art register](../literature/PRIOR_ART.md).

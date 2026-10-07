@@ -2,9 +2,9 @@
 
 **Updated 5 October 2026. Explanatory research note; not a manuscript or a new result.** The model, code, receiver and fidelity convention are those of [THEOREM.md](THEOREM.md), including the recorded [proof correction](PROOF_AUDIT.md).
 
-## The question
+## The transfer task
 
-When is a weakly excited collective spin an adequate oscillator for transferring an unknown quantum state?
+The result identifies when a weakly excited collective spin is an adequate oscillator for transferring an unknown quantum state.
 
 Take a symmetric ensemble of $`N`$ two-level emitters. Its stored excitations radiate into one useful spatial channel. A receiver is configured in advance and retains one oscillator, corresponding to one temporal pulse shape. The receiver must preserve an unknown superposition of excitation numbers, not merely capture its average photon number. A single spatial channel still contains many temporal modes.
 
@@ -52,7 +52,7 @@ The intended contribution is a domain-of-validity statement for a physical appro
 
 The excitation budget makes the operational meaning explicit; it does not add a second novelty claim. The strongest objection is that the conventional cubic mismatch and number-dependent pulse distortion already make multiphoton error accumulation familiar. A sharp uniform minimax theorem may therefore be judged a technical completion of known physics. The unresolved question is whether excluding every common receiving waveform changes the assessment of a useful one-oscillator interface enough to constitute a substantive advance.
 
-The inspected sources do not establish that their authors claimed a uniform unknown-input guarantee from low excitation density or near-unit mean occupation alone. This result should not be framed as overturning those papers. Its candidate contribution is a controlled answer to the different, explicitly common-receiver question. The internal significance reading preserves that narrow claim, but does not settle its importance or replace the separate [critical reading](CRITICAL_READING.md).
+The inspected sources do not establish that their authors claimed a uniform unknown-input guarantee from low excitation density or near-unit mean occupation alone. This result should not be framed as overturning those papers. Its candidate contribution is a controlled answer to the different, explicitly common-receiver question. The internal significance reading preserves that narrow claim, but does not settle its importance or resolve the remaining [open questions](CRITICAL_READING.md#questions-that-remain-open).
 
 ## What belongs in the supporting evidence
 
@@ -62,4 +62,4 @@ The inherited ingredients include the Dicke cascade, conventional-pulse cubic mi
 
 **One sentence:** A collective source can look nearly oscillator-like to photon collection while no prechosen linear memory faithfully receives its whole excitation code; the two tasks have different, sharply characterized validity ranges.
 
-The theorem remains conditional. The separate critical-reader report and a joint large-code realization remain absent. See [Purpose and contact](../README.md#purpose-and-contact) for the repository's learning role and discussion details.
+The theorem remains conditional; a joint large-code realization is not established. See [Purpose and contact](../README.md#purpose-and-contact) for the repository's learning role and discussion details.

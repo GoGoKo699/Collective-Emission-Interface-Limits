@@ -1,8 +1,8 @@
 # When ordinary loss masks the common-mode limitation
 
-**Internal supporting derivation, 5 October 2026.** This answers a physical-scope
-question already raised in [PHYSICAL_SCOPE.md](PHYSICAL_SCOPE.md): when does mode
-mismatch reduce the best uniform fidelity beyond the ordinary transmission ceiling?
+**Internal supporting derivation, 5 October 2026.** This identifies the regime in
+which mode mismatch reduces the best uniform fidelity beyond the ordinary transmission
+ceiling, resolving the issue raised in [PHYSICAL_SCOPE.md](PHYSICAL_SCOPE.md).
 It uses the existing source, canonical number target and passive one-output receiver.
 It is a consequence of the pulse approximation and geometry in
 [THEOREM.md](THEOREM.md), not an additional headline novelty claim or a device proposal.

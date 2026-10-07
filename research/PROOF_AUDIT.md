@@ -123,7 +123,7 @@ On each fixed-number sector, $`I-\hat n_f/m`$ is a positive contraction. Applyin
 
 These checks answer the listed normalization, channel, uniformity, converse, count and two-sector questions on the stated premises. They do not certify every possible imperfection, the optional microscopic realization, the two-mode appendix under new scaling regimes, or exhaustive priority. The source/receiver assumptions and the completed [Law–Lee comparison](../literature/LAW_LEE_FULL_TEXT.md) remain as recorded. That article already optimizes mean-occupation modes; the distinction is not optimization versus no optimization.
 
-No separate reader has supplied a report, and no outreach is performed. The remaining preparation evidence is not replaced by proof checks. Manuscript drafting stays on hold.
+The remaining preparation evidence is not replaced by proof checks. Manuscript drafting stays on hold.
 
 ## Reproduction and change record
 

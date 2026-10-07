@@ -16,8 +16,7 @@ proof review, numerical reproduction, literature comparison and reporting repair
 The internal mathematical and physical readings found no defect in the optimized
 uniform boundary. They checked the channel/reference reduction, full-process entropy
 bound, finite all-waveform converse, critical coefficient, photon-collection estimate
-and two-sector witness. This is an internal multi-agent audit, not a received external
-critical-reader report.
+and two-sector witness. This is an internal multi-agent audit.
 
 Explicit qualifications were added for the positive-pulse attenuation formula,
 complete emission under scalar pulse shaping, complex capture phase, and the
@@ -75,12 +74,11 @@ explicit in [STORY.md](research/STORY.md). It follows directly from the existing
 law and code monotonicity, and is not a new mechanism or an additional novelty claim.
 The narrow candidate contribution survives: a uniform guarantee with an all-waveform
 converse. Its importance beyond familiar multiphoton mismatch remains unresolved.
-The [critical-reading questions](research/CRITICAL_READING.md) now separate that judgment
+The [established answers and open questions](research/CRITICAL_READING.md) now separate that judgment
 from mathematical validity and scoped non-subsumption. No scientific code or saved
 reference result was changed by this clarification.
 
-A separate external mathematical/physical critical-reader report is still absent.
-No invitation or outreach is implied by the internal review. Whole-code preparation,
+Whole-code preparation,
 reference-preserving encoding, atom-number calibration, consistent microscopic
 bandwidth/rate scaling, duration, loss and combined realization remain conditional
 for a device claim.

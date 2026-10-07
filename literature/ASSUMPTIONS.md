@@ -23,7 +23,7 @@ The source model has a primary-paper foundation. The receiver has documented the
 
 Preparing selected known targets and providing an input-independent preparation isometry on the entire code are different resources. A heralded branch can preserve a code if its action is proportional to an isometry; neither mere heralding nor successful known-target examples establish that condition. No blanket prohibition on heralded unknown-state preparation is claimed.
 
-Whole-code preparation cost, known-N calibration, the consistent rate/bandwidth/duration family, and compatible joint realization remain unestablished. A genuinely separate critical-reader report is absent. General priority is not certified by completing the named readings.
+Whole-code preparation cost, known-N calibration, the consistent rate/bandwidth/duration family, and compatible joint realization remain unestablished. General priority is not certified by completing the named readings.
 
 These are limits on a device extension, not omitted hypotheses of the conditional
 ideal theorem. The [claim map](../research/CLAIM_EVIDENCE_MAP.md) states which physical

@@ -16,15 +16,15 @@ does not supply the sharp boundary: the project-specific steps are taught here.
 
 ## A guided route
 
-| Stage | Read | Check your understanding |
+| Stage | Read | Established takeaway |
 |---|---|---|
-| 1. A pulse carries a state | KM Introduction and II A; [bridge 1–2](../REVIEW.md#1-the-quantum-pulse) | Can one fixed envelope carry both a one-photon state and a superposition of number states? |
-| 2. The source is a finite spin | [Bridge 3](../REVIEW.md#3-the-exact-source-is-a-finite-collective-spin), including the one- and two-photon calculation | Why does the two-photon wavefunction contain a term depending on both detection times? |
-| 3. State the transfer task | KM II B–C and the opening of II D; [bridge 4](../REVIEW.md#4-photon-collection-is-not-the-transfer-objective) | Why can 99% mean photon collection coexist with much lower state fidelity? Why must one pulse serve every input? |
-| 4. Understand the boundary | [Bridge 5–7](../REVIEW.md#5-individually-matched-pulses-the-approximation-that-needs-proof), then [theorem](../research/THEOREM.md) | Which estimate justifies the product-pulse approximation, and which argument excludes every better common waveform? |
-| 5. Interpret the physical resources | [Bridge 8](../REVIEW.md#8-loss-and-finite-capture-after-the-ideal-theorem), then the linked loss and capture bounds | Why must loss and capture tolerances improve with the excitation cutoff? |
+| 1. A pulse carries a state | KM Introduction and II A; [bridge 1–2](../REVIEW.md#1-the-quantum-pulse) | A linear oscillator releases every number component into the same envelope, including an unknown superposition. |
+| 2. The source is a finite spin | [Bridge 3](../REVIEW.md#3-the-exact-source-is-a-finite-collective-spin), including the one- and two-photon calculation | Finite-spin decay rates produce a wavefunction that correlates the two detection times. |
+| 3. State the transfer task | KM II B–C and the opening of II D; [bridge 4](../REVIEW.md#4-photon-collection-is-not-the-transfer-objective) | Near-complete mean collection can coexist with low state fidelity; the unknown input requires one pulse to preserve all number amplitudes and coherences. |
+| 4. Understand the boundary | [Bridge 5–7](../REVIEW.md#5-individually-matched-pulses-the-approximation-that-needs-proof), then [theorem](../research/THEOREM.md) | The uniform counting-process bound controls the product approximation, and the angle converse excludes a higher limiting critical fidelity from any common waveform. |
+| 5. Interpret the physical resources | [Bridge 8](../REVIEW.md#8-loss-and-finite-capture-after-the-ideal-theorem), then the linked loss and capture bounds | The whole-code bounds require loss and capture errors to shrink with the excitation cutoff for asymptotically faithful transfer. |
 
-The worked calculations in the bridge answer these questions. Stages 1–3 establish
+The worked calculations in the bridge derive these statements. Stages 1–3 establish
 the model and the observable distinction. Stage 4 reaches the result; Stage 5
 explains its supporting physical qualifications. KM Section III is optional
 context for retaining more than one mode, which changes the transfer task.
@@ -104,7 +104,7 @@ Neither occurrence of $`u`$ denotes a new physical input to our vacuum source.
 | Inherited ingredients and closest comparisons | [Background](../literature/BACKGROUND.md), [direct comparison](../literature/COMPARISON.md), [bibliography](../literature/REFERENCES.bib) |
 | Dated additional predecessor and recent-source checks | [Prewriting source comparison](../literature/PREWRITING_SEARCH_2026_10_05.md) |
 | What the assumptions have and have not established | [Assumptions](../literature/ASSUMPTIONS.md), [preparation evidence](../literature/PREPARATION_EVIDENCE.md) |
-| Review and evidence boundaries | [Reading checklist](../research/CRITICAL_READING.md), [status](../STATUS.md), [reproduction policy](../provenance/REPRODUCTION_POLICY.md) |
+| Review and evidence boundaries | [Established answers and open questions](../research/CRITICAL_READING.md), [status](../STATUS.md), [reproduction policy](../provenance/REPRODUCTION_POLICY.md) |
 
 ## At the end of this route
 
@@ -114,8 +114,8 @@ mode, and why the theorem must optimize over every waveform. They should also kn
 additional receivers or encodings the theorem does not restrict.
 
 The completed [Tziperman comparison](../literature/TZIPERMAN_FULL_TEXT.md) and remaining
-external critical reading are recorded in the [work order](../work_orders/CURRENT.md).
-The [sanity-check record](../research/SANITY_CHECK_2026_10_05.md) separates the internal
-review from that external task; readers need not reconstruct the exploratory history.
+physical questions are recorded in the [work order](../work_orders/CURRENT.md).
+The [sanity-check record](../research/SANITY_CHECK_2026_10_05.md) identifies the checks
+actually performed; readers need not reconstruct the exploratory history.
 
 For the repository's role and discussion details, see [Purpose and contact](../README.md#purpose-and-contact).

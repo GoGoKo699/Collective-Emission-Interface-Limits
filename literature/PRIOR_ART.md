@@ -4,7 +4,7 @@
 
 ## Follow-up evidence pass
 
-The post-activation [direct comparison](COMPARISON.md) and [primary evidence register](SOURCE_EVIDENCE.md) now provide equation-level locations and premise-specific counts. They preserve the theorem and distinguish full text from abstract-only access. In particular, the Gorshkov linearized-memory comparison, Kiilerich-Molmer selected-mode formalism, and Malz atomic-state scope are now explicit. The author has now supplied Law–Lee in full; the [completed comparison](LAW_LEE_FULL_TEXT.md) supersedes the earlier abstract-only status. The named access gap is closed, while general priority and separate critical reading remain open. The preparation-pass paragraph below is historical.
+The post-activation [direct comparison](COMPARISON.md) and [primary evidence register](SOURCE_EVIDENCE.md) now provide equation-level locations and premise-specific counts. They preserve the theorem and distinguish full text from abstract-only access. In particular, the Gorshkov linearized-memory comparison, Kiilerich-Molmer selected-mode formalism, and Malz atomic-state scope are now explicit. The author has now supplied Law–Lee in full; the [completed comparison](LAW_LEE_FULL_TEXT.md) supersedes the earlier abstract-only status. The named access gap is closed; exhaustive priority is not established. The preparation-pass paragraph below is historical.
 
 ## Central comparisons
 
@@ -12,8 +12,7 @@ The later [Tziperman reading](TZIPERMAN_FULL_TEXT.md) inspects the complete
 author-hosted main article and supplement. It adds an overlapping collective source,
 canonical target and full selected-mode transfer construction. Its preparation-specific
 mode choice does not state the uniform common-code theorem; no subsumption was found
-in the inspected versions. This closes that named access task while leaving external
-critical review and exhaustive priority separate.
+in the inspected versions. This closes that named access task without establishing exhaustive priority.
 
 The [bounded prewriting refresh](PREWRITING_SEARCH_2026_10_05.md) additionally
 compares Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al. at the
