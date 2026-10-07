@@ -42,7 +42,7 @@ c_0=(-192\ln F_0)^{1/3}.
 \end{gathered}
 ```
 
-To see this, choose any fixed $`0<c_-<c_0<c_+`$. The critical limits at $`M=\lfloor c_-N^{2/3}\rfloor`$ and $`M=\lfloor c_+N^{2/3}\rfloor`$ lie strictly above and below $`F_0`$, respectively. The optimized fidelity cannot increase when the code is enlarged, so these cutoffs bracket $`K_N(F_0)`$ for sufficiently large $`N`$. Letting the margins approach zero gives the limit. Below a fixed margin, the constructive common pulse reaches the target; above a fixed margin, no allowed waveform does.
+To see this, choose any fixed $`0\lt c_-\lt c_0\lt c_+`$. The critical limits at $`M=\lfloor c_-N^{2/3}\rfloor`$ and $`M=\lfloor c_+N^{2/3}\rfloor`$ lie strictly above and below $`F_0`$, respectively. The optimized fidelity cannot increase when the code is enlarged, so these cutoffs bracket $`K_N(F_0)`$ for sufficiently large $`N`$. Letting the margins approach zero gives the limit. Below a fixed margin, the constructive common pulse reaches the target; above a fixed margin, no allowed waveform does.
 
 This is an asymptotic corollary of the existing theorem. It supplies neither a finite-$`N`$ pass/fail decision at the boundary nor a relative-error estimate for a target tending to one with $`N`$. A finite system must use the bounds in THEOREM.md. The source, calibration, preparation, capture and loss assumptions remain necessary; this is not a hardware specification.
 

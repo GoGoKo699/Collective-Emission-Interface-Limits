@@ -10,6 +10,7 @@ import argparse
 import json
 from pathlib import Path
 import re
+import string
 import sys
 import unittest
 
@@ -37,7 +38,8 @@ def inspect(text: str, name: str = '<text>') -> dict:
     def error(line: int, message: str) -> None:
         errors.append(f'{name}:{line}: {message}')
 
-    def math(tex: str, line: int, block: bool, table: bool = False) -> None:
+    def math(tex: str, line: int, block: bool, table: bool = False,
+             protected: bool = False) -> None:
         if not tex.strip():
             error(line, 'Empty mathematics')
         # Escaped braces are glyphs, not grouping braces.
@@ -58,6 +60,12 @@ def inspect(text: str, name: str = '<text>') -> dict:
             error(line, r'Literal pipe inside table mathematics; use \vert or \Vert')
         if '`' in tex or '$' in tex:
             error(line, 'Nested Markdown delimiter inside mathematics')
+        if not protected and re.search(r'\\[' + re.escape(string.punctuation) + ']', tex):
+            error(line, 'Backslash-escaped punctuation in plain-dollar math can be stripped by Markdown; '
+                        'use protected $`...`$ inline math or a fenced math block')
+        if re.search(r'<[A-Za-z]', tex):
+            error(line, r'Literal < immediately before a letter risks HTML parsing in GitHub math; '
+                        r'use \lt followed by whitespace')
         for command in re.finditer(r'\\([A-Za-z]+)\*?', tex):
             if escaped(tex, command.start()):
                 continue
@@ -96,7 +104,7 @@ def inspect(text: str, name: str = '<text>') -> dict:
         if fence:
             if mark and mark[1][0] == fence[0] and len(mark[1]) >= len(fence) and not mark[2].strip():
                 if fence_math:
-                    math('\n'.join(pending), start, True)
+                    math('\n'.join(pending), start, True, protected=True)
                 fence = None
                 pending = []
             elif fence_math:
@@ -153,7 +161,7 @@ def inspect(text: str, name: str = '<text>') -> dict:
                 if j < 0:
                     error(number, 'Unclosed GitHub inline-math delimiter')
                     break
-                math(line[i + 2:j], number, False, table)
+                math(line[i + 2:j], number, False, table, protected=True)
                 if line[j + 2:j + 3] == '`':
                     error(number, 'Stray code delimiter after inline mathematics')
                 i = j + 2
@@ -207,7 +215,7 @@ class PresentationTests(unittest.TestCase):
         text = r'''$`\mathcal C_M=\mathrm{span}\{\lvert D_N^m\rangle\}`$
 $`\sum_\nu\lvert\mathrm{Tr}(\rho K_\nu)\rvert^2`$
 ```math
-\exp\!\left[\frac{1}{N}\sum_{i<j}\min(\tau_i,\tau_j)\right]
+\exp\!\left[\frac{1}{N}\sum_{i\lt j}\min(\tau_i,\tau_j)\right]
 \tfrac{1}{2}\{L^\dagger L,\rho\}+\dfrac {b} {a}
 \frac{\sqrt{m!}}{\{N\}}+\frac{\frac{1}{2}}{N}
 ```'''
@@ -241,12 +249,34 @@ C_{N,m}^2&=\prod_{j=0}^{m-1}(1-j/N).
 \end{aligned}
 ```'''
         errors = inspect(original)['errors']
-        self.assertEqual(len(errors), 2)
+        self.assertEqual(len(errors), 3)
         self.assertTrue(any(r'\boldsymbol requires a braced argument' in e for e in errors))
-        corrected = original.replace(r'\boldsymbol\tau', r'\boldsymbol{\tau}').replace(r'\frac1N', r'\frac{1}{N}')
+        corrected = (original.replace(r'\boldsymbol\tau', r'\boldsymbol{\tau}')
+                     .replace(r'\frac1N', r'\frac{1}{N}').replace('i<j', r'i\lt j'))
         self.assertFalse(inspect(corrected)['errors'])
+    def test_less_than_html_rendering_regression(self):
+        errors = inspect(r'$`\sum_{i<j}\min(\tau_i,\tau_j)`$')['errors']
+        self.assertEqual(len(errors), 1)
+        self.assertIn(r'\lt followed by whitespace', errors[0])
+        for tex in (r'\sum_{i\lt j}\min(\tau_i,\tau_j)', r'0<1', r'\tau_1<\tau_2'):
+            with self.subTest(tex=tex):
+                self.assertFalse(inspect(f'$`{tex}`$')['errors'])
+    def test_plain_math_punctuation_stripping_regression(self):
+        for tex in (r'\{x\}', r'x\,y', r'x\!y', r'\|x\|', r'x\\y'):
+            for delim in ('$', '$$'):
+                with self.subTest(tex=tex, delim=delim):
+                    errors = inspect(f'{delim}{tex}{delim}')['errors']
+                    self.assertEqual(len(errors), 1)
+                    self.assertIn('protected $`...`$ inline math or a fenced math block', errors[0])
+    def test_protected_math_preserves_punctuation(self):
+        tex = r'\{x\},\quad y\,z\!\|w\|'
+        for source in (f'$`{tex}`$', f'```math\n{tex}\n```'):
+            with self.subTest(source=source):
+                result = inspect(source)
+                self.assertFalse(result['errors'])
+                self.assertEqual([e['tex'] for e in result['expressions']], [tex])
     def test_rendering_guards_ignore_ordinary_code(self):
-        text = r'''`\operatorname{span} \frac1N \boldsymbol\tau`
+        text = r'''`\operatorname{span} \frac1N \boldsymbol\tau i<j`
 ```tex
 \operatorname*{argmax}\tfrac12\dfrac{b}a
 ```'''

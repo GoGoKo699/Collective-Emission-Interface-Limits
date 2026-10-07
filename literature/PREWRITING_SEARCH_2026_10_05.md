@@ -64,7 +64,7 @@ and 10 were rendered.
 Section II A, Eq. (1), assumes small per-atom excitation before replacing spin
 operators by bosons. Eqs. (4)–(7) and (19) then map general atomic quantum states
 through a linear transformation. Section IV C, Eqs. (75)–(77), treats an
-$M$-photon target and purity under $M\ll N$; Appendix B concerns averaging atomic
+$`M`$-photon target and purity under $`M\ll N`$; Appendix B concerns averaging atomic
 positions.
 
 This deserves credit for full-state transfer, including entangled states. The
@@ -111,7 +111,7 @@ Equation (2) at zero spin interaction has our collective dissipator. Equation (3
 encodes a local parameter around full inversion. Eqs. (25)–(27) optimize the
 homodyne signal-to-noise ratio over temporal modes. Section IV C, Eq. (31), finds
 sublinear occupation of that mode numerically; the reported fractional exponent
-near $-0.37$ is a fit, not our sharp $N^{2/3}$ code boundary. Appendix I explicitly
+near $`-0.37`$ is a fit, not our sharp $`N^{2/3}`$ code boundary. Appendix I explicitly
 distinguishes this optimization from optimizing the selected mode's quantum Fisher
 information.
 
