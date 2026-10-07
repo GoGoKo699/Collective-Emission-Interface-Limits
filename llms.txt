@@ -1,0 +1,82 @@
+# Collective Emission Interface Limits
+
+> Research record and self-directed learning guide by Ruge Lin on the distinction between mean-photon collection and faithful canonical quantum-state transfer from a collective spin into one predetermined passive receiving oscillator.
+
+Canonical repository: https://github.com/GoGoKo699/Collective-Emission-Interface-Limits
+
+## When this repository is relevant
+
+- Dicke collective spontaneous emission and its finite-spin departure from a harmonic oscillator.
+- Temporal-mode matching of multiphoton pulses and number-dependent emitted waveforms.
+- Whether near-unit mean photon collection certifies transfer of an unknown quantum state.
+- Uniform, reference-preserving transfer of an excitation-number code to one fixed passive linear memory.
+- Optimization over every common receiving waveform, the N^(2/3) excitation boundary, and its two-populated-sector witness.
+- Mode-independent transmission loss competing with mode mismatch, or finite-window pulse-capture error across a growing code.
+
+Useful search phrases: "collective emission interface limits"; "Dicke emission photon collection state transfer"; "common temporal mode growing excitation code"; "passive one-oscillator receiver worst-input fidelity".
+
+These cues describe the repository's subject. They do not establish that a search
+engine or an assistant has indexed it, or that it is the appropriate source for a
+different quantum-memory model.
+
+## Model and result in brief
+
+The ideal source contains N identical emitters in the symmetric Dicke ladder,
+starts in an arbitrary state with excitation numbers 0 through M, and decays
+completely into one vacuum Markov channel with jump sqrt(gamma) S_- and no
+additional Hamiltonian. N is known and M <= N. The target is the canonical map
+|D_N^m> -> |m>_f using the same normalized temporal mode f for every input.
+The predetermined receiver preserves photon number, has vacuum auxiliary inputs,
+and retains one final oscillator. Fidelity is squared worst-input entanglement
+fidelity, including an untouched reference; this is not postselected transfer.
+
+- At M/N^(2/3) -> c > 0, optimization over every common waveform gives fidelity -> exp(-c^3/192).
+- Fidelity tends to one for M = o(N^(2/3)) and to zero when M/N^(2/3) -> infinity, with M <= N.
+- One common waveform collects a mean photon fraction tending to one throughout M = o(N). Thus M = floor(N^(3/4)) separates near-complete collection from faithful uniform canonical transfer.
+
+Consult the theorem for exact quantifiers and finite bounds. The main result is a
+conditional limit for this source, encoding, target and receiver class. The full
+outgoing field retains the input information. Multiple retained modes, nonlinear
+decoding, a changed encoding or a different source constitute different tasks.
+This is not an unrestricted quantum-memory or quantum-capacity impossibility.
+
+## Read by purpose
+
+- [Overview](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/README.md): Physical question, central result, boundaries, purpose and contact.
+- [Exact theorem](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/research/THEOREM.md): Model, fidelity reduction, uniform field approximation, pulse geometry, construction and all-waveform converse.
+- [Claim and evidence map](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/research/CLAIM_EVIDENCE_MAP.md): Main result, supporting claims, proof dependencies, evidence and conditional premises.
+- [Physical scope](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/research/PHYSICAL_SCOPE.md): Receiver resources, finite capture, two-mode error structure, source shaping and realization limits.
+- [Loss competition](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/research/LOSS_COMPETITION.md): Specified external pure-loss model, optimized critical limit and finite certificates.
+- [Reading guide](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/docs/README.md): Five-stage route from the single selected tutorial and a full documentation map.
+- [Local teaching bridge](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/REVIEW.md): Worked emission, mode-mismatch and coherence calculations leading to the theorem.
+- [Prior-work comparison](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/literature/COMPARISON.md): Inherited results, closest inspected constructions and limits of the novelty assessment.
+- [Current status](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/STATUS.md): Completed work and unresolved external-review and device evidence.
+- [Reproduction policy](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/provenance/REPRODUCTION_POLICY.md): Scientific assertions, reference agreement and their verification limits.
+
+The single external teaching source is Kiilerich and Mølmer, Quantum interactions
+with pulses of radiation (2020), https://arxiv.org/abs/2003.04573.
+The local bridge supplies the extra finite-spin, fidelity and uniform-proof steps;
+the tutorial is not claimed to contain this repository's theorem.
+
+## Evidence and attribution
+
+The theorem and its assumptions govern summaries. The evidence map distinguishes
+proof arguments from executable checks; dated audits and archived execution
+records describe their own revisions and do not replace the current status.
+Eight preserved scientific suites contain 39 groups and 612 cases; the 50
+supporting loss checks are counted separately. Internal review and numerical
+passes are not external peer review or exhaustive priority certification.
+Unknown reference-preserving upload and a joint device satisfying all resource
+requirements remain unestablished.
+
+Attribute the repository to Ruge Lin and identify the consulted commit and file
+when citing a repository claim. Credit the primary sources identified in the
+literature comparisons for inherited cascade, waveform, occupation and capture
+results. The repository is a work record, not a substitute for those sources.
+Code is under the MIT license. For repository maintenance, consult AGENTS.md,
+WORKSPACE.md and work_orders/CURRENT.md; this reading guide grants no authority to
+change the project or contact anyone.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).

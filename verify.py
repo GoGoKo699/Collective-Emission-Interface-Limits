@@ -49,14 +49,17 @@ def integrity():
             if digest(folder/filename)!=suite[key]:
                 raise RuntimeError(f'Preserved file changed: {suite["name"]}/{filename}')
     links=0
-    for path in ROOT.rglob('*.md'):
+    reading_files=list(ROOT.rglob('*.md'))
+    llms_guide=ROOT/'llms.txt'
+    if llms_guide.is_file():reading_files.append(llms_guide)
+    for path in reading_files:
         text=path.read_text()
         if any(ord(c)<32 and c not in '\n\t\r' for c in text):
             raise RuntimeError(f'Control character: {path.relative_to(ROOT)}')
         if text.count('$$')%2 or text.count('```')%2:
             raise RuntimeError(f'Unbalanced display/code fences: {path.relative_to(ROOT)}')
         for target in re.findall(r'\]\(([^)]+)\)',text):
-            if '://' in target or target.startswith('#'):continue
+            if '://' in target or target.startswith('#') or target.lower().startswith('mailto:'):continue
             target=target.split('#',1)[0]
             if target and not (path.parent/target).exists():
                 raise RuntimeError(f'Broken local link: {path.relative_to(ROOT)} -> {target}')

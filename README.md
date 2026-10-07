@@ -7,6 +7,16 @@ A receiver, configured before the input is known, retains one oscillator. The qu
 when the collective spin can be treated as a harmonic oscillator for this transfer—not
 merely for the average number of photons it delivers.
 
+| Read next | Purpose |
+|---|---|
+| [Reading guide](docs/README.md) · [Tutorial-to-theorem bridge](REVIEW.md) | Learn from one external tutorial and local worked examples |
+| [Theorem](research/THEOREM.md) · [Claim and evidence map](research/CLAIM_EVIDENCE_MAP.md) | Follow the result, proof dependencies and supporting consequences |
+| [Physical scope](research/PHYSICAL_SCOPE.md) · [Prior-work comparison](literature/COMPARISON.md) | Check receiver restrictions, realization limits and attribution |
+| [Verification](#evidence-and-reproduction) · [Research status](STATUS.md) | Inspect executable evidence and the remaining limits |
+| [LLM guide](llms.txt) · [Workspace](WORKSPACE.md) | Identify relevant questions and authoritative files for further reading |
+
+## Model and transfer task
+
 | Task | What one receiving pulse must preserve |
 |---|---|
 | Photon collection | Nearly all the mean photon number |
@@ -88,14 +98,6 @@ The guide now provides a staged route, with worked one- and two-photon emission,
 mode-mismatch and coherence examples before the asymptotic proof. Loss and finite
 capture follow as supporting lessons.
 
-## Read in three passes
-
-| Pass | Route | Purpose |
-|---|---|---|
-| Orientation | This page | Task, result and mechanism |
-| From the selected tutorial | [Reading guide](docs/README.md) → [technical bridge](REVIEW.md) | Translate the pulse formalism into the fixed interface problem |
-| Full audit | [Proof](research/THEOREM.md), [scope](research/PHYSICAL_SCOPE.md), [critical-reading questions](research/CRITICAL_READING.md) | Check the uniform estimates, resources and attribution |
-
 The [documentation map](docs/README.md#repository-map) keeps the supporting physics,
 literature and verification records accessible without putting every audit on the front page.
 The [claim and evidence map](research/CLAIM_EVIDENCE_MAP.md) records the completed
@@ -120,7 +122,7 @@ report and joint-device evidence remain absent. The
 [5 October sanity check](research/SANITY_CHECK_2026_10_05.md) records the internal review,
 scope clarifications and verification repairs.
 
-## Reproduce
+## Evidence and reproduction
 
 ```sh
 python -m pip install -r requirements.txt
@@ -138,6 +140,11 @@ The presentation check is separate from the scientific test count.
 The supplementary loss-competition checks are also counted separately; their
 [execution record](provenance/PREWRITING_2026_10_05.json) identifies methods and limitations.
 
-**Manuscript writing is on hold.** Collaboration inquiries are welcome; contact Ruge Lin.
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
+The [LLM guide](llms.txt) describes relevant research questions, search terms and the
+authoritative reading order for automated assistants and other readers.
 The [workspace](WORKSPACE.md) and [current work order](work_orders/CURRENT.md) describe
-continuing work.
+continuing work. Code is available under the [MIT license](LICENSE).

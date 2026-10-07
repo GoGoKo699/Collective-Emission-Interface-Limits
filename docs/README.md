@@ -93,6 +93,7 @@ Neither occurrence of $`u`$ denotes a new physical input to our vacuum source.
 
 | Need | Read |
 |---|---|
+| Relevance, search terms and authoritative sources for an automated reader | [LLM guide](../llms.txt) |
 | The compact physical account | [Story](../research/STORY.md) |
 | Claims, proof dependencies and the boundary of research closure | [Claim and evidence map](../research/CLAIM_EVIDENCE_MAP.md) |
 | Exact model, uniform approximation and all-waveform theorem | [Theorem](../research/THEOREM.md) |
@@ -116,3 +117,5 @@ The completed [Tziperman comparison](../literature/TZIPERMAN_FULL_TEXT.md) and r
 external critical reading are recorded in the [work order](../work_orders/CURRENT.md).
 The [sanity-check record](../research/SANITY_CHECK_2026_10_05.md) separates the internal
 review from that external task; readers need not reconstruct the exploratory history.
+
+For the repository's role and discussion details, see [Purpose and contact](../README.md#purpose-and-contact).
