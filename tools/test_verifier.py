@@ -30,7 +30,11 @@ class VerifierTests(unittest.TestCase):
         (self.root/'verify.py').write_text('# Source file that must remain untouched.\n')
         self.artifacts=self.root/'verification-artifacts'
         self.output=self.root/'verification-report.json'
-        self.manifest={'suites':[{'name':'fixture'}]}
+        self.manifest={'suites':[{'name':'fixture',
+                                'checks_sha256':verify.digest(self.suite/'checks.py'),
+                                'results_sha256':verify.digest(self.suite/'results.json')}]}
+        (self.root/'provenance').mkdir()
+        (self.root/'provenance/SUITES.json').write_text(json.dumps(self.manifest)+'\n')
         self.started=datetime(2031,4,2,23,59,59,tzinfo=timezone.utc)
         self.finished=datetime(2031,4,3,0,0,1,tzinfo=timezone.utc)
 
@@ -108,6 +112,32 @@ class VerifierTests(unittest.TestCase):
         self.assertFalse(report['reference_comparison_passed'])
         self.assertEqual(report['finished_at'],self.finished.isoformat())
         self.assertEqual((self.artifacts/'fixture'/'observed.json').read_bytes(),observed)
+
+    def test_integrity_accepts_contact_links_and_reads_llms_guide(self):
+        (self.root/'README.md').write_text(
+            '[Contact](mailto:reader@example.org) [Guide](llms.txt)\n')
+        (self.root/'llms.txt').write_text(
+            '[Contact](MAILTO:reader@example.org) [Readme](README.md)\n'
+            '[Source](https://example.org/source)\n')
+        with patch.object(verify,'ROOT',self.root):
+            manifest,links=verify.integrity()
+        self.assertEqual(manifest,self.manifest)
+        self.assertEqual(links,2)
+
+    def test_integrity_rejects_broken_local_markdown_link(self):
+        (self.root/'README.md').write_text(
+            '[Contact](mailto:reader@example.org) [Missing](missing.md)\n')
+        with patch.object(verify,'ROOT',self.root), \
+             self.assertRaisesRegex(RuntimeError,'Broken local link: README.md -> missing.md'):
+            verify.integrity()
+
+    def test_integrity_rejects_broken_local_llms_link(self):
+        (self.root/'README.md').write_text('# Fixture\n')
+        (self.root/'llms.txt').write_text(
+            '[Source](https://example.org/source) [Missing](docs/missing.md#claim)\n')
+        with patch.object(verify,'ROOT',self.root), \
+             self.assertRaisesRegex(RuntimeError,'Broken local link: llms.txt -> docs/missing.md'):
+            verify.integrity()
 
 
 if __name__=='__main__':unittest.main(verbosity=2)

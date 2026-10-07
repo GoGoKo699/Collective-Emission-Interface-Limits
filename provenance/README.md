@@ -14,8 +14,12 @@ The active registry contains **eight scientific suites, 39 groups and 612 cases*
 The [5 October sanity record](../research/SANITY_CHECK_2026_10_05.md) and
 [machine-readable evidence map](SANITY_2026_10_05.json) document fresh baseline and
 repaired-runner verification. All scientific scripts and references are preserved.
-The reporting tools now have 22 focused infrastructure tests; mathematical presentation
+The reporting tools now have 25 focused infrastructure tests; mathematical presentation
 has a separate 12-test checker. These counts are not added to the scientific cases.
+The 7 October reader-notice update added three link-integrity fixtures for email
+links and the LLM guide. The verifier accepts `mailto:` addresses and checks root
+`llms.txt` while continuing to reject broken local links. Scientific suite hashes
+and reference comparisons are unchanged.
 
 The eighth suite and endpoint proof repair are recorded in [PROOF_AUDIT.json](PROOF_AUDIT.json).
 The following import account and its seven-suite execution record are historical.

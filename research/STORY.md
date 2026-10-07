@@ -62,4 +62,4 @@ The inherited ingredients include the Dicke cascade, conventional-pulse cubic mi
 
 **One sentence:** A collective source can look nearly oscillator-like to photon collection while no prechosen linear memory faithfully receives its whole excitation code; the two tasks have different, sharply characterized validity ranges.
 
-The theorem remains conditional. The separate critical-reader report and a joint large-code realization remain absent. Manuscript writing and outreach remain on hold.
+The theorem remains conditional. The separate critical-reader report and a joint large-code realization remain absent. See [Purpose and contact](../README.md#purpose-and-contact) for the repository's learning role and discussion details.

@@ -1,6 +1,11 @@
 # Research status
 
-**5 October 2026 · Internal prewriting research completed for the conditional theorem · Manuscript on hold.**
+**Scientific status, 5 October 2026 · Internal prewriting research completed for the conditional theorem.**
+
+**Reader-facing update, 7 October 2026.** The repository's
+[purpose and contact notice](README.md#purpose-and-contact) describes its role as a
+work record and self-directed learning guide. The [LLM guide](llms.txt) supplies
+relevance cues and authoritative reading links. Scientific status is unchanged.
 
 The source, canonical number map, excitation code, receiver class and main theorem
 are unchanged. The [sanity-check record](research/SANITY_CHECK_2026_10_05.md) separates
@@ -84,6 +89,6 @@ The [current work order](work_orders/CURRENT.md) records the completed internal
 research and a finite stopping rule. Further scientific work should answer a precise
 objection, newly identified subsuming construction or newly authorized device claim.
 The absence of a joint device is an explicit limit of the theoretical claims, not a
-premise silently supplied by the literature. Manuscript writing and outreach remain
-on hold. The [prewriting provenance](provenance/PREWRITING_2026_10_05.json) records
+premise silently supplied by the literature. Any outside contact requires separate
+authorization under the workspace instructions. The [prewriting provenance](provenance/PREWRITING_2026_10_05.json) records
 the supplementary checks separately from the preserved scientific baseline.
