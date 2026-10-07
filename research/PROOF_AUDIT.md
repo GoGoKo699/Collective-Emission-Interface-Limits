@@ -27,7 +27,7 @@ It would be false to assert this minimum formula for every complex-pulse channel
 
 ## 3. Uniform field approximation
 
-The relative-entropy direction is $D(Q\Vert P)$, with $Q$ the product reference and $P$ the exact cascade. Under $Q$, the survivor count is binomial. Weighting its law by $K$ replaces $K-1$ by an independent $\operatorname{Bin}(m-1,S)$ variable and gives
+The relative-entropy direction is $D(Q\Vert P)$, with $Q$ the product reference and $P$ the exact cascade. Under $Q$, the survivor count is binomial. Weighting its law by $K$ replaces $K-1$ by an independent $\mathrm{Bin}(m-1,S)$ variable and gives
 
 $$\mathbb E\{K[K-1-(m-1)S]^2\}=m(m-1)S^2(1-S).$$
 

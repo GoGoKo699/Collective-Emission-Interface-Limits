@@ -6,15 +6,20 @@
 
 There are $N$ identical two-level emitters in the permutation-symmetric Dicke ladder. Their initial state is arbitrary in
 
-$$\mathcal C_M=\operatorname{span}\{|D_N^m\rangle:0\leq m\leq M\},\qquad M\leq N.$$
+$$\mathcal C_M=\mathrm{span}\,\{|D_N^m\rangle:0\leq m\leq M\},\qquad M\leq N.$$
 
 Complete emission into one vacuum Markov channel has jump $\sqrt\gamma S_-$. There is no extra Hamiltonian or inaccessible decay in this theorem. In time $\tau=N\gamma t$, the rates are $\ell_k=k[1-(k-1)/N]$.
 
 The emitted $m$-photon state has a positive symmetric wavefunction in the normalized labeled-time convention:
 
-$$\Psi_{N,m}(\boldsymbol\tau)=C_{N,m}e^{-\sum_i\tau_i/2}
-\exp\!\left[\frac1N\sum_{i<j}\min(\tau_i,\tau_j)\right],\qquad
-C_{N,m}^2=\prod_{j=0}^{m-1}(1-j/N).$$
+```math
+\begin{aligned}
+\Psi_{N,m}(\boldsymbol{\tau})
+&=C_{N,m}e^{-\sum_i\tau_i/2}\\
+&\quad\times\exp\!\left[\frac{1}{N}\sum_{i<j}\min(\tau_i,\tau_j)\right],\\
+C_{N,m}^2&=\prod_{j=0}^{m-1}(1-j/N).
+\end{aligned}
+```
 
 Its squared modulus integrates to one on $[0,\infty)^m$. The factor from the $m!$ ordered time regions is already accounted for. The product-mode Fock state corresponds to $\prod_i f(\tau_i)$ for $\|f\|_2=1$. This cascade and its physical origin are inherited from existing Dicke-output theory, especially Paulisch [P1].
 
@@ -28,11 +33,11 @@ The target is $|D_N^m\rangle\mapsto|m\rangle_f$, not merely conservation of ener
 
 ## 2. Reduction of the channel objective
 
-For nonnegative $f$, write $A_m(f)=\langle m_f|\Psi_{N,m}\rangle\geq0$. The vacuum-complement Kraus operator is diagonal, $K_0=\operatorname{diag}(A_0,\ldots,A_M)$. Every other Kraus operator lowers the number retained in the oscillator.
+For nonnegative $f$, write $A_m(f)=\langle m_f|\Psi_{N,m}\rangle\geq0$. The vacuum-complement Kraus operator is diagonal, $K_0=\mathrm{diag}(A_0,\ldots,A_M)$. Every other Kraus operator lowers the number retained in the oscillator.
 
 For every input density matrix,
 
-$$F_e(\rho)=\sum_\nu|\operatorname{Tr}(\rho K_\nu)|^2
+$$F_e(\rho)=\sum_\nu|\mathrm{Tr}(\rho K_\nu)|^2
 \geq\left(\sum_m\rho_{mm}A_m\right)^2\geq\min_m A_m^2.$$
 
 A number state attaining the smallest diagonal value saturates this inequality, since every nonvacuum discarded field gives the wrong output number. Therefore the exact optimum is
@@ -51,7 +56,7 @@ $$f_a(\tau)=\frac{\sqrt{1-a}\,e^{-\tau/2}}{1-a+a e^{-\tau}},\qquad a_m=(m-1)/N.$
 
 Use the vacuum for $m=0$ and $a_1=0$. Let $P=|\Psi_{N,m}|^2$ and $Q=\prod_i|f_{a_m}|^2$. For $m\geq2$, $a=a_m$, $b=1-a$,
 
-$$D(Q\Vert P)=m\left[-\frac b a\ln b-1\right]-\sum_{j=0}^{m-1}\ln(1-j/N)=D_{N,m}.$$
+$$D(Q\Vert P)=m\left[-\frac{b}{a}\ln b-1\right]-\sum_{j=0}^{m-1}\ln(1-j/N)=D_{N,m}.$$
 
 This exact expression is cancellation-prone; the code evaluates it with high precision. A positive integral representation yields the uniform bound
 

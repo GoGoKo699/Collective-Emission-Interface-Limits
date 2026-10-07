@@ -30,7 +30,7 @@ The mode can contain vacuum, a Fock state, a superposition, or a mixed state. Ra
 
 In the normalized symmetric labeled-time convention,
 
-$$|\Psi_m\rangle=\frac1{\sqrt{m!}}\int \Psi_m(t_1,\ldots,t_m)b^\dagger(t_1)\cdots b^\dagger(t_m)|0\rangle\,d^mt.$$
+$$|\Psi_m\rangle=\frac{1}{\sqrt{m!}}\int \Psi_m(t_1,\ldots,t_m)b^\dagger(t_1)\cdots b^\dagger(t_m)|0\rangle\,d^mt.$$
 
 The full-domain wavefunction has norm one. For $|m_f\rangle$, it is $\prod_i f(t_i)$. Ordered photon-emission amplitudes are equivalent, but the ordering factor cannot be counted twice. The repository fixes this convention before forming overlaps; [PROOF_AUDIT.md](../research/PROOF_AUDIT.md) checks the normalization.
 
@@ -70,7 +70,7 @@ Gorshkov et al. [Gorshkov2007] is an important successful comparator. Its linear
 
 Schumacher [Schumacher1996] defines entanglement fidelity by purifying the input into an untouched reference. For Kraus operators $K_\nu$, the standard formula is
 
-$$F_e(\rho)=\sum_\nu|\operatorname{Tr}(\rho K_\nu)|^2.$$
+$$F_e(\rho)=\sum_\nu|\mathrm{Tr}(\rho K_\nu)|^2.$$
 
 The repository compares the received channel with the canonical number isometry, not with an independently optimized target or recovery. It uses squared fidelity. Preparing a selected target, preserving an unknown input, estimating a parameter, and achieving quantum capacity are distinct tasks.
 

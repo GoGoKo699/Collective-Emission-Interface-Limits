@@ -72,7 +72,7 @@ This separates increasing logical dimension from increasing excitation energy. T
 
 ## 5. A control that must not be omitted
 
-The sparse code $\operatorname{span}\{|D_N^0\rangle,|D_N^M\rangle\}$ is different. Choose the receiving pulse for the known nonvacuum number. Vacuum is the same in every mode. The uniform matched-state bound then gives asymptotically unit fidelity whenever $M=o(N)$.
+The sparse code $\mathrm{span}\,\{|D_N^0\rangle,|D_N^M\rangle\}$ is different. Choose the receiving pulse for the known nonvacuum number. Vacuum is the same in every mode. The uniform matched-state bound then gives asymptotically unit fidelity whenever $M=o(N)$.
 
 Therefore “all sparse codes obey the cutoff” would be false. The positive lower-number component in the witness forces incompatible pulse requirements. This basic distinction between vacuum and two different populated number components is also discussed for specific nonlinear-cavity states in Khanahmadi et al. (2023). The corollary here quantifies it for the optimized Dicke interface; it does not claim the qualitative observation was unknown.
 

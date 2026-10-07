@@ -82,11 +82,11 @@ There is a useful exception: for a pure two-photon field the symmetric Schmidt (
 
 ## 5. The half-excited result is compatible, and its pulse is an exact shape correspondence
 
-Section III C uses the semiclassical approximation for an initially half-excited system and obtains $v_1(t)\propto\operatorname{sech}(N\gamma_{\rm LL}t)$. The source explicitly marks Eq. (29) as approximate and reports finite numerical purities, not an exact finite-$N$ full-field identity.
+Section III C uses the semiclassical approximation for an initially half-excited system and obtains $v_1(t)\propto\mathrm{sech}(N\gamma_{\rm LL}t)$. The source explicitly marks Eq. (29) as approximate and reports finite numerical purities, not an exact finite-$N$ full-field identity.
 
 For our comparison pulse family, direct substitution gives
 
-$$f_{1/2}(\tau)=\frac1{\sqrt2}\operatorname{sech}(\tau/2).$$
+$$f_{1/2}(\tau)=\frac{1}{\sqrt{2}}\mathrm{sech}(\tau/2).$$
 
 Using the rate conversion above, this is the same normalized shape on the positive time axis. For $m=N/2$, the repository parameter $a_m=(m-1)/N$ tends to $1/2$, but is not exactly $1/2$ at finite $N$.
 

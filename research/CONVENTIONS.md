@@ -7,7 +7,7 @@
 The dissipator is
 
 ```math
-\mathcal D[L]\rho=L\rho L^\dagger-\tfrac12\{L^\dagger L,\rho\}.
+\mathcal D[L]\rho=L\rho L^\dagger-\tfrac{1}{2}\{L^\dagger L,\rho\}.
 ```
 
 For $`L=\sqrt\gamma S_-`$, the $`m`$-excitation population leaves at rate $`\gamma m(N-m+1)`$. With $`\tau=N\gamma t`$, the dimensionless rate is $`\ell_m=m[1-(m-1)/N]`$. A no-jump amplitude decays at half the corresponding population rate.

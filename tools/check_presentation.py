@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Check Markdown math boundaries and tables without changing research content.
 
-Accepts GitHub's $...$, $`...`$, $$...$$ and fenced math. This is a structural
-check, not a TeX renderer, visual check, scientific test or proof verification.
+Accepts GitHub's $...$, $`...`$, $$...$$ and fenced math. Checks structure and
+specific observed rendering hazards; this is not a TeX renderer, a complete
+GitHub compatibility check, a visual check, a scientific test or proof verification.
 """
 from __future__ import annotations
 import argparse
@@ -57,6 +58,35 @@ def inspect(text: str, name: str = '<text>') -> dict:
             error(line, r'Literal pipe inside table mathematics; use \vert or \Vert')
         if '`' in tex or '$' in tex:
             error(line, 'Nested Markdown delimiter inside mathematics')
+        for command in re.finditer(r'\\([A-Za-z]+)\*?', tex):
+            if escaped(tex, command.start()):
+                continue
+            if command[1] == 'operatorname':
+                error(line, r'Observed GitHub rendering failure with \operatorname; '
+                            r'use \mathrm{...} and explicit spacing if needed')
+            elif command[1] in {'frac', 'tfrac', 'dfrac', 'boldsymbol'}:
+                pos = command.end()
+                arguments = ('argument',) if command[1] == 'boldsymbol' else ('numerator', 'denominator')
+                example = f'\\{command[1]}{{...}}' + ('{...}' if len(arguments) == 2 else '')
+                for argument in arguments:
+                    while pos < len(tex) and tex[pos].isspace():
+                        pos += 1
+                    if pos == len(tex) or tex[pos] != '{':
+                        error(line, f'\\{command[1]} requires a braced {argument}; '
+                                    f'write {example}')
+                        break
+                    # Find the entire group, including nested groups and literal braces.
+                    group_depth = 1
+                    pos += 1
+                    while pos < len(tex) and group_depth:
+                        if not escaped(tex, pos):
+                            if tex[pos] == '{':
+                                group_depth += 1
+                            elif tex[pos] == '}':
+                                group_depth -= 1
+                        pos += 1
+                    if group_depth:
+                        break  # The grouping check above reports this separately.
         expressions.append(dict(line=line, display=block, tex=tex))
 
     for number, line in enumerate(text.splitlines(), 1):
@@ -173,6 +203,57 @@ class PresentationTests(unittest.TestCase):
         self.assertEqual([e['tex'] for e in result['expressions']], ['N', 'M'])
     def test_injected_backtick(self):
         self.assertTrue(inspect('$`N`$` emitters and `$`M`$.')['errors'])
+    def test_supported_operator_and_fraction_replacements(self):
+        text = r'''$`\mathcal C_M=\mathrm{span}\{\lvert D_N^m\rangle\}`$
+$`\sum_\nu\lvert\mathrm{Tr}(\rho K_\nu)\rvert^2`$
+```math
+\exp\!\left[\frac{1}{N}\sum_{i<j}\min(\tau_i,\tau_j)\right]
+\tfrac{1}{2}\{L^\dagger L,\rho\}+\dfrac {b} {a}
+\frac{\sqrt{m!}}{\{N\}}+\frac{\frac{1}{2}}{N}
+```'''
+        self.assertFalse(inspect(text)['errors'])
+    def test_operatorname_rendering_regression(self):
+        for tex in (r'\mathcal C_M=\operatorname{span}\{D_N^m\}',
+                    r'\operatorname{Tr}(\rho K_\nu)', r'\operatorname*{argmax}_f F(f)'):
+            with self.subTest(tex=tex):
+                errors = inspect(f'$`{tex}`$')['errors']
+                self.assertEqual(len(errors), 1)
+                self.assertIn(r'\mathrm{...}', errors[0])
+    def test_fraction_numerator_rendering_regression(self):
+        for tex in (r'\frac1N', r'\tfrac12', r'\dfrac b a', r'\frac1{\sqrt{m!}}'):
+            with self.subTest(tex=tex):
+                errors = inspect(f'```math\n{tex}\n```')['errors']
+                self.assertEqual(len(errors), 1)
+                self.assertIn('braced numerator', errors[0])
+    def test_fraction_denominator_rendering_regression(self):
+        for tex in (r'\frac{1}N', r'\tfrac{1}2', r'\dfrac{b} a', r'\frac{1}\{N\}'):
+            with self.subTest(tex=tex):
+                errors = inspect(f'$`{tex}`$')['errors']
+                self.assertEqual(len(errors), 1)
+                self.assertIn('braced denominator', errors[0])
+    def test_cascade_rendering_regression(self):
+        original = r'''```math
+\begin{aligned}
+\Psi_{N,m}(\boldsymbol\tau)
+&=C_{N,m}e^{-\sum_i\tau_i/2}\\
+&\quad\times\exp\!\left[\frac1N\sum_{i<j}\min(\tau_i,\tau_j)\right],\\
+C_{N,m}^2&=\prod_{j=0}^{m-1}(1-j/N).
+\end{aligned}
+```'''
+        errors = inspect(original)['errors']
+        self.assertEqual(len(errors), 2)
+        self.assertTrue(any(r'\boldsymbol requires a braced argument' in e for e in errors))
+        corrected = original.replace(r'\boldsymbol\tau', r'\boldsymbol{\tau}').replace(r'\frac1N', r'\frac{1}{N}')
+        self.assertFalse(inspect(corrected)['errors'])
+    def test_rendering_guards_ignore_ordinary_code(self):
+        text = r'''`\operatorname{span} \frac1N \boldsymbol\tau`
+```tex
+\operatorname*{argmax}\tfrac12\dfrac{b}a
+```'''
+        self.assertFalse(inspect(text)['errors'])
+        self.assertFalse(inspect(text)['expressions'])
+    def test_rendering_guards_recognize_command_boundaries(self):
+        self.assertFalse(inspect(r'$`x\\operatorname+\fraction+x\\frac`$')['errors'])
 
 
 def main() -> None:
@@ -193,7 +274,8 @@ def main() -> None:
     errors = [e for report in reports for e in report['errors']]
     summary = dict(status='FAIL' if errors else 'PASS', markdown_files=len(reports),
                    math_expressions=sum(len(r['expressions']) for r in reports), files=reports,
-                   scope='Markdown/TeX delimiter and table structure only; no rendering or scientific verification.')
+                   scope='Markdown/TeX structure and targeted rendering-hazard checks; '
+                         'no rendering, complete GitHub compatibility or scientific verification.')
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + '\n')
