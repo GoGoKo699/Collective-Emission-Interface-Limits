@@ -361,8 +361,7 @@ KM supplies the operational language and full selected-pulse state calculation. 
 Dicke, pulse-shape and occupation results remain credited. The uniform optimization is
 the candidate additional contribution, not the discovery that mode shape and photon
 number can be correlated. The later [close-source comparison](literature/TZIPERMAN_FULL_TEXT.md)
-is complete at its documented versions; separate external critical reading remains
-open. See [Purpose and contact](README.md#purpose-and-contact) for the repository's
+is complete at its documented versions. See [Purpose and contact](README.md#purpose-and-contact) for the repository's
 learning role and discussion details.
 
 ## 8. Loss and finite capture after the ideal theorem

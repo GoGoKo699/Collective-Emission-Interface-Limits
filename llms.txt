@@ -50,7 +50,7 @@ This is not an unrestricted quantum-memory or quantum-capacity impossibility.
 - [Reading guide](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/docs/README.md): Five-stage route from the single selected tutorial and a full documentation map.
 - [Local teaching bridge](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/REVIEW.md): Worked emission, mode-mismatch and coherence calculations leading to the theorem.
 - [Prior-work comparison](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/literature/COMPARISON.md): Inherited results, closest inspected constructions and limits of the novelty assessment.
-- [Current status](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/STATUS.md): Completed work and unresolved external-review and device evidence.
+- [Current status](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/STATUS.md): Completed work, unresolved physical premises and practical significance.
 - [Reproduction policy](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/provenance/REPRODUCTION_POLICY.md): Scientific assertions, reference agreement and their verification limits.
 
 The single external teaching source is Kiilerich and Mølmer, Quantum interactions

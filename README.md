@@ -117,8 +117,7 @@ mean-occupation optimization and pulse-capture formalism have direct predecessor
 The [comparison](literature/COMPARISON.md) and [background dossier](literature/BACKGROUND.md)
 separate those ingredients from the optimized uniform limit. The
 [Tziperman full-text comparison](literature/TZIPERMAN_FULL_TEXT.md) is complete at its
-documented versions; no subsumption was found. A separate external critical-reader
-report and joint-device evidence remain absent. The
+documented versions; no subsumption was found. A joint-device realization remains unestablished. The
 [5 October sanity check](research/SANITY_CHECK_2026_10_05.md) records the internal review,
 scope clarifications and verification repairs.
 

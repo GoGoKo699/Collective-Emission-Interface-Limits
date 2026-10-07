@@ -44,9 +44,9 @@ for the fixed conditional theorem. The supporting loss and capture questions are
 now quantified. This completes the bounded internal research required for those
 claims; it is not an external validation or exhaustive priority certificate.
 
-The external mathematical/physical critical-reader report remains absent. Use
-[CRITICAL_READING.md](../research/CRITICAL_READING.md), the theorem, the claim map
-and the source comparisons for that separate judgment. Correctness, non-subsumption
+The [established answers and open questions](../research/CRITICAL_READING.md)
+link settled mathematical issues to their proofs and identify unresolved preparation,
+joint-resource and significance questions. Correctness, non-subsumption
 by inspected sources, and physical significance remain distinct.
 
 Unknown reference-preserving upload, calibration robustness, uniform microscopic
