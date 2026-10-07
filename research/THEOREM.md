@@ -16,7 +16,7 @@ The emitted $m$-photon state has a positive symmetric wavefunction in the normal
 \begin{aligned}
 \Psi_{N,m}(\boldsymbol{\tau})
 &=C_{N,m}e^{-\sum_i\tau_i/2}\\
-&\quad\times\exp\!\left[\frac{1}{N}\sum_{i<j}\min(\tau_i,\tau_j)\right],\\
+&\quad\times\exp\!\left[\frac{1}{N}\sum_{i\lt j}\min(\tau_i,\tau_j)\right],\\
 C_{N,m}^2&=\prod_{j=0}^{m-1}(1-j/N).
 \end{aligned}
 ```
