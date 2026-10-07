@@ -1,8 +1,8 @@
 # Law–Lee 2007: full-text comparison of the fixed interface result
 
-**3 October 2026.** The author supplied the complete six-page article by C. K. Law and S. K. Y. Lee, *Dynamic photon-mode selection in Dicke superradiance*, Physical Review A 75, 033813 (2007), DOI [10.1103/PhysRevA.75.033813](https://doi.org/10.1103/PhysRevA.75.033813). All pages, Eqs. (1)–(30), figure captions, and notes [16]–[17] were read; mathematical typography and figures were checked against rendered pages. The article has no separate appendix. The supplied PDF is not redistributed in this repository.
+C. K. Law and S. K. Y. Lee, *Dynamic photon-mode selection in Dicke superradiance*, Physical Review A 75, 033813 (2007), DOI [10.1103/PhysRevA.75.033813](https://doi.org/10.1103/PhysRevA.75.033813). This comparison covers the complete six-page article: Eqs. (1)–(30), figures/captions and notes [16]–[17], with mathematical typography and figures checked against rendered pages. The article has no separate appendix.
 
-**Outcome: the specific missing full-text comparison is closed. No correction to the common-code theorem or subsumption by this article was established. Attribution must explicitly include the oscillator comparator, dominant two-mode behavior, and the semiclassical hyperbolic-secant pulse.** This is an author-side comparison, not independent proof review or an exhaustive priority certificate.
+Law–Lee establishes optimized mean-occupation modes, the oscillator comparator, dominant two-mode behavior and the semiclassical hyperbolic-secant pulse. The distinction developed below is between those results and uniform canonical transfer of an unknown growing code.
 
 ## 1. What the paper actually optimizes
 
@@ -120,8 +120,4 @@ This conclusion does not claim that their methods could never be extended to add
 
 The paper is a foundational predecessor for several explanatory ingredients. The theorem, its $`N^{2/3}`$ scaling domain, the receiver restriction, and its proof are unchanged by this comparison. We do not claim a new Dicke model, first oscillator comparison, first two-mode description, or first semiclassical pulse matching.
 
-## 7. Reading outcome and remaining work
-
-The missing-paper task is complete; further failed-download searches are unnecessary. The completed comparison removes one specific uncertainty, not all possible priority concerns. A genuinely separate reading of the uniform proof and remaining preparation/realization evidence are still outstanding. No independent report, hardware demonstration, or submission readiness is implied.
-
-The next work remains on the fixed core: check the finite inequalities and quantifiers in [THEOREM.md](../research/THEOREM.md), and close the specific preparation evidence gaps in [ASSUMPTIONS.md](ASSUMPTIONS.md). No new source, decoder, or multimode-capacity project is opened. Manuscript writing stays on hold.
+The [canonical proof](../research/THEOREM.md) gives the finite inequalities and quantifiers for the uniform result; the [assumption register](ASSUMPTIONS.md) states its preparation and realization scope.

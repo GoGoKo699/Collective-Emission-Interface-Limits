@@ -1,6 +1,6 @@
-# Preparation evidence: closing the two named full-text checks
+# Preparation evidence: conditional symmetric-state constructions
 
-**3 October 2026.** This completes the P03/P04 access-and-construction task from the preceding work order. It does not change the emission model or certify a prepared large-code device. Prior identifiers remain those of [SOURCE_EVIDENCE_PRE_UPLOAD.md](SOURCE_EVIDENCE_PRE_UPLOAD.md); their old P03/P04 access labels are now superseded, not silently rewritten.
+Lemr–Fiurasek and Chen et al. provide two conditional constructions for symmetric atomic targets. This note identifies their controls, approximations and relation to the input resource of the interface theorem. P03/P04 refer to the [source register](SOURCE_EVIDENCE.md).
 
 ## P03: Lemr and Fiurasek
 
@@ -24,14 +24,14 @@ Equations (1)-(3) specify a uniformly coupled dispersive three-level ensemble an
 
 ## What follows, and what does not
 
-**Reading status:** five preparation approaches have now been inspected at construction level: the three previously recorded S01/P01/P02 papers and these two. This count refers to related preparation approaches, including conditional and approximate ones. It is not five demonstrations of the identical physical premise, five experiments, or completion of the combined-device audit. The three older readings are inherited records, not newly repeated full-paper audits in this pass.
+Together with S01/P01/P02 in the [source register](SOURCE_EVIDENCE.md), these papers supply five related preparation approaches, including conditional and approximate constructions. They do not provide five demonstrations of the same input resource or a combined device.
 
 **Our interpretation, not an additional claim of the papers:** preparing a classically specified target, preparing it on a heralded branch, and coherently accepting an unknown state entangled with a reference are different operational statements. For example, a success operator that multiplies number components by unequal magnitudes changes their relative amplitudes and makes success input-dependent. Preparation of every chosen target by separately selected controls does not by itself establish one input-independent isometry on their span. Conversely, a heralded operation can preserve an unknown code if its successful action is proportional to an isometry there. We do not rule that out universally; these inspected constructions do not establish that resource for our entire growing code.
 
-The interface theorem starts with an input in its declared symmetric space. It neither assumes the receiver knows its coefficients nor supplies an end-to-end preparation protocol. The evidence now substantiates why symmetric target states are a recognized control objective. Fixed-N calibration, uniformly accurate reference-entangled preparation, compatible emission/reception, and their resource costs remain separate obligations for a device claim.
+The interface theorem starts with an input in its declared symmetric space. It neither assumes the receiver knows its coefficients nor supplies an end-to-end preparation protocol. These constructions establish symmetric target states as a recognized control objective. Fixed-N calibration, uniformly accurate reference-entangled preparation, compatible emission/reception, and their resource costs remain separate obligations for a device claim.
 
-## Access and validation limits
+## Source versions and reading method
 
-All sections of the two retrieved text records were traversed. Equation references above are to those specific versions. Web rendering attempts failed; the assessment uses parsed text and equations, not image-only data, plot readings or a claimed visual typography check. No third-party PDF is redistributed. Failed earlier arXiv/MIT/APS requests are superseded only where a readable copy was actually obtained.
+All sections of the two retrieved text records were traversed. Equation references above are to those specific versions. Web rendering attempts failed; the assessment uses parsed text and equations, not image-only data, plot readings or a claimed visual typography check. The [historical register](SOURCE_EVIDENCE_PRE_UPLOAD.md) preserves earlier access attempts.
 
-This evidence pass does not add a theorem or claim independent review. It leaves the central source-to-memory result unchanged and closes the two named preparation-source reading tasks. The clean physical account is in [STORY.md](../research/STORY.md).
+The [physical account](../research/STORY.md) explains how these preparation resources relate to the conditional source-to-memory result.

@@ -1,12 +1,14 @@
 # One logical qubit can witness the common-mode limit
 
-**3 October 2026. Scope consequence of the recorded theorem, with new finite checks.** The source, passive receiver, and canonical excitation-number map are unchanged. This note does not claim another general information theorem or an optimized bosonic encoding.
+The critical common-mode obstruction already appears in a two-dimensional logical
+code. This is a consequence of the [theorem](THEOREM.md) for the same collective
+source, passive receiver and canonical excitation-number map.
 
-## 1. The question
+## 1. The two-number code
 
-The original statement requires a receiver to handle every Dicke excitation number from zero to $`M`$. One might ask whether the loss of fidelity is only an artifact of demanding simultaneous performance on an increasingly large logical space.
-
-It is not. For $`M\geq4`$, define $`q=\lfloor M/4\rfloor`$ and the two-dimensional input code
+The full-code theorem requires a receiver to handle every Dicke excitation number
+from zero to $`M`$. Two populated levels suffice to witness its critical limit.
+For $`M\geq4`$, define $`q=\lfloor M/4\rfloor`$ and the two-dimensional input code
 
 ```math
 |0_L\rangle=|D_N^q\rangle,\qquad |1_L\rangle=|D_N^M\rangle.

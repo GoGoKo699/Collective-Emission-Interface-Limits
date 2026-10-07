@@ -1,38 +1,28 @@
-# Prior-art register and reading status
+# Prior-art and attribution register
 
-**Updated 5 October 2026.** This is a targeted attribution map, not a systematic-review or novelty certificate. Primary references are used. A failed download is an access gap, not evidence that a construction is absent.
-
-## Follow-up evidence pass
-
-The post-activation [direct comparison](COMPARISON.md) and [primary evidence register](SOURCE_EVIDENCE.md) now provide equation-level locations and premise-specific counts. They preserve the theorem and distinguish full text from abstract-only access. In particular, the Gorshkov linearized-memory comparison, Kiilerich-Molmer selected-mode formalism, and Malz atomic-state scope are now explicit. The author has now supplied Law–Lee in full; the [completed comparison](LAW_LEE_FULL_TEXT.md) supersedes the earlier abstract-only status. The named access gap is closed; exhaustive priority is not established. The preparation-pass paragraph below is historical.
+This map identifies inherited ingredients and the precise differences between the interface theorem and its closest predecessors. The [direct comparison](COMPARISON.md) and [primary evidence register](SOURCE_EVIDENCE.md) provide equation-level locations and distinguish full text from abstract-only evidence.
 
 ## Central comparisons
 
-The later [Tziperman reading](TZIPERMAN_FULL_TEXT.md) inspects the complete
-author-hosted main article and supplement. It adds an overlapping collective source,
-canonical target and full selected-mode transfer construction. Its preparation-specific
-mode choice does not state the uniform common-code theorem; no subsumption was found
-in the inspected versions. This closes that named access task without establishing exhaustive priority.
+The [Tziperman comparison](TZIPERMAN_FULL_TEXT.md) covers the complete author-hosted
+main article and supplement: an overlapping collective source, canonical target and
+full selected-mode transfer construction. Its preparation-specific mode choice does
+not supply the uniform common-code theorem in the inspected versions.
 
-The [bounded prewriting refresh](PREWRITING_SEARCH_2026_10_05.md) additionally
-compares Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al. at the
-construction level and records screened recent titles. This is the current
-reading status for those sources.
+The [additional source comparisons](PREWRITING_SEARCH_2026_10_05.md) cover
+Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al. at the construction level,
+with inspected versions and search scope.
 
-| Source | Established ingredient | Difference that still requires evaluation |
+| Source | Established ingredient | Relation to the interface theorem |
 |---|---|---|
 | Paulisch, *Waveguide Quantum Electrodynamics*, dissertation, 2018, Chapter 1 | Exact emitted cascade, conventional-pulse overlap, number-state mapping and useful-channel probability | The present result optimizes one waveform over a growing number code and controls the approximation uniformly. The conventional cubic error already suggests the critical scale. |
 | Khanahmadi et al., Physical Review Research 5, 043071 (2023) | Number-dependent temporal modes, selected Fock/cat-state transfer and capture-cavity analysis | The inspected work does not state the same all-waveform Dicke-code minimax. Its qualitative explanation is a direct predecessor, not an observation to claim anew. |
-| Law and Lee, Physical Review A 75, 033813 (2007) | Full-text-checked natural-mode optimization, mode purity, oscillator comparator, dominant two-mode occupation and semiclassical sech pulse | The supplied six pages do not state the uniform growing-code isometry estimate or all-waveform common-code converse. Exact rank-one correlation does imply single-mode support; approximate occupation needs a photon-number-dependent fidelity estimate. See the completed comparison. |
+| Law and Lee, Physical Review A 75, 033813 (2007) | Full-text-checked natural-mode optimization, mode purity, oscillator comparator, dominant two-mode occupation and semiclassical sech pulse | The supplied six pages do not state the uniform growing-code isometry estimate or all-waveform common-code converse. Exact rank-one correlation does imply single-mode support; approximate occupation needs a photon-number-dependent fidelity estimate. See the [full comparison](LAW_LEE_FULL_TEXT.md). |
 | Lemberger and Mølmer, Physical Review A 103, 033713 (2021) | Radiation eigenmodes and dominant average occupations | Mean occupation is not worst-input canonical state-transfer fidelity. A complete comparison must preserve that distinction without claiming that changing metrics is itself novel. |
 | Yamamoto and James, arXiv:1403.1698 | Passive linear memory framework | The one-retained-mode reduction is an application of established input-output theory. |
 | Nurdin, James, Yamamoto, arXiv:1609.05643 | Tunable capture and singular-onset control issue | The finite regularized receiver is a concrete implementation check, not a new capture principle. |
 
-### What was checked in the repository-preparation pass
-
-The 2023 nonlinear-cavity primary PDF was reopened, especially Sections IV–V and Eq. (17). Its state-specific readout and the vacuum-versus-populated-number discussion agree with the earlier source comparison. No numerical value was read from a graph. The Law–Lee primary abstract was retrieved again, but publisher/harvest full-text requests did not return a readable article. That earlier access attempt did not settle the full construction. The later user-supplied article and completed comparison above supersede this historical gap. The arXiv records of the passive-memory, capture, radiation-mode, source-generation, and cavity-amplification references were checked for title, authors, and scope.
-
-The current two-sector witness is a consequence of the already recorded converse. It should not be counted as a second independent publication-level discovery. Its purpose is to distinguish growing excitation energy from growing logical dimension.
+The two-sector witness follows from the common-waveform converse and distinguishes growing excitation energy from growing logical dimension; it is not a separate mechanism. Historical access attempts, including unsuccessful Law–Lee retrievals, are preserved in [SOURCE_EVIDENCE_PRE_UPLOAD.md](SOURCE_EVIDENCE_PRE_UPLOAD.md).
 
 ## Source-realization comparisons
 
@@ -60,7 +50,4 @@ The two-emitter observation by Mlynek et al. supports a realizable collective-de
 
 [P9] J. A. Mlynek, A. A. Abdumalikov, C. Eichler, and A. Wallraff, *Observation of Dicke superradiance for two artificial atoms in a cavity with high decay rate*, Nature Communications 5, 5186 (2014). https://doi.org/10.1038/ncomms6186
 
-The source register adds direct Malz-Trivedi-Cirac and cavity-memory scope checks.
-The earlier Belliardo reading gap is superseded by the dated prewriting comparison
-linked above. Full-field coherent absorbers remain a different task; no complete
-construction-level subsumption audit for that broader resource is claimed here.
+The [source register](SOURCE_EVIDENCE.md) also covers Malz–Trivedi–Cirac and cavity-memory scope. Full-field coherent absorbers allow broader receiving resources and fall outside this comparison.

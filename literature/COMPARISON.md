@@ -1,6 +1,6 @@
 # Direct comparison of the fixed interface theorem
 
-**Updated 5 October 2026 after the bounded prewriting source refresh.** The source, receiver, target map and theorem are unchanged; the repository preserves eight scientific suites. This is a construction-level literature comparison, not independent proof review or exhaustive priority certification. Identifiers refer to the [source register](SOURCE_EVIDENCE.md).
+This comparison identifies the source models, optimized quantities and asymptotic guarantees in the closest references. Identifiers refer to the [source register](SOURCE_EVIDENCE.md).
 
 ## The exact question
 
@@ -18,13 +18,13 @@ Khanahmadi et al. (A02), Sec. IV, already distinguish vacuum plus one populated 
 
 Kiilerich and Molmer (R03), Eqs. (2)–(6), supply full quantum-state calculations for any selected output pulse through virtual cascaded oscillators, not only intensity. Our numerical capture calculations apply that method. Neither inspected construction states the present all-waveform worst-Dicke-code converse and controlled joint limit. This does not mean those methods cannot be extended to investigate it.
 
-## Law–Lee: the missing comparison is now complete
+## Law–Lee: optimized occupation and whole-state fidelity
 
 The entire six-page article (A03) has been inspected. Its Eqs. (10)–(17) optimize mean photon occupation by diagonalizing a first-order field correlation kernel; Eqs. (18)–(21) define its normalized purity and effective mode number. Its regression formula covers general diagonal Dicke preparations, and its examples include both full inversion and half excitation. It is inaccurate to dismiss the paper as only a fixed-mode or fully inverted calculation.
 
 The [full-text comparison](LAW_LEE_FULL_TEXT.md) identifies the precise differences and overlap. The article does not contain the common-waveform worst-code optimization, a uniform emitted-isometry error over the growing code, or the matching critical converse. Exact rank-one correlation does imply genuine single-mode support; approximate concentration must be translated with a photon-number-dependent error bound. The half-excited semiclassical pulse matches the $`a\to1/2`$ shape limit of our reference family, but that does not extend our $`m=o(N)`$ norm theorem to half filling.
 
-Direct attribution now includes its harmonic-oscillator argument (opening of Sec. III and note [16]), dominant two-mode occupation (Sec. III B), and semiclassical hyperbolic-secant pulse (Sec. III C). None is advertised as a new discovery. Its time-dependent modes at a fixed collection time also define receiving envelopes, so 'dynamic versus fixed' is not our novelty distinction.
+Direct predecessors include its harmonic-oscillator argument (opening of Sec. III and note [16]), dominant two-mode occupation (Sec. III B), and semiclassical hyperbolic-secant pulse (Sec. III C). None is advertised as a new discovery. Its time-dependent modes at a fixed collection time also define receiving envelopes, so 'dynamic versus fixed' is not our novelty distinction.
 
 ## Tziperman: full-state transfer with an input-selected mode
 
@@ -39,7 +39,7 @@ found in these inspected constructions; that is a scoped conclusion.
 
 ## Other controlled limits and attribution anchors
 
-The [prewriting comparison](PREWRITING_SEARCH_2026_10_05.md) adds Porras–Cirac's
+The [additional source comparisons](PREWRITING_SEARCH_2026_10_05.md) cover Porras–Cirac's
 bosonic atom-to-light mapping, Perarnau-Llobet et al.'s full-state few-mode
 projections, and Belliardo et al.'s optimized parameter readout. It records their
 equations and source versions, credits the inherited capabilities, and explains
@@ -50,10 +50,8 @@ Lemberger–Molmer (S04), Sec. 2.2, Eq. (7), analyze mean radiation eigenmode oc
 
 Paulisch (A01) supplies the exact cascade, conventional exponential overlap, useful-channel collection product, and prior discussion of number-state mapping and pulse shaping. The conventional cubic correction already suggests the $`N^{2/3}`$ scale. The candidate advance is the optimized uniform boundary, not the first appearance of that exponent.
 
-## Outcome
+## Contribution and scope
 
-**The core is preserved against the inspected full-text comparisons, including Law–Lee and Tziperman; no theorem correction or subsumption was established.** The named missing-source tasks are resolved. This does not establish exhaustive novelty or submission readiness.
+The contribution is the sharp optimized uniform distinction between faithful canonical state transfer and mean-photon collection for the stated collective source and one linear memory. Explicitly excluded claims include a new Dicke cascade, first mode optimization, first recognition of number-dependent pulses, first two-mode description, a new oscillator comparator or capture formalism, failure of established linearized memory theory, and limits on unrestricted nonlinear decoding.
 
-The strongest remaining contribution is the sharp optimized uniform distinction between faithful canonical state transfer and mean-photon collection for the stated collective source and one linear memory. Explicitly excluded claims include a new Dicke cascade, first mode optimization, first recognition of number-dependent pulses, first two-mode description, a new oscillator comparator or capture formalism, failure of established linearized memory theory, and limits on unrestricted nonlinear decoding.
-
-The remaining [open questions](../research/CRITICAL_READING.md#questions-that-remain-open) concern preparation, joint realization and practical significance. No new Hamiltonian or receiver class has been introduced to avoid those questions. See [Purpose and contact](../README.md#purpose-and-contact) for the repository's learning role and discussion details.
+The [scope discussion](../research/CRITICAL_READING.md) separates the established interface result from preparation and joint-device extensions, and discusses its practical significance.

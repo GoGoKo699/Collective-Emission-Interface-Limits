@@ -12,7 +12,7 @@ merely for the average number of photons it delivers.
 | [Reading guide](docs/README.md) · [Tutorial-to-theorem bridge](REVIEW.md) | Learn from one external tutorial and local worked examples |
 | [Theorem](research/THEOREM.md) · [Claim and evidence map](research/CLAIM_EVIDENCE_MAP.md) | Follow the result, proof dependencies and supporting consequences |
 | [Physical scope](research/PHYSICAL_SCOPE.md) · [Prior-work comparison](literature/COMPARISON.md) | Check receiver restrictions, realization limits and attribution |
-| [Verification](#evidence-and-reproduction) · [Research status](STATUS.md) | Inspect executable evidence and the remaining limits |
+| [Verification](#evidence-and-reproduction) · [Scope and evidence](STATUS.md) | Inspect executable evidence and the remaining limits |
 | [LLM guide](llms.txt) · [Workspace](WORKSPACE.md) | Identify relevant questions and authoritative files for further reading |
 
 ## Model and transfer task
@@ -94,15 +94,9 @@ Its virtual input/output cavities give the physical language of the interface. T
 [reading guide](docs/README.md) maps its sections to this repository. The
 [tutorial-to-theorem bridge](REVIEW.md) supplies the missing Dicke-ladder, fidelity and
 uniform-bound steps locally; no second external tutorial is required.
-The guide now provides a staged route, with worked one- and two-photon emission,
-mode-mismatch and coherence examples before the asymptotic proof. Loss and finite
-capture follow as supporting lessons.
-
-The [documentation map](docs/README.md#repository-map) keeps the supporting physics,
-literature and verification records accessible without putting every audit on the front page.
-The [claim and evidence map](research/CLAIM_EVIDENCE_MAP.md) records the completed
-internal research before writing, including the loss/capture bounds and the exact
-boundary between a conditional theorem and a device claim.
+Worked emission, mode-mismatch and coherence examples lead into the proof;
+loss and finite capture follow as supporting lessons. The
+[documentation map](docs/README.md#repository-map) locates the supporting material.
 
 ## Boundaries and prior work
 
@@ -116,10 +110,10 @@ The Dicke cascade, conventional-pulse cubic mismatch, number-dependent temporal 
 mean-occupation optimization and pulse-capture formalism have direct predecessors.
 The [comparison](literature/COMPARISON.md) and [background dossier](literature/BACKGROUND.md)
 separate those ingredients from the optimized uniform limit. The
-[Tziperman full-text comparison](literature/TZIPERMAN_FULL_TEXT.md) is complete at its
-documented versions; no subsumption was found. A joint-device realization remains unestablished. The
-[5 October sanity check](research/SANITY_CHECK_2026_10_05.md) records the internal review,
-scope clarifications and verification repairs.
+[Tziperman comparison](literature/TZIPERMAN_FULL_TEXT.md) examines its overlapping
+collective source and selected-state transfer construction. No subsumption of the
+uniform common-code theorem was found in the inspected versions. The
+[scope and evidence page](STATUS.md) links the physical limits and verification records.
 
 ## Evidence and reproduction
 

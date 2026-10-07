@@ -1,6 +1,9 @@
 # Model and proof of the common-mode boundary
 
-**Consolidated on 3 October 2026; endpoint-safe proof clarification the same day.** This is an edited, standalone presentation of the preceding collective-emission calculations. It introduces no new source or receiver. The complete primitive identities and numerical benchmarks are covered by the preserved standalone suites. Statements below are mathematical claims within the declared model; the priority and physical-scope checks are separate.
+This note defines the collective source and passive receiving channel, proves the
+optimized uniform transfer boundary, and compares it with mean-photon collection.
+The [claim map](CLAIM_EVIDENCE_MAP.md) links the proof steps to executable checks;
+[physical scope](PHYSICAL_SCOPE.md) states the implementation limits.
 
 ## 1. Source, output normalization, and target
 
@@ -238,11 +241,15 @@ For a general nonvacuum code input, the ratio $`\langle\hat n_{f_*}\rangle/\lang
 
 It tends to one for every $`M=o(N)`$. Taking $`M=\lfloor N^{3/4}\rfloor`$ simultaneously gives vanishing excitation density, uniformly near-complete mean photon collection, and vanishing optimized whole-code transfer fidelity. This does not infer an unbounded moment from trace-distance convergence alone, nor assert failure of every low-excitation approximation.
 
-## 7. Status and attribution
+## 7. Attribution
 
 The emitted cascade, conventional exponential overlap, nonlinear-emission mode dependence, and passive-capture framework are prior results [P1–P4]. The optimized exponent is not claimed to be the first appearance of the $`N^{2/3}`$ scale. The candidate additional result is its all-waveform, whole-code, uniform optimization and the observable/channel distinction.
 
-The calculations and proof have author-side audits but no independent report. The [Law–Lee full-text comparison](../literature/LAW_LEE_FULL_TEXT.md) is complete: mean-occupation optimization, the oscillator comparator, dominant few-mode behavior and the semiclassical pulse are credited directly. That scoped comparison did not establish subsumption of this uniform common-code theorem; it is not exhaustive priority certification. The [endpoint-safe proof audit](PROOF_AUDIT.md) records the current clarification and its limits. See also the [prior-art register](../literature/PRIOR_ART.md) and [physical boundaries](PHYSICAL_SCOPE.md). No joint large-code experiment is asserted.
+The [Law–Lee comparison](../literature/LAW_LEE_FULL_TEXT.md) credits mean-occupation
+optimization, the oscillator comparator, dominant few-mode behavior and the
+semiclassical pulse. No subsumption of this uniform common-code theorem was found
+in that comparison. The [prior-art register](../literature/PRIOR_ART.md) records the
+source coverage. The [proof audit](PROOF_AUDIT.md) preserves the endpoint correction.
 
 [P1] V. Paulisch, *Waveguide Quantum Electrodynamics*, dissertation (2018), Chapter 1. https://edoc.ub.uni-muenchen.de/22151/1/Paulisch_Vanessa.pdf
 

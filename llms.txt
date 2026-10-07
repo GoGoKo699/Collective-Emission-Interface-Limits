@@ -50,7 +50,7 @@ This is not an unrestricted quantum-memory or quantum-capacity impossibility.
 - [Reading guide](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/docs/README.md): Five-stage route from the single selected tutorial and a full documentation map.
 - [Local teaching bridge](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/REVIEW.md): Worked emission, mode-mismatch and coherence calculations leading to the theorem.
 - [Prior-work comparison](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/literature/COMPARISON.md): Inherited results, closest inspected constructions and limits of the novelty assessment.
-- [Current status](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/STATUS.md): Completed work, unresolved physical premises and practical significance.
+- [Scope and evidence](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/STATUS.md): Results, verification records and the boundary between the conditional theorem and a device realization.
 - [Reproduction policy](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/provenance/REPRODUCTION_POLICY.md): Scientific assertions, reference agreement and their verification limits.
 
 The single external teaching source is Kiilerich and Mølmer, Quantum interactions
@@ -62,7 +62,7 @@ the tutorial is not claimed to contain this repository's theorem.
 
 The theorem and its assumptions govern summaries. The evidence map distinguishes
 proof arguments from executable checks; dated audits and archived execution
-records describe their own revisions and do not replace the current status.
+records describe their own revisions.
 Eight preserved scientific suites contain 39 groups and 612 cases; the 50
 supporting loss checks are counted separately. Internal review and numerical
 passes are not external peer review or exhaustive priority certification.

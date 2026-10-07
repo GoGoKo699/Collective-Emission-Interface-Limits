@@ -1,92 +1,51 @@
-# Research status
+# Scope and evidence
 
-**Scientific status, 5 October 2026 · Internal prewriting research completed for the conditional theorem.**
+This repository contains the model, proofs, supporting physical analysis, source
+comparisons and reproducible checks for collective emission into one passive
+receiving oscillator. The [overview](README.md) gives the physical result; the
+[claim and evidence map](research/CLAIM_EVIDENCE_MAP.md) connects each claim to its
+proof and tests.
 
-**Reader-facing update, 7 October 2026.** The repository's
-[purpose and contact notice](README.md#purpose-and-contact) describes its role as a
-work record and self-directed learning guide. The [LLM guide](llms.txt) supplies
-relevance cues and authoritative reading links. Scientific status is unchanged.
+## Results and scope
 
-The source, canonical number map, excitation code, receiver class and main theorem
-are unchanged. The [sanity-check record](research/SANITY_CHECK_2026_10_05.md) separates
-proof review, numerical reproduction, literature comparison and reporting repairs.
+- The [theorem](research/THEOREM.md) gives the optimized uniform transfer boundary
+  and distinguishes it from near-complete mean-photon collection.
+- The [two-sector witness](research/TWO_SECTOR_WITNESS.md) shows that two populated
+  number levels can expose the critical obstruction.
+- The [loss analysis](research/LOSS_COMPETITION.md) and
+  [finite-capture bounds](research/PHYSICAL_SCOPE.md) quantify supporting limits
+  within their stated effective models.
+- The [source comparisons](literature/COMPARISON.md) distinguish inherited
+  ingredients from the uniform common-receiver result. Their source coverage is
+  recorded; they do not assert exhaustive priority.
 
-## Scientific outcome
+The theorem assumes a known symmetric collective source, an available unknown
+input code state, complete ideal emission and a predetermined passive receiver.
+It does not supply a physical input encoder or a joint microscopic device.
+Preparation, calibration and compatible loss, bandwidth and duration resources
+are [scope extensions](research/CRITICAL_READING.md#questions-that-remain-open).
+They are outside the conditional theorem.
 
-The internal mathematical and physical readings found no defect in the optimized
-uniform boundary. They checked the channel/reference reduction, full-process entropy
-bound, finite all-waveform converse, critical coefficient, photon-collection estimate
-and two-sector witness. This is an internal multi-agent audit.
+## Verification
 
-Explicit qualifications were added for the positive-pulse attenuation formula,
-complete emission under scalar pulse shaping, complex capture phase, and the
-convergent critical sequence required by the Poisson limit. The established theorem,
-its coefficient and the eight scientific suites/results are unchanged.
+| Evidence | Location |
+|---|---|
+| Eight scientific suites: 39 groups, 612 cases | [Suite registry](provenance/SUITES.json), [verification commands](README.md#evidence-and-reproduction) |
+| 50 supplementary loss checks | [Loss checker](tools/check_loss_competition.py) |
+| Reference agreement and evidence protection | [Reproduction policy](provenance/REPRODUCTION_POLICY.md) |
+| Mathematical formatting and local links | [Presentation checker](tools/check_presentation.py), [integrity verifier](verify.py) |
+| Dated proof corrections, source records and execution evidence | [Provenance index](provenance/README.md), [proof audit](research/PROOF_AUDIT.md), [sanity record](research/SANITY_CHECK_2026_10_05.md) |
 
-The [Tziperman construction-level comparison](literature/TZIPERMAN_FULL_TEXT.md) is now
-complete for the documented main-article and supplement versions. Their source overlaps
-ours, and their full-state calculations receive direct credit. No subsumption of the
-common-receiver growing-code theorem was found. This resolves the named access task,
-not exhaustive priority or publication readiness.
+Numerical checks exercise identities and finite cases; the analytic proofs establish
+the uniform limits. Historical execution records describe their own revisions.
+Current runs compare fresh outputs with the protected references.
 
-The requested prewriting pass is organized in the [claim and evidence map](research/CLAIM_EVIDENCE_MAP.md).
-An additional claim-level proof reading found no outstanding obligation for the ideal
-theorem. The [loss-competition proof](research/LOSS_COMPETITION.md) now determines
-when ordinary transmission loss masks the common-mode penalty, including optimization
-over every waveform and finite certificates. The [physical-scope note](research/PHYSICAL_SCOPE.md)
-quantifies finite-window capture and the tolerances required across a growing code.
-These close supporting physical questions within the established model.
+## Reading and maintenance
 
-A [bounded source refresh](literature/PREWRITING_SEARCH_2026_10_05.md) adds direct
-Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al. comparisons with reading
-scope and versions. Their full-state mapping, few-mode projections and parameter
-readout receive credit. No subsumption was found in those inspected constructions.
+The [reading guide](docs/README.md) uses Kiilerich–Mølmer (2020) as its single
+external teaching source. The [local bridge](REVIEW.md) supplies worked examples
+and the additional proof steps. The [workspace](WORKSPACE.md) and
+[maintenance instructions](work_orders/CURRENT.md) govern repository changes.
 
-## Teaching and verification
-
-**Kiilerich–Mølmer (2020), Quantum interactions with pulses of radiation** remains the
-single teaching anchor. The [reading guide](docs/README.md), [local bridge](REVIEW.md)
-and [convention map](research/CONVENTIONS.md) supply the route; no further anchor choice
-is pending. Stale statements elsewhere have been corrected or marked historical.
-
-On 6 October 2026 the owner reconfirmed this choice. The guide now has a staged
-learning route, and the bridge includes worked emission, mode-mismatch and coherence
-calculations, followed by the existing loss and finite-capture consequences. This
-is a teaching revision; the scientific claims, proof files and saved results are unchanged.
-
-All eight scientific suites pass: **39 groups, 612 cases**. The fresh local baseline
-has zero scientific-value differences from the saved references; only runtime metadata
-differs. Raw outputs are retained in the [audit evidence](provenance/SANITY_2026_10_05.json).
-The repaired verifier records real UTC execution times and effective suite thread
-settings, rejects nonfinite metadata, and prevents summary paths from overwriting
-maintained sources or raw evidence. Numerical thresholds and saved references are unchanged.
-
-The [reproduction policy](provenance/REPRODUCTION_POLICY.md) still distinguishes exact
-bytes, reviewed agreement and scientific assertions. The earlier hosted recurrence
-remains classified in [HOSTED_REPRODUCTION.md](provenance/HOSTED_REPRODUCTION.md); its
-missing historical PR #6 outputs are not recovered by this check. New hosted results
-must be read from their actual workflow runs.
-
-## Remaining limits and next step
-
-The bounded internal significance reading makes the fixed-fidelity excitation budget
-explicit in [STORY.md](research/STORY.md). It follows directly from the existing critical
-law and code monotonicity, and is not a new mechanism or an additional novelty claim.
-The narrow candidate contribution survives: a uniform guarantee with an all-waveform
-converse. Its importance beyond familiar multiphoton mismatch remains unresolved.
-The [established answers and open questions](research/CRITICAL_READING.md) now separate that judgment
-from mathematical validity and scoped non-subsumption. No scientific code or saved
-reference result was changed by this clarification.
-
-Whole-code preparation,
-reference-preserving encoding, atom-number calibration, consistent microscopic
-bandwidth/rate scaling, duration, loss and combined realization remain conditional
-for a device claim.
-
-The [current work order](work_orders/CURRENT.md) records the completed internal
-research and a finite stopping rule. Further scientific work should answer a precise
-objection, newly identified subsuming construction or newly authorized device claim.
-The absence of a joint device is an explicit limit of the theoretical claims, not a
-premise silently supplied by the literature. Any outside contact requires separate
-authorization under the workspace instructions. The [prewriting provenance](provenance/PREWRITING_2026_10_05.json) records
-the supplementary checks separately from the preserved scientific baseline.
+See [Purpose and contact](README.md#purpose-and-contact) for the repository's role
+and discussion details.

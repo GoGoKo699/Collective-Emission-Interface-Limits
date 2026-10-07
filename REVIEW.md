@@ -3,15 +3,13 @@
 [Overview](README.md) · [Reading guide](docs/README.md) · [Complete proof](research/THEOREM.md)
 
 This is the local bridge from **Kiilerich–Mølmer, Quantum interactions with pulses of
-radiation (2020)**, abbreviated **KM**, to the existing interface theorem. Section and
+radiation (2020)**, abbreviated **KM**, to the interface theorem. Section and
 equation labels refer to the [author version](https://arxiv.org/pdf/2003.04573v1).
 The pulse and capture framework comes from KM. The Dicke specialization, channel objective
-and uniform estimates below are the repository's recorded argument with their existing
-attributions; they are not claimed to appear in the tutorial. No new result is introduced.
+and uniform estimates below supply the additional steps, with their source attributions.
 
 Read Sections 1–4 for the physical task, then Sections 5–7 for the proof mechanism.
-Section 8 connects the result to loss and finite capture. The worked calculations
-below are elementary consequences of the stated models, not additional research claims.
+Section 8 connects the result to loss and finite capture.
 
 ## 1. The quantum pulse
 
@@ -158,7 +156,7 @@ error of a product approximation instead of assuming independent photons.
 ## 4. Photon collection is not the transfer objective
 
 KM Section II B finds occupation modes from a two-time correlation kernel. Law–Lee's
-[completed comparison](literature/LAW_LEE_FULL_TEXT.md) also genuinely optimizes mean
+[comparison](literature/LAW_LEE_FULL_TEXT.md) also optimizes mean
 occupation. In a fixed $`m`$-photon sector, define
 
 ```math
@@ -360,8 +358,8 @@ remain necessary for a device claim.
 KM supplies the operational language and full selected-pulse state calculation. Existing
 Dicke, pulse-shape and occupation results remain credited. The uniform optimization is
 the candidate additional contribution, not the discovery that mode shape and photon
-number can be correlated. The later [close-source comparison](literature/TZIPERMAN_FULL_TEXT.md)
-is complete at its documented versions. See [Purpose and contact](README.md#purpose-and-contact) for the repository's
+number can be correlated. The [close-source comparison](literature/TZIPERMAN_FULL_TEXT.md)
+examines Tziperman et al.'s selected-state transfer construction. See [Purpose and contact](README.md#purpose-and-contact) for the repository's
 learning role and discussion details.
 
 ## 8. Loss and finite capture after the ideal theorem

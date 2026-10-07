@@ -1,6 +1,7 @@
 # One source, two notions of an accurate interface
 
-**Updated 5 October 2026. Explanatory research note; not a manuscript or a new result.** The model, code, receiver and fidelity convention are those of [THEOREM.md](THEOREM.md), including the recorded [proof correction](PROOF_AUDIT.md).
+The model, code, receiver and fidelity convention are defined in
+[THEOREM.md](THEOREM.md).
 
 ## The transfer task
 
@@ -48,17 +49,22 @@ This is an asymptotic corollary of the existing theorem. It supplies neither a f
 
 The intended contribution is a domain-of-validity statement for a physical approximation and a recognized memory resource. It is not a universal quantum-capacity limit. The complete emitted field retains the input information, and additional retained modes or nonlinear decoding change the task. Receiver controls, bandwidth, source preparation and loss remain real resources; [PHYSICAL_SCOPE.md](PHYSICAL_SCOPE.md) states those boundaries.
 
-## The significance question that remains
+## Relation to known physics
 
-The excitation budget makes the operational meaning explicit; it does not add a second novelty claim. The strongest objection is that the conventional cubic mismatch and number-dependent pulse distortion already make multiphoton error accumulation familiar. A sharp uniform minimax theorem may therefore be judged a technical completion of known physics. The unresolved question is whether excluding every common receiving waveform changes the assessment of a useful one-oscillator interface enough to constitute a substantive advance.
+The Dicke cascade, conventional cubic mismatch, number-dependent pulses, occupation
+optimization and linear capture are inherited ingredients. They already explain
+why multiphoton mismatch accumulates. The result here controls that accumulation
+uniformly over an unknown excitation code and excludes every better common waveform
+in the critical limit.
 
-The inspected sources do not establish that their authors claimed a uniform unknown-input guarantee from low excitation density or near-unit mean occupation alone. This result should not be framed as overturning those papers. Its candidate contribution is a controlled answer to the different, explicitly common-receiver question. The internal significance reading preserves that narrow claim, but does not settle its importance or resolve the remaining [open questions](CRITICAL_READING.md#questions-that-remain-open).
+The [direct comparison](../literature/COMPARISON.md) and
+[Law–Lee reading](../literature/LAW_LEE_FULL_TEXT.md) distinguish that task from
+selected-state and mean-occupation optimization. Those results are not contradicted.
+The excitation budget is a corollary of the same boundary, not a second result.
 
 ## What belongs in the supporting evidence
 
 The uniform field approximation and the unrestricted converse are the proof. The logical-qubit example clarifies scope. The two-mode description explains the leading error. Finite-cavity and independent-decay analyses delimit realizations. Preparation papers establish related control methods, not an implemented unknown-input interface. None of these is a separate headline needed to make the central result seem larger.
-
-The inherited ingredients include the Dicke cascade, conventional-pulse cubic mismatch, number-dependent temporal modes, mode-occupation optimization and linear capture. Law and Lee genuinely optimize mean occupation; their task is not dismissed as unoptimized. The [direct comparison](../literature/COMPARISON.md) and [full-text reading](../literature/LAW_LEE_FULL_TEXT.md) identify the specific remaining contribution without claiming exhaustive priority.
 
 **One sentence:** A collective source can look nearly oscillator-like to photon collection while no prechosen linear memory faithfully receives its whole excitation code; the two tasks have different, sharply characterized validity ranges.
 

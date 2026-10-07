@@ -1,6 +1,9 @@
 # Physical scope, error mechanism, and realization limits
 
-**Consolidated 3 October 2026; finite-capture and loss scope completed 5 October 2026.** These are supporting consequences and assumption checks, not new independent headline claims. Their original numerical implementations are retained under `tests/03_passive_receiver` through `tests/06_source_realization`.
+This note derives the receiver, pulse-shaping and loss consequences of the
+common-mode theorem and states the limits of its microscopic realization.
+Supporting numerical checks are in `tests/03_passive_receiver` through
+`tests/06_source_realization`.
 
 ## A. What the receiver restriction means
 
@@ -136,7 +139,7 @@ Off-resonant mapping that slows useful and unwanted rates together is an existin
 An additional independent link transmission $`\eta`$ imposes $`F_{\rm worst}\leq\eta^M`$ on the uncorrected canonical target. Losing one photon from the highest number gives the wrong number. This simple ceiling can dominate practical experiments; it does not remove the ideal mode-mismatch limit.
 
 For mode-independent pure loss, [the loss-competition proof](LOSS_COMPETITION.md)
-now optimizes the common waveform with that penalty included. At critical code
+optimizes the common waveform with that penalty included. At critical code
 scaling and $`-M\log\eta_N\to\lambda<\infty`$, mismatch lowers the leading optimum
 beyond the ordinary-loss ceiling precisely when $`\lambda\lt c^3/48`$. The optimal
 pulse shifts toward the highest excitation as loss increases. This is a supporting
@@ -145,7 +148,8 @@ or a treatment of mode-dependent filtering or independent atomic loss.
 
 Symmetric preparation and the whole-code input promise are not established by reproducing intensity data or by demonstrating one excited state. The two-sector witness reduces the logical dimension needed to exhibit the mismatch, not the challenge of preparing high excitation numbers.
 
-None of the source or receiver literature is claimed to demonstrate all assumptions jointly at the illustrative large $`N`$. The code uses the effective model as an explicit idealization. Repository development is not a declaration of a completed device design.
+The source and receiver references support component models. They do not establish
+all preparation, calibration and resource requirements jointly for a growing code.
 
 ## Primary references
 
