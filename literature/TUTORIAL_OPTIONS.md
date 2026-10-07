@@ -1,9 +1,8 @@
 # Selected tutorial and the alternatives considered
 
-**Kiilerich–Mølmer (2020) is the owner-selected learning anchor.** The repository now uses
-that one source, followed by a local bridge, rather than a three-source reading stack.
-The owner reconfirmed Option 1 on 6 October 2026 after a comparison against the
-completed conditional research package. The alternatives below remain optional.
+**Kiilerich–Mølmer (2020) is the single learning anchor.** Read it with the local
+bridge to connect the established pulse formalism to the repository's result. The
+alternatives below are optional references.
 
 > A. H. Kiilerich and K. Mølmer, *Quantum interactions with pulses of radiation*,  
 > Physical Review A **102**, 023717 (2020).  
@@ -26,17 +25,12 @@ claims of this project.
 
 ## Alternatives retained as references
 
-| Source | Strength | Role after the choice |
+| Source | Strength | Role |
 |---|---|---|
 | Raymer–Walmsley, *Temporal modes in quantum optics: then and now* (2020), [arXiv:1911.06771](https://arxiv.org/abs/1911.06771) | Gentle explanation of modes, states and selective storage | Optional conceptual reference, not a prerequisite |
 | Combes–Kerckhoff–Sarovar, *The SLH framework for modeling quantum input-output networks* (2017), [arXiv:1611.00375](https://arxiv.org/abs/1611.00375) | Systematic network and approximation mathematics | Optional technical reference, not a second course |
 
 Paulisch's dissertation remains an attribution anchor for the inherited cascade and
 source formulas, not a hidden second learning requirement. The needed formula is given
-and explained in the bridge. The [background audit](BACKGROUND_AUDIT.md) preserves the
-previous access and comparison record. Its unselected-anchor statements describe that
-earlier pass; the choice above is the current state.
-
-Selecting a tutorial is a pedagogical decision. The later
-[Tziperman full-construction comparison](TZIPERMAN_FULL_TEXT.md) is now complete at
-its documented versions.
+and explained in the bridge. For the closest related collective-transfer construction,
+see the [Tziperman comparison](TZIPERMAN_FULL_TEXT.md).

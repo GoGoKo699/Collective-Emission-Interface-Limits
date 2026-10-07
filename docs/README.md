@@ -9,10 +9,9 @@ It is a tutorial-style review-and-method article, not a textbook. The original
 [three-option comparison](../literature/TUTORIAL_OPTIONS.md) records the choice; the other
 sources are references, not additional prerequisites.
 
-The owner reconfirmed this single-source choice on 6 October 2026. A reader who
-knows ordinary quantum mechanics can use the sequence below to reach the physical
-statement, then decide how deeply to inspect its proof. Studying the source alone
-does not supply the sharp boundary: the project-specific steps are taught here.
+A reader who knows ordinary quantum mechanics can use the sequence below to reach
+the physical statement and then its proof. The project-specific steps leading to
+the sharp boundary are taught in the local bridge.
 
 ## A guided route
 
@@ -62,7 +61,7 @@ annihilation operators, and basic calculus. The bridge explains the dissipator,
 reference-system fidelity and entropy-to-overlap step. Checking the full proof also
 uses elementary probability, relative entropy and asymptotic estimates; its
 counting-process comparison is written in [Theorem, Section 3](../research/THEOREM.md#3-a-uniform-individually-matched-pulse-approximation).
-These are local proof obligations, not an unstated second external course.
+These mathematical tools are explained locally.
 
 | Supplied by the tutorial | Supplied by this repository |
 |---|---|
@@ -104,7 +103,7 @@ Neither occurrence of $`u`$ denotes a new physical input to our vacuum source.
 | Inherited ingredients and closest comparisons | [Background](../literature/BACKGROUND.md), [direct comparison](../literature/COMPARISON.md), [bibliography](../literature/REFERENCES.bib) |
 | Dated additional predecessor and recent-source checks | [Prewriting source comparison](../literature/PREWRITING_SEARCH_2026_10_05.md) |
 | What the assumptions have and have not established | [Assumptions](../literature/ASSUMPTIONS.md), [preparation evidence](../literature/PREPARATION_EVIDENCE.md) |
-| Review and evidence boundaries | [Established answers and open questions](../research/CRITICAL_READING.md), [status](../STATUS.md), [reproduction policy](../provenance/REPRODUCTION_POLICY.md) |
+| Scope extensions and evidence | [Interpretation and extensions](../research/CRITICAL_READING.md), [scope and evidence](../STATUS.md), [reproduction policy](../provenance/REPRODUCTION_POLICY.md) |
 
 ## At the end of this route
 
@@ -113,9 +112,8 @@ canonical transfer differ, why independently excellent pulses need not share one
 mode, and why the theorem must optimize over every waveform. They should also know what
 additional receivers or encodings the theorem does not restrict.
 
-The completed [Tziperman comparison](../literature/TZIPERMAN_FULL_TEXT.md) and remaining
-physical questions are recorded in the [work order](../work_orders/CURRENT.md).
-The [sanity-check record](../research/SANITY_CHECK_2026_10_05.md) identifies the checks
-actually performed; readers need not reconstruct the exploratory history.
+The [claim and evidence map](../research/CLAIM_EVIDENCE_MAP.md) connects these results
+to their proofs and checks. [Scope extensions](../research/CRITICAL_READING.md)
+distinguish future realization work from the conditional theorem.
 
 For the repository's role and discussion details, see [Purpose and contact](../README.md#purpose-and-contact).

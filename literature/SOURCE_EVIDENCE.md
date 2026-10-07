@@ -1,12 +1,12 @@
-# Primary-source evidence: current reading status
+# Primary-source evidence
 
-**3 October 2026, after the preparation-source checks.** This register distinguishes what was read, what a source supports, and what remains unestablished. It is not an exhaustive priority certificate or a joint-device demonstration.
+This register records inspected source versions, equation-level support and the boundaries of each comparison. F denotes inspected full text; A denotes abstract-only evidence.
 
-## Completed Law–Lee comparison
+## Law–Lee: mode optimization
 
 **A03. C. K. Law and S. K. Y. Lee, *Dynamic photon-mode selection in Dicke superradiance*, Physical Review A 75, 033813 (2007).** [Primary identifier](https://doi.org/10.1103/PhysRevA.75.033813).
 
-**F: complete user-supplied six-page article inspected in the preceding pass**, including Eqs. (1)–(30), figures/captions and notes [16]–[17], with rendered typography checks then. The [full comparison](LAW_LEE_FULL_TEXT.md) controls this source. That reading is not repeated or newly claimed in the present preparation pass. The PDF remains outside the repository.
+**F: complete six-page article**, including Eqs. (1)–(30), figures/captions and notes [16]–[17], with rendered typography checks. See the [full comparison](LAW_LEE_FULL_TEXT.md).
 
 | Location | Direct support | Boundary |
 |---|---|---|
@@ -18,17 +18,15 @@
 | Section III opening and note [16] | Exact one-mode radiation from a linear oscillator | The oscillator comparator is inherited. |
 | Section III C, Eqs. (29)–(30) | Approximate half-excited factorization and hyperbolic-secant pulse | Not exact finite-N factorization or one receiver for an unknown number code. |
 
-No correction or subsumption of our theorem was established by that scoped comparison. A distinction between task definitions is not by itself evidence of novelty.
-
-## Completed preparation constructions
+## Preparation constructions
 
 **P03: F at the author-preprint level.** Lemr and Fiurasek, arXiv:0812.0507v1, ten pages; published as PRA 79, 043808. The full text's Sections II–VII specify the oscillator reduction, conditional filters, target-dependent controls and success accounting. A final-version line-by-line comparison is not claimed.
 
 **P04: F at the published-article level.** Chen et al., PRL 115, 250502, five pages, obtained from the authors' MIT group site. Eqs. (1)–(12) specify the initial coherent spin state, dispersive spectral selection, time-resolved heralding and finite-cooperativity treatment.
 
-The precise versions, locations and interpretation are in [PREPARATION_EVIDENCE.md](PREPARATION_EVIDENCE.md). Both new assessments use retrieved text/equations; unsuccessful rendering is recorded, and no image-only numbers are imported. No third-party PDF is redistributed.
+The precise versions, locations and interpretation are in [PREPARATION_EVIDENCE.md](PREPARATION_EVIDENCE.md). Both assessments use retrieved text/equations; unsuccessful rendering is recorded, and no image-only numbers are imported.
 
-The three earlier S01/P01/P02 records plus these two give five inspected preparation approaches. They include approximate and conditional known-target constructions. They are not five exact finite-spin unknown-input channels, experimental replications or demonstrations of the entire interface. The narrow combined preparation premise remains conditional.
+Together, S01 and P01–P04 give five inspected preparation approaches. They include approximate and conditional known-target constructions. They are not five exact finite-spin unknown-input channels, experimental replications or demonstrations of the entire interface. The narrow combined preparation premise remains conditional.
 
 ## Preserved component-level evidence
 
@@ -36,6 +34,6 @@ The complete S01–S07, R01–R07, P01–P04 and A01–A02 location table remain
 
 The snapshot supplies seven inspected collective-source papers, six explicit useful-channel formulations, and separately categorized receiver theory and experiments. Distinct papers from the same group are papers, not independent replications. The thesis remains an attribution anchor rather than an additional primary-paper count. F means relevant constructions were inspected, not that their proofs were independently verified.
 
-## Remaining boundaries
+## Related comparisons and physical scope
 
-The A03, P03 and P04 full-text tasks are closed. The later Tziperman comparison has its own access and construction record in the [background audit](BACKGROUND_AUDIT.md). Exhaustive priority, uniformly accurate reference-entangled input preparation and a joint large-code source-to-memory realization remain unestablished. The [assumption register](ASSUMPTIONS.md) and [work order](../work_orders/CURRENT.md) preserve those distinctions. No new physical model, outside correspondence or device claim follows from this documentation pass.
+The [Tziperman comparison](TZIPERMAN_FULL_TEXT.md) records the main-article and supplement versions and their source, target and mode-selection constructions. The [assumption register](ASSUMPTIONS.md) distinguishes component evidence from uniformly accurate reference-entangled preparation and a joint large-code source-to-memory realization. Historical access records remain in the [background audit](BACKGROUND_AUDIT.md).

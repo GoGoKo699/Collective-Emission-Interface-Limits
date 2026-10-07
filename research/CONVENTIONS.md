@@ -1,6 +1,7 @@
 # Conventions connecting the background to the theorem
 
-**3 October 2026. Explanatory reference; no scientific result is changed.** The canonical definitions are in [THEOREM.md](THEOREM.md). These translations prevent superficially identical symbols from producing factor-of-two or fidelity errors when using the background sources.
+The canonical definitions are in [THEOREM.md](THEOREM.md). These translations
+prevent factor-of-two and fidelity-convention errors when comparing the source papers.
 
 ## Source, time and rates
 
@@ -12,7 +13,7 @@ The dissipator is
 
 For $`L=\sqrt\gamma S_-`$, the $`m`$-excitation population leaves at rate $`\gamma m(N-m+1)`$. With $`\tau=N\gamma t`$, the dimensionless rate is $`\ell_m=m[1-(m-1)/N]`$. A no-jump amplitude decays at half the corresponding population rate.
 
-Law–Lee's Eq. (22) writes the collective dissipator with coefficient $`\gamma_{\rm LL}`$ multiplying $`2J_-\rho J_+-\{J_+J_-,\rho\}`$. Thus $`\gamma=2\gamma_{\rm LL}`$, and $`\tau=2N\gamma_{\rm LL}t`$. Their amplitude/rate notation must not be equated by matching the letter gamma alone. The [completed reading](../literature/LAW_LEE_FULL_TEXT.md) records this translation and the hyperbolic-secant correspondence.
+Law–Lee's Eq. (22) writes the collective dissipator with coefficient $`\gamma_{\rm LL}`$ multiplying $`2J_-\rho J_+-\{J_+J_-,\rho\}`$. Thus $`\gamma=2\gamma_{\rm LL}`$, and $`\tau=2N\gamma_{\rm LL}t`$. Their amplitude/rate notation must not be equated by matching the letter gamma alone. The [Law–Lee comparison](../literature/LAW_LEE_FULL_TEXT.md) records this translation and the hyperbolic-secant correspondence.
 
 $`N`$ is the physical number of emitters; $`M`$ is the largest allowed input excitation. In the independent-loss appendix the effective ladder parameter $`Q=N+C^{-1}`$ is not an increased physical atom count. In the SLH review, $`S`$ is a scattering operator in a network triple and is not the collective lowering operator $`S_-`$.
 

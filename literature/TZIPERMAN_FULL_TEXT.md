@@ -1,6 +1,6 @@
 # Tziperman et al.: construction-level comparison
 
-**5 October 2026.** The previously missing reading is now completed for the versions below. This is an internal literature comparison, not an independent proof report or exhaustive novelty certification. The source, receiver, code, target and theorem remain fixed.
+Tziperman et al. use collective emission and a selected temporal mode to transfer specified emitter states into quantum light. This comparison identifies the shared source and target, and the additional uniform guarantee established by the common-receiver theorem.
 
 ## Sources and reading scope
 
@@ -12,7 +12,7 @@ The main scientific body and SI Sections I–VI were read, with particular atten
 
 ## Direct evidence
 
-| Question | Located construction |
+| Ingredient | Located construction |
 |---|---|
 | Source | Main Section 2.3, p. 5/E, replaces the source cavity operator by $`S_-`$. Section 2.4, p. 7/G, identifies wavelength-spaced emitters with zero mediated interaction as the Dicke limit. |
 | Pulse selection | Main Section 2.2.2, p. 4/D, diagonalizes the first-order field kernel and selects its largest-occupation mode. |
@@ -35,4 +35,4 @@ The virtual oscillator is an ideal calculation of a selected-mode state. It over
 
 The fixed-cat sweep and constant-excitation discussion do not establish a growing-code minimax limit. No uniform emitted-isometry bound on $`\mathcal C_M`$, all-waveform common-receiver converse, or matching $`e^{-c^3/192}`$ critical law was found in these versions. Selected-input success is compatible with a failing worst-input guarantee.
 
-**Outcome:** no subsumption or correction of the fixed theorem was established by this comparison. Its candidate additional contribution remains the controlled all-waveform, whole-code boundary and its separation from mean photon collection. The access gap is closed for the inspected versions; exhaustive priority and a joint device realization remain unestablished.
+The additional result here is the controlled all-waveform, whole-code boundary and its separation from mean photon collection. The comparison is restricted to the documented constructions and versions above.

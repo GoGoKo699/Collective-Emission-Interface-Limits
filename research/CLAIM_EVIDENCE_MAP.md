@@ -1,12 +1,10 @@
-# Claim and evidence map before writing
+# Claim and evidence map
 
-**5 October 2026. Internal research closure, not a manuscript or an external review.**
-This map states what can be claimed from the present work, where each claim is proved,
-which checks exercise it, and which physical assumptions remain conditional. The source,
-canonical target and allowed receiver are fixed. The single teaching anchor remains
-Kiilerich–Mølmer (2020).
+This map links the theoretical claims to their proofs, numerical checks and physical
+assumptions. The source, canonical target and allowed receiver are defined in the
+[theorem](THEOREM.md).
 
-## 1. The scientific statement to carry forward
+## 1. The central result
 
 A symmetric collective source can deliver almost all its mean photon number to one
 preconfigured receiving mode while failing to transfer its unknown excitation code
@@ -39,12 +37,11 @@ approximation, pulse geometry, and matching finite bounds. The photon-fraction r
 uses a separate bounded-observable estimate. Neither the finite examples nor the
 implementation discussion is a premise of the ideal theorem.
 
-## 3. The physical question closed in this pass
+## 3. Loss and finite capture
 
-Previously, the loss ceiling alone did not say when the common-mode limitation would
-actually lower the optimized fidelity further. For uniform pure loss with
-$`-M\log\eta_N\to\lambda`$ at critical code scaling, [the new supporting proof](LOSS_COMPETITION.md)
-finds an additional mismatch exponent precisely below $`\lambda=c^3/48`$. Above that
+For uniform pure loss with $`-M\log\eta_N\to\lambda`$ at critical code scaling,
+the [loss-competition proof](LOSS_COMPETITION.md) gives an additional mismatch
+exponent precisely below $`\lambda=c^3/48`$. Above that
 threshold the highest-number loss ceiling fixes the leading optimum. This comparison
 uses the already specified loss channel; it does not assert a general noisy-source
 optimization.
@@ -59,8 +56,8 @@ a bound on modulation bandwidth or slew rate.
 
 The [background dossier](../literature/BACKGROUND.md) supplies the inherited optics,
 and the [direct comparison](../literature/COMPARISON.md) identifies the closest tasks.
-The [dated search and construction comparison](../literature/PREWRITING_SEARCH_2026_10_05.md)
-adds relevant predecessors and checks more recent work. Source versions and reading
+The [source search record](../literature/PREWRITING_SEARCH_2026_10_05.md)
+documents the inspected predecessors and the date-limited coverage. Source versions and reading
 depth are recorded; a search result is not treated as a full-text comparison.
 
 The cascade, conventional cubic mismatch, number-dependent pulses, occupation
@@ -84,28 +81,15 @@ needed for the result.
 | Independent atomic decay and cavity elimination | Separate audits with explicit effective-rate assumptions | A controlled full-field limit for one consistent microscopic scaling family |
 | Joint realization | Not claimed | A demonstration or design meeting the premises together |
 
-A conditional theorem can be scientifically complete without establishing the last
-column. More papers on separately prepared known targets would not close the unknown
-input promise. More intensity simulations would not establish a uniform field bound.
+The last column describes extensions outside the conditional theorem. Known-target
+preparation does not supply the unknown-input promise, and intensity data alone do
+not establish a uniform field bound.
 The [physical scope](PHYSICAL_SCOPE.md) and [preparation evidence](../literature/PREPARATION_EVIDENCE.md)
 remain the detailed source of these qualifications.
 
-## 6. Closure decision and stop rule
+## 6. Interpretation and records
 
-The internal claim audit found no outstanding proof obligation for the fixed ideal
-result. The loss competition and capture-resource questions now have explicit
-supporting derivations. No correction or subsumption of the main theorem was
-established. The scientific package supports a conditional theoretical account;
-it does not support a demonstrated-device claim.
-
-Physical significance remains a separate judgment: does excluding every common
-pulse settle a consequential interface question beyond familiar multiphoton mismatch?
-The [open questions](CRITICAL_READING.md#questions-that-remain-open) state that objection directly.
-This pass does not manufacture an external endorsement or decide significance by
-counting calculations.
-
-Further scientific work should respond to a specific counterexample, subsuming
-construction, or changed claim. Additional examples and broader receivers are not
-prerequisites for the present result. Manuscript drafting and outside contact remain
-on hold until separately instructed. Verification provenance is recorded in
-[PREWRITING_2026_10_05.json](../provenance/PREWRITING_2026_10_05.json).
+The [physical account](STORY.md) explains the consequence of the uniform boundary.
+[Scope extensions](CRITICAL_READING.md) distinguish future realization work from
+that result. The [proof audit](PROOF_AUDIT.md) preserves the endpoint correction;
+[verification provenance](../provenance/README.md) records the numerical evidence.

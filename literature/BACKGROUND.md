@@ -1,8 +1,6 @@
 # Scientific background for the fixed interface result
 
-**Updated 5 October 2026. Background research, not a manuscript.** This dossier covers the ingredients needed to explain the existing theorem and its physical scope. It does not change the source, receiver, encoding, or proof. Bibliographic keys refer to [REFERENCES.bib](REFERENCES.bib). The [reading audit](BACKGROUND_AUDIT.md) distinguishes newly inspected sources from the repository's previous full-text comparisons. The selected single tutorial is Kiilerich–Mølmer (2020); [TUTORIAL_OPTIONS.md](TUTORIAL_OPTIONS.md) records that choice and the optional alternatives. The [reading guide](../docs/README.md) and [local bridge](../REVIEW.md) implement the selected route.
-
-The coverage is organized by scientific dependency rather than citation count. The close paper by Tziperman et al. [Tziperman2025] now has a [construction-level comparison](TZIPERMAN_FULL_TEXT.md) based on its main article and supplement. Its full-state transfer examples and overlapping source model receive direct credit. No subsumption of the optimized uniform theorem was found in those inspected constructions; exhaustive priority remains unestablished.
+This guide explains the collective-emission model, traveling modes, passive reception and channel-fidelity tools underlying the theorem. Bibliographic keys refer to [REFERENCES.bib](REFERENCES.bib). Kiilerich–Mølmer (2020) is the single tutorial anchor; the [reading guide](../docs/README.md) and [local bridge](../REVIEW.md) connect it to the result. [TUTORIAL_OPTIONS.md](TUTORIAL_OPTIONS.md) explains the choice and lists optional references.
 
 ## 1. Collective emission and the oscillator approximation
 
@@ -48,7 +46,7 @@ A collective jump and no-jump propagation generate a dependent emission cascade.
 
 Law–Lee [LawLee2007], Eqs. (10)–(17), optimize the mean photon occupation by diagonalizing a first-order correlation kernel. The eigenvalues are $`\langle b_j^\dagger b_j\rangle`$. Their purity is the purity of the normalized one-photon correlation operator, not the density-matrix purity of the complete radiation. Lemberger–Mølmer [LembergerMolmer2021] pursues the same occupation-eigenmode objective using a later treatment of the correlations.
 
-This is genuine mode optimization. Our comparison must not portray those papers as tests of a fixed, unoptimized exponential. Their complete-decay modes are legitimate candidate receiving envelopes. Their oscillator comparator, dominant few-mode behavior and semiclassical pulse retain direct credit; the completed [Law–Lee reading](LAW_LEE_FULL_TEXT.md) controls that attribution.
+This is genuine mode optimization. Our comparison must not portray those papers as tests of a fixed, unoptimized exponential. Their complete-decay modes are legitimate candidate receiving envelopes. Their oscillator comparator, dominant few-mode behavior and semiclassical pulse retain direct credit; the [Law–Lee comparison](LAW_LEE_FULL_TEXT.md) gives the precise locations.
 
 The quantities are different but not unrelated. For a fixed $`m>0`$ define $`p_f=\langle n_f\rangle/m`$ and $`F_f=\Pr(n_f=m)`$. Then
 
@@ -106,17 +104,17 @@ Positivity is essential. Matching photon-time probabilities would not control ar
 
 The receiving-waveform converse uses the projective Hilbert-space angle $`\arccos|\langle f,g\rangle|`$, its triangle inequality, and elementary scalar inequalities. It applies to waveforms outside the span of the reference modes. Finite bounds are derived before the joint limit: an additive overlap error cannot simply be called a small relative logarithmic error near fidelity one. The previously corrected endpoint and negative control are preserved in PROOF_AUDIT.md.
 
-The exact reference-pulse kernel, its minimax placement, the matching uniform converse and the growing-code photon-collection contrast are the candidate project-specific contribution. Standard entropy inequalities or the existence of a different fidelity objective do not establish their novelty. A learning anchor should teach the underlying optics; our bridge should derive these additional steps rather than require a second external textbook.
+The exact reference-pulse kernel, its minimax placement, the matching uniform converse and the growing-code photon-collection contrast are the candidate project-specific contribution. Standard entropy inequalities or the existence of a different fidelity objective do not establish their novelty. The [local bridge](../REVIEW.md) derives these additional steps from the optical framework of the tutorial.
 
 ## 7. Preparation, rates and what a device claim would still need
 
-The completed [preparation evidence](PREPARATION_EVIDENCE.md) distinguishes five related constructions from five demonstrations of the same input resource. Some prepare a classically specified target; some herald success; others rely on an oscillator reduction. None automatically supplies an input-independent encoding preserving an arbitrary external reference with uniform error on this growing code.
+The [preparation evidence](PREPARATION_EVIDENCE.md) distinguishes five related constructions from five demonstrations of the same input resource. Some prepare a classically specified target; some herald success; others rely on an oscillator reduction. None automatically supplies an input-independent encoding preserving an arbitrary external reference with uniform error on this growing code.
 
 The independent-loss product, collective enhancement and Raman rate control already have direct predecessors in the source papers. In a simple rapidly damped cavity, useful decay, cavity bandwidth and microscopic coupling are related. Enlarging $`N`$ at fixed microscopic parameters is not identical to keeping the effective useful-to-loss ratio fixed. Our source audit retains this distinction and does not claim a uniform microscopic field theorem from small finite-cavity collection tests.
 
-Fixed $`N`$, phase conventions, omitted interactions, propagation delay, control duration, source preparation and receiving losses remain separate obligations. A conditional theory result need not invent a prototype, but it cannot present all these resources as simultaneously free. The existing [assumption register](ASSUMPTIONS.md) remains the detailed accounting; none of its unresolved joint-realization claims is marked complete by adding review citations.
+Fixed $`N`$, phase conventions, omitted interactions, propagation delay, control duration, source preparation and receiving losses remain separate obligations. A conditional theory result need not invent a prototype, but it cannot present all these resources as simultaneously free. The [assumption register](ASSUMPTIONS.md) gives the detailed resource accounting.
 
-## 8. Claim-to-source map for eventual writing
+## 8. Claim-to-source map
 
 | Intended statement | Primary basis and precise role | What must remain separate |
 |---|---|---|
@@ -134,12 +132,10 @@ Fixed $`N`$, phase conventions, omitted interactions, propagation delay, control
 
 [Tziperman2025], published as *Nonlinear Quantum Light Generation in Collective Spontaneous Emission*, has an arXiv precursor titled *The quantum state of light in collective spontaneous emission*. The publisher abstract explicitly concerns transferring emitter correlations to traveling single-mode non-Gaussian states, with cavity, waveguide and array examples, losses, interactions and beyond-Markov effects. It is directly relevant and must not be omitted merely because its title differs from ours.
 
-The [full-text note](TZIPERMAN_FULL_TEXT.md) now records the source, input, mode-selection, target and asymptotic comparison. Their cavity-free collective source overlaps ours. Their selected-mode quantum-state calculations go beyond photon moments and must not be described as intensity-only work. The mode is selected from the first-order correlation of the specified input; the inspected construction does not supply a common-receiver minimax converse over a growing unknown code. [BACKGROUND_AUDIT.md](BACKGROUND_AUDIT.md) preserves the earlier access history, explicitly superseded by this reading.
+The [full-text note](TZIPERMAN_FULL_TEXT.md) records the source, input, mode-selection, target and asymptotic comparison. Their cavity-free collective source overlaps ours. Their selected-mode quantum-state calculations go beyond photon moments and must not be described as intensity-only work. The mode is selected from the first-order correlation of the specified input; the inspected construction does not supply a common-receiver minimax converse over a growing unknown code.
 
-The named construction-level readings and tutorial furnishing are complete. The joint preparation/realization premises remain conditional. See [Purpose and contact](../README.md#purpose-and-contact) for the repository's learning role and discussion details.
-
-The subsequent [prewriting refresh](PREWRITING_SEARCH_2026_10_05.md) adds three
-direct comparisons and their bibliography entries. It supplements this background
-without changing the selected tutorial or upgrading scoped searches to priority
-certification. The [claim map](../research/CLAIM_EVIDENCE_MAP.md) connects these
-readings to the completed proof and physical-scope obligations.
+The [additional source comparisons](PREWRITING_SEARCH_2026_10_05.md) cover
+Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al. The
+[claim map](../research/CLAIM_EVIDENCE_MAP.md) connects the literature to the proof
+and physical scope; the [background audit](BACKGROUND_AUDIT.md) preserves the
+source-access history.

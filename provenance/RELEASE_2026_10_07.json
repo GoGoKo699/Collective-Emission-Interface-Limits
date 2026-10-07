@@ -1,0 +1,92 @@
+{
+  "repository": "GoGoKo699/Collective-Emission-Interface-Limits",
+  "record": "Release sanity check",
+  "date": "2026-10-07",
+  "baseline_commit": "2c0cb6dd2af8c5f10d9200c2ea7e176f5b108dbc",
+  "scope": "Local numerical reproduction, repository integrity and documentation structure checks. This record does not substitute for an analytic proof or a rendered-browser inspection.",
+  "scientific_execution": {
+    "status": "PASS",
+    "started_at": "2026-10-07T12:04:49.615727+00:00",
+    "finished_at": "2026-10-07T12:05:19.197659+00:00",
+    "suite_count": 8,
+    "group_count": 39,
+    "case_count": 612
+  },
+  "reference_comparison": {
+    "accepted": true,
+    "classification": "METADATA_ONLY",
+    "scientific_numeric_differences": 0,
+    "unresolved_paths": 0,
+    "references_rewritten": false
+  },
+  "supplementary_loss_execution": {
+    "status": "PASS",
+    "started_at": "2026-10-07T12:04:50.163623+00:00",
+    "finished_at": "2026-10-07T12:04:53.355689+00:00",
+    "supplementary_cases": 50
+  },
+  "environment": {
+    "versions": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "mpmath": "1.3.0"
+    },
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "infrastructure_tests": {
+    "status": "PASS",
+    "reproduction": 17,
+    "verifier": 8,
+    "presentation": 22
+  },
+  "protected_science": {
+    "status": "PASS",
+    "tests_tree_sha": "217d1d8d07fc74d9b94e52f47b953df6dce3845e",
+    "sha256_registry": "provenance/SUITES.json",
+    "files_checked": 16,
+    "all_hashes_match": true,
+    "scientific_scripts_results_and_verification_tools_unchanged": true
+  },
+  "documentation_checks": {
+    "status": "PASS",
+    "checked_at": "2026-10-07T12:11:30.430841+00:00",
+    "markdown_files": 33,
+    "math_expressions": 723,
+    "local_links": 232,
+    "local_fragment_links": 29,
+    "missing_fragment_candidates": 0,
+    "diff_whitespace_errors": 0,
+    "retained_tex_expressions_unchanged": true,
+    "removed_math_occurrences": [
+      {
+        "path": "research/PHYSICAL_SCOPE.md",
+        "tex": "N",
+        "count": 1,
+        "reason": "Rephrased the large-N device disclaimer while retaining the joint preparation, calibration and resource limitation."
+      }
+    ],
+    "method": "Existing presentation parser and exact extracted TeX comparison against baseline; ATX-heading fragment normalization with duplicate-heading handling.",
+    "final_link_check_started_at": "2026-10-07T12:14:52.443833+00:00",
+    "final_link_check_finished_at": "2026-10-07T12:14:52.526917+00:00"
+  },
+  "tracked_content_inspection": {
+    "tracked_files_before_this_record": 83,
+    "credential_pattern_candidates": 0,
+    "source_pdfs": 0,
+    "generated_junk_candidates": 0,
+    "target_journal_claims": 0,
+    "bibliographic_journal_names_retained": true,
+    "historical_archive": "provenance/sanity_2026_10_05/raw-evidence.zip",
+    "archive_integrity": "PASS",
+    "archive_members": 109,
+    "archive_unsafe_paths": 0,
+    "archive_credential_pattern_candidates": 0
+  },
+  "evidence_digests": {
+    "verification-report.json": "a143ebe1db3acd64fa893f7450dd65b7f42ca182443df0114bded59901d69fcb",
+    "loss-competition-report.json": "cce4714342c3c1bb39de0f6d7de52e6e92fe6b2532fa169d0b31c27dcf9e602c",
+    "presentation-final.json": "fd5d908d4718b5c64fc22fe033db3b319fd6999c51045b2fc313f9268a3eed0d"
+  }
+}

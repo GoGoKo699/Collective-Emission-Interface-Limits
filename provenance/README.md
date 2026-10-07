@@ -2,6 +2,10 @@
 
 ## Current audit
 
+The [7 October release sanity record](RELEASE_2026_10_07.json) records numerical
+reproduction, protected-reference checks and documentation validation for the
+release cleanup.
+
 The [prewriting research record](PREWRITING_2026_10_05.json) maps the subsequent
 claim audit, source refresh, finite-capture proof and loss-competition derivation.
 The new supporting checker has 50 supplementary cases, counted separately from
