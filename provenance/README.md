@@ -15,11 +15,20 @@ The [5 October sanity record](../research/SANITY_CHECK_2026_10_05.md) and
 [machine-readable evidence map](SANITY_2026_10_05.json) document fresh baseline and
 repaired-runner verification. All scientific scripts and references are preserved.
 The reporting tools now have 25 focused infrastructure tests; mathematical presentation
-has a separate 12-test checker. These counts are not added to the scientific cases.
+has a separate 22-test checker. These counts are not added to the scientific cases.
 The 7 October reader-notice update added three link-integrity fixtures for email
 links and the LLM guide. The verifier accepts `mailto:` addresses and checks root
 `llms.txt` while continuing to reject broken local links. Scientific suite hashes
 and reference comparisons are unchanged.
+
+The 7 October display repair replaces rejected operator notation with upright text,
+makes fraction and bold-symbol arguments explicit, and uses a TeX relation instead
+of an HTML-like less-than token. Protected inline and fenced display delimiters
+keep Markdown from stripping mathematical braces or turning spacing commands into
+punctuation. Ten new presentation fixtures cover these compatibility patterns.
+Local TeX compilation alone did not catch the reported GitHub failures; the checker
+remains a limited structural and compatibility check, not a substitute for
+inspecting the rendered page.
 
 The eighth suite and endpoint proof repair are recorded in [PROOF_AUDIT.json](PROOF_AUDIT.json).
 The following import account and its seven-suite execution record are historical.

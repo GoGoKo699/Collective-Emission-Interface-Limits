@@ -8,7 +8,7 @@ The result concerns the finite-spin Dicke decay ladder, one waveform chosen befo
 
 ## Universal linearized quantum memory
 
-Gorshkov et al. (R04), Sec. IV, Eq. (14), derive retrieval efficiency $C/(1+C)$, independent of control shape for complete retrieval. Appendix A replaces the ground population by $N$ and works to first order in the signal before Eqs. (3)–(5); Eqs. (A17)–(A18) give bosonic commutators and Eqs. (A20)–(A23) specify an occupied field envelope.
+Gorshkov et al. (R04), Sec. IV, Eq. (14), derive retrieval efficiency $`C/(1+C)`$, independent of control shape for complete retrieval. Appendix A replaces the ground population by $`N`$ and works to first order in the signal before Eqs. (3)–(5); Eqs. (A17)–(A18) give bosonic commutators and Eqs. (A20)–(A23) specify an occupied field envelope.
 
 This is not just a one-photon or intensity result: the linear vacuum-noise model transfers the quantum state of that mode. Our question retains the number-dependent finite-spin rates discarded in that linearization and asks for uniform channel accuracy. The earlier memory result neither supplies that estimate nor is contradicted by its absence. Our bound is not automatically a theorem about their different Lambda-control protocol.
 
@@ -22,7 +22,7 @@ Kiilerich and Molmer (R03), Eqs. (2)–(6), supply full quantum-state calculatio
 
 The entire six-page article (A03) has been inspected. Its Eqs. (10)–(17) optimize mean photon occupation by diagonalizing a first-order field correlation kernel; Eqs. (18)–(21) define its normalized purity and effective mode number. Its regression formula covers general diagonal Dicke preparations, and its examples include both full inversion and half excitation. It is inaccurate to dismiss the paper as only a fixed-mode or fully inverted calculation.
 
-The [full-text comparison](LAW_LEE_FULL_TEXT.md) identifies the precise differences and overlap. The article does not contain the common-waveform worst-code optimization, a uniform emitted-isometry error over the growing code, or the matching critical converse. Exact rank-one correlation does imply genuine single-mode support; approximate concentration must be translated with a photon-number-dependent error bound. The half-excited semiclassical pulse matches the $a\to1/2$ shape limit of our reference family, but that does not extend our $m=o(N)$ norm theorem to half filling.
+The [full-text comparison](LAW_LEE_FULL_TEXT.md) identifies the precise differences and overlap. The article does not contain the common-waveform worst-code optimization, a uniform emitted-isometry error over the growing code, or the matching critical converse. Exact rank-one correlation does imply genuine single-mode support; approximate concentration must be translated with a photon-number-dependent error bound. The half-excited semiclassical pulse matches the $`a\to1/2`$ shape limit of our reference family, but that does not extend our $`m=o(N)`$ norm theorem to half filling.
 
 Direct attribution now includes its harmonic-oscillator argument (opening of Sec. III and note [16]), dominant two-mode occupation (Sec. III B), and semiclassical hyperbolic-secant pulse (Sec. III C). None is advertised as a new discovery. Its time-dependent modes at a fixed collection time also define receiving envelopes, so 'dynamic versus fixed' is not our novelty distinction.
 
@@ -46,9 +46,9 @@ equations and source versions, credits the inherited capabilities, and explains
 why these inspected constructions do not supply the present common-code theorem.
 The result does not imply failure of useful metrological readout.
 
-Lemberger–Molmer (S04), Sec. 2.2, Eq. (7), analyze mean radiation eigenmode occupations. Malz–Trivedi–Cirac (S06) establish controlled large-$N$ reduced atomic dynamics from full inversion. Without additional bounds those observables do not give a uniform outgoing-field isometry or the present worst-input transfer fidelity.
+Lemberger–Molmer (S04), Sec. 2.2, Eq. (7), analyze mean radiation eigenmode occupations. Malz–Trivedi–Cirac (S06) establish controlled large-$`N`$ reduced atomic dynamics from full inversion. Without additional bounds those observables do not give a uniform outgoing-field isometry or the present worst-input transfer fidelity.
 
-Paulisch (A01) supplies the exact cascade, conventional exponential overlap, useful-channel collection product, and prior discussion of number-state mapping and pulse shaping. The conventional cubic correction already suggests the $N^{2/3}$ scale. The candidate advance is the optimized uniform boundary, not the first appearance of that exponent.
+Paulisch (A01) supplies the exact cascade, conventional exponential overlap, useful-channel collection product, and prior discussion of number-state mapping and pulse shaping. The conventional cubic correction already suggests the $`N^{2/3}`$ scale. The candidate advance is the optimized uniform boundary, not the first appearance of that exponent.
 
 ## Outcome
 

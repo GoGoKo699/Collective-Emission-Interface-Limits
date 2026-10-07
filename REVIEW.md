@@ -93,7 +93,7 @@ Use the same dissipator convention as KM Eq. (2):
 \begin{aligned}
 \dot\rho&=\mathcal D[\sqrt\gamma S_-]\rho,\\
 \mathcal D[L]\rho
-&=L\rho L^\dagger-\tfrac12\{L^\dagger L,\rho\}.
+&=L\rho L^\dagger-\tfrac{1}{2}\{L^\dagger L,\rho\}.
 \end{aligned}
 ```
 
@@ -108,9 +108,9 @@ once for the ordering factor gives the normalized symmetric labeled-time wavefun
 
 ```math
 \begin{aligned}
-\Psi_{N,m}(\boldsymbol\tau)
+\Psi_{N,m}(\boldsymbol{\tau})
 &=C_{N,m}e^{-\sum_i\tau_i/2}\\
-&\quad\times\exp\!\left[\frac1N\sum_{i<j}\min(\tau_i,\tau_j)\right],\\
+&\quad\times\exp\!\left[\frac{1}{N}\sum_{i\lt j}\min(\tau_i,\tau_j)\right],\\
 C_{N,m}^2&=\prod_{j=0}^{m-1}(1-j/N).
 \end{aligned}
 ```
@@ -202,7 +202,7 @@ is what makes this mechanism applicable to the correlated source field.
 ### Preserving an unknown state
 
 Our added demand is **one waveform for an unknown input** in
-$`\mathcal C_M=\operatorname{span}\{\lvert D_N^m\rangle:0\leq m\leq M\}`$.
+$`\mathcal C_M=\mathrm{span}\,\{\lvert D_N^m\rangle:0\leq m\leq M\}`$.
 We compare the output with the canonical map
 $`\lvert D_N^m\rangle\mapsto\lvert m\rangle_f`$ while leaving any reference untouched.
 Entanglement fidelity means the squared overlap with that ideal joint output after
@@ -223,7 +223,7 @@ number-sector overlaps must therefore be proved using the actual channel structu
 For nonnegative $`f`$, the Kraus operator associated with vacuum in the discarded modes
 is positive diagonal, with entries $`A_m=\langle m_f\vert\Psi_{N,m}\rangle`$. All other
 Kraus operators lower the retained number. The standard expression
-$`F_e(\rho)=\sum_\nu\lvert\operatorname{Tr}(\rho K_\nu)\rvert^2`$
+$`F_e(\rho)=\sum_\nu\lvert\mathrm{Tr}(\rho K_\nu)\rvert^2`$
 is therefore at least $`\min_m A_m^2`$, and the corresponding number input attains it.
 The exact positive emission amplitudes also mean that replacing a complex receiving
 pulse by its modulus cannot reduce any number-overlap modulus. Together these facts give
@@ -275,7 +275,7 @@ Since both amplitudes are nonnegative,
 
 ```math
 \int\sqrt{PQ}
-=\mathbb E_Q\exp\!\left[\tfrac12\ln(P/Q)\right]
+=\mathbb E_Q\exp\!\left[\tfrac{1}{2}\ln(P/Q)\right]
 \geq e^{-D(Q\Vert P)/2}.
 ```
 

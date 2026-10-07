@@ -21,7 +21,9 @@ Only top-level `environment` and `date` values are metadata. Duplicate keys, non
 
 Before the first retained run, the branch declared the general review threshold
 
-$$|a-b|\leq10^{-10}+10^{-9}\max(|a|,|b|).$$
+```math
+|a-b|\leq10^{-10}+10^{-9}\max(|a|,|b|).
+```
 
 That threshold is unchanged. It is a regression alert, not solver accuracy, an allowable physical infidelity or a proof that all changes within it are harmless. Every raw difference is preserved, not just threshold violations.
 
