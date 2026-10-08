@@ -1,4 +1,4 @@
-# Selected tutorial and the alternatives considered
+# Tutorial and related references
 
 **Kiilerich–Mølmer (2020) is the single learning anchor.** Read it with the local
 bridge to connect the established pulse formalism to the repository's result. The
@@ -11,26 +11,23 @@ alternatives below are optional references.
 
 The [reading guide](../docs/README.md) maps Sections I–II C, the emitter-only opening of
 II D and optional Section III to the result. The [technical bridge](../REVIEW.md) supplies
-the Dicke specialization, canonical fidelity and uniform proof steps not taught there.
-The author's 15-page preprint provides the section/equation labels; a line-by-line
-comparison of author and publisher versions is not claimed.
+the Dicke specialization, canonical fidelity and uniform proof steps.
+Section and equation labels refer to the 15-page author preprint.
 
-## Why this source was chosen
+## Connection to the result
 
 Its virtual input and output cavities lead directly to the state stored in a selected
-receiving oscillator. It already distinguishes full quantum states from field moments
-and includes number-dependent mode distortions. This is a tutorial-style review-and-method
-article, not a textbook. Those established capabilities are the foundation, not new
-claims of this project.
+receiving oscillator. It distinguishes full quantum states from field moments
+and includes number-dependent mode distortions. This tutorial-style review-and-method
+article supplies the optical framework used throughout the repository.
 
-## Alternatives retained as references
+## Related references
 
 | Source | Strength | Role |
 |---|---|---|
-| Raymer–Walmsley, *Temporal modes in quantum optics: then and now* (2020), [arXiv:1911.06771](https://arxiv.org/abs/1911.06771) | Gentle explanation of modes, states and selective storage | Optional conceptual reference, not a prerequisite |
-| Combes–Kerckhoff–Sarovar, *The SLH framework for modeling quantum input-output networks* (2017), [arXiv:1611.00375](https://arxiv.org/abs/1611.00375) | Systematic network and approximation mathematics | Optional technical reference, not a second course |
+| Raymer–Walmsley, *Temporal modes in quantum optics: then and now* (2020), [arXiv:1911.06771](https://arxiv.org/abs/1911.06771) | Gentle explanation of modes, states and selective storage | Optional conceptual reference |
+| Combes–Kerckhoff–Sarovar, *The SLH framework for modeling quantum input-output networks* (2017), [arXiv:1611.00375](https://arxiv.org/abs/1611.00375) | Systematic network and approximation mathematics | Optional technical reference |
 
-Paulisch's dissertation remains an attribution anchor for the inherited cascade and
-source formulas, not a hidden second learning requirement. The needed formula is given
-and explained in the bridge. For the closest related collective-transfer construction,
+Paulisch's dissertation supplies the inherited cascade and source formulas,
+which are given and explained in the bridge. For the closest related collective-transfer construction,
 see the [Tziperman comparison](TZIPERMAN_FULL_TEXT.md).

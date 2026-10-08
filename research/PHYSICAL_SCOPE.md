@@ -7,11 +7,11 @@ Supporting numerical checks are in `tests/03_passive_receiver` through
 
 ## A. What the receiver restriction means
 
-A predetermined, number-preserving linear network maps annihilation operators linearly. If auxiliary inputs are vacuum and one canonical oscillator is retained, its final operator is a normalized signal temporal mode plus a vacuum mode, with attenuation. This is a standard passive-systems fact, not a no-go theorem for arbitrary quantum memories; see Yamamoto and James, arXiv:1403.1698.
+A predetermined, number-preserving linear network maps annihilation operators linearly. If auxiliary inputs are vacuum and one canonical oscillator is retained, its final operator is a normalized signal temporal mode plus a vacuum mode, with attenuation. This reduction follows from passive-system structure; see Yamamoto and James, arXiv:1403.1698.
 
 Finite coupling and time constraints reduce the realizable kernels. Adding auxiliaries may improve that constrained engineering problem, but it cannot exceed the optimum over all ideal normalized kernels. Active Gaussian processing, nonlinear decoding, nonvacuum resources, receiver-to-source feedback, or retaining multiple output modes changes the stated class.
 
-A receiving oscillator with coupling rate $`\kappa_\varepsilon(t)=|f(t)|^2/[\varepsilon+F(t)]`$, where $`\varepsilon>0`$ and $`F(t)=\int_0^t|f(s)|^2ds`$, and coupling phase matched to $`f`$, captures the normalized truncated pulse with transmission $`q_T=F(T)/[\varepsilon+F(T)]`$ when $`F(T)>0`$. The rate alone specifies capture of a nonnegative pulse; a general complex pulse also requires its phase. Perfect finite-time onset can require singular initial coupling. The ideal optimization is a supremum, not a hardware guarantee. Nurdin, James, and Yamamoto, arXiv:1609.05643, directly discuss this control issue.
+A receiving oscillator with coupling rate $`\kappa_\varepsilon(t)=|f(t)|^2/[\varepsilon+F(t)]`$, where $`\varepsilon>0`$ and $`F(t)=\int_0^t|f(s)|^2ds`$, and coupling phase matched to $`f`$, captures the normalized truncated pulse with transmission $`q_T=F(T)/[\varepsilon+F(T)]`$ when $`F(T)>0`$. The rate alone specifies capture of a nonnegative pulse; a general complex pulse also requires its phase. Perfect finite-time onset can require singular initial coupling. The ideal optimization takes a supremum over normalized kernels. Nurdin, James, and Yamamoto, arXiv:1609.05643, directly discuss this control issue.
 
 ### A finite receiving window on the same code
 
@@ -44,8 +44,8 @@ q_T^M\max\left\{0,L-\sqrt{1-P_T^M}\right\}\\
 \end{aligned}
 ```
 
-The weaker expression is the finite-receiver estimate already evaluated in
-[the preserved passive-receiver suite](../tests/03_passive_receiver/checks.py).
+The weaker expression is evaluated in
+[the passive-receiver suite](../tests/03_passive_receiver/checks.py).
 This calculation truncates the receiving mode, not the source dynamics: later
 photons and any remaining source excitation are discarded. It does not condition
 on complete emission before $`T`$ or on a no-loss event.
@@ -67,9 +67,8 @@ Any $`T\geq(1+s)\ln M`$ with fixed $`s>0`$ gives the required tail when $`a`$ st
 bounded away from one. For example, $`T=2\ln(M+1)`$ and
 $`\varepsilon=(M+1)^{-2}`$ suffice along a growing
 critical code. The onset rate then grows as $`M^2`$ in scaled units. Thus finite
-coupling amplitudes exist at every finite size, but a fixed control limit is not shown to
-attain the asymptotic ideal fidelity. Scalar slowing can trade physical rate for
-duration as described below; it does not establish a joint microscopic device.
+coupling amplitudes exist at every finite size, with resources that scale with the
+code. Scalar slowing can trade physical rate for duration as described below.
 
 ## B. The leading mismatch has a simple structure
 
@@ -87,9 +86,9 @@ At $`M=O(N^{2/3})`$, the whole code approaches a two-mode encoding, with an oper
 \lambda(x)=\frac{c^3}{12}x(x-3/4)^2.
 ```
 
-The smallest zero-count probability recovers $`e^{-c^3/192}`$. This explains the common-mode error without claiming that radiation spreads over an ever-growing number of unrelated modes.
+The smallest zero-count probability recovers $`e^{-c^3/192}`$. The leading common-mode error is therefore carried by one orthogonal tangent mode.
 
-Two retained modes are an additional quantum resource. Their occupied direction depends on excitation number, so a fixed linear rotation cannot compress the entire encoding into one canonical oscillator. No nonlinear decoder is supplied. The full field remains an isometric encoding of the source.
+Two retained modes are an additional quantum resource. Their occupied direction depends on excitation number, so a fixed linear rotation cannot compress the entire encoding into one canonical oscillator. The full field remains an isometric encoding of the source.
 
 ## C. Scalar source pulse shaping
 
@@ -107,7 +106,7 @@ They can change duration or match a constrained receiver. A multilevel protocol 
 
 ## D. Independent atomic loss
 
-The optional audit model adds independent inaccessible decay at rate $`\gamma_i`$ to useful collective decay $`\gamma_c\mathcal D[S_-]`$. Set $`r=\gamma_i/\gamma_c`$ and $`Q=N+r`$.
+The independent-loss model adds inaccessible decay at rate $`\gamma_i`$ to useful collective decay $`\gamma_c\mathcal D[S_-]`$. Set $`r=\gamma_i/\gamma_c`$ and $`Q=N+r`$.
 
 The established probability that all $`m`$ photons enter the useful channel is
 
@@ -124,15 +123,15 @@ p_{N,M}\mathcal F_{\rm id}(Q,M)\leq\mathcal F_{\rm ind}(N,M)
 \leq\min\{p_{N,M},\mathcal F_{\rm id}(Q,M)\}.
 ```
 
-At fixed positive $`\gamma_c/\gamma_i`$ and critical code scaling, the additional penalty tends to one. This does not claim that a physical device can hold all effective rates independently fixed.
+At fixed positive $`\gamma_c/\gamma_i`$ and critical code scaling, the additional penalty tends to one. Microscopic relations between these effective rates are considered next.
 
 ## E. Bandwidth and duration
 
 For resonant emitters coupled to a rapidly damped cavity, the conventional elimination gives $`\gamma_c\simeq4g^2/\kappa`$ with a separation such as $`\kappa\gg g\sqrt N`$. If $`R=\kappa/(g\sqrt N)`$, holding $`g/\gamma_i`$ fixed makes the effective ratio $`\gamma_c/\gamma_i=4g/(R\gamma_i\sqrt N)`$ decrease. The simple fixed-parameter cavity family therefore need not realize the favorable fixed-ratio asymptotic limit.
 
-These relationships are conventional; Koppenhöfer et al., arXiv:2111.15647, supplies the cited cavity model. Its usual elimination condition is not asserted to control the full emitted field uniformly over an increasing code. The small full-cavity tests concern collected-photon probabilities, not a theorem proving optimized temporal-mode fidelity for every microscopic scaling path.
+Koppenhöfer et al., arXiv:2111.15647, supplies the cited cavity model. Applying an effective field-state theorem to a growing code requires uniform control of the emitted-field approximation. The full-cavity tests evaluate collected-photon probabilities.
 
-Off-resonant mapping that slows useful and unwanted rates together is an existing alternative in González-Tudela et al., arXiv:1504.07600. It preserves the rate ratio but changes duration and has additional level/control assumptions. It must not be omitted to manufacture a universal implementation no-go.
+Off-resonant mapping that slows useful and unwanted rates together is an existing alternative in González-Tudela et al., arXiv:1504.07600. It preserves the rate ratio but changes duration and has additional level/control assumptions. These two microscopic routes have different bandwidth and duration costs.
 
 ## F. External loss and source preparation
 
@@ -142,14 +141,14 @@ For mode-independent pure loss, [the loss-competition proof](LOSS_COMPETITION.md
 optimizes the common waveform with that penalty included. At critical code
 scaling and $`-M\log\eta_N\to\lambda<\infty`$, mismatch lowers the leading optimum
 beyond the ordinary-loss ceiling precisely when $`\lambda\lt c^3/48`$. The optimal
-pulse shifts toward the highest excitation as loss increases. This is a supporting
-effective-model result with finite certificates, not a joint hardware realization
-or a treatment of mode-dependent filtering or independent atomic loss.
+pulse shifts toward the highest excitation as loss increases. The proof also gives
+finite certificates for this mode-independent loss channel.
 
-Symmetric preparation and the whole-code input promise are not established by reproducing intensity data or by demonstrating one excited state. The two-sector witness reduces the logical dimension needed to exhibit the mismatch, not the challenge of preparing high excitation numbers.
-
-The source and receiver references support component models. They do not establish
-all preparation, calibration and resource requirements jointly for a growing code.
+The transfer theorem takes an unknown state in the symmetric excitation code as
+its input and evaluates its full quantum-state fidelity. The two-sector witness
+uses a two-dimensional logical code with high physical excitation numbers. The
+[assumption register](../literature/ASSUMPTIONS.md) specifies the source and
+preparation conditions.
 
 ## Primary references
 

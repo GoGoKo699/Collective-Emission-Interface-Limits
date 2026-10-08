@@ -33,9 +33,9 @@ For $`M/N^{2/3}\to c>0`$,
 \boxed{\mathcal G_{N,M}\longrightarrow e^{-c^3/192}.}
 ```
 
-The proof needs no new asymptotic approximation. The whole-code receiving pulse works on this subcode, so $`\mathcal G_{N,M}\geq\mathcal F_{N,M}`$. Conversely, the whole-code all-waveform proof already uses only these two numbers. Its upper bound therefore also applies to $`\mathcal G_{N,M}`$. The same critical limit follows by squeezing the bounds.
+The whole-code receiving pulse works on this subcode, so $`\mathcal G_{N,M}\geq\mathcal F_{N,M}`$. Conversely, the whole-code all-waveform proof already uses only these two numbers. Its upper bound therefore also applies to $`\mathcal G_{N,M}`$. The same critical limit follows by squeezing the bounds.
 
-This is a corollary of the original proof, not an independent source of novelty. Its role is to clarify the physical demand: the receiving limitation can be exposed with a single logical qubit, although the physical excitation numbers are large and grow with $`N`$.
+This corollary shows that a single logical qubit exposes the receiving limitation, with physical excitation numbers that grow with $`N`$.
 
 ### Why the quarter-number state appears
 
@@ -47,7 +47,7 @@ For a generic fixed lower fraction $`r\in(0,1)`$, the leading product-state mini
 
 Balancing its two terms gives $`b=1-\sqrt r+r`$ and the optimal value $`r(1-\sqrt r)^2`$. This is largest at $`r=1/4`$, where $`b=3/4`$ and the value is $`1/16`$. Dividing by the pulse-geometric coefficient 12 gives $`1/192`$.
 
-This scalar calculation explains the witness selected in the existing converse. It is not a claim that no other encoding, source control, or receiver can do better.
+This scalar calculation identifies the quarter-number witness in the critical asymptotic converse.
 
 ## 3. A finite test within an explicit pulse family
 
@@ -66,7 +66,7 @@ The full emitted-amplitude calculation yields:
 
 This is a constructive numerical witness for the entire two-dimensional code. It is not merely a comparison of two individually chosen pulses. Their equality also makes the maximally reference-entangled input's entanglement fidelity equal to the displayed value, since that fidelity is $`(A_q+A_M)^2/4`$ with positive amplitudes.
 
-The prior analytic all-waveform angle bound gives
+The analytic all-waveform angle bound gives
 
 ```math
 \mathcal G_{1000,300}\leq0.84394780\ldots.
@@ -74,7 +74,7 @@ The prior analytic all-waveform angle bound gives
 
 Thus the finite two-sector optimum is bracketed by the explicit approximately 81.25% achievable value and the approximately 84.39% universal ceiling. The lower value is numerically evaluated, with a separate analytic tail allowance and tolerance refinement. These decimals are not interval-certified. The root search locates a balanced trial in $`f_a`$; it does not prove global finite-$`N`$ optimality even within that family.
 
-For comparison, the original asymptotic trial $`a=0.224`$ gives fidelities 0.8257267087 and 0.7865187451 for the two numbers. The slightly different trial here improves their minimum. Neither set of two values certifies the minimum over every intermediate excitation number in the original full code.
+For comparison, the asymptotic trial $`a=0.224`$ gives fidelities 0.8257267087 and 0.7865187451 for the two numbers. The slightly different trial here improves their minimum. Neither set of two values certifies the minimum over every intermediate excitation number in the full code.
 
 ## 4. A one-qubit low-density separation
 
@@ -84,20 +84,20 @@ Nevertheless, the two-sector angle argument forces $`\mathcal G_{N,M}\to0`$. If 
 
 This separates increasing logical dimension from increasing excitation energy. The example has fixed logical dimension two; it is not a fixed-energy or fixed-duration limit.
 
-## 5. A control that must not be omitted
+## 5. Vacuum-plus-number control
 
 The sparse code $`\mathrm{span}\,\{|D_N^0\rangle,|D_N^M\rangle\}`$ is different. Choose the receiving pulse for the known nonvacuum number. Vacuum is the same in every mode. The uniform matched-state bound then gives asymptotically unit fidelity whenever $`M=o(N)`$.
 
-Therefore “all sparse codes obey the cutoff” would be false. The positive lower-number component in the witness forces incompatible pulse requirements. This basic distinction between vacuum and two different populated number components is also discussed for specific nonlinear-cavity states in Khanahmadi et al. (2023). The corollary here quantifies it for the optimized Dicke interface; it does not claim the qualitative observation was unknown.
+Therefore “all sparse codes obey the cutoff” would be false. The positive lower-number component in the witness forces incompatible pulse requirements. This basic distinction between vacuum and two different populated number components is also discussed for specific nonlinear-cavity states in Khanahmadi et al. (2023). The corollary here quantifies it for the optimized Dicke interface.
 
-## 6. What an experimental test would and would not need
+## 6. Witnessing the limitation
 
 To witness the minimax upper bound within the trusted source model, the two number-state inputs suffice; a high-dimensional unknown superposition need not be prepared merely to expose incompatible receiving modes. Testing a few particular receiving pulses experimentally does not, on its own, prove the all-waveform upper bound. That bound rests on the model and the controlled mode-state comparison.
 
-Preparing high-number Dicke states, knowing $`N`$, and measuring full-Fock overlap can still be demanding. Ordinary photon loss can dominate this canonical target. The corollary is not an inexpensive experiment proposal or a replacement for the source-assumption audit.
+Preparing high-number Dicke states, knowing $`N`$, and measuring full-Fock overlap can still be demanding. Ordinary photon loss can dominate this canonical target. These requirements connect the witness to the [source assumptions](../literature/ASSUMPTIONS.md).
 
 ## 7. Checks
 
-`tests/07_two_sector_scope/checks.py` checks the scalar minimax balance, the complete emission-amplitude cascade for two finite code choices, horizon/tolerance refinement, the exact two-input analytic bound, convergence of its critical brackets, a vacuum-plus-number control, and the reference-channel Kraus logic. The new suite imports none of the six archived scientific scripts.
+`tests/07_two_sector_scope/checks.py` checks the scalar minimax balance, the complete emission-amplitude cascade for two finite code choices, horizon/tolerance refinement, the exact two-input analytic bound, convergence of its critical brackets, a vacuum-plus-number control, and the reference-channel Kraus logic.
 
 The source theorem and the nonlinear-cavity qualitative predecessor are credited in [the prior-art register](../literature/PRIOR_ART.md).

@@ -16,15 +16,15 @@ proof and tests.
   [finite-capture bounds](research/PHYSICAL_SCOPE.md) quantify supporting limits
   within their stated effective models.
 - The [source comparisons](literature/COMPARISON.md) distinguish inherited
-  ingredients from the uniform common-receiver result. Their source coverage is
-  recorded; they do not assert exhaustive priority.
+  ingredients from the uniform common-receiver result and identify the versions
+  and constructions compared.
 
-The theorem assumes a known symmetric collective source, an available unknown
-input code state, complete ideal emission and a predetermined passive receiver.
-It does not supply a physical input encoder or a joint microscopic device.
-Preparation, calibration and compatible loss, bandwidth and duration resources
-are [scope extensions](research/CRITICAL_READING.md#questions-that-remain-open).
-They are outside the conditional theorem.
+The theorem assumes a known symmetric collective source, an arbitrary input state
+in the declared excitation code, complete ideal emission and a predetermined passive
+receiver retaining one oscillator. The fidelity includes correlations with an
+external reference. The [assumption register](literature/ASSUMPTIONS.md) relates
+these premises to source and receiver models; the
+[physical analysis](research/PHYSICAL_SCOPE.md) treats capture and loss resources.
 
 ## Verification
 
@@ -34,18 +34,17 @@ They are outside the conditional theorem.
 | 50 supplementary loss checks | [Loss checker](tools/check_loss_competition.py) |
 | Reference agreement and evidence protection | [Reproduction policy](provenance/REPRODUCTION_POLICY.md) |
 | Mathematical formatting and local links | [Presentation checker](tools/check_presentation.py), [integrity verifier](verify.py) |
-| Dated proof corrections, source records and execution evidence | [Provenance index](provenance/README.md), [proof audit](research/PROOF_AUDIT.md), [sanity record](research/SANITY_CHECK_2026_10_05.md) |
+| Execution records and protected reference data | [Provenance index](provenance/README.md) |
 
 Numerical checks exercise identities and finite cases; the analytic proofs establish
-the uniform limits. Historical execution records describe their own revisions.
-Current runs compare fresh outputs with the protected references.
+the uniform limits. Reproduction runs compare fresh outputs with the protected
+references.
 
-## Reading and maintenance
+## Reading
 
 The [reading guide](docs/README.md) uses Kiilerich–Mølmer (2020) as its single
 external teaching source. The [local bridge](REVIEW.md) supplies worked examples
-and the additional proof steps. The [workspace](WORKSPACE.md) and
-[maintenance instructions](work_orders/CURRENT.md) govern repository changes.
+and the additional proof steps.
 
 See [Purpose and contact](README.md#purpose-and-contact) for the repository's role
 and discussion details.

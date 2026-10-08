@@ -50,8 +50,8 @@ g_f(t)=-\frac{f^*(t)}{
 ```
 
 This is a coupling **amplitude**; its squared modulus is a decay rate. The ideal
-expression can be singular when capture begins. It defines a mode-selection operation,
-not a claim of unlimited physical control. The finite-rate treatment belongs in
+expression can be singular when capture begins. It defines an ideal mode-selection
+operation. The finite-rate construction is in
 [Physical scope A](research/PHYSICAL_SCOPE.md#a-what-the-receiver-restriction-means).
 
 For our source there is no incoming prepared quantum pulse. Following the opening of
@@ -116,8 +116,8 @@ C_{N,m}^2&=\prod_{j=0}^{m-1}(1-j/N).
 The full-domain integral of $`\lvert\Psi_{N,m}\rvert^2`$ is one. A Fock state in one
 pulse has wavefunction $`\prod_i f(\tau_i)`$. The pair-time term above makes the exact
 emission dependent. The cascade is inherited source theory, with Paulisch credited in
-[the background](literature/BACKGROUND.md); no additional external reading is needed to
-use this formula here. Its normalization is checked in the existing proof audit.
+[the background](literature/BACKGROUND.md). The [proof note](research/PROOF_AUDIT.md)
+verifies its normalization.
 
 ### Worked calculation: one photon, then two
 
@@ -173,7 +173,6 @@ The number outside the mode is zero on success and between one and $`m`$ otherwi
 Exact $`p_f=1`$ implies all photons occupy the mode. Approximate collection needs care
 when $`m`$ grows. For the pure emitted state,
 $`F_m(f)=\lvert\langle m_f\vert\Psi_{N,m}\rangle\rvert^2`$.
-This elementary comparison is not a new general distinction between intensity and state.
 
 ### Worked calculation: a nearly matched pulse
 
@@ -199,7 +198,7 @@ is what makes this mechanism applicable to the correlated source field.
 
 ### Preserving an unknown state
 
-Our added demand is **one waveform for an unknown input** in
+The transfer task requires **one waveform for an unknown input** in
 $`\mathcal C_M=\mathrm{span}\,\{\lvert D_N^m\rangle:0\leq m\leq M\}`$.
 We compare the output with the canonical map
 $`\lvert D_N^m\rangle\mapsto\lvert m\rangle_f`$ while leaving any reference untouched.
@@ -252,7 +251,7 @@ f_a(\tau)=
 \qquad a_m=\frac{m-1}{N}.
 ```
 
-For $`m\geq1`$, the existing uniform proof establishes
+For $`m\geq1`$, the uniform proof establishes
 
 ```math
 \begin{aligned}
@@ -280,7 +279,6 @@ Since both amplitudes are nonnegative,
 This is Jensen's inequality. Squaring gives the fidelity bound; squaring the norm of the
 difference of the two positive-phase unit vectors gives a vector-error bound.
 The nontrivial full-process estimate is in [Theorem, Section 3](research/THEOREM.md#3-a-uniform-individually-matched-pulse-approximation).
-It is not taught by KM and is not hidden behind a second prerequisite textbook.
 
 Different number inputs emit into orthogonal photon-number sectors. The norm error of
 the entire source map is consequently the largest sector error, not the sum over an
@@ -315,7 +313,7 @@ F_m(f_*)\longrightarrow
 \exp\!\left[-\frac{c^3}{12}x(x-3/4)^2\right].
 ```
 
-The limiting statement here uses the previously controlled replacement of the true
+The limiting statement here uses the uniform approximation of the true
 field. The largest $`x(x-3/4)^2`$ on $`[0,1]`$ is $`1/16`$, attained at $`x=1/4`$
 and $`x=1`$. This explains the constructive value $`e^{-c^3/192}`$.
 
@@ -341,7 +339,7 @@ The finite bounds, subcritical success, and supercritical failure for the comple
 consecutive code are in the standalone proof. The same two populated sectors witness
 the critical limit; vacuum plus one populated number is a successful different code.
 
-## 7. What the result changes—and what it does not
+## 7. The interface boundary
 
 The uniform mean-collection bound tends to one for $`M=o(N)`$, beyond the
 $`M=o(N^{2/3})`$ regime of faithful canonical transfer. Hence choosing
@@ -349,16 +347,14 @@ $`M=\lfloor N^{3/4}\rfloor`$ makes the excitation density vanish and the mean co
 fraction approach one while optimal worst-input transfer fidelity approaches zero.
 This is a domain-of-validity statement for a particular interface approximation.
 
-The full outgoing field retains the quantum information. A second retained pulse or a
-nonlinear decoder is an additional resource, not a violation of the one-memory theorem.
-Likewise, neither a virtual-cavity equation nor a heralded target-preparation example
-establishes the complete growing-code apparatus. The physical-scope and assumption notes
-remain necessary for a device claim.
+The full outgoing field retains the quantum information. Retaining a second pulse
+or using a nonlinear decoder changes the receiver resource. The
+[physical analysis](research/PHYSICAL_SCOPE.md) relates the ideal one-memory
+optimization to capture, bandwidth and loss.
 
 KM supplies the operational language and full selected-pulse state calculation. Existing
-Dicke, pulse-shape and occupation results remain credited. The uniform optimization is
-the candidate additional contribution, not the discovery that mode shape and photon
-number can be correlated. The [close-source comparison](literature/TZIPERMAN_FULL_TEXT.md)
+Dicke, pulse-shape and occupation results supply the source theory; the uniform
+common-code optimization gives the boundary derived here. The [close-source comparison](literature/TZIPERMAN_FULL_TEXT.md)
 examines Tziperman et al.'s selected-state transfer construction. See [Purpose and contact](README.md#purpose-and-contact) for the repository's
 learning role and discussion details.
 
@@ -388,10 +384,9 @@ For the normalized pulse $`f(\tau)=e^{-\tau/2}`$, its rate in scaled units is
 The divergence at $`\tau=0`$ is already visible in this simple example.
 Adding $`\varepsilon>0`$ to the denominator's integrated intensity and stopping
 at a finite time make capture finite, at the cost of attenuation and a changed mode. With
-$`P_T=\int_0^T|f(\tau)|^2d\tau`$, the recorded construction has attenuation
+$`P_T=\int_0^T|f(\tau)|^2d\tau`$, the construction has attenuation
 $`q_T=P_T/(\varepsilon+P_T)`$. A growing code is sensitive to $`q_T^M`$,
 so a small single-photon error must shrink as the code grows. The proved
 [whole-code bound](research/PHYSICAL_SCOPE.md#a-finite-receiving-window-on-the-same-code)
-controls both this attenuation and the discarded tail. It permits increasing
-duration and coupling resources; it does not establish a fixed bandwidth or a
-joint device realization.
+controls both this attenuation and the discarded tail, with duration and coupling
+resources allowed to increase with code size.

@@ -5,9 +5,8 @@
 The single external teaching anchor is **Kiilerich and Mølmer, Quantum interactions with
 pulses of radiation (2020)**: [arXiv:2003.04573v1](https://arxiv.org/pdf/2003.04573v1).
 The route below uses the section and equation labels in that 15-page author version.
-It is a tutorial-style review-and-method article, not a textbook. The original
-[three-option comparison](../literature/TUTORIAL_OPTIONS.md) records the choice; the other
-sources are references, not additional prerequisites.
+It is a tutorial-style review-and-method article. The local bridge supplies the
+additional mathematics needed for this result.
 
 A reader who knows ordinary quantum mechanics can use the sequence below to reach
 the physical statement and then its proof. The project-specific steps leading to
@@ -94,26 +93,23 @@ Neither occurrence of $`u`$ denotes a new physical input to our vacuum source.
 |---|---|
 | Relevance, search terms and authoritative sources for an automated reader | [LLM guide](../llms.txt) |
 | The compact physical account | [Story](../research/STORY.md) |
-| Claims, proof dependencies and the boundary of research closure | [Claim and evidence map](../research/CLAIM_EVIDENCE_MAP.md) |
+| Claims and proof dependencies | [Claim and evidence map](../research/CLAIM_EVIDENCE_MAP.md) |
 | Exact model, uniform approximation and all-waveform theorem | [Theorem](../research/THEOREM.md) |
-| The correction and its finite-bound replacement | [Proof audit](../research/PROOF_AUDIT.md) |
 | Logical-qubit witness and successful sparse comparator | [Two-sector note](../research/TWO_SECTOR_WITNESS.md) |
 | Receivers, second mode, loss, rates and bandwidth | [Physical scope](../research/PHYSICAL_SCOPE.md) |
 | When transmission loss masks the common-mode limitation | [Loss competition](../research/LOSS_COMPETITION.md) |
 | Inherited ingredients and closest comparisons | [Background](../literature/BACKGROUND.md), [direct comparison](../literature/COMPARISON.md), [bibliography](../literature/REFERENCES.bib) |
-| Dated additional predecessor and recent-source checks | [Prewriting source comparison](../literature/PREWRITING_SEARCH_2026_10_05.md) |
-| What the assumptions have and have not established | [Assumptions](../literature/ASSUMPTIONS.md), [preparation evidence](../literature/PREPARATION_EVIDENCE.md) |
-| Scope extensions and evidence | [Interpretation and extensions](../research/CRITICAL_READING.md), [scope and evidence](../STATUS.md), [reproduction policy](../provenance/REPRODUCTION_POLICY.md) |
+| Source and receiver premises | [Assumptions](../literature/ASSUMPTIONS.md), [preparation evidence](../literature/PREPARATION_EVIDENCE.md) |
+| Model scope and reproducibility | [Scope and evidence](../STATUS.md), [reproduction policy](../provenance/REPRODUCTION_POLICY.md) |
 
 ## At the end of this route
 
 A reader should be able to explain why a mode is not a photon, why mean collection and
 canonical transfer differ, why independently excellent pulses need not share one receiving
-mode, and why the theorem must optimize over every waveform. They should also know what
-additional receivers or encodings the theorem does not restrict.
+mode, and why the theorem must optimize over every waveform. They should also be
+able to state the source, encoding and receiver assumptions precisely.
 
 The [claim and evidence map](../research/CLAIM_EVIDENCE_MAP.md) connects these results
-to their proofs and checks. [Scope extensions](../research/CRITICAL_READING.md)
-distinguish future realization work from the conditional theorem.
+to their proofs and checks.
 
 For the repository's role and discussion details, see [Purpose and contact](../README.md#purpose-and-contact).

@@ -59,7 +59,7 @@ E(A,\lambda)=\lambda+\frac{(A/4-\lambda)_+^2}{A}.
 \end{gathered}}
 ```
 
-Here $`(y)_+=\max(y,0)`$. A receiving pulse from the existing family suffices:
+Here $`(y)_+=\max(y,0)`$. A receiving pulse from the theorem's family suffices:
 
 ```math
 \begin{gathered}
@@ -68,7 +68,7 @@ b_* = \min\{1,3/4+\delta\}.
 \end{gathered}
 ```
 
-This is an asymptotically optimal choice, not an asserted exact finite-size optimizer.
+This choice is asymptotically optimal. Section 3 gives finite-size bounds.
 The lossless endpoint gives $`E(A,0)=A/16=c^3/192`$ as required.
 
 ### Uniform reduction to product pulses
@@ -166,8 +166,8 @@ without assuming the optimizer belongs to the pulse family.
 
 ## 3. Finite certificates
 
-The asymptotic limit does not replace finite-size checks. A closed constructive
-bound avoids a scan over sectors. For $`M\geq2`$, set
+A closed constructive bound gives a finite-size certificate without scanning
+over sectors. For $`M\geq2`$, set
 
 ```math
 \begin{gathered}
@@ -227,7 +227,7 @@ R_{q,\eta}(F)+R_{M,\eta}(F)\geq\arccos K(u_q-u_M).
 ```
 
 Solving this scalar necessary condition, together with $`F\leq\eta^M`$, gives a
-finite all-waveform upper certificate. These are the existing angle brackets with
+finite all-waveform upper certificate. These are the theorem's angle brackets with
 the sector-dependent transmission factor inserted; they need not coincide at
 finite $`N`$.
 
@@ -253,6 +253,5 @@ is nondecreasing in $`\lambda`$.
 The balance requires $`\eta_N\to1`$. Any fixed $`\eta<1`$ with $`M\to\infty`$, or more
 generally $`-M\log\eta_N\to\infty`$, forces fidelity to zero by the loss ceiling
 alone. Consequently the ideal common-mode boundary is not automatically the dominant
-limitation of a high-excitation device. This supporting result supplies a precise
-comparison within the already specified effective model; it does not establish
-source preparation, calibrated microscopic rates or a combined implementation.
+limitation of a high-excitation device. The competition is set by the transmission
+scaling in this specified pure-loss model.
