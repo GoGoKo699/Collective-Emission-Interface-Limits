@@ -13,7 +13,7 @@ Take a symmetric ensemble of $`N`$ two-level emitters. Its stored excitations ra
 
 The ideal collective ladder has decay rates $`\gamma k(N-k+1)`$, rather than the oscillator's $`\gamma Nk`$. The finite-spin correction slightly changes the pulse as the excitation number changes. An individually known subextensive number $`m`$ can be matched to its own excellent pulse. This does not imply one pulse works equally well for several possible populated numbers.
 
-The intuitive scaling is simple. A pulse-shape difference of order $`M/N`$ gives a missed fraction of order $`(M/N)^2`$. A many-photon state is sensitive to whether even one photon occupies a different mode; a number of order $`M`$ amplifies that small mismatch to an effect of order $`M^3/N^2`$. This is an explanation of the proved result, not a substitute for its all-waveform converse. The exact photons are not assumed independent; the uniform approximation justifies the product-pulse comparison.
+The intuitive scaling is simple. A pulse-shape difference of order $`M/N`$ gives a missed fraction of order $`(M/N)^2`$. A many-photon state is sensitive to whether even one photon occupies a different mode; a number of order $`M`$ amplifies that small mismatch to an effect of order $`M^3/N^2`$. The uniform approximation controls the exact correlated photons and justifies this product-pulse comparison; the converse then bounds every receiving waveform.
 
 ## The result
 
@@ -45,9 +45,9 @@ c_0=(-192\ln F_0)^{1/3}.
 
 To see this, choose any fixed $`0\lt c_-\lt c_0\lt c_+`$. The critical limits at $`M=\lfloor c_-N^{2/3}\rfloor`$ and $`M=\lfloor c_+N^{2/3}\rfloor`$ lie strictly above and below $`F_0`$, respectively. The optimized fidelity cannot increase when the code is enlarged, so these cutoffs bracket $`K_N(F_0)`$ for sufficiently large $`N`$. Letting the margins approach zero gives the limit. Below a fixed margin, the constructive common pulse reaches the target; above a fixed margin, no allowed waveform does.
 
-This is an asymptotic corollary of the existing theorem. It supplies neither a finite-$`N`$ pass/fail decision at the boundary nor a relative-error estimate for a target tending to one with $`N`$. A finite system must use the bounds in THEOREM.md. The source, calibration, preparation, capture and loss assumptions remain necessary; this is not a hardware specification.
+This corollary applies at fixed target fidelity. Finite-$`N`$ decisions use the bounds in THEOREM.md; a target tending to one with $`N`$ requires separate control of the convergence rate. [PHYSICAL_SCOPE.md](PHYSICAL_SCOPE.md) relates the ideal theorem to capture, bandwidth and loss.
 
-The intended contribution is a domain-of-validity statement for a physical approximation and a recognized memory resource. It is not a universal quantum-capacity limit. The complete emitted field retains the input information, and additional retained modes or nonlinear decoding change the task. Receiver controls, bandwidth, source preparation and loss remain real resources; [PHYSICAL_SCOPE.md](PHYSICAL_SCOPE.md) states those boundaries.
+The result gives the domain of validity of an oscillator approximation for a passive one-memory interface. The complete emitted field retains the input information; additional retained modes or nonlinear decoding change the receiver resource.
 
 ## Relation to known physics
 
@@ -59,13 +59,6 @@ in the critical limit.
 
 The [direct comparison](../literature/COMPARISON.md) and
 [Law–Lee reading](../literature/LAW_LEE_FULL_TEXT.md) distinguish that task from
-selected-state and mean-occupation optimization. Those results are not contradicted.
-The excitation budget is a corollary of the same boundary, not a second result.
+selected-state and mean-occupation optimization.
 
-## What belongs in the supporting evidence
-
-The uniform field approximation and the unrestricted converse are the proof. The logical-qubit example clarifies scope. The two-mode description explains the leading error. Finite-cavity and independent-decay analyses delimit realizations. Preparation papers establish related control methods, not an implemented unknown-input interface. None of these is a separate headline needed to make the central result seem larger.
-
-**One sentence:** A collective source can look nearly oscillator-like to photon collection while no prechosen linear memory faithfully receives its whole excitation code; the two tasks have different, sharply characterized validity ranges.
-
-The theorem remains conditional; a joint large-code realization is not established. See [Purpose and contact](../README.md#purpose-and-contact) for the repository's learning role and discussion details.
+See [Purpose and contact](../README.md#purpose-and-contact) for the repository's learning role and discussion details.

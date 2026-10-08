@@ -1,6 +1,6 @@
 # Uniform-proof audit and endpoint repair
 
-**3 October 2026. Author-side audit, not an independent reader report.** The source, receiver, canonical target and theorem statement are unchanged. This pass checks the six mathematical questions in [CRITICAL_READING.md](CRITICAL_READING.md) against the actual proof. The reference version is commit `1e64a433150e63ea2dcfb8a49b94d4bf4efb2e3b`, whose theorem blob is `e25ccc8f692f5ca739d995dca66cd414c95b5c9a`.
+**3 October 2026. Author-side audit, not an independent reader report.** The source, receiver, canonical target and theorem statement are unchanged. This pass checks the six mathematical questions in [CRITICAL_READING.md](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/1e64a433150e63ea2dcfb8a49b94d4bf4efb2e3b/research/CRITICAL_READING.md) against the actual proof. The reference version is commit `1e64a433150e63ea2dcfb8a49b94d4bf4efb2e3b`, whose theorem blob is `e25ccc8f692f5ca739d995dca66cd414c95b5c9a`.
 
 ## Outcome
 

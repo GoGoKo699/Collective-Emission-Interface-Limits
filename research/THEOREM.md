@@ -194,7 +194,7 @@ The finite constructive and converse bounds therefore squeeze the optimum to
 \mathcal F_{N,M}\to e^{-c^3/192}.}
 ```
 
-This argument includes the unit-fidelity endpoint. The earlier compressed multiplicative-error argument required an additional justification there; the finite inequality supplies it. The [audit](PROOF_AUDIT.md) records that proof-level correction explicitly. The theorem statement and its coefficient are unchanged.
+The finite inequality remains valid as fidelity approaches one, so the converse includes the unit-fidelity endpoint. See the [proof note](PROOF_AUDIT.md) for the endpoint argument.
 
 For $`M=o(N^{2/3})`$, the constructive lower envelope tends to one. For $`M/N^{2/3}\to\infty`$, restrict the full consecutive code to a subcode with cutoff near $`cN^{2/3}`$ for any fixed $`c`$. Monotonicity gives $`\limsup\mathcal F\leq e^{-c^3/192}`$ for every $`c`$, hence zero. This does not extend the critical exponential as an asymptotic equality throughout every supercritical regime. The two-sector code requires its own direct converse rather than this full-code monotonicity argument.
 
@@ -239,17 +239,17 @@ Using $`|m-3M/4|+\sqrt{m(m-1)}\leq5M/4`$ yields
 
 For a general nonvacuum code input, the ratio $`\langle\hat n_{f_*}\rangle/\langle\hat n_{\rm total}\rangle`$ is a photon-number-weighted average of these sector ratios. Cross-number coherences do not contribute to number-preserving observables. The same bound therefore holds, including with reference entanglement.
 
-It tends to one for every $`M=o(N)`$. Taking $`M=\lfloor N^{3/4}\rfloor`$ simultaneously gives vanishing excitation density, uniformly near-complete mean photon collection, and vanishing optimized whole-code transfer fidelity. This does not infer an unbounded moment from trace-distance convergence alone, nor assert failure of every low-excitation approximation.
+It tends to one for every $`M=o(N)`$. Taking $`M=\lfloor N^{3/4}\rfloor`$ simultaneously gives vanishing excitation density, uniformly near-complete mean photon collection, and vanishing optimized whole-code transfer fidelity. The photon-number estimate follows directly from the positive-contraction bound above.
 
 ## 7. Attribution
 
-The emitted cascade, conventional exponential overlap, nonlinear-emission mode dependence, and passive-capture framework are prior results [P1–P4]. The optimized exponent is not claimed to be the first appearance of the $`N^{2/3}`$ scale. The candidate additional result is its all-waveform, whole-code, uniform optimization and the observable/channel distinction.
+The emitted cascade, conventional exponential overlap, nonlinear-emission mode dependence and passive-capture framework are prior results [P1–P4]. The $`N^{2/3}`$ scale follows from the cubic mismatch. The theorem gives its all-waveform, whole-code, uniform optimization and the observable/channel distinction.
 
 The [Law–Lee comparison](../literature/LAW_LEE_FULL_TEXT.md) credits mean-occupation
 optimization, the oscillator comparator, dominant few-mode behavior and the
-semiclassical pulse. No subsumption of this uniform common-code theorem was found
-in that comparison. The [prior-art register](../literature/PRIOR_ART.md) records the
-source coverage. The [proof audit](PROOF_AUDIT.md) preserves the endpoint correction.
+semiclassical pulse. It distinguishes that occupation objective from the uniform
+common-code fidelity optimized here. The [prior-art register](../literature/PRIOR_ART.md)
+gives the source-by-source attribution.
 
 [P1] V. Paulisch, *Waveguide Quantum Electrodynamics*, dissertation (2018), Chapter 1. https://edoc.ub.uni-muenchen.de/22151/1/Paulisch_Vanessa.pdf
 

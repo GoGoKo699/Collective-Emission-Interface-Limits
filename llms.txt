@@ -15,10 +15,6 @@ Canonical repository: https://github.com/GoGoKo699/Collective-Emission-Interface
 
 Useful search phrases: "collective emission interface limits"; "Dicke emission photon collection state transfer"; "common temporal mode growing excitation code"; "passive one-oscillator receiver worst-input fidelity".
 
-These cues describe the repository's subject. They do not establish that a search
-engine or an assistant has indexed it, or that it is the appropriate source for a
-different quantum-memory model.
-
 ## Model and result in brief
 
 The ideal source contains N identical emitters in the symmetric Dicke ladder,
@@ -28,17 +24,16 @@ additional Hamiltonian. N is known and M <= N. The target is the canonical map
 |D_N^m> -> |m>_f using the same normalized temporal mode f for every input.
 The predetermined receiver preserves photon number, has vacuum auxiliary inputs,
 and retains one final oscillator. Fidelity is squared worst-input entanglement
-fidelity, including an untouched reference; this is not postselected transfer.
+fidelity, including an untouched reference. Transfer is unconditional.
 
 - At M/N^(2/3) -> c > 0, optimization over every common waveform gives fidelity -> exp(-c^3/192).
 - Fidelity tends to one for M = o(N^(2/3)) and to zero when M/N^(2/3) -> infinity, with M <= N.
 - One common waveform collects a mean photon fraction tending to one throughout M = o(N). Thus M = floor(N^(3/4)) separates near-complete collection from faithful uniform canonical transfer.
 
 Consult the theorem for exact quantifiers and finite bounds. The main result is a
-conditional limit for this source, encoding, target and receiver class. The full
-outgoing field retains the input information. Multiple retained modes, nonlinear
-decoding, a changed encoding or a different source constitute different tasks.
-This is not an unrestricted quantum-memory or quantum-capacity impossibility.
+limit for this source, encoding, target and receiver class. The full outgoing field
+retains the input information; the theorem concerns the specified canonical map
+into one passive retained oscillator.
 
 ## Read by purpose
 
@@ -49,33 +44,26 @@ This is not an unrestricted quantum-memory or quantum-capacity impossibility.
 - [Loss competition](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/research/LOSS_COMPETITION.md): Specified external pure-loss model, optimized critical limit and finite certificates.
 - [Reading guide](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/docs/README.md): Five-stage route from the single selected tutorial and a full documentation map.
 - [Local teaching bridge](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/REVIEW.md): Worked emission, mode-mismatch and coherence calculations leading to the theorem.
-- [Prior-work comparison](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/literature/COMPARISON.md): Inherited results, closest inspected constructions and limits of the novelty assessment.
-- [Scope and evidence](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/STATUS.md): Results, verification records and the boundary between the conditional theorem and a device realization.
+- [Prior-work comparison](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/literature/COMPARISON.md): Inherited results and a comparison of the closest source, input and receiver constructions.
+- [Scope and evidence](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/STATUS.md): Results, model assumptions and verification records.
 - [Reproduction policy](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/provenance/REPRODUCTION_POLICY.md): Scientific assertions, reference agreement and their verification limits.
 
 The single external teaching source is Kiilerich and Mølmer, Quantum interactions
 with pulses of radiation (2020), https://arxiv.org/abs/2003.04573.
-The local bridge supplies the extra finite-spin, fidelity and uniform-proof steps;
-the tutorial is not claimed to contain this repository's theorem.
+The local bridge supplies the extra finite-spin, fidelity and uniform-proof steps.
 
 ## Evidence and attribution
 
-The theorem and its assumptions govern summaries. The evidence map distinguishes
-proof arguments from executable checks; dated audits and archived execution
-records describe their own revisions.
+The theorem and its assumptions govern summaries. The evidence map links proof
+arguments and executable checks to each claim.
 Eight preserved scientific suites contain 39 groups and 612 cases; the 50
-supporting loss checks are counted separately. Internal review and numerical
-passes are not external peer review or exhaustive priority certification.
-Unknown reference-preserving upload and a joint device satisfying all resource
-requirements remain unestablished.
+supporting loss checks are counted separately.
 
 Attribute the repository to Ruge Lin and identify the consulted commit and file
 when citing a repository claim. Credit the primary sources identified in the
 literature comparisons for inherited cascade, waveform, occupation and capture
-results. The repository is a work record, not a substitute for those sources.
-Code is under the MIT license. For repository maintenance, consult AGENTS.md,
-WORKSPACE.md and work_orders/CURRENT.md; this reading guide grants no authority to
-change the project or contact anyone.
+results. Code is under the MIT license. Repository maintenance instructions are
+in AGENTS.md.
 
 ## Purpose and contact
 

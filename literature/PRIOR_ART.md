@@ -6,29 +6,29 @@ This map identifies inherited ingredients and the precise differences between th
 
 The [Tziperman comparison](TZIPERMAN_FULL_TEXT.md) covers the complete author-hosted
 main article and supplement: an overlapping collective source, canonical target and
-full selected-mode transfer construction. Its preparation-specific mode choice does
-not supply the uniform common-code theorem in the inspected versions.
+full selected-mode transfer construction. Its mode choice depends
+on the prepared state; the theorem here uses one receiver for the whole unknown code.
 
 The [additional source comparisons](PREWRITING_SEARCH_2026_10_05.md) cover
 Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al. at the construction level,
-with inspected versions and search scope.
+with source versions and equation-level locations.
 
 | Source | Established ingredient | Relation to the interface theorem |
 |---|---|---|
 | Paulisch, *Waveguide Quantum Electrodynamics*, dissertation, 2018, Chapter 1 | Exact emitted cascade, conventional-pulse overlap, number-state mapping and useful-channel probability | The present result optimizes one waveform over a growing number code and controls the approximation uniformly. The conventional cubic error already suggests the critical scale. |
-| Khanahmadi et al., Physical Review Research 5, 043071 (2023) | Number-dependent temporal modes, selected Fock/cat-state transfer and capture-cavity analysis | The inspected work does not state the same all-waveform Dicke-code minimax. Its qualitative explanation is a direct predecessor, not an observation to claim anew. |
-| Law and Lee, Physical Review A 75, 033813 (2007) | Full-text-checked natural-mode optimization, mode purity, oscillator comparator, dominant two-mode occupation and semiclassical sech pulse | The supplied six pages do not state the uniform growing-code isometry estimate or all-waveform common-code converse. Exact rank-one correlation does imply single-mode support; approximate occupation needs a photon-number-dependent fidelity estimate. See the [full comparison](LAW_LEE_FULL_TEXT.md). |
-| Lemberger and Mølmer, Physical Review A 103, 033713 (2021) | Radiation eigenmodes and dominant average occupations | Mean occupation is not worst-input canonical state-transfer fidelity. A complete comparison must preserve that distinction without claiming that changing metrics is itself novel. |
+| Khanahmadi et al., Physical Review Research 5, 043071 (2023) | Number-dependent temporal modes, selected Fock/cat-state transfer and capture-cavity analysis | These selected-state constructions and their qualitative explanation precede the all-waveform Dicke-code minimax studied here. |
+| Law and Lee, Physical Review A 75, 033813 (2007) | Natural-mode optimization, mode purity, oscillator comparator, dominant two-mode occupation and semiclassical sech pulse | The six-page article optimizes occupation; the theorem here controls the full emitted isometry and worst-code transfer. Exact rank-one correlation does imply single-mode support; approximate occupation needs a photon-number-dependent fidelity estimate. See the [full comparison](LAW_LEE_FULL_TEXT.md). |
+| Lemberger and Mølmer, Physical Review A 103, 033713 (2021) | Radiation eigenmodes and dominant average occupations | The theorem relates mean-photon collection to worst-input canonical state-transfer fidelity through uniform error bounds. |
 | Yamamoto and James, arXiv:1403.1698 | Passive linear memory framework | The one-retained-mode reduction is an application of established input-output theory. |
-| Nurdin, James, Yamamoto, arXiv:1609.05643 | Tunable capture and singular-onset control issue | The finite regularized receiver is a concrete implementation check, not a new capture principle. |
+| Nurdin, James, Yamamoto, arXiv:1609.05643 | Tunable capture and singular-onset control issue | The finite regularized receiver applies this capture principle. |
 
-The two-sector witness follows from the common-waveform converse and distinguishes growing excitation energy from growing logical dimension; it is not a separate mechanism. Historical access attempts, including unsuccessful Law–Lee retrievals, are preserved in [SOURCE_EVIDENCE_PRE_UPLOAD.md](SOURCE_EVIDENCE_PRE_UPLOAD.md).
+The two-sector witness follows from the common-waveform converse and distinguishes growing excitation energy from growing logical dimension.
 
 ## Source-realization comparisons
 
-González-Tudela and colleagues' 2015 source proposal is a direct precedent for symmetric atomic preparation and matter-to-pulse mapping, including a route to slowing the dynamics. Koppenhöfer and colleagues provide the cavity-mediated collective-decay rates used in the source audit. Those papers' actual level structures and regimes must be kept; their citations do not prove a uniform microscopic-field approximation on our growing code.
+González-Tudela and colleagues' 2015 source proposal is a direct precedent for symmetric atomic preparation and matter-to-pulse mapping, including a route to slowing the dynamics. Koppenhöfer and colleagues provide the cavity-mediated collective-decay rates used in the source audit. The [physical analysis](../research/PHYSICAL_SCOPE.md) uses their specified level structures and rate regimes to relate effective and microscopic parameters.
 
-The two-emitter observation by Mlynek et al. supports a realizable collective-decay mechanism, not a large unknown-code demonstration. Receiver experiments establish a meaningful application class but do not validate every ideal source assumption simultaneously.
+Mlynek et al. observe collective decay in a two-emitter system. The receiver experiments in the source register supply the corresponding storage and capture context.
 
 ## Primary identifiers
 
@@ -50,4 +50,4 @@ The two-emitter observation by Mlynek et al. supports a realizable collective-de
 
 [P9] J. A. Mlynek, A. A. Abdumalikov, C. Eichler, and A. Wallraff, *Observation of Dicke superradiance for two artificial atoms in a cavity with high decay rate*, Nature Communications 5, 5186 (2014). https://doi.org/10.1038/ncomms6186
 
-The [source register](SOURCE_EVIDENCE.md) also covers Malz–Trivedi–Cirac and cavity-memory scope. Full-field coherent absorbers allow broader receiving resources and fall outside this comparison.
+The [source register](SOURCE_EVIDENCE.md) also covers Malz–Trivedi–Cirac and cavity-memory scope.

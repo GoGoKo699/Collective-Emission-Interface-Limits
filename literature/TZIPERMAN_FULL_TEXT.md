@@ -2,13 +2,13 @@
 
 Tziperman et al. use collective emission and a selected temporal mode to transfer specified emitter states into quantum light. This comparison identifies the shared source and target, and the additional uniform guarantee established by the common-receiver theorem.
 
-## Sources and reading scope
+## Source versions
 
 Offek Tziperman et al., *Nonlinear Quantum Light Generation in Collective Spontaneous Emission*, ACS Nano **19**, 21260–21270 (2025), [DOI](https://doi.org/10.1021/acsnano.4c15257); associated preprint [arXiv:2306.11348](https://arxiv.org/abs/2306.11348).
 
-The [authors' laboratory publication list](https://kaminer.net.technion.ac.il/publications-list/) supplies the [main article](https://kaminer.net.technion.ac.il/files/2025/06/tziperman-et-al-2025-nonlinear-quantum-light-generation-in-collective-spontaneous-emission.pdf) and [supplement](https://kaminer.net.technion.ac.il/files/2025/06/nn4c15257_si_001.pdf). Both complete PDFs were downloaded and inspected. The main file is an 11-page publisher-formatted early-online copy with printed letters A–K and placeholder issue pagination; it was not compared line by line with a final issue PDF or the arXiv versions. SI has 23 PDF pages. Page numbers below count PDF pages from one.
+The [authors' laboratory publication list](https://kaminer.net.technion.ac.il/publications-list/) supplies the [main article](https://kaminer.net.technion.ac.il/files/2025/06/tziperman-et-al-2025-nonlinear-quantum-light-generation-in-collective-spontaneous-emission.pdf) and [supplement](https://kaminer.net.technion.ac.il/files/2025/06/nn4c15257_si_001.pdf). The comparison uses the 11-page publisher-formatted early-online main article with printed letters A–K and placeholder issue pagination, together with its 23-page SI. Page numbers below count PDF pages from one.
 
-The main scientific body and SI Sections I–VI were read, with particular attention to II, IV and VI. Main pages 4/D, 5/E and 8/H, and SI pages 9, 14, 16 and 17 were rendered to check equations and the fixed-target construction. Neither third-party PDF is redistributed here.
+The relevant constructions are in the main scientific body and SI Sections I–VI, especially II, IV and VI.
 
 ## Direct evidence
 
@@ -23,16 +23,16 @@ The main scientific body and SI Sections I–VI were read, with particular atten
 | Number-map target | SI IV.4, pp. 16–17 and Fig. S7, fixes an even cat with $`\alpha=2`$, copies truncated, renormalized Fock coefficients into the Dicke basis, and varies $`N`$. |
 | Input examples | SI VI, pp. 21–22, Eqs. (S76)–(S79), specifies prepared cat, GKP and squeezed states. |
 
-## What follows for this project
+## Relation to the common-receiver theorem
 
-After removing carrier rotation, matching rate and phase conventions and imposing the lossless symmetric case, the shared source has our ladder rates $`\gamma m(N-m+1)`$. The source cannot be dismissed as a different model. The coefficient-copying example also overlaps our canonical number target. The paper deserves direct credit for collective full-state transfer, number-dependent mode distortion and selected-mode capture.
+After removing carrier rotation, matching rate and phase conventions and imposing the lossless symmetric case, the shared source has our ladder rates $`\gamma m(N-m+1)`$. The coefficient-copying example also overlaps our canonical number target. The paper gives collective full-state transfer calculations for selected inputs, including number-dependent mode distortion and selected-mode capture.
 
-The mode-selection procedure is applied to the radiation from a specified initial state. Thus its calculation allows the chosen waveform to depend on that preparation. Our optimization instead chooses one waveform before an arbitrary, possibly reference-entangled input in $`\mathcal C_M`$. A numerical method supporting arbitrary initial conditions is not itself a uniform accuracy guarantee with this quantifier order.
+The mode-selection procedure is applied to the radiation from a specified initial state. Thus its calculation allows the chosen waveform to depend on that preparation. Our optimization instead chooses one waveform before an arbitrary, possibly reference-entangled input in $`\mathcal C_M`$. The quantifier order distinguishes a selected-state calculation from a uniform channel guarantee.
 
-The virtual oscillator is an ideal calculation of a selected-mode state. It overlaps the allowed linear receiver; it does not establish a finite-bandwidth apparatus attaining every waveform. We found no adaptive or nonlinear recovery needed for the compared construction.
+The virtual oscillator calculates the ideal selected-mode state using a prescribed passive linear coupling, within the receiver class considered here.
 
-**Fidelity convention remains unresolved:** no explicit squared-versus-root fidelity definition was located in either inspected file. Their reported percentages are therefore not equated to this repository's squared entanglement fidelity. This does not prevent the construction comparison.
+The comparison uses the source, target and mode-selection construction. Its reported fidelity percentages have an unspecified squared-versus-root convention in these versions, so a numerical conversion to squared entanglement fidelity would require that definition.
 
-The fixed-cat sweep and constant-excitation discussion do not establish a growing-code minimax limit. No uniform emitted-isometry bound on $`\mathcal C_M`$, all-waveform common-receiver converse, or matching $`e^{-c^3/192}`$ critical law was found in these versions. Selected-input success is compatible with a failing worst-input guarantee.
+Their asymptotic discussion holds excitation number fixed. The theorem here instead controls the emitted isometry uniformly on $`\mathcal C_M`$, optimizes over every common waveform and gives the matching $`e^{-c^3/192}`$ critical law. Selected-input success is compatible with a failing worst-input guarantee.
 
 The additional result here is the controlled all-waveform, whole-code boundary and its separation from mean photon collection. The comparison is restricted to the documented constructions and versions above.

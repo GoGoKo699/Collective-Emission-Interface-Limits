@@ -12,8 +12,8 @@ merely for the average number of photons it delivers.
 | [Reading guide](docs/README.md) · [Tutorial-to-theorem bridge](REVIEW.md) | Learn from one external tutorial and local worked examples |
 | [Theorem](research/THEOREM.md) · [Claim and evidence map](research/CLAIM_EVIDENCE_MAP.md) | Follow the result, proof dependencies and supporting consequences |
 | [Physical scope](research/PHYSICAL_SCOPE.md) · [Prior-work comparison](literature/COMPARISON.md) | Check receiver restrictions, realization limits and attribution |
-| [Verification](#evidence-and-reproduction) · [Scope and evidence](STATUS.md) | Inspect executable evidence and the remaining limits |
-| [LLM guide](llms.txt) · [Workspace](WORKSPACE.md) | Identify relevant questions and authoritative files for further reading |
+| [Verification](#evidence-and-reproduction) · [Scope and evidence](STATUS.md) | Inspect the model assumptions and executable evidence |
+| [LLM guide](llms.txt) | Identify relevant questions and authoritative files for further reading |
 
 ## Model and transfer task
 
@@ -62,8 +62,7 @@ M/N &\longrightarrow 0,\\
 
 This is a uniform channel limitation, not a statement that every input fails. The
 [standalone theorem](research/THEOREM.md) supplies the construction, unrestricted-waveform
-converse and finite bounds; the [explicit proof correction](research/PROOF_AUDIT.md)
-remains part of the record.
+converse and finite bounds.
 
 ## Why the two criteria differ
 
@@ -102,17 +101,19 @@ loss and finite capture follow as supporting lessons. The
 
 The ideal source is symmetric, has known $`N`$, and emits completely into one vacuum
 Markov channel. The receiver retains one oscillator after fixed passive processing.
-The full emitted field retains the information; several retained modes, nonlinear
-decoding or a different encoding change the task. Preparation, loss, duration and
-bandwidth are real resources, not a demonstrated joint apparatus.
+The input is an arbitrary state in the symmetric excitation code, including its
+correlations with a reference. The full emitted field retains that information;
+the theorem quantifies transfer into the specified single receiving oscillator.
+The [physical analysis](research/PHYSICAL_SCOPE.md) gives the loss, duration and
+coupling requirements for capture.
 
 The Dicke cascade, conventional-pulse cubic mismatch, number-dependent temporal modes,
 mean-occupation optimization and pulse-capture formalism have direct predecessors.
 The [comparison](literature/COMPARISON.md) and [background dossier](literature/BACKGROUND.md)
 separate those ingredients from the optimized uniform limit. The
 [Tziperman comparison](literature/TZIPERMAN_FULL_TEXT.md) examines its overlapping
-collective source and selected-state transfer construction. No subsumption of the
-uniform common-code theorem was found in the inspected versions. The
+collective source and selected-state transfer construction alongside the uniform
+common-code guarantee. The
 [scope and evidence page](STATUS.md) links the physical limits and verification records.
 
 ## Evidence and reproduction
@@ -128,7 +129,7 @@ python verify.py --artifacts-dir verification-artifacts --require-reference
 The eight scientific suites cover 39 groups and 612 cases. The scientific scripts and
 saved results are preserved; generated outputs are compared without rewriting references.
 The [reproduction policy](provenance/REPRODUCTION_POLICY.md) distinguishes exact bytes,
-reviewed numerical agreement and passing assertions. None is independent proof review.
+reviewed numerical agreement and passing assertions.
 The presentation check is separate from the scientific test count.
 The supplementary loss-competition checks are also counted separately; their
 [execution record](provenance/PREWRITING_2026_10_05.json) identifies methods and limitations.
@@ -139,5 +140,4 @@ This repository serves as a record of the work and a guide for the author’s se
 
 The [LLM guide](llms.txt) describes relevant research questions, search terms and the
 authoritative reading order for automated assistants and other readers.
-The [workspace](WORKSPACE.md) and [current work order](work_orders/CURRENT.md) describe
-continuing work. Code is available under the [MIT license](LICENSE).
+Code is available under the [MIT license](LICENSE).

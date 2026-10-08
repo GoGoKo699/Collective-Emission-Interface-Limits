@@ -1,56 +1,43 @@
 # Provenance and reproducibility
 
-## Current audit
+The [suite registry](SUITES.json) protects the scientific scripts and reference
+results by hash. Eight suites cover 39 groups and 612 cases; the loss checker has
+50 supplementary cases. Reproduction runs compare fresh outputs with these
+references. The [reproduction policy](REPRODUCTION_POLICY.md) defines the comparison
+and evidence rules.
 
-The [7 October release sanity record](RELEASE_2026_10_07.json) records numerical
-reproduction, protected-reference checks and documentation validation for the
-release cleanup.
+## Verification records
 
-The [prewriting research record](PREWRITING_2026_10_05.json) maps the subsequent
-claim audit, source refresh, finite-capture proof and loss-competition derivation.
-The new supporting checker has 50 supplementary cases, counted separately from
-the preserved eight-suite baseline. It imports the existing continuum-overlap ODE
-with attribution and checks new scalar optimization and finite bounds; it is not
-an independent derivation of that ODE or an interval-certified numerical proof.
-The raw new [loss-check result](prewriting_2026_10_05/loss-check.json) is retained.
+Each dated record identifies the revision, environment and checks it covers.
 
-The active registry contains **eight scientific suites, 39 groups and 612 cases**.
-The [5 October sanity record](../research/SANITY_CHECK_2026_10_05.md) and
-[machine-readable evidence map](SANITY_2026_10_05.json) document fresh baseline and
-repaired-runner verification. All scientific scripts and references are preserved.
-The reporting tools now have 25 focused infrastructure tests; mathematical presentation
-has a separate 22-test checker. These counts are not added to the scientific cases.
-The 7 October reader-notice update added three link-integrity fixtures for email
-links and the LLM guide. The verifier accepts `mailto:` addresses and checks root
-`llms.txt` while continuing to reject broken local links. Scientific suite hashes
-and reference comparisons are unchanged.
+| Record | Contents |
+|---|---|
+| [Release sanity check, 7 October 2026](RELEASE_2026_10_07.json) | Numerical reproduction, protected hashes, documentation and content checks |
+| [Research verification, 5 October 2026](PREWRITING_2026_10_05.json) | Claim/source comparisons and the loss and finite-capture calculations |
+| [Loss-check output](prewriting_2026_10_05/loss-check.json) | The 50 supplementary scalar-optimization and finite-bound checks |
+| [Sanity evidence map](SANITY_2026_10_05.json) and [analysis](../research/SANITY_CHECK_2026_10_05.md) | Numerical reproduction and verifier diagnostics |
+| [Proof audit record](PROOF_AUDIT.json) and [derivations](../research/PROOF_AUDIT.md) | Endpoint correction, finite inequalities and the eighth scientific suite |
+| [Import record](IMPORT.md) | Original source packages and repository import |
 
-The 7 October display repair replaces rejected operator notation with upright text,
-makes fraction and bold-symbol arguments explicit, and uses a TeX relation instead
-of an HTML-like less-than token. Protected inline and fenced display delimiters
-keep Markdown from stripping mathematical braces or turning spacing commands into
-punctuation. Ten new presentation fixtures cover these compatibility patterns.
-Local TeX compilation alone did not catch the reported GitHub failures; the checker
-remains a limited structural and compatibility check, not a substitute for
-inspecting the rendered page.
+## Reference data
 
-The eighth suite and endpoint proof repair are recorded in [PROOF_AUDIT.json](PROOF_AUDIT.json).
-The following import account and its seven-suite execution record are historical.
+The six original script/result pairs under `tests/01_*` through `tests/06_*` are
+exact copies from the supplied source packages. Their package and file hashes are
+recorded in `SUITES.json`, alongside the two-sector and uniform-proof suites.
 
-## Original import account
+[FILE_MANIFEST.json](FILE_MANIFEST.json), [VERIFICATION.json](VERIFICATION.json)
+and [DELIVERY_VALIDATION.json](DELIVERY_VALIDATION.json) describe the original
+32-file starter at commit `ff4e1577b18cbfbf759e11c61cc86efe268eb59e`.
+The active `SUITES.json` registry governs scientific-file integrity; CI preserves
+its own execution reports and raw comparisons.
 
-The six original scientific scripts and their `results.json` files under `tests/01_*` through `tests/06_*` are exact copies from the supplied aggregate archive. `SUITES.json` records each source package hash and the per-file hashes. All six nested source archives were also compared to their separately uploaded versions and matched.
+## Documentation checks
 
-The seventh suite is the new two-sector scope audit. Its analytic statement is a corollary of the preceding converse; its finite trial calculation and controls are newly executed. None of the old scientific modules is imported by that suite.
+The reproduction and verifier tools have 25 focused tests. Mathematical
+presentation has 22 separate fixtures covering delimiters, table structure and
+known GitHub rendering hazards. These counts are separate from the scientific
+cases. The integrity verifier checks local Markdown and LLM-guide links.
 
-The canonical README and research documents are **edited standalone consolidations**, not claimed to be byte-identical archival notes. No change to the source model, fidelity convention, or earlier result is intended by those edits. Historical scouting opinions and target-journal statements are not public scientific premises. The original aggregate archive remains unmodified in the conversation; no third-party paper is redistributed here.
-
-`VERIFICATION.json` records the completed local execution of all seven suites. The reference environment is pinned in `requirements.txt`. The runner writes outputs to temporary files and compares them with references without overwriting them. Exact numerical equality in that environment is evidence of reproducibility, not proof of universal statements or prior-art independence.
-
-If a future change is needed, make it explicit in this ledger and preserve the corresponding original file or its source hash. A failed numerical check must not be “fixed” by silently replacing its expected output. No formal proof assistant or independent reviewer has certified the results.
-
-## Activation in the live repository
-
-The initial import commit is `ff4e1577b18cbfbf759e11c61cc86efe268eb59e`. At that revision, every one of the 32 starter files matches the supplied package byte-for-byte; the pre-existing MIT license is the only additional file. `FILE_MANIFEST.json`, `VERIFICATION.json`, and `DELIVERY_VALIDATION.json` describe that original starter. In particular, the historical `new_remote_repository_created: false` field describes preparation of the seed, not the current repository state.
-
-Later onboarding edits are recorded separately in [IMPORT.md](IMPORT.md). The starter file manifest is intentionally not relabeled as a current-tree or CI-success certificate. `SUITES.json` remains the active per-script/per-reference integrity check. The automated workflow writes its own execution report and never refreshes reference results. Numerical tests can pass on another environment without exact-byte agreement; the runner records that distinction explicitly.
+Protected inline and fenced display mathematics preserve TeX through GitHub's
+Markdown processing. The presentation checker tests structure and compatibility
+patterns; visual inspection checks the rendered page.

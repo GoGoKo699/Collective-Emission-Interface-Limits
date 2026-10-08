@@ -72,4 +72,4 @@ runs rather than inferred from local success.
 The useful next gate is a separate external critical reading or a precise new scientific
 objection. Whole-code reference-preserving preparation and combined microscopic
 realization remain conditional. No contact, manuscript, new model or new receiver was
-initiated by this audit. See the [work order](../work_orders/CURRENT.md).
+initiated by this audit. See the [work order](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/2e965dbe489a9f03ff8ffd1ff98951e3f1f612f2/work_orders/CURRENT.md).
