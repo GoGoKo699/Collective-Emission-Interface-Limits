@@ -9,7 +9,7 @@ main article and supplement: an overlapping collective source, canonical target 
 full selected-mode transfer construction. Its mode choice depends
 on the prepared state; the theorem here uses one receiver for the whole unknown code.
 
-The [additional source comparisons](PREWRITING_SEARCH_2026_10_05.md) cover
+The [additional source comparisons](ADDITIONAL_COMPARISONS.md) cover
 Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al. at the construction level,
 with source versions and equation-level locations.
 
@@ -26,7 +26,7 @@ The two-sector witness follows from the common-waveform converse and distinguish
 
 ## Source-realization comparisons
 
-González-Tudela and colleagues' 2015 source proposal is a direct precedent for symmetric atomic preparation and matter-to-pulse mapping, including a route to slowing the dynamics. Koppenhöfer and colleagues provide the cavity-mediated collective-decay rates used in the source audit. The [physical analysis](../research/PHYSICAL_SCOPE.md) uses their specified level structures and rate regimes to relate effective and microscopic parameters.
+González-Tudela and colleagues' 2015 source proposal is a direct precedent for symmetric atomic preparation and matter-to-pulse mapping, including a route to slowing the dynamics. Koppenhöfer and colleagues provide the cavity-mediated collective-decay rates used in the source audit. The [physical analysis](../science/PHYSICAL_SCOPE.md) uses their specified level structures and rate regimes to relate effective and microscopic parameters.
 
 Mlynek et al. observe collective decay in a two-emitter system. The receiver experiments in the source register supply the corresponding storage and capture context.
 

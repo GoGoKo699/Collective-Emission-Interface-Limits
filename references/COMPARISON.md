@@ -16,7 +16,7 @@ The linear vacuum-noise model transfers the quantum state of that mode. Our ques
 
 Khanahmadi et al. (A02), Sec. IV, distinguish vacuum plus one populated number from two populated numbers. Sec. V, Eqs. (15)–(16), models a capture oscillator; Eq. (17) evaluates selected Fock/cat fidelities, with target cat amplitude varied. Sec. V A optimizes a drive parameter for selected inputs. Number-dependent pulse shapes, degraded superposition transfer, and state-specific optimization are inherited.
 
-Kiilerich and Molmer (R03), Eqs. (2)–(6), supply full quantum-state calculations for any selected output pulse through virtual cascaded oscillators. Our numerical capture calculations apply that method; the common-waveform converse and controlled growing-code limit are established in the [theorem](../research/THEOREM.md).
+Kiilerich and Molmer (R03), Eqs. (2)–(6), supply full quantum-state calculations for any selected output pulse through virtual cascaded oscillators. Our numerical capture calculations apply that method; the common-waveform converse and controlled growing-code limit are established in the [theorem](../science/COMMON_MODE_BOUNDARY.md).
 
 ## Law–Lee: optimized occupation and whole-state fidelity
 
@@ -38,7 +38,7 @@ a matching converse for a growing unknown input code.
 
 ## Other controlled limits and attribution anchors
 
-The [additional source comparisons](PREWRITING_SEARCH_2026_10_05.md) cover Porras–Cirac's
+The [additional source comparisons](ADDITIONAL_COMPARISONS.md) cover Porras–Cirac's
 bosonic atom-to-light mapping, Perarnau-Llobet et al.'s full-state few-mode
 projections, and Belliardo et al.'s optimized parameter readout, with equations
 and source versions. These tasks respectively concern bosonic state mapping,
@@ -52,4 +52,4 @@ Paulisch (A01) supplies the exact cascade, conventional exponential overlap, use
 
 The contribution is the sharp optimized uniform distinction between faithful canonical state transfer and mean-photon collection for the stated collective source and one linear memory. It builds on the cascade, natural-mode optimization, number-dependent pulses, oscillator comparison and capture formalisms attributed above.
 
-The [physical account](../research/STORY.md) explains the transfer-versus-collection distinction; the [physical analysis](../research/PHYSICAL_SCOPE.md) quantifies receiver and source resources.
+The [physical account](../science/INTERPRETATION.md) explains the transfer-versus-collection distinction; the [physical analysis](../science/PHYSICAL_SCOPE.md) quantifies receiver and source resources.

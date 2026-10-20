@@ -1,6 +1,9 @@
 # Reproduction evidence and source-informed review
 
-**3 October 2026.** This policy addresses issue #7 without changing any scientific calculation or saved reference. It is not a proof or a rigorous numerical-error certificate.
+This policy separates scientific assertions, preserved reference identities,
+raw numerical differences and source-informed comparison. Its thresholds are
+regression alerts, not rigorous numerical-error certificates. The
+[verification guide](../verification/README.md) gives the complete command route.
 
 ## Run and retain the evidence
 
@@ -41,7 +44,15 @@ With `--require-reference`, unresolved raw alerts fail the run. The two justifie
 
 ## Controls
 
-The original fifteen tooling unit tests covered invalid data, duplicate keys, zeros, large integers, types, metadata, changes to N, scoped work counts, rescaled physical errors and evidence preservation. The 5 October audit adds two comparator/environment tests and five verifier fixtures: **22 current infrastructure tests**. Nonfinite numeric overflow is rejected even inside metadata; reports carry real UTC start/end times and the effective suite thread settings. Summary output paths cannot replace maintained source files or retained raw evidence. The fixtures include a deliberately invalid result that reports PASS but must fail the reference gate while retaining its original bytes.
+The **25 infrastructure tests** cover invalid data, duplicate keys, zeros,
+large integers, types, metadata, changes to N, scoped work counts, rescaled
+physical errors, environment reporting, local navigation and evidence
+preservation. Nonfinite numeric overflow is rejected even inside metadata;
+reports carry real UTC start/end times and the effective suite thread settings.
+Summary output paths cannot replace maintained source files or retained raw
+evidence, including the topic-based science, learning, reference and verification
+directories. The fixtures include a deliberately invalid result that reports
+PASS but must fail the reference gate while retaining its original bytes.
 
 The earlier local end-to-end replay of the captured output passes the declared review while retaining its false exact-byte flags. Altering an ordinary fidelity by 0.001 makes the gate fail even if the replayed script reports PASS. These fixtures test infrastructure, not the science. Historical execution reports remain unchanged, including their original dates and environment fields; the current audit identifies the provenance limitations of the old runner.
 

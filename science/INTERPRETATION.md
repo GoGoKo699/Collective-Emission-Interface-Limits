@@ -1,7 +1,7 @@
 # One source, two notions of an accurate interface
 
 The model, code, receiver and fidelity convention are defined in
-[THEOREM.md](THEOREM.md).
+[model and channel objective](MODEL.md).
 
 ## The transfer task
 
@@ -45,7 +45,7 @@ c_0=(-192\ln F_0)^{1/3}.
 
 To see this, choose any fixed $`0\lt c_-\lt c_0\lt c_+`$. The critical limits at $`M=\lfloor c_-N^{2/3}\rfloor`$ and $`M=\lfloor c_+N^{2/3}\rfloor`$ lie strictly above and below $`F_0`$, respectively. The optimized fidelity cannot increase when the code is enlarged, so these cutoffs bracket $`K_N(F_0)`$ for sufficiently large $`N`$. Letting the margins approach zero gives the limit. Below a fixed margin, the constructive common pulse reaches the target; above a fixed margin, no allowed waveform does.
 
-This corollary applies at fixed target fidelity. Finite-$`N`$ decisions use the bounds in THEOREM.md; a target tending to one with $`N`$ requires separate control of the convergence rate. [PHYSICAL_SCOPE.md](PHYSICAL_SCOPE.md) relates the ideal theorem to capture, bandwidth and loss.
+This corollary applies at fixed target fidelity. Finite-$`N`$ decisions use the [common-mode bounds](COMMON_MODE_BOUNDARY.md); a target tending to one with $`N`$ requires separate control of the convergence rate. [PHYSICAL_SCOPE.md](PHYSICAL_SCOPE.md) relates the ideal theorem to capture, bandwidth and loss.
 
 The result gives the domain of validity of an oscillator approximation for a passive one-memory interface. The complete emitted field retains the input information; additional retained modes or nonlinear decoding change the receiver resource.
 
@@ -57,8 +57,8 @@ why multiphoton mismatch accumulates. The result here controls that accumulation
 uniformly over an unknown excitation code and excludes every better common waveform
 in the critical limit.
 
-The [direct comparison](../literature/COMPARISON.md) and
-[Law–Lee reading](../literature/LAW_LEE_FULL_TEXT.md) distinguish that task from
+The [direct comparison](../references/COMPARISON.md) and
+[Law–Lee reading](../references/LAW_LEE_FULL_TEXT.md) distinguish that task from
 selected-state and mean-occupation optimization.
 
 See [Purpose and contact](../README.md#purpose-and-contact) for the repository's learning role and discussion details.

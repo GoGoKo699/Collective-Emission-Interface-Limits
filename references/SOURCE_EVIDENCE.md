@@ -1,6 +1,16 @@
-# Primary-source evidence: premises, access depth, and limits
+# Primary-source evidence
 
-**3 October 2026.** This register supports the fixed collective-emission interface question. It is not an exhaustive novelty search or a demonstration of the combined device. Labels **F** mean that a primary full text was retrieved and the specified sections inspected; **A** means primary abstract/metadata only. F does not mean independent verification of every proof. Distinct papers from the same group are counted as papers, not independent experimental replications. The thesis is an attribution anchor but is not counted as an additional primary paper in the five-to-ten-paper totals.
+This register identifies the collective-source, receiver and preparation premises,
+the primary versions supporting them, and the scope of each comparison. **F** means
+that primary full text and the specified sections were inspected; **A** means
+abstract or bibliographic evidence. A full-text reading is distinct from independent
+verification of every proof. Source identifiers S, R, P and A are stable across
+the [assumption register](ASSUMPTIONS.md), [background](BACKGROUND.md) and
+[direct comparisons](COMPARISON.md).
+
+The records support the stated component models. The interface theorem is conditional
+on its declared symmetric input and ideal collective source; experimental examples
+retain their own controls, encodings and imperfections.
 
 ## Collective-source conventions
 
@@ -30,26 +40,52 @@ The seven sources directly support the collective-source convention; S01-S06 exp
 
 R01-R03 directly support the mathematical receiver formalism. R04 is a closely related linearized atomic-memory model. R05-R07 establish component and task relevance, not additional proofs of the general receiver reduction. These categories are deliberately not combined into seven identical demonstrations.
 
-## Symmetric-state preparation: the remaining evidence deficit
+## Symmetric-state preparation
 
 | ID and primary source | Depth and location | Actual support and limitation |
 |---|---|---|
 | S01 above | **F**, Eq. (6) and the surrounding stepwise protocol | Arbitrary symmetric target superpositions are an explicit theoretical objective with additional levels, ancilla control, and errors. |
 | P01. Keating et al., *Arbitrary Dicke-State Control of Symmetric Rydberg Ensembles*, PRL 117, 213601 (2016), [arXiv:1607.03169](https://arxiv.org/pdf/1607.03169) | **F**, control Hamiltonian and Eqs. (2)-(8), target expansion and controllability discussion | A theoretical route to arbitrary symmetric targets using Rydberg blockade and collective controls; not a demonstration of the present large-code source. |
 | P02. Bond et al., *Global Variational Quantum Circuits for Arbitrary Symmetric State Preparation*, Physical Review Research 7, L022072 (2025), [arXiv:2312.05060v2](https://arxiv.org/html/2312.05060v2) | **F**, global-control ansatz and symmetric-state examples | Collective rotations and twisting for symmetric targets; numerical preparation results in that model are not errors established for our interface. |
-| P03. Lemr and Fiurasek, *Conditional preparation of arbitrary superpositions of atomic Dicke states*, PRA 79, 043808 (2009), [primary abstract](https://doi.org/10.1103/PhysRevA.79.043808) | **A**, publisher abstract returned in primary search results; direct page did not yield a readable full article | Conditional preparation using additional optical/measurement resources. Do not count it as a full-text-verified deterministic source or universal unknown-input transfer. |
-| P04. Chen et al., *Carving complex many-atom entangled states by single-photon detection*, PRL 115, 250502 (2015), [primary abstract](https://arxiv.org/abs/1508.02457) | **A**, primary abstract; full-text requests unsuccessful | Heralded carving of complex symmetric states. No detailed preparation fidelity or large-code scaling is imported from inaccessible text. |
+| P03. Lemr and Fiurasek, *Conditional preparation of arbitrary superpositions of atomic Dicke states*, PRA 79, 043808 (2009), [published identifier](https://doi.org/10.1103/PhysRevA.79.043808); inspected [arXiv:0812.0507v1](https://arxiv.org/abs/0812.0507v1), titled *Conditional preparation of arbitrary atomic Dicke states* | **F**, ten-page author preprint, Sections II–VII: oscillator reduction, conditional filters, target-dependent controls and success accounting | Approximate bosonic quadratures and heralded, classically specified target preparation. The target-dependent controls do not establish a universal preparation isometry for unknown inputs. See [preparation evidence](PREPARATION_EVIDENCE.md#p03-lemr-and-fiurasek). |
+| P04. Chen et al., *Carving Complex Many-Atom Entangled States by Single-Photon Detection*, PRL 115, 250502 (2015), [published identifier](https://doi.org/10.1103/PhysRevLett.115.250502), [author-hosted published article](https://eapg.mit.edu/wp-content/uploads/2018/03/prl115_quantum_state_carving.pdf) | **F**, complete five-page published article, Eqs. (1)–(12): initial coherent spin state, dispersive spectral selection, time-resolved heralding and finite cooperativity | Heralded finite-spin target preparation with target-dependent initial distribution and selected spectrum. Its accounting includes success probability, linewidth and conditioning. See [preparation evidence](PREPARATION_EVIDENCE.md#p04-chen-et-al). |
 
-This supplies **three inspected full-text preparation papers and two abstract-level leads**, not five completed construction-level audits. No cited work here proves a uniform preparation-and-reference-entanglement error bound for every state of the particular growing code. The theorem may be conditional on that input space, but a device claim must supply the missing preparation evidence.
+Together, S01 and P01–P04 give five construction-level preparation readings, including approximate and conditional known-target constructions. The interface theorem takes an arbitrary state of the symmetric code as its input. A physical encoding of that resource must preserve its correlations with an external reference; success on separately selected targets does not itself establish that input-independent property. The [preparation evidence](PREPARATION_EVIDENCE.md) distinguishes these resources.
 
-## Attribution anchors and unresolved access
+## Attribution anchors
 
 **A01. Paulisch thesis (2018), Chapter 1, Eqs. (1.5)-(1.11).** [Primary dissertation](https://edoc.ub.uni-muenchen.de/22151/1/Paulisch_Vanessa.pdf). The exact cascade, conventional exponential overlap, useful-channel product, number-state mapping and shape control are inherited. This is a consolidated anchor for associated papers, not another independent experiment. Its conventional overlap already yields a cubic excitation-number correction; discovering the exponent is not our novelty claim.
 
 **A02. Khanahmadi et al., PRR 5, 043071 (2023).** [Published full text](https://research.chalmers.se/publication/538258/file/538258_Fulltext.pdf). **F**, Secs. II and IV-V, Eqs. (15)-(17), Sec. V A. Number-dependent output shapes, a capture cavity, Fock/cat fidelities and state-specific drive optimization are direct predecessors. The inspected procedure chooses the most populated mode and also optimizes cat amplitude; it is not the same fixed canonical target and all-waveform worst-code optimization.
 
-**A03. Law and Lee, PRA 75, 033813 (2007).** [Primary abstract](https://doi.org/10.1103/PhysRevA.75.033813). **A only**. The abstract supports dynamical output-mode selection and occupation optimization using dipole correlations. Publisher PDF and APS full-text delivery requests did not produce a readable article in this pass. A university publication list confirms the citation but does not supply the missing construction. These failures say nothing about whether the full paper contains a relevant reduction. The exact missing item is the complete six-page article, including equations and appendices; no credentials, paywall evasion, or outside contact was attempted.
+## Law–Lee: mode optimization
 
-## Accounting rule
+**A03. C. K. Law and S. K. Y. Lee, *Dynamic photon-mode selection in Dicke superradiance*, Physical Review A 75, 033813 (2007).** [Primary identifier](https://doi.org/10.1103/PhysRevA.75.033813).
 
-The counts refer only to the stated narrow premises and access depths. A source can support more than one row, but it is never counted twice inside one row. An abstract is not upgraded to full text. A theory paper is not labeled an experiment. Mathematical definitions, reference-entangled quantifiers, and the receiver resource restriction are not empirical facts that become true by reaching a citation quota. The complete joint apparatus and fixed-microscopic-rate large-code family remain unestablished.
+**F: complete six-page article**, including Eqs. (1)–(30), figures/captions and notes [16]–[17]. See the [full comparison](LAW_LEE_FULL_TEXT.md).
+
+| Location | Direct support | Boundary |
+|---|---|---|
+| Sections II A–B, Eqs. (10)–(21) | Optimized mean-occupation modes and normalized correlation-kernel purity | The optimized quantity is a first-order field observable. |
+| Section II C, Eqs. (22)–(25) | Collective Markov model and general initial Dicke populations in regression | Rate conventions need factor-of-two conversion; dipole interactions are omitted. |
+| Section II C, final paragraph | Raman coupling and bad-ring-cavity realization considerations | Theoretical model-realization considerations. |
+| Section III A, Eq. (26) | Analytic two-atom correlation and mode occupations | Two-emitter preparation and occupation observables. |
+| Section III B, Eq. (27), Figs. 2–4 | Fully inverted large-ensemble and dominant two-mode occupation | Different preparation and norm from the low-density code theorem. |
+| Section III opening and note [16] | Exact one-mode radiation from a linear oscillator | The oscillator comparator is inherited. |
+| Section III C, Eqs. (29)–(30) | Approximate half-excited factorization and hyperbolic-secant pulse | Semiclassical approximation for a specified half-excited preparation. |
+
+## Related comparisons and evidence scope
+
+The [Tziperman comparison](TZIPERMAN_FULL_TEXT.md) identifies the main-article and
+supplement versions and the overlapping source, target and mode-selection construction.
+[Additional comparisons](ADDITIONAL_COMPARISONS.md) cover bosonic state mapping,
+few-mode full-state descriptions and parameter readout, with explicit source versions
+and reading scope.
+
+A source can support several premises, but a citation count does not establish the
+joint apparatus or the channel theorem. Different theory papers and experimental
+component examples retain their stated roles. The comparisons address the inspected
+constructions and versions; they are not an exhaustive literature survey.
+
+[Physical scope](../science/PHYSICAL_SCOPE.md) supplies the source-rate, independent-loss
+and finite-capture qualifications used with the theorem.

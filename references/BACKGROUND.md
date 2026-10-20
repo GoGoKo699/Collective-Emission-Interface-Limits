@@ -1,6 +1,6 @@
 # Scientific background for the fixed interface result
 
-This guide explains the collective-emission model, traveling modes, passive reception and channel-fidelity tools underlying the theorem. Bibliographic keys refer to [REFERENCES.bib](REFERENCES.bib). Kiilerich–Mølmer (2020) is the single tutorial anchor; the [reading guide](../docs/README.md) and [local bridge](../REVIEW.md) connect it to the result. [TUTORIAL_OPTIONS.md](TUTORIAL_OPTIONS.md) explains the choice and lists optional references.
+This guide explains the collective-emission model, traveling modes, passive reception and channel-fidelity tools underlying the theorem. Bibliographic keys refer to [REFERENCES.bib](REFERENCES.bib). Kiilerich–Mølmer (2020) is the single tutorial anchor; the [reading guide](../learning/README.md) and [local bridge](../learning/KIILERICH_MOLMER_BRIDGE.md) connect it to the result.
 
 ## 1. Collective emission and the oscillator approximation
 
@@ -10,7 +10,7 @@ Dicke's collective-emission model [Dicke1954] organizes identical emitters by co
 S_-|D_N^m\rangle=\sqrt{m(N-m+1)}\,|D_N^{m-1}\rangle.
 ```
 
-With jump operator $`\sqrt\gamma S_-`$ and the dissipator convention in [CONVENTIONS.md](../research/CONVENTIONS.md), the decay rate from that level is $`\gamma m(N-m+1)`$. The exact ladder and cascade are developed in Paulisch's dissertation [Paulisch2018Thesis], Chapter 1, for multiphoton generation, and [Paulisch2019] treats the emitted field and its use in metrology.
+With jump operator $`\sqrt\gamma S_-`$ and the dissipator convention in [CONVENTIONS.md](../science/CONVENTIONS.md), the decay rate from that level is $`\gamma m(N-m+1)`$. The exact ladder and cascade are developed in Paulisch's dissertation [Paulisch2018Thesis], Chapter 1, for multiphoton generation, and [Paulisch2019] treats the emitted field and its use in metrology.
 
 On the truncated oscillator number space, the Holstein–Primakoff representation [HolsteinPrimakoff1940] can be written
 
@@ -38,9 +38,9 @@ In the normalized symmetric labeled-time convention,
 |\Psi_m\rangle=\frac{1}{\sqrt{m!}}\int \Psi_m(t_1,\ldots,t_m)b^\dagger(t_1)\cdots b^\dagger(t_m)|0\rangle\,d^mt.
 ```
 
-The full-domain wavefunction has norm one. For $`|m_f\rangle`$, it is $`\prod_i f(t_i)`$. Ordered photon-emission amplitudes are equivalent, but the ordering factor cannot be counted twice. The repository fixes this convention before forming overlaps; [PROOF_AUDIT.md](../research/PROOF_AUDIT.md) checks the normalization.
+The full-domain wavefunction has norm one. For $`|m_f\rangle`$, it is $`\prod_i f(t_i)`$. Ordered photon-emission amplitudes are equivalent, but the ordering factor cannot be counted twice. The repository fixes this convention before forming overlaps; [proof details](../science/PROOF_DETAILS.md) checks the normalization.
 
-A collective jump and no-jump propagation generate a dependent emission cascade. Multiplying its ordered waiting-time amplitudes and symmetrizing gives the exact wavefunction used in [THEOREM.md](../research/THEOREM.md). Paulisch is the direct source-theory anchor; Kiilerich–Mølmer [KiilerichMolmer2020] supplies a pedagogical alternative description through cascaded source and output oscillators. Treating the exact photons as independent would remove the very correction that our uniform approximation must bound.
+A collective jump and no-jump propagation generate a dependent emission cascade. Multiplying its ordered waiting-time amplitudes and symmetrizing gives the exact wavefunction used in [source model](../science/MODEL.md). Paulisch is the direct source-theory anchor; Kiilerich–Mølmer [KiilerichMolmer2020] supplies a pedagogical alternative description through cascaded source and output oscillators. Treating the exact photons as independent would remove the very correction that our uniform approximation must bound.
 
 ## 3. Mode occupation does not determine the complete field state
 
@@ -86,7 +86,7 @@ The repository compares the received channel with the canonical number isometry,
 
 The reduction of our optimized worst-input objective to a minimum of number-state overlaps is a property of this channel, not a general fidelity identity. The no-discarded-photon Kraus operator is positive diagonal for nonnegative receiving pulses; the other Kraus operators lower the retained number. This gives the lower bound for arbitrary inputs, including reference entanglement, and a number state attains it. Positivity of the emitted amplitudes then justifies the optimized reduction from complex pulses to their moduli. A generic phase-distorting channel need not preserve superpositions just because it preserves basis-state fidelities.
 
-Tracing the unwanted field gives an unconditional channel. For transmission $`q`$, the corresponding number-state contribution includes $`q^m`$; this factor accounts for loss separately from mode matching. THEOREM.md and PROOF_AUDIT.md give the channel-specific proof and a phase counterexample.
+Tracing the unwanted field gives an unconditional channel. For transmission $`q`$, the corresponding number-state contribution includes $`q^m`$; this factor accounts for loss separately from mode matching. The [channel reduction](../science/MODEL.md) and [proof details](../science/PROOF_DETAILS.md) give the channel-specific proof and a phase counterexample.
 
 ## 6. Mathematical tools and where the project's proof begins
 
@@ -100,15 +100,15 @@ A standard information-theoretic step turns that density estimate into a state e
 
 Positivity is essential. Matching photon-time probabilities would not control arbitrary unobserved phases. The resulting vector error controls the whole emitted isometry because different photon-number sectors are orthogonal. Its operator norm is the largest sector error, not the sum over the growing code, and remains controlled upon adjoining a reference.
 
-The receiving-waveform converse uses the projective Hilbert-space angle $`\arccos|\langle f,g\rangle|`$, its triangle inequality, and elementary scalar inequalities. It applies to waveforms outside the span of the reference modes. Finite bounds are derived before the joint limit: an additive overlap error cannot simply be called a small relative logarithmic error near fidelity one. PROOF_AUDIT.md gives the endpoint argument and negative control.
+The receiving-waveform converse uses the projective Hilbert-space angle $`\arccos|\langle f,g\rangle|`$, its triangle inequality, and elementary scalar inequalities. It applies to waveforms outside the span of the reference modes. Finite bounds are derived before the joint limit: an additive overlap error cannot simply be called a small relative logarithmic error near fidelity one. The [proof details](../science/PROOF_DETAILS.md) give the endpoint argument and negative control.
 
-The exact reference-pulse kernel, its minimax placement, the matching uniform converse and the growing-code photon-collection contrast form the uniform interface theorem. The [local bridge](../REVIEW.md) derives these additional steps from the optical framework of the tutorial.
+The exact reference-pulse kernel, its minimax placement, the matching uniform converse and the growing-code photon-collection contrast form the uniform interface theorem. The [local bridge](../learning/KIILERICH_MOLMER_BRIDGE.md) derives these additional steps from the optical framework of the tutorial.
 
 ## 7. Preparation and effective source rates
 
 The [preparation evidence](PREPARATION_EVIDENCE.md) describes five related constructions, including classically specified targets, heralded preparation and oscillator reductions. The theorem takes an arbitrary state in its symmetric code as input; an encoding of that resource must preserve its coherence with an external reference.
 
-The independent-loss product, collective enhancement and Raman rate control already have direct predecessors in the source papers. In a simple rapidly damped cavity, useful decay, cavity bandwidth and microscopic coupling are related. Enlarging $`N`$ at fixed microscopic parameters is not identical to keeping the effective useful-to-loss ratio fixed. The [physical analysis](../research/PHYSICAL_SCOPE.md) makes this rate distinction explicit.
+The independent-loss product, collective enhancement and Raman rate control already have direct predecessors in the source papers. In a simple rapidly damped cavity, useful decay, cavity bandwidth and microscopic coupling are related. Enlarging $`N`$ at fixed microscopic parameters is not identical to keeping the effective useful-to-loss ratio fixed. The [physical analysis](../science/PHYSICAL_SCOPE.md) makes this rate distinction explicit.
 
 The [assumption register](ASSUMPTIONS.md) states the known-$`N`$ source premise and the preparation, rate and receiver resources used by the effective model.
 
@@ -122,8 +122,8 @@ The [assumption register](ASSUMPTIONS.md) states the known-$`N`$ source premise 
 | Full selected-output-mode calculations and number-dependent pulse distortion | Kiilerich–Mølmer 2019/2020; Khanahmadi et al. 2023 Sections IV–V | Selected-mode full-state calculations |
 | One-oscillator passive reception | Yamamoto–James; Nurdin et al.; Combes et al. VI A | Predetermined passive receiver with one retained oscillator |
 | Quantum-channel benchmark | Schumacher plus the channel-specific proof here | Canonical transfer with an untouched reference |
-| Uniform approximation and all-waveform critical limit | THEOREM.md and PROOF_AUDIT.md | Uniform control on a growing code and matching converse |
-| Realization and preparation context | Existing S/R/P registers and PHYSICAL_SCOPE.md | Source and receiver component models |
+| Uniform approximation and all-waveform critical limit | [Matched pulses](../science/MATCHED_PULSES.md), [common-mode boundary](../science/COMMON_MODE_BOUNDARY.md) and [proof details](../science/PROOF_DETAILS.md) | Uniform control on a growing code and matching converse |
+| Realization and preparation context | [Source register](SOURCE_EVIDENCE.md) and [physical scope](../science/PHYSICAL_SCOPE.md) | Source and receiver component models |
 | Closest collective-light comparison | Tziperman et al. 2025: main article and supplement inspected | Shared source and target, with input-dependent mode selection |
 
 ## 9. The close Tziperman comparison
@@ -132,7 +132,7 @@ The [assumption register](ASSUMPTIONS.md) states the known-$`N`$ source premise 
 
 The [full-text note](TZIPERMAN_FULL_TEXT.md) records the source, input, mode-selection, target and asymptotic comparison. Their cavity-free collective source overlaps ours. They select a mode from the first-order correlation of the specified input and then calculate its full quantum state. The theorem here instead fixes one receiver for a growing unknown code and establishes a matching minimax converse.
 
-The [additional source comparisons](PREWRITING_SEARCH_2026_10_05.md) cover
+The [additional source comparisons](ADDITIONAL_COMPARISONS.md) cover
 Porras–Cirac, Perarnau-Llobet et al., and Belliardo et al. The
-[claim map](../research/CLAIM_EVIDENCE_MAP.md) connects the literature to the proof
+[claim map](../science/CLAIM_EVIDENCE_MAP.md) connects the literature to the proof
 and physical scope.

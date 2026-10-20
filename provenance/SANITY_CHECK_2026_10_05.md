@@ -30,11 +30,11 @@ Four qualifications are now explicit:
   bounded scaling sufficient for the two-mode approximation.
 
 These repair local scope statements without changing the central result. The earlier
-[endpoint proof correction](PROOF_AUDIT.md) remains visible.
+[endpoint proof correction](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/research/PROOF_AUDIT.md) remains visible.
 
 ## Attribution and repository consistency
 
-The [Tziperman comparison](../literature/TZIPERMAN_FULL_TEXT.md) now uses the complete
+The [Tziperman comparison](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/literature/TZIPERMAN_FULL_TEXT.md) now uses the complete
 author-hosted early-online main article and supplement. Its source and canonical target
 overlap ours; its full selected-mode state calculation must receive credit. The inspected
 construction selects an occupation mode for a specified preparation. No common-receiver,
@@ -59,7 +59,7 @@ instead of the executed child settings, nonfinite overflow escaping through meta
 and summary paths able to overwrite source or raw evidence. These are repaired with
 focused negative controls. The old baseline report is retained verbatim: its date and
 thread metadata have those documented limitations. The repaired run records actual UTC
-times and effective settings. The [evidence map](../provenance/SANITY_2026_10_05.json)
+times and effective settings. The [evidence map](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/provenance/SANITY_2026_10_05.json)
 identifies both runs, raw comparisons, infrastructure checks and presentation validation.
 
 No saved result was refreshed to obtain agreement. A successful numerical run remains

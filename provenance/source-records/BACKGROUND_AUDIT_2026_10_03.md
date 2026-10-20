@@ -1,3 +1,5 @@
+> Historical source record. Its statements and access limits describe the dated review below. Relative references are pinned to the [preserved repository revision](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/tree/5c83bb701006b101097ca284969ecce6398f95a6). Use the [current source register](../../references/SOURCE_EVIDENCE.md) and [source comparisons](../../references/README.md) for the scientific reading route.
+
 # Background research: coverage, access and remaining work
 
 **3 October 2026.** The owner's new instruction requests manuscript background research and up to three single-source teaching anchors. It does not request drafting the manuscript or selecting an anchor on the owner's behalf. The base revision is `9a340f9b052d6c2fe48a1e70e99800f2c8ed94e8`.
@@ -5,13 +7,13 @@
 **Historical access record; current update 5 October 2026:** the owner subsequently
 selected Kiilerich–Mølmer and the teaching route is complete. The main Tziperman
 article and its supplement have now been read through an author-hosted university
-copy; [the construction-level comparison](TZIPERMAN_FULL_TEXT.md) supersedes the
+copy; [the construction-level comparison](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/literature/TZIPERMAN_FULL_TEXT.md) supersedes the
 access gap below. The earlier failed routes remain recorded as history, not a
 current claim that full text is missing.
 
 ## What this pass adds
 
-[BACKGROUND.md](BACKGROUND.md) maps each ingredient of the fixed argument to its scientific source and distinguishes inherited methods from the repository's derivations. [REFERENCES.bib](REFERENCES.bib) is a curated core bibliography, not a replacement for the detailed S/R/P preparation and implementation registers. [CONVENTIONS.md](../research/CONVENTIONS.md) records rate, time, field, fidelity and receiver translations. [TUTORIAL_OPTIONS.md](TUTORIAL_OPTIONS.md) evaluates exactly three alternative single-source routes, leaving their selection open.
+[BACKGROUND.md](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/literature/BACKGROUND.md) maps each ingredient of the fixed argument to its scientific source and distinguishes inherited methods from the repository's derivations. [REFERENCES.bib](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/literature/REFERENCES.bib) is a curated core bibliography, not a replacement for the detailed S/R/P preparation and implementation registers. [CONVENTIONS.md](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/research/CONVENTIONS.md) records rate, time, field, fidelity and receiver translations. [TUTORIAL_OPTIONS.md](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/literature/TUTORIAL_OPTIONS.md) evaluates exactly three alternative single-source routes, leaving their selection open.
 
 This is background integration, not independent critical review or a new proof. The canonical theorem, endpoint repair, physical-scope and logical-qubit notes remain unchanged. The separate reader task remains open.
 
@@ -32,7 +34,7 @@ The Kiilerich–Mølmer and SLH PDF-rendering attempts did not all succeed. The 
 
 ## Previously completed readings are not claimed as new work
 
-The [Law–Lee full-text note](LAW_LEE_FULL_TEXT.md), [direct comparison](COMPARISON.md), [preparation readings](PREPARATION_EVIDENCE.md), and [source register](SOURCE_EVIDENCE.md) retain their earlier evidence and scope. Law–Lee's supplied six-page article is available, not an outstanding access task. The original figure/equation comparison is not replaced by a new abstract-only search.
+The [Law–Lee full-text note](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/literature/LAW_LEE_FULL_TEXT.md), [direct comparison](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/literature/COMPARISON.md), [preparation readings](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/literature/PREPARATION_EVIDENCE.md), and [source register](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/literature/SOURCE_EVIDENCE.md) retain their earlier evidence and scope. Law–Lee's supplied six-page article is available, not an outstanding access task. The original figure/equation comparison is not replaced by a new abstract-only search.
 
 The new dossier uses those records for the collective jump, source realization, capture and preparation context. Their papers do not become new independent checks because this pass cites them again. Primary records were also consulted to distinguish published and author-preprint titles where these differ, including the 2017 multiphoton-generation article and the new 2025 collective-light paper.
 
