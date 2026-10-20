@@ -118,4 +118,4 @@ Law–Lee optimizes the occupation quantities in Eqs. (13) and (18) and analyzes
 
 The resulting **sharp optimized boundary between canonical state transfer and mean-photon collection** occurs on the $`N^{2/3}`$ scale for the specified collective source and one linear memory. The cascade model, oscillator comparator, dominant two-mode occupation and semiclassical pulse are inherited ingredients, as detailed above.
 
-The [canonical proof](../research/THEOREM.md) gives the finite inequalities and quantifiers for the uniform result; the [assumption register](ASSUMPTIONS.md) states its preparation and realization scope.
+The [canonical proof](../science/COMMON_MODE_BOUNDARY.md) gives the finite inequalities and quantifiers for the uniform result; the [assumption register](ASSUMPTIONS.md) states its preparation and realization scope.

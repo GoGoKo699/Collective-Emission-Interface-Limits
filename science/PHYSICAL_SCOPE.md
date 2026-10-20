@@ -147,7 +147,7 @@ finite certificates for this mode-independent loss channel.
 The transfer theorem takes an unknown state in the symmetric excitation code as
 its input and evaluates its full quantum-state fidelity. The two-sector witness
 uses a two-dimensional logical code with high physical excitation numbers. The
-[assumption register](../literature/ASSUMPTIONS.md) specifies the source and
+[assumption register](../references/ASSUMPTIONS.md) specifies the source and
 preparation conditions.
 
 ## Primary references

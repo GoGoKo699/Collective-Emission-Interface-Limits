@@ -1,5 +1,7 @@
 # Provenance and reproducibility
 
+[Verification guide](../verification/README.md) · [Scientific account](../science/README.md)
+
 The [suite registry](SUITES.json) protects the scientific scripts and reference
 results by hash. Eight suites cover 39 groups and 612 cases; the loss checker has
 50 supplementary cases. Reproduction runs compare fresh outputs with these
@@ -15,8 +17,9 @@ Each dated record identifies the revision, environment and checks it covers.
 | [Release sanity check, 7 October 2026](RELEASE_2026_10_07.json) | Numerical reproduction, protected hashes, documentation and content checks |
 | [Research verification, 5 October 2026](PREWRITING_2026_10_05.json) | Claim/source comparisons and the loss and finite-capture calculations |
 | [Loss-check output](prewriting_2026_10_05/loss-check.json) | The 50 supplementary scalar-optimization and finite-bound checks |
-| [Sanity evidence map](SANITY_2026_10_05.json) and [analysis](../research/SANITY_CHECK_2026_10_05.md) | Numerical reproduction and verifier diagnostics |
-| [Proof audit record](PROOF_AUDIT.json) and [derivations](../research/PROOF_AUDIT.md) | Endpoint correction, finite inequalities and the eighth scientific suite |
+| [Sanity evidence map](SANITY_2026_10_05.json) and [analysis](SANITY_CHECK_2026_10_05.md) | Numerical reproduction and verifier diagnostics |
+| [Proof audit record](PROOF_AUDIT.json) and [original audit](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/research/PROOF_AUDIT.md) | Endpoint correction, finite inequalities and the eighth scientific suite; current mathematical details are in [science](../science/PROOF_DETAILS.md) |
+| [Background reading, 3 October](source-records/BACKGROUND_AUDIT_2026_10_03.md) · [component source evidence, 3 October](source-records/SOURCE_EVIDENCE_2026_10_03.md) · [literature comparison, 5 October](source-records/LITERATURE_SEARCH_2026_10_05.md) | Dated source-reading records; the current attribution route is the [reference guide](../references/README.md) |
 | [Import record](IMPORT.md) | Original source packages and repository import |
 
 ## Reference data

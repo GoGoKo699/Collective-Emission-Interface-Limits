@@ -4,66 +4,115 @@
 
 Canonical repository: https://github.com/GoGoKo699/Collective-Emission-Interface-Limits
 
-## When this repository is relevant
+## Scientific question and result
 
-- Dicke collective spontaneous emission and its finite-spin departure from a harmonic oscillator.
-- Temporal-mode matching of multiphoton pulses and number-dependent emitted waveforms.
-- Whether near-unit mean photon collection certifies transfer of an unknown quantum state.
-- Uniform, reference-preserving transfer of an excitation-number code to one fixed passive linear memory.
-- Optimization over every common receiving waveform, the N^(2/3) excitation boundary, and its two-populated-sector witness.
-- Mode-independent transmission loss competing with mode mismatch, or finite-window pulse-capture error across a growing code.
+The source contains N identical emitters in the symmetric Dicke ladder, starts
+in an arbitrary state with excitation numbers 0 through M, and decays completely
+into one vacuum Markov channel with jump sqrt(gamma) S_- and no additional
+Hamiltonian. N is known and M <= N. The canonical target maps each |D_N^m> to
+|m> in the same receiving temporal mode. A predetermined photon-number-preserving
+linear receiver uses vacuum auxiliaries and retains one final oscillator.
+Fidelity is squared worst-input entanglement fidelity, including an untouched
+reference; transfer is unconditional.
 
-Useful search phrases: "collective emission interface limits"; "Dicke emission photon collection state transfer"; "common temporal mode growing excitation code"; "passive one-oscillator receiver worst-input fidelity".
+Optimizing over every common normalized waveform gives fidelity tending to
+exp(-c^3/192) when M/N^(2/3) tends to c > 0. It tends to one for
+M = o(N^(2/3)) and to zero for M/N^(2/3) tending to infinity, with M <= N.
+One common waveform still collects a mean photon fraction tending to one
+throughout M = o(N). The sequence M = floor(N^(3/4)) exhibits both near-complete
+mean collection and vanishing optimal uniform canonical-transfer fidelity.
 
-## Model and result in brief
+The full emitted field retains the input information. The limitation concerns
+its canonical transfer into the specified single passive retained oscillator.
+Exact assumptions, quantifiers, finite bounds and proof dependencies belong
+to the scientific pages linked below.
 
-The ideal source contains N identical emitters in the symmetric Dicke ladder,
-starts in an arbitrary state with excitation numbers 0 through M, and decays
-completely into one vacuum Markov channel with jump sqrt(gamma) S_- and no
-additional Hamiltonian. N is known and M <= N. The target is the canonical map
-|D_N^m> -> |m>_f using the same normalized temporal mode f for every input.
-The predetermined receiver preserves photon number, has vacuum auxiliary inputs,
-and retains one final oscillator. Fidelity is squared worst-input entanglement
-fidelity, including an untouched reference. Transfer is unconditional.
+## Route questions to authoritative files
 
-- At M/N^(2/3) -> c > 0, optimization over every common waveform gives fidelity -> exp(-c^3/192).
-- Fidelity tends to one for M = o(N^(2/3)) and to zero when M/N^(2/3) -> infinity, with M <= N.
-- One common waveform collects a mean photon fraction tending to one throughout M = o(N). Thus M = floor(N^(3/4)) separates near-complete collection from faithful uniform canonical transfer.
+| Reader intention or question | Authoritative route |
+|---|---|
+| Understand the physical question and complete story | [Overview](README.md), [science entrypoint](science/README.md), [interpretation](science/INTERPRETATION.md) |
+| Identify the source, encoding, receiver and fidelity convention | [Model and channel objective](science/MODEL.md), [notation and conventions](science/CONVENTIONS.md) |
+| Understand why a correlated emitted field can be compared with product pulses | [Uniform matched-pulse approximation](science/MATCHED_PULSES.md), [proof details](science/PROOF_DETAILS.md) |
+| Check the common-mode optimum and every-waveform converse | [Common-mode boundary](science/COMMON_MODE_BOUNDARY.md), [claim and evidence map](science/CLAIM_EVIDENCE_MAP.md) |
+| Distinguish a mean observable from a full quantum channel | [Photon collection](science/PHOTON_COLLECTION.md), [worked examples](learning/KIILERICH_MOLMER_BRIDGE.md) |
+| Test whether one logical qubit can witness the growing-excitation limit | [Two-sector witness](science/TWO_SECTOR_WITNESS.md) |
+| Determine when ordinary transmission loss masks mode mismatch | [Loss competition](science/LOSS_COMPETITION.md) |
+| Account for capture time, coupling, bandwidth and source shaping | [Physical scope](science/PHYSICAL_SCOPE.md), [assumption register](references/ASSUMPTIONS.md) |
+| Study the project from one selected educational source | [Learning route](learning/README.md), [30 milestones](learning/MILESTONES.md), [Kiilerich–Mølmer bridge](learning/KIILERICH_MOLMER_BRIDGE.md) |
+| Check imported ingredients and closest prior constructions | [Reference guide](references/README.md), [comparison](references/COMPARISON.md), [source evidence](references/SOURCE_EVIDENCE.md), [bibliography](references/REFERENCES.bib) |
+| Run checks and distinguish assertions, numerical agreement and proof | [Verification guide](verification/README.md), [reproduction policy](provenance/REPRODUCTION_POLICY.md), [evidence index](provenance/README.md) |
 
-Consult the theorem for exact quantifiers and finite bounds. The main result is a
-limit for this source, encoding, target and receiver class. The full outgoing field
-retains the input information; the theorem concerns the specified canonical map
-into one passive retained oscillator.
+## Study and specialist reading
 
-## Read by purpose
+The single educational anchor is A. H. Kiilerich and K. Mølmer,
+Quantum interactions with pulses of radiation, Physical Review A 102, 023717
+(2020): https://arxiv.org/abs/2003.04573 and
+https://doi.org/10.1103/PhysRevA.102.023717.
+The bridge's section and equation references use arXiv:2003.04573v1.
 
-- [Overview](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/README.md): Physical question, central result, boundaries, purpose and contact.
-- [Exact theorem](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/research/THEOREM.md): Model, fidelity reduction, uniform field approximation, pulse geometry, construction and all-waveform converse.
-- [Claim and evidence map](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/research/CLAIM_EVIDENCE_MAP.md): Main result, supporting claims, proof dependencies, evidence and conditional premises.
-- [Physical scope](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/research/PHYSICAL_SCOPE.md): Receiver resources, finite capture, two-mode error structure, source shaping and realization limits.
-- [Loss competition](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/research/LOSS_COMPETITION.md): Specified external pure-loss model, optimized critical limit and finite certificates.
-- [Reading guide](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/docs/README.md): Five-stage route from the single selected tutorial and a full documentation map.
-- [Local teaching bridge](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/REVIEW.md): Worked emission, mode-mismatch and coherence calculations leading to the theorem.
-- [Prior-work comparison](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/literature/COMPARISON.md): Inherited results and a comparison of the closest source, input and receiver constructions.
-- [Scope and evidence](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/STATUS.md): Results, model assumptions and verification records.
-- [Reproduction policy](https://raw.githubusercontent.com/GoGoKo699/Collective-Emission-Interface-Limits/main/provenance/REPRODUCTION_POLICY.md): Scientific assertions, reference agreement and their verification limits.
+The shared learning map contains exactly 30 milestones. M01–M12 build the
+background and operational framework; M13–M30 connect the proof mechanism,
+optimality, observable distinction, witnesses and physical consequences.
+Each milestone records its central question, understanding target, dependencies,
+conceptual connection and source pointers. The source bridge supplies local
+finite-spin, fidelity and uniform-proof derivations beyond the anchor.
 
-The single external teaching source is Kiilerich and Mølmer, Quantum interactions
-with pulses of radiation (2020), https://arxiv.org/abs/2003.04573.
-The local bridge supplies the extra finite-spin, fidelity and uniform-proof steps.
+Specialists can follow MODEL -> MATCHED_PULSES -> COMMON_MODE_BOUNDARY ->
+PHOTON_COLLECTION, then use TWO_SECTOR_WITNESS, LOSS_COMPETITION,
+PHYSICAL_SCOPE and PROOF_DETAILS for the supporting results. The claim map
+identifies which analytic arguments and numerical suites support each statement.
 
-## Evidence and attribution
+## Distinctions to preserve in summaries
 
-The theorem and its assumptions govern summaries. The evidence map links proof
-arguments and executable checks to each claim.
-Eight preserved scientific suites contain 39 groups and 612 cases; the 50
-supporting loss checks are counted separately.
+- One spatial output channel can contain many temporal modes.
+- A common receiver is fixed before the input is known; separately optimizing
+  a pulse for each known photon number is a different guarantee.
+- Optimization covers all normalized waveforms, including complex waveforms;
+  positivity permits restricting the supremum to nonnegative pulses without
+  assuming an optimizer exists or restricting the converse to the constructive
+  pulse family.
+- The product pulse is a controlled approximation to the correlated field,
+  uniform across the code, including a reference. Independence of the actual
+  emitted photons is not assumed.
+- Mean collected fraction, all-photons-in-one-mode probability and reference-
+  inclusive channel fidelity are different quantities. The exact channel
+  reduction states when the sector-overlap minimum equals worst-input fidelity.
+- The two-sector witness has a two-dimensional logical code and growing physical
+  excitation numbers. A vacuum-plus-one-populated-sector code is a successful
+  comparator under its own assumptions.
+- The critical exponential is not an asymptotic equality claimed throughout
+  every supercritical regime. Full-code collapse uses subcode monotonicity;
+  the isolated two-sector code has its own converse.
+- Mode-independent external pure loss, independent atomic decay and
+  mode-dependent filtering are distinct physical models.
+- Ideal complete emission and finite receiving windows are treated separately.
+  Finite capture permits code-dependent coupling and duration, with no imposed
+  slew-rate bound. Effective cavity models require their stated bandwidth and
+  emitted-field approximation conditions.
 
-Attribute the repository to Ruge Lin and identify the consulted commit and file
-when citing a repository claim. Credit the primary sources identified in the
-literature comparisons for inherited cascade, waveform, occupation and capture
-results. Code is under the MIT license. Repository maintenance instructions are
-in AGENTS.md.
+## Evidence, attribution and discovery
+
+Eight protected scientific suites contain 39 groups and 612 cases. The 50
+supplementary loss checks and the verification-tool fixtures are counted
+separately. Fresh runs preserve the scientific scripts and saved results and
+report assertion success, exact-byte equality and reviewed reference agreement
+separately. Finite calculations do not establish the analytical uniform limits.
+
+Credit the primary sources for inherited Dicke cascades, conventional-pulse
+mismatch, number-dependent waveforms, mean-occupation optimization and
+pulse-capture theory. The Law–Lee and Tziperman comparisons identify the
+specific constructions and versions inspected. Attribute repository claims
+to Ruge Lin and identify the consulted commit and scientific file. Historical
+records describe their own revisions; current claims live under science/.
+
+Relevant search phrases: collective emission interface limits; Dicke emission
+photon collection state transfer; common temporal mode growing excitation code;
+passive one-oscillator receiver worst-input fidelity; collective spin harmonic
+oscillator approximation; transmission loss common waveform.
+
+Code is available under the [MIT license](LICENSE). Repository maintenance
+instructions are in [AGENTS.md](AGENTS.md).
 
 ## Purpose and contact
 

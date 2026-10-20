@@ -1,7 +1,7 @@
 # One logical qubit can witness the common-mode limit
 
 The critical common-mode obstruction already appears in a two-dimensional logical
-code. This is a consequence of the [theorem](THEOREM.md) for the same collective
+code. This is a consequence of the [common-mode theorem](COMMON_MODE_BOUNDARY.md) for the same collective
 source, passive receiver and canonical excitation-number map.
 
 ## 1. The two-number code
@@ -94,10 +94,10 @@ Therefore “all sparse codes obey the cutoff” would be false. The positive lo
 
 To witness the minimax upper bound within the trusted source model, the two number-state inputs suffice; a high-dimensional unknown superposition need not be prepared merely to expose incompatible receiving modes. Testing a few particular receiving pulses experimentally does not, on its own, prove the all-waveform upper bound. That bound rests on the model and the controlled mode-state comparison.
 
-Preparing high-number Dicke states, knowing $`N`$, and measuring full-Fock overlap can still be demanding. Ordinary photon loss can dominate this canonical target. These requirements connect the witness to the [source assumptions](../literature/ASSUMPTIONS.md).
+Preparing high-number Dicke states, knowing $`N`$, and measuring full-Fock overlap can still be demanding. Ordinary photon loss can dominate this canonical target. These requirements connect the witness to the [source assumptions](../references/ASSUMPTIONS.md).
 
 ## 7. Checks
 
 `tests/07_two_sector_scope/checks.py` checks the scalar minimax balance, the complete emission-amplitude cascade for two finite code choices, horizon/tolerance refinement, the exact two-input analytic bound, convergence of its critical brackets, a vacuum-plus-number control, and the reference-channel Kraus logic.
 
-The source theorem and the nonlinear-cavity qualitative predecessor are credited in [the prior-art register](../literature/PRIOR_ART.md).
+The source theorem and the nonlinear-cavity qualitative predecessor are credited in [the prior-art register](../references/PRIOR_ART.md).

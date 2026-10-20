@@ -30,4 +30,4 @@ For the interface theorem, preparing a classically specified target, preparing i
 
 The interface theorem starts with an arbitrary input in its declared symmetric space, with coefficients unknown to the receiver. This input may be entangled with an external reference. Realizing that resource from another carrier requires an input-independent encoding, which differs from selected-target control.
 
-The [physical account](../research/STORY.md) explains how these preparation resources relate to the conditional source-to-memory result.
+The [physical account](../science/INTERPRETATION.md) explains how these preparation resources relate to the conditional source-to-memory result.

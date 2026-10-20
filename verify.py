@@ -21,7 +21,10 @@ from tools.reproduction import compare_results, numerical_environment, write_sui
 from tools.reviewed_fields import review_field_differences
 
 ROOT=Path(__file__).resolve().parent
-MAINTAINED_DIRECTORIES=('tests','provenance','research','literature','tools','.github','docs','work_orders','.git')
+MAINTAINED_DIRECTORIES=(
+    'tests','provenance','science','references','learning','verification',
+    'research','literature','tools','.github','docs','work_orders','.git',
+)
 
 
 def digest(path:Path)->str:

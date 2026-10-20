@@ -2,7 +2,7 @@
 
 This map links the theoretical claims to their proofs, numerical checks and physical
 assumptions. The source, canonical target and allowed receiver are defined in the
-[theorem](THEOREM.md).
+[model and channel objective](MODEL.md).
 
 ## 1. The central result
 
@@ -21,13 +21,13 @@ possibly reference-entangled input.
 
 | Role | Claim | Analytic source | Executed-check coverage |
 |---|---|---|---|
-| Task reduction | Positive receiving pulses reduce the optimized unconditional worst-input entanglement fidelity to the smallest number-sector overlap; arbitrary complex competitors cannot improve it. | [Theorem, Section 2](THEOREM.md#2-reduction-of-the-channel-objective) | Suites 03 and 08 exercise reference inputs, passive capture and phase controls. |
-| Essential lemma | Each number sector has an individually matched product-pulse approximation, uniformly across the code for $`M=o(N)`$. | [Theorem, Section 3](THEOREM.md#3-a-uniform-individually-matched-pulse-approximation) | Suites 01, 02 and 08 check normalization, entropy, overlap and the sector-maximum norm. The exact field remains correlated. |
-| Main theorem | A constructive common pulse and an all-waveform converse give the same critical fidelity and the subcritical/supercritical alternatives. | [Theorem, Sections 4–5](THEOREM.md#4-exact-pulse-geometry) | Suites 02 and 08 test finite envelopes and endpoint controls through scalar evaluations. |
-| Main physical contrast | One common mode collects a fraction tending to one throughout $`M=o(N)`$, a larger range than faithful uniform transfer. | [Theorem, Section 6](THEOREM.md#6-mean-photon-collection-has-a-larger-domain-of-validity) | Suites 05 and 08 exercise bounded-operator and photon-weighted estimates. Collection alone does not certify the channel. |
+| Task reduction | Positive receiving pulses reduce the optimized unconditional worst-input entanglement fidelity to the smallest number-sector overlap; arbitrary complex competitors cannot improve it. | [Channel reduction](MODEL.md#reduction-of-the-channel-objective) | Suites 03 and 08 exercise reference inputs, passive capture and phase controls. |
+| Essential lemma | Each number sector has an individually matched product-pulse approximation, uniformly across the code for $`M=o(N)`$. | [Uniform matched-pulse approximation](MATCHED_PULSES.md#uniform-individually-matched-pulse-approximation) | Suites 01, 02 and 08 check normalization, entropy, overlap and the sector-maximum norm. The exact field remains correlated. |
+| Main theorem | A constructive common pulse and an all-waveform converse give the same critical fidelity and the subcritical/supercritical alternatives. | [Constructive and converse bounds](COMMON_MODE_BOUNDARY.md#constructive-common-waveform) | Suites 02 and 08 test finite envelopes and endpoint controls through scalar evaluations. |
+| Main physical contrast | One common mode collects a fraction tending to one throughout $`M=o(N)`$, a larger range than faithful uniform transfer. | [Mean-photon bound](PHOTON_COLLECTION.md#mean-collected-fraction) | Suites 05 and 08 exercise bounded-operator and photon-weighted estimates. Collection alone does not certify the channel. |
 | Scope witness | Two populated number levels suffice to witness the critical obstruction; vacuum plus one populated number is a successful comparator. | [Two-sector proof](TWO_SECTOR_WITNESS.md) | Suite 07; fixed logical dimension still requires growing excitation number. |
 | Error explanation | At critical scaling the leading leakage occupies a tangent mode and has a Poisson count limit. | [Physical scope, B](PHYSICAL_SCOPE.md#b-the-leading-mismatch-has-a-simple-structure) | Suite 04 tests the tangent-mode expansion and leakage distribution. |
-| Operational corollary | A fixed target fidelity determines an asymptotic excitation cutoff. | [Story](STORY.md#what-the-result-changes) | Follows analytically by monotonicity and strict margins at fixed target fidelity. |
+| Operational corollary | A fixed target fidelity determines an asymptotic excitation cutoff. | [Story](INTERPRETATION.md#what-the-result-changes) | Follows analytically by monotonicity and strict margins at fixed target fidelity. |
 | Loss boundary | Mode-independent external loss changes the optimal pulse and can mask the mode-mismatch penalty. | [Loss competition](LOSS_COMPETITION.md) | [Supplementary checks](../tools/check_loss_competition.py) compare independent scalar optimization, finite cascade calculations and finite bounds. This is a supporting scope result. |
 | Capture resources | Finite window and onset regularization give an explicit whole-code error budget. | [Physical scope, A](PHYSICAL_SCOPE.md#a-what-the-receiver-restriction-means) | Suite 03 tests the conservative form and unconditional capture dynamics. Duration and coupling requirements depend on the code size. |
 
@@ -51,9 +51,9 @@ a bound on modulation bandwidth or slew rate.
 
 ## 4. What the literature establishes
 
-The [background dossier](../literature/BACKGROUND.md) supplies the inherited optics,
-and the [direct comparison](../literature/COMPARISON.md) identifies the closest tasks.
-The [source search record](../literature/PREWRITING_SEARCH_2026_10_05.md)
+The [background dossier](../references/BACKGROUND.md) supplies the inherited optics,
+and the [direct comparison](../references/COMPARISON.md) identifies the closest tasks.
+The [additional source comparisons](../references/ADDITIONAL_COMPARISONS.md)
 identifies the inspected predecessors, source versions and reading depth.
 
 The cascade, conventional cubic mismatch, number-dependent pulses, occupation
@@ -71,6 +71,7 @@ is compatible with failure of the canonical worst-input task.
 | Target and receiver | The canonical number map into one oscillator retained after predetermined passive processing with vacuum auxiliaries |
 | Supporting loss models | External mode-independent attenuation and independent atomic decay under their respective stated effective-rate assumptions |
 
-The [assumption register](../literature/ASSUMPTIONS.md) relates these premises to
-the literature. The [physical account](STORY.md) explains their consequences, and
-[verification provenance](../provenance/README.md) records the numerical evidence.
+The [assumption register](../references/ASSUMPTIONS.md) relates these premises to
+the literature. The [physical account](INTERPRETATION.md) explains their consequences, and
+[verification guide](../verification/README.md) connects the commands to the
+numerical evidence and its protected references.

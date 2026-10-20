@@ -1,10 +1,12 @@
+> Historical source record. Its statements and access limits describe the dated review below. Relative references are pinned to the [preserved repository revision](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/tree/5c83bb701006b101097ca284969ecce6398f95a6). Use the [current source register](../../references/SOURCE_EVIDENCE.md) and [source comparisons](../../references/README.md) for the scientific reading route.
+
 # Bounded literature refresh before manuscript work
 
 **5 October 2026.** This internal search tests the fixed claim in
-[THEOREM.md](../research/THEOREM.md): symmetric Markov collective decay, the
+[THEOREM.md](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/research/THEOREM.md): symmetric Markov collective decay, the
 canonical number map, one passive retained oscillator with a waveform chosen
 before an unknown input, and a uniform growing-code fidelity boundary. It supplements
-the [existing comparisons](COMPARISON.md). It is neither a systematic review nor
+the [existing comparisons](https://github.com/GoGoKo699/Collective-Emission-Interface-Limits/blob/5c83bb701006b101097ca284969ecce6398f95a6/literature/COMPARISON.md). It is neither a systematic review nor
 an exhaustive priority certificate.
 
 **Outcome:** no subsumption was located in the constructions inspected below.

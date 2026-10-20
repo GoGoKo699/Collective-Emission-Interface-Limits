@@ -9,10 +9,11 @@ merely for the average number of photons it delivers.
 
 | Read next | Purpose |
 |---|---|
-| [Reading guide](docs/README.md) · [Tutorial-to-theorem bridge](REVIEW.md) | Learn from one external tutorial and local worked examples |
-| [Theorem](research/THEOREM.md) · [Claim and evidence map](research/CLAIM_EVIDENCE_MAP.md) | Follow the result, proof dependencies and supporting consequences |
-| [Physical scope](research/PHYSICAL_SCOPE.md) · [Prior-work comparison](literature/COMPARISON.md) | Check receiver restrictions, realization limits and attribution |
-| [Verification](#evidence-and-reproduction) · [Scope and evidence](STATUS.md) | Inspect the model assumptions and executable evidence |
+| [Scientific account](science/README.md) · [Model and objective](science/MODEL.md) | Enter the connected account through its definitions and proof dependencies |
+| [Common-mode boundary](science/COMMON_MODE_BOUNDARY.md) · [Claim and evidence map](science/CLAIM_EVIDENCE_MAP.md) | Check the exact theorem, finite bounds and supporting consequences |
+| [Learning route](learning/README.md) · [30 milestones](learning/MILESTONES.md) · [Source bridge](learning/KIILERICH_MOLMER_BRIDGE.md) | Build understanding from one educational anchor and local worked examples |
+| [Physical scope](science/PHYSICAL_SCOPE.md) · [References](references/README.md) | Check receiver resources, realization limits and attribution |
+| [Verification guide](verification/README.md) | Reproduce the scientific checks and interpret the evidence |
 | [LLM guide](llms.txt) | Identify relevant questions and authoritative files for further reading |
 
 ## Model and transfer task
@@ -61,8 +62,10 @@ M/N &\longrightarrow 0,\\
 ```
 
 This is a uniform channel limitation, not a statement that every input fails. The
-[standalone theorem](research/THEOREM.md) supplies the construction, unrestricted-waveform
-converse and finite bounds.
+[boundary proof](science/COMMON_MODE_BOUNDARY.md) supplies the construction,
+all-waveform converse and finite bounds. The
+[photon-collection proof](science/PHOTON_COLLECTION.md) establishes the larger
+domain for the mean collected fraction.
 
 ## Why the two criteria differ
 
@@ -72,13 +75,13 @@ individual pulse. But different numbers prefer slightly different pulses.
 
 A pulse difference of order $`M/N`$ produces a one-photon mismatch of order
 $`(M/N)^2`$. Requiring all photons in a many-photon component to occupy the receiving
-mode amplifies this into the scale $`M^3/N^2`$. The proof controls the correlated emitted
-field before making that product-pulse comparison; independence is not assumed.
+mode amplifies this into the scale $`M^3/N^2`$. The [matched-pulse argument](science/MATCHED_PULSES.md) controls the correlated
+emitted field before making that product-pulse comparison; independence is not assumed.
 
 Even one logical qubit can witness the critical limit: use the populated numbers
 $`\lfloor M/4\rfloor`$ and $`M`$. Their physical excitation numbers grow. Vacuum plus one
 populated number is a different, successful comparator. See the
-[two-sector witness](research/TWO_SECTOR_WITNESS.md).
+[two-sector witness](science/TWO_SECTOR_WITNESS.md).
 
 ## One tutorial, then this result
 
@@ -90,12 +93,18 @@ The selected learning anchor is:
 > [Published article](https://doi.org/10.1103/PhysRevA.102.023717)
 
 Its virtual input/output cavities give the physical language of the interface. The
-[reading guide](docs/README.md) maps its sections to this repository. The
-[tutorial-to-theorem bridge](REVIEW.md) supplies the missing Dicke-ladder, fidelity and
+[learning guide](learning/README.md) maps its sections to this repository. The
+[source-to-project bridge](learning/KIILERICH_MOLMER_BRIDGE.md) supplies the additional Dicke-ladder, fidelity and
 uniform-bound steps locally; no second external tutorial is required.
 Worked emission, mode-mismatch and coherence examples lead into the proof;
-loss and finite capture follow as supporting lessons. The
-[documentation map](docs/README.md#repository-map) locates the supporting material.
+loss and finite capture supply the physical qualifications.
+
+The [30-milestone map](learning/MILESTONES.md) has two phases. M01–M12 assemble
+the pulse, source and channel framework; M13–M30 connect the controlled field
+approximation, pulse geometry, optimality proof and physical consequences into
+the whole result. Each milestone states a central question, understanding target,
+dependencies, conceptual connection and source pointers. It is a shared map of
+the science, independent of a reader's prior knowledge or learning history.
 
 ## Boundaries and prior work
 
@@ -104,26 +113,33 @@ Markov channel. The receiver retains one oscillator after fixed passive processi
 The input is an arbitrary state in the symmetric excitation code, including its
 correlations with a reference. The full emitted field retains that information;
 the theorem quantifies transfer into the specified single receiving oscillator.
-The [physical analysis](research/PHYSICAL_SCOPE.md) gives the loss, duration and
+The [physical analysis](science/PHYSICAL_SCOPE.md) gives the loss, duration and
 coupling requirements for capture.
+
+The [loss-competition result](science/LOSS_COMPETITION.md) also identifies when
+prescribed mode-independent transmission loss masks the common-mode limitation.
+Its pure-loss channel is distinct from independent atomic decay and from
+mode-dependent filtering. Finite capture is quantified on the same excitation
+code, with coupling and duration allowed to scale with that code.
 
 The Dicke cascade, conventional-pulse cubic mismatch, number-dependent temporal modes,
 mean-occupation optimization and pulse-capture formalism have direct predecessors.
-The [comparison](literature/COMPARISON.md) and [background dossier](literature/BACKGROUND.md)
+The [comparison](references/COMPARISON.md) and [background account](references/BACKGROUND.md)
 separate those ingredients from the optimized uniform limit. The
-[Tziperman comparison](literature/TZIPERMAN_FULL_TEXT.md) examines its overlapping
+[Tziperman comparison](references/TZIPERMAN_FULL_TEXT.md) examines its overlapping
 collective source and selected-state transfer construction alongside the uniform
 common-code guarantee. The
-[scope and evidence page](STATUS.md) links the physical limits and verification records.
+[interpretation](science/INTERPRETATION.md) connects the consequences, while the
+[verification guide](verification/README.md) locates their executable checks.
 
 ## Evidence and reproduction
 
 ```sh
 python -m pip install -r requirements.txt
-python tools/check_presentation.py
-python tools/check_loss_competition.py
+python tools/check_presentation.py --self-test
 python verify.py --integrity-only
 python verify.py --artifacts-dir verification-artifacts --require-reference
+python tools/check_loss_competition.py --output loss-competition-report.json
 ```
 
 The eight scientific suites cover 39 groups and 612 cases. The scientific scripts and
@@ -131,8 +147,9 @@ saved results are preserved; generated outputs are compared without rewriting re
 The [reproduction policy](provenance/REPRODUCTION_POLICY.md) distinguishes exact bytes,
 reviewed numerical agreement and passing assertions.
 The presentation check is separate from the scientific test count.
-The supplementary loss-competition checks are also counted separately; their
-[execution record](provenance/PREWRITING_2026_10_05.json) identifies methods and limitations.
+The 50 supplementary loss-competition checks are counted separately. The
+[verification guide](verification/README.md) explains the commands, expected
+outputs and the distinction between finite calculations and analytical proof.
 
 ## Purpose and contact
 

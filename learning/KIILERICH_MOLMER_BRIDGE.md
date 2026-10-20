@@ -1,6 +1,6 @@
 # From a quantum pulse to the interface boundary
 
-[Overview](README.md) · [Reading guide](docs/README.md) · [Complete proof](research/THEOREM.md)
+[Overview](../README.md) · [Learning route](README.md) · [30 milestones](MILESTONES.md) · [Scientific account](../science/README.md)
 
 This is the local bridge from **Kiilerich–Mølmer, Quantum interactions with pulses of
 radiation (2020)**, abbreviated **KM**, to the interface theorem. Section and
@@ -9,7 +9,10 @@ The pulse and capture framework comes from KM. The Dicke specialization, channel
 and uniform estimates below supply the additional steps, with their source attributions.
 
 Read Sections 1–4 for the physical task, then Sections 5–7 for the proof mechanism.
-Section 8 connects the result to loss and finite capture.
+Section 8 connects the result to loss and finite capture; Section 9 connects the
+remaining field structure and controls to the physical interpretation. The
+[30-milestone map](MILESTONES.md) supplies the understanding targets and dependencies
+for this route.
 
 ## 1. The quantum pulse
 
@@ -52,7 +55,7 @@ g_f(t)=-\frac{f^*(t)}{
 This is a coupling **amplitude**; its squared modulus is a decay rate. The ideal
 expression can be singular when capture begins. It defines an ideal mode-selection
 operation. The finite-rate construction is in
-[Physical scope A](research/PHYSICAL_SCOPE.md#a-what-the-receiver-restriction-means).
+[Physical scope A](../science/PHYSICAL_SCOPE.md#a-what-the-receiver-restriction-means).
 
 For our source there is no incoming prepared quantum pulse. Following the opening of
 KM Section II D, omit the virtual input cavity from Eqs. (18)–(19), keep the emitter and
@@ -70,7 +73,7 @@ c_{\mathrm{out}}=\sqrt q\,b_f+\sqrt{1-q}\,v,
 ```
 
 where $`v`$ is a vacuum mode. This uses the passive-network result already attributed in
-[the proof](research/THEOREM.md), not a restriction on every system KM discusses.
+[the proof](../science/MODEL.md), not a restriction on every system KM discusses.
 The ideal optimization allows $`q=1`$ and every normalized $`f`$. Finite control limits
 can reduce performance, not invalidate that upper bound. Nonlinear decoding, nonvacuum
 ancillas, source-changing feedback or several retained modes change the task.
@@ -116,7 +119,7 @@ C_{N,m}^2&=\prod_{j=0}^{m-1}(1-j/N).
 The full-domain integral of $`\lvert\Psi_{N,m}\rvert^2`$ is one. A Fock state in one
 pulse has wavefunction $`\prod_i f(\tau_i)`$. The pair-time term above makes the exact
 emission dependent. The cascade is inherited source theory, with Paulisch credited in
-[the background](literature/BACKGROUND.md). The [proof note](research/PROOF_AUDIT.md)
+[the background](../references/BACKGROUND.md). The [proof note](../science/PROOF_DETAILS.md)
 verifies its normalization.
 
 ### Worked calculation: one photon, then two
@@ -156,7 +159,7 @@ error of a product approximation instead of assuming independent photons.
 ## 4. Photon collection is not the transfer objective
 
 KM Section II B finds occupation modes from a two-time correlation kernel. Law–Lee's
-[comparison](literature/LAW_LEE_FULL_TEXT.md) also optimizes mean
+[comparison](../references/LAW_LEE_FULL_TEXT.md) also optimizes mean
 occupation. In a fixed $`m`$-photon sector, define
 
 ```math
@@ -278,7 +281,7 @@ Since both amplitudes are nonnegative,
 
 This is Jensen's inequality. Squaring gives the fidelity bound; squaring the norm of the
 difference of the two positive-phase unit vectors gives a vector-error bound.
-The nontrivial full-process estimate is in [Theorem, Section 3](research/THEOREM.md#3-a-uniform-individually-matched-pulse-approximation).
+The nontrivial full-process estimate is in [Uniform matched-pulse proof](../science/MATCHED_PULSES.md#uniform-individually-matched-pulse-approximation).
 
 Different number inputs emit into orthogonal photon-number sectors. The norm error of
 the entire source map is consequently the largest sector error, not the sum over an
@@ -321,7 +324,7 @@ A construction alone cannot exclude a better waveform. The converse uses the ang
 between the individually matched pulses for $`q=\lfloor M/4\rfloor`$ and $`M`$.
 Any common receiver must lie close enough to both. A Hilbert-space angle triangle
 inequality gives a finite upper bound for every normalized waveform, including complex
-ones outside their span. The [endpoint-safe proof](research/PROOF_AUDIT.md) keeps the
+ones outside their span. The [endpoint-safe proof](../science/PROOF_DETAILS.md) keeps the
 additive approximation error explicit before taking the limit. It does not assume
 fidelity stays away from one in order to exclude perfect transfer.
 
@@ -335,13 +338,16 @@ Construction and converse yield the sharp boundary
 }
 ```
 
-The finite bounds, subcritical success, and supercritical failure for the complete
-consecutive code are in the standalone proof. The same two populated sectors witness
-the critical limit; vacuum plus one populated number is a successful different code.
+The [common-mode proof](../science/COMMON_MODE_BOUNDARY.md) gives the finite bounds,
+subcritical success, and supercritical failure for the complete consecutive code.
+The critical exponential is an exact limiting law at fixed positive
+$`M/N^{2/3}\to c`$; it is not asserted as an asymptotic equality in every
+supercritical sequence. The [same two populated sectors](../science/TWO_SECTOR_WITNESS.md) witness the
+critical limit; vacuum plus one populated number is a successful different code.
 
 ## 7. The interface boundary
 
-The uniform mean-collection bound tends to one for $`M=o(N)`$, beyond the
+The [uniform mean-collection bound](../science/PHOTON_COLLECTION.md) tends to one for $`M=o(N)`$, beyond the
 $`M=o(N^{2/3})`$ regime of faithful canonical transfer. Hence choosing
 $`M=\lfloor N^{3/4}\rfloor`$ makes the excitation density vanish and the mean collected
 fraction approach one while optimal worst-input transfer fidelity approaches zero.
@@ -349,13 +355,13 @@ This is a domain-of-validity statement for a particular interface approximation.
 
 The full outgoing field retains the quantum information. Retaining a second pulse
 or using a nonlinear decoder changes the receiver resource. The
-[physical analysis](research/PHYSICAL_SCOPE.md) relates the ideal one-memory
+[physical analysis](../science/PHYSICAL_SCOPE.md) relates the ideal one-memory
 optimization to capture, bandwidth and loss.
 
 KM supplies the operational language and full selected-pulse state calculation. Existing
 Dicke, pulse-shape and occupation results supply the source theory; the uniform
-common-code optimization gives the boundary derived here. The [close-source comparison](literature/TZIPERMAN_FULL_TEXT.md)
-examines Tziperman et al.'s selected-state transfer construction. See [Purpose and contact](README.md#purpose-and-contact) for the repository's
+common-code optimization gives the boundary derived here. The [close-source comparison](../references/TZIPERMAN_FULL_TEXT.md)
+examines Tziperman et al.'s selected-state transfer construction. See [Purpose and contact](../README.md#purpose-and-contact) for the repository's
 learning role and discussion details.
 
 ## 8. Loss and finite capture after the ideal theorem
@@ -369,9 +375,31 @@ $`\eta^m`$. Thus the positive-pulse objective becomes
 $`\min_{m\leq M}\eta^m|A_m(f)|^2`$. In particular, the highest number imposes
 the ceiling $`\eta^M`$, even with perfect mode matching. This is why fixed
 nonzero loss can hide the mode-mismatch effect as the code grows. The
-[loss-competition proof](research/LOSS_COMPETITION.md) solves the reoptimization
+[loss-competition proof](../science/LOSS_COMPETITION.md) solves the reoptimization
 when both effects survive at critical scaling: its Sections 1–2 give the result
-and proof, and Section 3 gives finite bounds. Independent atomic loss is a different model.
+and proof, and Section 3 gives finite bounds. With
+$`M/N^{2/3}\to c>0`$ and $`-M\log\eta_N\to\lambda\in[0,\infty)`$,
+write $`A=c^3/12`$. Its limiting exponent is
+
+```math
+E(A,\lambda)=\lambda+\frac{(A/4-\lambda)_+^2}{A}.
+```
+
+Here $`(y)_+=\max\{y,0\}`$. The optimum tends to $`e^{-E(A,\lambda)}`$.
+The ordinary-loss contribution is
+$`\lambda`$; the extra mode-mismatch contribution survives precisely when
+$`\lambda\lt c^3/48`$. Loss moves the common-pulse choice toward the highest
+number sector. This is optimization over all allowed waveforms, not just a
+trial-pulse comparison.
+
+**Independent atomic loss.** An inaccessible atomic decay channel competes during
+emission, rather than attenuating an already emitted field. Its useful-emission
+probability is a product of branching fractions. The
+[effective-ladder comparison](../science/PHYSICAL_SCOPE.md#d-independent-atomic-loss)
+bounds the canonical fidelity using that product and a shifted analytic ladder
+parameter. A favorable limit at fixed effective useful-to-unwanted rate ratio
+does not establish that a fixed microscopic cavity family realizes the same
+scaling. The source, rate and bandwidth assumptions must be checked together.
 
 **Finite capture.** The ideal coupling in Section 2 above may diverge at its onset.
 For the normalized pulse $`f(\tau)=e^{-\tau/2}`$, its rate in scaled units is
@@ -387,6 +415,38 @@ at a finite time make capture finite, at the cost of attenuation and a changed m
 $`P_T=\int_0^T|f(\tau)|^2d\tau`$, the construction has attenuation
 $`q_T=P_T/(\varepsilon+P_T)`$. A growing code is sensitive to $`q_T^M`$,
 so a small single-photon error must shrink as the code grows. The proved
-[whole-code bound](research/PHYSICAL_SCOPE.md#a-finite-receiving-window-on-the-same-code)
+[whole-code bound](../science/PHYSICAL_SCOPE.md#a-finite-receiving-window-on-the-same-code)
 controls both this attenuation and the discarded tail, with duration and coupling
 resources allowed to increase with code size.
+
+## 9. Field structure, controls and the complete interpretation
+
+The two-mode explanation gives a physical picture of the failure. Near the common
+pulse, an individually matched pulse has a component along the normalized tangent
+$`g_*=\sqrt{12}\,\partial_u f_u|_{u_*}`$. Its one-photon weight is small, but a
+growing number of photons can occupy it. At critical scaling the tangent-mode
+count has a Poisson limit; minimizing its limiting zero-count probability over
+the code recovers the critical worst-input common-mode fidelity. The
+[tangent-mode derivation](../science/PHYSICAL_SCOPE.md#b-the-leading-mismatch-has-a-simple-structure)
+controls this statement for the full emitted field. The state remains encoded in
+the field, while discarding an occupied orthogonal mode damages the prescribed
+one-oscillator output.
+
+Retaining that second mode changes the receiver resource. Its occupied direction
+depends on the excitation number, so a fixed linear rotation does not compress the
+whole code into one canonical oscillator. Likewise, a prescribed scalar change of
+source rate and phase applies the same one-particle isometry to every pulse. Under
+complete emission, this preserves their geometry and the optimized boundary; it
+can still trade physical capture rate against duration. The
+[scalar-control statement](../science/PHYSICAL_SCOPE.md#c-scalar-source-pulse-shaping)
+requires an unbounded accumulated emission clock.
+
+The specialist route joins the [model](../science/MODEL.md),
+[controlled approximation](../science/MATCHED_PULSES.md),
+[matching boundary bounds](../science/COMMON_MODE_BOUNDARY.md), and
+[collection estimate](../science/PHOTON_COLLECTION.md). The
+[interpretation](../science/INTERPRETATION.md) then connects their physical meaning,
+while the [claim map](../science/CLAIM_EVIDENCE_MAP.md),
+[source comparison](../references/COMPARISON.md) and
+[verification guide](../verification/README.md) separate analytic conclusions,
+inherited ingredients and finite numerical checks.

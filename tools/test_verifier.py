@@ -89,6 +89,8 @@ class VerifierTests(unittest.TestCase):
     def test_protects_maintained_directories_and_raw_artifacts(self):
         with patch.object(verify,'ROOT',self.root):
             for relative in ['provenance/SUITES.json','tests/fixture/results.json',
+                             'science/new-report.json','references/new-report.json',
+                             'learning/new-report.json','verification/new-report.json',
                              'docs/new-report.json','work_orders/new-report.json','.git/config',
                              'verification-artifacts/fixture/observed.json',
                              'verification-artifacts/environment.json']:

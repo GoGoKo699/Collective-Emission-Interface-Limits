@@ -1,7 +1,8 @@
 # Repository maintenance
 
 Work only in `GoGoKo699/Collective-Emission-Interface-Limits`. Read `README.md`,
-`STATUS.md`, `research/THEOREM.md` and `provenance/SUITES.json` before editing.
+`science/README.md`, `science/MODEL.md`, `science/COMMON_MODE_BOUNDARY.md`,
+`verification/README.md` and `provenance/SUITES.json` before editing.
 
 ## Scientific integrity
 
@@ -16,6 +17,10 @@ Work only in `GoGoKo699/Collective-Emission-Interface-Limits`. Read `README.md`,
 - Present the model, results, proofs, examples and references as a complete account.
 - State the assumptions and limitations needed to interpret a claim accurately. Do not add development narratives, work plans, lists of unperformed work, or notices about absent reports or certifications.
 - Keep maintenance instructions here, outside the scientific reading route. Preserve dated scientific audits and execution evidence as records, with links to the revisions they describe.
+- Keep the connected scientific account in topic-based `science/` pages, with one authoritative home for each result and direct links between its definitions, proof dependencies and consequences.
+- Preserve the single selected educational anchor, Kiilerich–Mølmer (2020), its local bridge, and the exactly 30 project-defined milestones in `learning/`. The map is reader-independent and proceeds from local concepts to global understanding within each of its two phases.
+- Keep personal coaching rules, challenge answers, learner progress and session instructions outside this scientific repository. Furnishing the learning route does not start lessons or certify anyone's understanding.
+- Maintain the README, science and learning entrypoints, `references/`, `verification/` and `llms.txt` together when files move. Historical records should point to the revisions they describe, not silently adopt current scientific claims.
 - State established answers directly with evidence links. Include future research questions only when explicitly requested.
 - Preserve the Purpose and contact wording and clickable author email.
 - Use protected GitHub inline and fenced display mathematics. Inspect rendered expressions after mathematical edits; structural checks do not replace rendering or proof review.

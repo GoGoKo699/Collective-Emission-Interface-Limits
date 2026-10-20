@@ -2,7 +2,7 @@
 
 This note identifies when mode mismatch reduces the optimized uniform fidelity
 beyond the ordinary transmission ceiling. It uses the collective source, canonical
-number target and passive one-output receiver of [THEOREM.md](THEOREM.md), with
+number target and passive one-output receiver of [model and channel objective](MODEL.md), with
 prescribed mode-independent attenuation. The derivation follows from the uniform
 pulse approximation and geometry; [physical scope](PHYSICAL_SCOPE.md) distinguishes
 this loss model from microscopic decay and filtering.
