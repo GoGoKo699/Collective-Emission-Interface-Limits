@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Supplementary diagnostics for research/LOSS_COMPETITION.md; not a proof.
+"""Supplementary diagnostics for science/LOSS_COMPETITION.md; not a proof.
 
 Imports the preserved suite 02 continuum ODE, never its result file. The scalar
 minimax search is independent of the stated optimizer. No high-dimensional
