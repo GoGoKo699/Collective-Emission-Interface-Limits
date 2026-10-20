@@ -50,7 +50,7 @@ Equation (25) obtains the two-time correlation from a general diagonal initial D
 |---|---|---|
 | Section II A, Eqs. (10)–(17) | Optimal mean-occupation modes from the full correlation kernel | The natural-mode method optimizes occupation. |
 | Section III A, Eq. (26), Fig. 1 | Analytic two-atom correlation and its nonfactorability; leading normalized populations about 0.957 and 0.0345 | The two-photon multimode example is inherited. |
-| Section III B, Figs. 2–3, Eq. (27) | Fully inverted large ensembles with limiting mode purity about 0.82; the first two modes hold about 98% of the total mean photon number in the illustrated case | Dominant two-mode occupation precedes the uniform two-mode encoding result for subextensive codes. |
+| Section III B, Figs. 2–3, Eq. (27) | Fully inverted large ensembles with limiting mode purity about 0.82; the first two modes hold about 98% of the total mean photon number in the illustrated case | Dominant two-mode occupation precedes the [uniform two-mode encoding result](../science/PHYSICAL_SCOPE.md#b-the-leading-mismatch-has-a-simple-structure) for $`M=O(N^{2/3})`$. |
 | Opening of Section III and note [16] | Replacing the spin by one harmonic oscillator makes the emitted radiation exactly single mode, by linear Heisenberg evolution | This supplies the oscillator comparator. |
 | Section III C, Eqs. (29)–(30) | Half-excited semiclassical factorization and a hyperbolic-secant pulse; numerical checks of mode purity | The pulse has the shape correspondence derived below. |
 | Section II C, final paragraph | Dipole-interaction omission, Raman suppression, and a well-defined cavity output channel | This specifies the source idealization. |

@@ -308,8 +308,9 @@ K(z)&=\frac{z}{2\sinh(z/2)},\qquad K(0)=1,\\
 ```
 
 For $`M\geq2`$, the common choice $`a_*=(3M/4-1)/N`$ balances the most demanding
-populated numbers. A product $`m`$-photon overlap is the one-photon overlap raised to
-power $`2m`$. With $`m/M=x`$ and $`M/N^{2/3}\to c>0`$, this construction gives
+populated numbers. The fidelity between two product-mode $`m`$-photon states is the
+one-photon overlap modulus raised to power $`2m`$. With $`m/M=x`$ and
+$`M/N^{2/3}\to c>0`$, this construction gives
 
 ```math
 F_m(f_*)\longrightarrow
