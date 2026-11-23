@@ -3,14 +3,14 @@
 **Almost complete photon collection does not guarantee faithful quantum-state transfer.**
 
 A symmetric ensemble stores an unknown quantum state and releases its excitations as light.
-A receiver, configured before the input is known, retains one oscillator. The question is
-when the collective spin can be treated as a harmonic oscillator for this transfer—not
-merely for the average number of photons it delivers.
+A receiver configured in advance must reproduce every excitation amplitude and
+coherence in one output oscillator. A single passive mode has a sharp transfer
+limit. Capturing several modes and coherently combining them raises that limit.
 
 | Read next | Purpose |
 |---|---|
 | [Scientific account](science/README.md) · [Model and objective](science/MODEL.md) | Enter the connected account through its definitions and proof dependencies |
-| [Common-mode boundary](science/COMMON_MODE_BOUNDARY.md) · [Claim and evidence map](science/CLAIM_EVIDENCE_MAP.md) | Check the exact theorem, finite bounds and supporting consequences |
+| [Common-mode boundary](science/COMMON_MODE_BOUNDARY.md) · [Multimode receiver](science/MULTIMODE_RECEIVER.md) | Compare the sharp limits and receiver constructions |
 | [Learning route](learning/README.md) · [30 milestones](learning/MILESTONES.md) · [Source bridge](learning/KIILERICH_MOLMER_BRIDGE.md) | Build understanding from one educational anchor and local worked examples |
 | [Physical scope](science/PHYSICAL_SCOPE.md) · [References](references/README.md) | Check receiver resources, realization limits and attribution |
 | [Verification guide](verification/README.md) | Reproduce the scientific checks and interpret the evidence |
@@ -67,6 +67,35 @@ all-waveform converse and finite bounds. The
 [photon-collection proof](science/PHOTON_COLLECTION.md) establishes the larger
 domain for the mean collected fraction.
 
+## How additional modes extend the excitation ceiling
+
+The [multimode receiver](science/MULTIMODE_RECEIVER.md) passively captures a fixed
+$`K`$-dimensional temporal subspace. Its decoder then rotates the captured modes
+coherently according to their total photon number and writes the state into one
+oscillator. The rotation preserves coherences between different numbers without
+measuring them.
+
+For fixed $`K\geq1`$, the optimized worst-input fidelity satisfies
+
+```math
+\frac{M}{N^{2K/(2K+1)}}\longrightarrow c>0
+\quad\Longrightarrow\quad
+\mathcal F^{(K)}_{N,M}\longrightarrow
+\exp\!\left[-\frac{c^{2K+1}}{16^K(2K+1)\binom{2K}{K}^2}\right].
+```
+
+| Captured modes | Critical excitation scale | Fidelity at the critical scale |
+|---:|---|---|
+| 1 | $`N^{2/3}`$ | $`\exp(-c^3/192)`$ |
+| 2 | $`N^{4/5}`$ | $`\exp(-c^5/46080)`$ |
+| 3 | $`N^{6/7}`$ | $`\exp(-c^7/11468800)`$ |
+
+For example, at $`M=\lfloor N^{3/4}\rfloor`$ the single-mode fidelity tends to
+zero and the two-mode fidelity tends to one. The proof gives explicit waveforms,
+a converse over every common capture subspace and a finite capture construction.
+A receiver whose entire optical processing stays linear and ends in one oscillator
+still has the one-mode bound.
+
 ## Why the two criteria differ
 
 The collective ladder decays at $`\gamma k(N-k+1)`$, rather than the oscillator rate
@@ -101,15 +130,17 @@ loss and finite capture supply the physical qualifications.
 
 The [30-milestone map](learning/MILESTONES.md) has two phases. M01–M12 assemble
 the pulse, source and channel framework; M13–M30 connect the controlled field
-approximation, pulse geometry, optimality proof and physical consequences into
-the whole result. Each milestone states a central question, understanding target,
+approximation, receiver optimization and physical consequences into the whole
+result, including the multimode extension. Each milestone states a central question, understanding target,
 dependencies, conceptual connection and source pointers. It is a shared map of
 the science, independent of a reader's prior knowledge or learning history.
 
 ## Boundaries and prior work
 
 The ideal source is symmetric, has known $`N`$, and emits completely into one vacuum
-Markov channel. The receiver retains one oscillator after fixed passive processing.
+Markov channel. Both receiver classes output one oscillator. The multimode
+class additionally uses several capture oscillators and a number-dependent
+coherent decoder.
 The input is an arbitrary state in the symmetric excitation code, including its
 correlations with a reference. The full emitted field retains that information;
 the theorem quantifies transfer into the specified single receiving oscillator.
@@ -140,6 +171,7 @@ python tools/check_presentation.py --self-test
 python verify.py --integrity-only
 python verify.py --artifacts-dir verification-artifacts --require-reference
 python tools/check_loss_competition.py --output loss-competition-report.json
+python tests/09_multimode_receiver/checks.py --output multimode-receiver-report.json
 ```
 
 The eight scientific suites cover 39 groups and 612 cases. The scientific scripts and
@@ -147,7 +179,7 @@ saved results are preserved; generated outputs are compared without rewriting re
 The [reproduction policy](provenance/REPRODUCTION_POLICY.md) distinguishes exact bytes,
 reviewed numerical agreement and passing assertions.
 The presentation check is separate from the scientific test count.
-The 50 supplementary loss-competition checks are counted separately. The
+The loss-competition and multimode receiver checks are supplementary. The
 [verification guide](verification/README.md) explains the commands, expected
 outputs and the distinction between finite calculations and analytical proof.
 

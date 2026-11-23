@@ -9,8 +9,9 @@ The pulse and capture framework comes from KM. The Dicke specialization, channel
 and uniform estimates below supply the additional steps, with their source attributions.
 
 Read Sections 1–4 for the physical task, then Sections 5–7 for the proof mechanism.
-Section 8 connects the result to loss and finite capture; Section 9 connects the
-remaining field structure and controls to the physical interpretation. The
+Section 8 connects the result to loss and finite capture. Section 9 locates the
+one-mode error in the emitted field, and Section 10 follows two-mode capture and
+coherent decoding to the improved excitation scale. The
 [30-milestone map](MILESTONES.md) supplies the understanding targets and dependencies
 for this route.
 
@@ -354,8 +355,9 @@ $`M=\lfloor N^{3/4}\rfloor`$ makes the excitation density vanish and the mean co
 fraction approach one while optimal worst-input transfer fidelity approaches zero.
 This is a domain-of-validity statement for a particular interface approximation.
 
-The full outgoing field retains the quantum information. Retaining a second pulse
-or using a nonlinear decoder changes the receiver resource. The
+The full outgoing field retains the quantum information. The
+[multimode receiver](#10-capture-several-modes-and-decode-coherently) uses a second
+retained pulse and a coherent nonlinear decoder to recover it on a larger code. The
 [physical analysis](../science/PHYSICAL_SCOPE.md) relates the ideal one-memory
 optimization to capture, bandwidth and loss.
 
@@ -433,10 +435,10 @@ controls this statement for the full emitted field. The state remains encoded in
 the field, while discarding an occupied orthogonal mode damages the prescribed
 one-oscillator output.
 
-Retaining that second mode changes the receiver resource. Its occupied direction
-depends on the excitation number, so a fixed linear rotation does not compress the
-whole code into one canonical oscillator. Likewise, a prescribed scalar change of
-source rate and phase applies the same one-particle isometry to every pulse. Under
+The occupied direction depends on the excitation number. A fixed passive linear
+network with one retained output still implements one effective capture mode.
+A prescribed scalar change of source rate and phase applies the same one-particle
+isometry to every pulse. Under
 complete emission, this preserves their geometry and the optimized boundary; it
 can still trade physical capture rate against duration. The
 [scalar-control statement](../science/PHYSICAL_SCOPE.md#c-scalar-source-pulse-shaping)
@@ -451,3 +453,89 @@ while the [claim map](../science/CLAIM_EVIDENCE_MAP.md),
 [source comparison](../references/COMPARISON.md) and
 [verification guide](../verification/README.md) separate analytic conclusions,
 inherited ingredients and finite numerical checks.
+
+## 10. Capture several modes and decode coherently
+
+KM Section III and the Appendix give a sequence of virtual cavities that retain
+orthogonal outgoing modes. Use these cavities to retain a fixed one-particle
+subspace $`S`$, chosen from the known atom count and code cutoff.
+The receiver can orthonormalize the chosen waveforms and capture their basis.
+For excitation number $`m`$, the all-photons-captured component is the projection
+of the emitted $`m`$-photon vector onto the $`m`$-photon sector over that subspace.
+Denote its norm by $`B_m`$.
+
+The key extra operation is a unitary that acts separately within each total-number
+sector while maintaining coherence between sectors. In the sector with total number
+$`m`$, it sends the normalized projected vector to $`\lvert m,0,\ldots,0\rangle`$.
+The original all-photons-captured component then has positive amplitude $`B_m`$
+and leaves the other receiver modes and the discarded field in vacuum. The
+vacuum component preserves the relative phases of the input number amplitudes.
+The apparatus neither reports the number nor conditions on a successful trial.
+For a number input, a lost photon removes any chance of the correct output number.
+For a superposition or an input entangled with a reference, the common vacuum
+component gives fidelity at least the smallest $`B_m^2`$. The worst number input
+attains that bound.
+
+### Worked calculation with two retained modes
+
+Let $`h=M/N`$ and use $`x=(m-1)/M`$ for the sector fraction, so the matched
+pulse is $`f_{hx}`$. The coordinate $`z=1-e^{-\tau}`$ has $`dz=e^{-\tau}d\tau`$.
+Dividing each pulse by the reference envelope $`f_0(\tau)=e^{-\tau/2}`$ gives
+$`g_a(z)=\sqrt{1-a}/(1-az)`$ with the inner product in $`L^2([0,1],dz)`$.
+The constant and linear terms span the leading two pulse directions.
+To optimize capture, allow the chosen span to
+depend on $`h`$. Take snapshots of the known pulse family at the two fractions
+
+```math
+r_-=\frac{5-\sqrt 5}{8},
+\qquad
+r_+=\frac{5+\sqrt 5}{8}.
+```
+
+Interpolation makes the uncaptured amplitude proportional, at leading order, to
+$`h^2(x-r_-)(x-r_+)`$. The orthogonal quadratic direction in the pulse
+coordinate is $`z^2-z+1/6`$, with squared norm $`1/180`$. The square
+of the uncaptured amplitude contributes once per photon to the logarithm of fidelity.
+The leading coefficient therefore minimizes the maximum of
+$`x(x-r_-)^2(x-r_+)^2`$ over the excitation fractions.
+
+To see the polynomial choice, put $`y=\sqrt x`$ and use the fifth Chebyshev polynomial:
+
+```math
+y(y^2-r_-)(y^2-r_+)=\tfrac{1}{16}T_5(y).
+```
+
+Its alternating extrema give the lower bound for every monic weighted quadratic.
+The maximum of the weighted square is $`1/256`$. The critical exponent of the
+worst-input fidelity is therefore $`Mh^4/(180\cdot256)=M^5/(46080N^4)`$. At
+$`M/N^{4/5}\to c>0`$, the optimal value tends to $`e^{-c^5/46080}`$. The proof
+in the [multimode account](../science/MULTIMODE_RECEIVER.md) reduces arbitrary
+capture subspaces to this polynomial bound and controls the error from replacing
+the correlated emitted field with matched product pulses.
+
+In a basis of the retained plane, the projected matched pulse has an angle fixed
+by the total number. The constructive decoder can rotate this direction into the
+designated oscillator by coherently controlling a two-mode rotation on total
+number. A rotation chosen once for all sectors returns to the single effective
+mode. For example, $`M=\lfloor N^{3/4}\rfloor`$ is above the $`N^{2/3}`$ scale and below
+the $`N^{4/5}`$ scale, so the ideal one-mode optimum tends to zero and the
+two-mode receiver's optimum tends to one.
+
+### From two retained modes to a fixed number
+
+With $`K`$ modes, the component orthogonal to the first $`K`$ Taylor
+directions is of order $`h^K`$. Its squared norm is multiplied by $`M`$
+in the log fidelity. Balancing $`M(M/N)^{2K}`$ at order one gives
+the scale $`N^{2K/(2K+1)}`$. The optimal snapshots are the roots of the monic
+polynomial $`p_K`$ for which $`yp_K(y^2)=2^{-2K}T_{2K+1}(y)`$.
+At $`M/N^{2K/(2K+1)}\to c>0`$, the optimal squared fidelity tends to
+
+```math
+\exp\!\left[
+-\frac{c^{2K+1}}{16^K(2K+1)\binom{2K}{K}^2}
+\right].
+```
+
+The [multimode proof](../science/MULTIMODE_RECEIVER.md) derives this constant
+and gives the capture and decoding controls. The limit keeps $`K`$ fixed
+as the atomic ensemble grows and assumes lossless emission and ideal capture.

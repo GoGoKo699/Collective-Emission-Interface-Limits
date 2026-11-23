@@ -38,7 +38,10 @@ The receiver retains one mode $`f`$, chosen before learning the input, and trace
 c_{\rm out}=\sqrt q\,b_f+\sqrt{1-q}\,v,
 ```
 
-with vacuum $`v`$ and $`0\leq q\leq1`$, by passive input-output structure [Yamamoto–James](README.md#primary-sources). The ideal optimization takes $`q=1`$. Auxiliary modes are allowed internally, but only one final oscillator is retained. Feedback changing the source, active Gaussian operations, nonvacuum ancillary inputs, measurement feedback, nonlinear decoding, and alternative encodings are not included.
+with vacuum $`v`$ and $`0\leq q\leq1`$, by passive input-output structure [Yamamoto–James](README.md#primary-sources). The ideal optimization takes $`q=1`$. Auxiliary modes are allowed internally, but only one final oscillator is retained. Feedback changing the source, active Gaussian operations, nonvacuum ancillary inputs, measurement feedback, nonlinear decoding, and alternative encodings are not included
+in the single-mode baseline. The [multimode receiver](MULTIMODE_RECEIVER.md)
+uses the same source and canonical output target with additional capture
+oscillators and coherent number-preserving decoding.
 
 The target is $`|D_N^m\rangle\mapsto|m\rangle_f`$, not merely conservation of energy or a classical number label. Fidelity means squared entanglement fidelity, allowing an untouched reference.
 

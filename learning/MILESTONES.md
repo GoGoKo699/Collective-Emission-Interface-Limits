@@ -10,7 +10,7 @@ The allocation is **12 background/preliminaries milestones** and **18
 narrative/innovation milestones**. The background joins the collective spin,
 traveling field and receiving channel into one precise transfer task. The narrative
 needs more room to connect the controlled field approximation, the matching bounds,
-the collection contrast and the physical resource consequences. Each phase moves
+the collection contrast, the multimode receiver and physical resources. Each phase moves
 from local objects or arguments to an integrated account.
 
 The single educational anchor is **Kiilerich and Mølmer, *Quantum interactions with
@@ -28,7 +28,8 @@ global understanding; specialist calculations remain in those sources.
 | Background/preliminaries | M07–M12 | Receiver resources, collection, coherence and the complete operational question |
 | Narrative/innovation | M13–M19 | Channel reduction, uniform approximation and the optimized boundary |
 | Narrative/innovation | M20–M23 | Photon collection, a two-sector witness and a successful sparse comparator |
-| Narrative/innovation | M24–M28 | Field structure, source controls, loss and finite capture resources |
+| Narrative/innovation | M24–M25 | Tangent-mode information, coherent decoding and the fixed-mode-count frontier |
+| Narrative/innovation | M26–M28 | Transmission loss, atomic loss and finite capture resources |
 | Narrative/innovation | M29–M30 | Attribution, verification and the complete scientific interpretation |
 
 ## Phase I: background/preliminaries
@@ -125,7 +126,7 @@ global understanding; specialist calculations remain in those sources.
 
 **Dependencies and story role.** M02 and M07. This states the resource boundary before comparing receivers.
 
-**Conceptual connection.** An all-waveform bound includes elaborate passive networks in the specified class. Nonvacuum inputs, active operations, feedback to the source and nonlinear decoding require different models.
+**Conceptual connection.** An all-waveform bound includes elaborate passive networks with one retained output. Keeping several modes and applying a coherent number-dependent decoder adds two distinct resources. The map returns to both in M24.
 
 **Sources.** [Receiver definition](../science/MODEL.md#source-output-normalization-and-target); [resource conventions](../science/CONVENTIONS.md#receiver-resources); [bridge 2](KIILERICH_MOLMER_BRIDGE.md#2-the-receiving-oscillator).
 
@@ -133,7 +134,7 @@ global understanding; specialist calculations remain in those sources.
 
 **Central question.** What must remain fixed while the input varies?
 
-**Understanding target.** State the canonical Dicke-number to oscillator-number map on the entire declared code. Allow the receiver to depend on known atom count and cutoff, while requiring the same waveform for all unknown amplitudes and number components.
+**Understanding target.** State the canonical Dicke-number to oscillator-number map on the entire declared code. Let the capture waveform or subspace depend on known atom count and cutoff. Require the same capture modes and decoding operation for every unknown input.
 
 **Dependencies and story role.** M03, M06 and M08. This joins source and receiver into an operational state-transfer task.
 
@@ -169,13 +170,13 @@ global understanding; specialist calculations remain in those sources.
 
 **Central question.** Which source, input, receiver, target and error criterion are being compared?
 
-**Understanding target.** Assemble the symmetric vacuum-channel source, arbitrary code input, predetermined passive receiver, canonical target and reference-inclusive fidelity into one model. Contrast that model with the easier goal of accurate mean-photon collection and the successful oscillator comparator.
+**Understanding target.** Assemble the symmetric vacuum-channel source, arbitrary code input, predetermined passive one-mode receiver, canonical target and reference-inclusive fidelity into one model. State which part changes for the receiver that retains several modes and acts coherently on their total number.
 
 **Dependencies and story role.** M01–M11. This synthesizes the background before the proof mechanism begins.
 
-**Conceptual connection.** A proposed improvement must preserve the complete task to challenge its boundary. Retaining more modes, changing the encoding or learning the input changes what has been established.
+**Conceptual connection.** A multimode receiver can improve the resource–fidelity tradeoff while keeping the source, input, target and loss criterion fixed. The common-mode theorem characterizes the one-mode resource point.
 
-**Sources.** [Model](../science/MODEL.md); [assumption register](../references/ASSUMPTIONS.md); [scientific reading route](../science/README.md).
+**Sources.** [Model](../science/MODEL.md); [multimode receiver](../science/MULTIMODE_RECEIVER.md); [assumption register](../references/ASSUMPTIONS.md); [scientific reading route](../science/README.md).
 
 ## Phase II: narrative/innovation
 
@@ -311,29 +312,29 @@ global understanding; specialist calculations remain in those sources.
 
 **Sources.** [Finite witness and vacuum control](../science/TWO_SECTOR_WITNESS.md); [finite brackets](../science/COMMON_MODE_BOUNDARY.md#finite-brackets); [verification guide](../verification/README.md).
 
-### M24 The leading error occupies a tangent mode
+### M24 Retaining and decoding the tangent-mode information
 
-**Central question.** Where does the state information go when the receiving mode is insufficient?
+**Central question.** How can a receiver recover information that lies outside the common mode?
 
-**Understanding target.** Identify the normalized tangent mode to the pulse family, its orthogonality to the common pulse and the controlled two-mode approximation at critical scaling. Relate the Poisson count of tangent-mode photons to the probability that none leave the selected mode.
+**Understanding target.** Identify the tangent mode and relate its Poisson occupation law at one-mode critical scaling to the probability of losing no photons. Extend the capture projection to a common subspace. Explain how the decoder compresses each fully captured sector to the canonical oscillator with aligned phases and the same vacuum in the other modes.
 
-**Dependencies and story role.** M15, M16, M19 and M21. This gives a field-level explanation of the boundary.
+**Dependencies and story role.** M08, M11, M13, M15 and M19–M21. This connects the one-mode boundary to the additional receiver resources.
 
-**Conceptual connection.** A nearly two-mode encoding can preserve information in the field while a one-mode receiver loses fidelity. The occupied direction depends on excitation number, so a fixed linear rotation does not compress the whole code into one canonical oscillator.
+**Conceptual connection.** The occupied direction depends on excitation number. Coherent number-sector control preserves a superposition through compression because the fully captured component leaves a common vacuum environment. Measuring total number would reveal the sector and remove its coherence with other sectors.
 
-**Sources.** [Tangent-mode structure](../science/PHYSICAL_SCOPE.md#b-the-leading-mismatch-has-a-simple-structure); [bridge 9](KIILERICH_MOLMER_BRIDGE.md#9-field-structure-controls-and-the-complete-interpretation). KM Section III supplies optional multimode context.
+**Sources.** KM Section III and Appendix; [tangent-mode structure](../science/PHYSICAL_SCOPE.md#b-the-leading-mismatch-has-a-simple-structure); [multimode capture bridge](KIILERICH_MOLMER_BRIDGE.md#10-capture-several-modes-and-decode-coherently); [multimode receiver](../science/MULTIMODE_RECEIVER.md).
 
-### M25 What scalar source shaping preserves
+### M25 Optimizing the common capture subspace
 
-**Central question.** Can slowing or rephasing collective emission remove the optimized mismatch?
+**Central question.** How does the excitation budget increase with the number of retained modes?
 
-**Understanding target.** Explain why the stated scalar rate and phase controls act as the same one-particle isometry on every emitted pulse under complete emission. Distinguish preserved pulse geometry from changes in physical duration and receiver-control requirements.
+**Understanding target.** Explain the first pulse-family coefficient orthogonal to the retained directions and why its squared norm is multiplied by the photon number. Identify the weighted Chebyshev problem, its snapshot roots and the converse over arbitrary capture subspaces. Recover the critical scale $`N^{2K/(2K+1)}`$ and the two-mode fidelity $`e^{-c^5/46080}`$ at $`M/N^{4/5}\to c>0`$.
 
-**Dependencies and story role.** M04, M08, M16 and M19. This identifies the scope of an important control comparison.
+**Dependencies and story role.** M15–M19 and M24. This turns the multimode receiver into a sharp resource–fidelity law.
 
-**Conceptual connection.** An unbounded accumulated emission clock is required. A finite clock leaves residual excitation, and number-dependent ladder engineering is outside the scalar-control statement.
+**Conceptual connection.** Shifting the retained subspace balances residuals across the full excitation range. A common rate-and-phase shaping of complete emission preserves pulse overlap geometry, even though it can trade capture rate against duration.
 
-**Sources.** [Scalar source pulse shaping](../science/PHYSICAL_SCOPE.md#c-scalar-source-pulse-shaping); [bridge interpretation](KIILERICH_MOLMER_BRIDGE.md#9-field-structure-controls-and-the-complete-interpretation).
+**Sources.** [Multimode receiver](../science/MULTIMODE_RECEIVER.md); [worked two-mode example](KIILERICH_MOLMER_BRIDGE.md#worked-calculation-with-two-retained-modes); [scalar source pulse shaping](../science/PHYSICAL_SCOPE.md#c-scalar-source-pulse-shaping).
 
 ### M26 Optimizing in the presence of transmission loss
 
@@ -365,7 +366,7 @@ global understanding; specialist calculations remain in those sources.
 
 **Understanding target.** Follow onset regularization and time truncation to the unconditional whole-code capture bound. Track both the accumulated attenuation and discarded pulse tail, and translate scaled duration and coupling rate back to physical units.
 
-**Dependencies and story role.** M07–M09, M17, M25 and M26. This joins the ideal theorem with an explicit receiver error and resource budget.
+**Dependencies and story role.** M07–M09, M17 and M24–M26. This joins the ideal receiver comparison with an explicit capture error and resource budget.
 
 **Conceptual connection.** Finite resources exist for each finite code, while accuracy on growing codes requires shrinking tail and attenuation errors. The construction permits changing coupling and duration bounds and does not establish a fixed slew-rate or modulation-bandwidth guarantee.
 
@@ -375,22 +376,22 @@ global understanding; specialist calculations remain in those sources.
 
 **Central question.** Which ingredients are inherited, and what establishes each conclusion here?
 
-**Understanding target.** Separate known cascade, waveform, occupation-optimization and capture results from the controlled uniform common-code optimization. Distinguish analytical proofs, finite numerical checks, reference agreement and source-reading evidence.
+**Understanding target.** Identify what prior work supplies about cascades, waveform selection, occupation optimization and joint capture. Explain the additional results on common-code optimization and coherent decoding. Distinguish analytical proofs, finite numerical checks and source-reading evidence.
 
 **Dependencies and story role.** M12–M28. This connects the scientific conclusions to their sources and verification routes.
 
 **Conceptual connection.** An occupation optimum or a successful selected-state transfer can coexist with a failed canonical worst-input guarantee. Passing finite suites supports the checked identities and implementations; it does not replace a uniform proof or establish exhaustive priority.
 
-**Sources.** [Prior-work comparison](../references/COMPARISON.md); [Law–Lee comparison](../references/LAW_LEE_FULL_TEXT.md); [Tziperman comparison](../references/TZIPERMAN_FULL_TEXT.md); [claim map](../science/CLAIM_EVIDENCE_MAP.md); [verification guide](../verification/README.md).
+**Sources.** [Prior-work comparison](../references/COMPARISON.md); [Law–Lee comparison](../references/LAW_LEE_FULL_TEXT.md); [Tziperman comparison](../references/TZIPERMAN_FULL_TEXT.md); [multimode receiver](../science/MULTIMODE_RECEIVER.md); [claim map](../science/CLAIM_EVIDENCE_MAP.md); [verification guide](../verification/README.md).
 
 ### M30 The complete interface story
 
 **Central question.** What does the optimized boundary change about treating a collective spin as an oscillator?
 
-**Understanding target.** Explain the chain from number-dependent collective decay through uniformly controlled pulse geometry to the common-waveform boundary. Join that result to near-complete mean collection, the logical-qubit witness, the fixed-fidelity excitation budget and the capture/loss qualifications.
+**Understanding target.** Explain how number-dependent collective decay creates the common-waveform boundary despite near-complete photon collection. State the fixed-fidelity excitation budgets for one passive mode and for a fixed number of retained modes with number-coherent decoding. Include the loss and capture conditions that matter for implementation.
 
 **Dependencies and story role.** M12 and M19–M29. This synthesizes the narrative into the full contribution and its domain of validity.
 
-**Conceptual connection.** State accuracy depends on the complete source, encoding, receiver and error criterion. The full field retains the information; the proved limitation belongs to the predetermined passive one-oscillator canonical interface, with the exact physical and asymptotic conditions stated in its sources.
+**Conceptual connection.** The full field retains the information. Practical transfer depends on which parts of that field the receiver keeps and how it recombines them. In the ideal model, receiver resources alone change the excitation exponent while leaving the source and task fixed.
 
-**Sources.** [Scientific account](../science/README.md); [interpretation and excitation budget](../science/INTERPRETATION.md); [claim and evidence map](../science/CLAIM_EVIDENCE_MAP.md); [complete learning bridge](KIILERICH_MOLMER_BRIDGE.md).
+**Sources.** [Scientific account](../science/README.md); [interpretation and excitation budget](../science/INTERPRETATION.md); [multimode receiver](../science/MULTIMODE_RECEIVER.md); [claim and evidence map](../science/CLAIM_EVIDENCE_MAP.md); [complete learning bridge](KIILERICH_MOLMER_BRIDGE.md).
