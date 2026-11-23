@@ -88,7 +88,7 @@ At $`M=O(N^{2/3})`$, the whole code approaches a two-mode encoding, with an oper
 
 The smallest zero-count probability recovers $`e^{-c^3/192}`$. The leading common-mode error is therefore carried by one orthogonal tangent mode.
 
-Two retained modes are an additional quantum resource. Their occupied direction depends on excitation number, so a fixed linear rotation cannot compress the entire encoding into one canonical oscillator. The full field remains an isometric encoding of the source.
+Two retained modes are an additional quantum resource. Their occupied direction depends on excitation number, so a fixed linear rotation cannot compress the entire encoding into one canonical oscillator. A [multimode receiver](MULTIMODE_RECEIVER.md) uses a coherent rotation in each number sector and obtains a sharp larger excitation scale. The full field remains an isometric encoding of the source.
 
 ## C. Scalar source pulse shaping
 

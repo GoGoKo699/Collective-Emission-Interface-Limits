@@ -24,8 +24,11 @@ mean collection and vanishing optimal uniform canonical-transfer fidelity.
 
 The full emitted field retains the input information. The limitation concerns
 its canonical transfer into the specified single passive retained oscillator.
-Exact assumptions, quantifiers, finite bounds and proof dependencies belong
-to the scientific pages linked below.
+The multimode receiver captures a fixed K-dimensional subspace and coherently
+decodes to one output oscillator. Its critical scale is N^(2K/(2K+1)),
+with limit exp(-c^(2K+1)/(16^K (2K+1) binom(2K,K)^2)). The two-mode
+limit is exp(-c^5/46080). The decoder preserves photon number and needs coherent
+number-dependent rotations. Exact assumptions and proofs are linked below.
 
 ## Route questions to authoritative files
 
@@ -35,6 +38,7 @@ to the scientific pages linked below.
 | Identify the source, encoding, receiver and fidelity convention | [Model and channel objective](science/MODEL.md), [notation and conventions](science/CONVENTIONS.md) |
 | Understand why a correlated emitted field can be compared with product pulses | [Uniform matched-pulse approximation](science/MATCHED_PULSES.md), [proof details](science/PROOF_DETAILS.md) |
 | Check the common-mode optimum and every-waveform converse | [Common-mode boundary](science/COMMON_MODE_BOUNDARY.md), [claim and evidence map](science/CLAIM_EVIDENCE_MAP.md) |
+| Design and bound a fixed-mode-count receiver and decoder | [Multimode receiver](science/MULTIMODE_RECEIVER.md), [finite audit](tests/09_multimode_receiver/checks.py) |
 | Distinguish a mean observable from a full quantum channel | [Photon collection](science/PHOTON_COLLECTION.md), [worked examples](learning/KIILERICH_MOLMER_BRIDGE.md) |
 | Test whether one logical qubit can witness the growing-excitation limit | [Two-sector witness](science/TWO_SECTOR_WITNESS.md) |
 | Determine when ordinary transmission loss masks mode mismatch | [Loss competition](science/LOSS_COMPETITION.md) |
@@ -53,7 +57,7 @@ The bridge's section and equation references use arXiv:2003.04573v1.
 
 The shared learning map contains exactly 30 milestones. M01–M12 build the
 background and operational framework; M13–M30 connect the proof mechanism,
-optimality, observable distinction, witnesses and physical consequences.
+optimality, observable distinction, witnesses and multimode decoding.
 Each milestone records its central question, understanding target, dependencies,
 conceptual connection and source pointers. The source bridge supplies local
 finite-spin, fidelity and uniform-proof derivations beyond the anchor.
@@ -94,8 +98,8 @@ identifies which analytic arguments and numerical suites support each statement.
 ## Evidence, attribution and discovery
 
 Eight protected scientific suites contain 39 groups and 612 cases. The 50
-supplementary loss checks and the verification-tool fixtures are counted
-separately. Fresh runs preserve the scientific scripts and saved results and
+supplementary loss checks, multimode receiver audit and verifier fixtures are
+counted separately. Fresh runs preserve the scientific scripts and saved results and
 report assertion success, exact-byte equality and reviewed reference agreement
 separately. Finite calculations do not establish the analytical uniform limits.
 

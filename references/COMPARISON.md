@@ -48,6 +48,23 @@ Lemberger–Molmer (S04), Sec. 2.2, Eq. (7), analyze mean radiation eigenmode oc
 
 Paulisch (A01) supplies the exact cascade, conventional exponential overlap, useful-channel collection product, and prior discussion of number-state mapping and pulse shaping. The conventional cubic correction already suggests the $`N^{2/3}`$ scale. The result here gives the optimized uniform boundary at that scale.
 
+## Fixed multimode capture and coherent decoding
+
+Perarnau-Llobet, González-Tudela and Cirac compute the projection of specified
+multimode Fock states onto two or three temporal modes, including the squared
+norm of the full projected state. Tziperman et al. use principal modes selected
+by mean occupation to compute the propagated quantum state and selected-target
+fidelities. Kiilerich and Mølmer's Appendix, Eqs. (35)–(43), constructs passive
+capture into several virtual oscillators. The [additional comparisons](ADDITIONAL_COMPARISONS.md)
+and [Tziperman reading](TZIPERMAN_FULL_TEXT.md) give the inspected models and locations.
+
+The [multimode theorem](../science/MULTIMODE_RECEIVER.md) optimizes one
+preconfigured capture subspace over a growing unknown number code. It supplies
+a phase-coherent decoder, the sharp excitation scale for each fixed mode
+count, and a converse over all subspaces. Both the mean-occupation objective and
+a fixed-sector state overlap can be evaluated without testing the code's
+coherences.
+
 ## Contribution and scope
 
 The contribution is the sharp optimized uniform distinction between faithful canonical state transfer and mean-photon collection for the stated collective source and one linear memory. It builds on the cascade, natural-mode optimization, number-dependent pulses, oscillator comparison and capture formalisms attributed above.

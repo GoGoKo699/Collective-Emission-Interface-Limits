@@ -30,7 +30,7 @@ C_{N,m}^2&=\prod_{j=0}^{m-1}(1-j/N).
 \end{aligned}
 ```
 
-Its squared modulus integrates to one on $`[0,\infty)^m`$. The factor from the $`m!`$ ordered time regions is already accounted for. The product-mode Fock state corresponds to $`\prod_i f(\tau_i)`$ for $`\|f\|_2=1`$. This cascade and its physical origin are inherited from existing Dicke-output theory, especially [Paulisch](README.md#primary-sources).
+Its squared modulus integrates to one on $`[0,\infty)^m`$. The factor from the $`m!`$ ordered time regions is already accounted for. The product-mode Fock state corresponds to $`\prod_i f(\tau_i)`$ for $`\lVert f\rVert_2=1`$. This cascade and its physical origin are inherited from existing Dicke-output theory, especially [Paulisch](README.md#primary-sources).
 
 The receiver retains one mode $`f`$, chosen before learning the input, and traces the orthogonal modes. A predetermined photon-number-preserving linear receiver with vacuum auxiliaries reduces to
 
@@ -38,7 +38,10 @@ The receiver retains one mode $`f`$, chosen before learning the input, and trace
 c_{\rm out}=\sqrt q\,b_f+\sqrt{1-q}\,v,
 ```
 
-with vacuum $`v`$ and $`0\leq q\leq1`$, by passive input-output structure [Yamamoto–James](README.md#primary-sources). The ideal optimization takes $`q=1`$. Auxiliary modes are allowed internally, but only one final oscillator is retained. Feedback changing the source, active Gaussian operations, nonvacuum ancillary inputs, measurement feedback, nonlinear decoding, and alternative encodings are not included.
+with vacuum $`v`$ and $`0\leq q\leq1`$, by passive input-output structure [Yamamoto–James](README.md#primary-sources). The ideal optimization takes $`q=1`$. Auxiliary modes are allowed internally, but only one final oscillator is retained. Feedback changing the source, active Gaussian operations, nonvacuum ancillary inputs, measurement feedback, nonlinear decoding, and alternative encodings are not included
+in the single-mode baseline. The [multimode receiver](MULTIMODE_RECEIVER.md)
+uses the same source and canonical output target with additional capture
+oscillators and coherent number-preserving decoding.
 
 The target is $`|D_N^m\rangle\mapsto|m\rangle_f`$, not merely conservation of energy or a classical number label. Fidelity means squared entanglement fidelity, allowing an untouched reference.
 
@@ -56,7 +59,7 @@ F_e(\rho)=\sum_\nu|\mathrm{Tr}(\rho K_\nu)|^2
 A number state attaining the smallest diagonal value saturates this inequality, since every nonvacuum discarded field gives the wrong output number. Therefore the exact optimum is
 
 ```math
-\boxed{\mathcal F_{N,M}=\sup_{\|f\|_2=1}\min_{m\leq M}|\langle m_f|\Psi_{N,m}\rangle|^2.}
+\boxed{\mathcal F_{N,M}=\sup_{\lVert f\rVert_2=1}\min_{m\leq M}|\langle m_f|\Psi_{N,m}\rangle|^2.}
 ```
 
 For a complex $`f`$, replacing it by $`|f|`$ cannot reduce any overlap modulus, because the emitted amplitudes are positive. Fock-state inputs bound its worst fidelity from above, and the corresponding positive waveform realizes the resulting minimum. Optimizing over all complex waveforms thus does not evade the reduction.

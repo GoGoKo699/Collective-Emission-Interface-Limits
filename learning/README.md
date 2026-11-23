@@ -2,15 +2,15 @@
 
 [Project overview](../README.md) · [30 milestones](MILESTONES.md) · [Local bridge](KIILERICH_MOLMER_BRIDGE.md) · [Scientific account](../science/README.md)
 
-The learning route follows one question: **when does a collective spin transfer an
-unknown quantum state faithfully into one preconfigured receiving oscillator?**
-It begins with pulses, emission and capture, then connects the controlled field
-approximation to the optimized boundary and its physical meaning.
+The learning route asks **how many excitations can a collective spin transfer
+faithfully into one output oscillator?** It starts with the boundary for a single
+passive receiving mode, then shows how jointly retaining a fixed number of modes
+and decoding them coherently changes the excitation budget.
 
 The [30-milestone map](MILESTONES.md) defines the common understanding targets and
 their dependencies. Its 12 background milestones assemble the source, field and
-channel model; its 18 narrative milestones join the proof, collection contrast,
-witnesses and implementation resources. The
+channel model. Its 18 narrative milestones connect the one-mode proof, collection
+contrast, multimode receiver and implementation resources. The
 [local bridge](KIILERICH_MOLMER_BRIDGE.md) supplies worked calculations and explains
 the steps between the anchor and this project's result. Specialists can go directly
 to the [scientific reading route](../science/README.md).
@@ -46,8 +46,9 @@ is written in the scientific account.
 | M07–M12: complete transfer task | KM II B–C and opening of II D; [bridge 2](KIILERICH_MOLMER_BRIDGE.md#2-the-receiving-oscillator) and [bridge 4](KIILERICH_MOLMER_BRIDGE.md#4-photon-collection-is-not-the-transfer-objective) | One receiving mode must preserve the unknown number amplitudes, coherences and reference correlations; mean occupation alone does not certify that task. |
 | M13–M19: matching proof bounds | [Bridge 5–6](KIILERICH_MOLMER_BRIDGE.md#5-individually-matched-pulses-the-approximation-that-needs-proof); [matched pulses](../science/MATCHED_PULSES.md); [common-mode boundary](../science/COMMON_MODE_BOUNDARY.md) | A full-process estimate makes the product comparison uniform, and an arbitrary-waveform angle converse matches the constructive critical fidelity. |
 | M20–M23: physical separation and witnesses | [Bridge 7](KIILERICH_MOLMER_BRIDGE.md#7-the-interface-boundary); [photon collection](../science/PHOTON_COLLECTION.md); [two-sector witness](../science/TWO_SECTOR_WITNESS.md) | Low density and near-complete mean collection coexist with vanishing worst-input fidelity; two populated levels already expose the obstruction. |
-| M24–M28: field and apparatus resources | [Bridge 8–9](KIILERICH_MOLMER_BRIDGE.md#8-loss-and-finite-capture-after-the-ideal-theorem); [physical scope](../science/PHYSICAL_SCOPE.md); [loss competition](../science/LOSS_COMPETITION.md) | The tangent mode locates the leading error; scalar shaping, loss, duration and capture coupling retain their distinct assumptions and costs. |
-| M29–M30: scientific synthesis | [Interpretation](../science/INTERPRETATION.md); [claim map](../science/CLAIM_EVIDENCE_MAP.md); [source comparison](../references/COMPARISON.md); [verification](../verification/README.md) | The result gives an excitation budget at fixed target fidelity, with explicit attribution, evidence and scope. |
+| M24–M25: multimode transfer | KM Section III and Appendix; [bridge 9–10](KIILERICH_MOLMER_BRIDGE.md#9-field-structure-controls-and-the-complete-interpretation); [multimode receiver](../science/MULTIMODE_RECEIVER.md) | The tangent mode locates the leading error. A common subspace and number-coherent decoder give the sharp excitation scale for any fixed number of retained modes. |
+| M26–M28: apparatus resources | [Bridge 8](KIILERICH_MOLMER_BRIDGE.md#8-loss-and-finite-capture-after-the-ideal-theorem); [physical scope](../science/PHYSICAL_SCOPE.md); [loss competition](../science/LOSS_COMPETITION.md) | Transmission loss, atomic loss, duration and capture coupling each affect the resource account. |
+| M29–M30: scientific synthesis | [Interpretation](../science/INTERPRETATION.md); [claim map](../science/CLAIM_EVIDENCE_MAP.md); [source comparison](../references/COMPARISON.md); [verification](../verification/README.md) | Compare the excitation budgets at fixed target fidelity and identify what capture and decoding each require. |
 
 The milestone map provides finer dependencies within these groups. Its final
 background milestone assembles the operational question; its final narrative
@@ -62,13 +63,11 @@ milestone joins the result, proof mechanism and physical qualifications.
 | Section II B, Eqs. (13)–(15) | Intensity, two-time correlation and occupation-eigenmode analysis. | [Collection and transfer](KIILERICH_MOLMER_BRIDGE.md#4-photon-collection-is-not-the-transfer-objective) |
 | Section II C, Eqs. (17)–(19) | A downstream virtual cavity captures a selected pulse and represents its reduced state. | [The receiving oscillator](KIILERICH_MOLMER_BRIDGE.md#2-the-receiving-oscillator) |
 | Opening of Section II D | Omit the virtual input cavity when no incident quantum pulse is prepared. | The stored collective state emits into a vacuum channel. |
-| Section III, optional supporting context | Several selected output modes can be retained jointly. | [Tangent-mode structure](../science/PHYSICAL_SCOPE.md#b-the-leading-mismatch-has-a-simple-structure), with a different retained-mode resource |
+| Section III and Appendix, Eqs. (35)–(43) | Cascaded virtual cavities can jointly retain several orthogonal output modes. | [Multimode capture and decoding](KIILERICH_MOLMER_BRIDGE.md#10-capture-several-modes-and-decode-coherently) |
 
-KM already supplies selected-mode quantum states and recognizes that optimizing
-occupation need not optimize another property. Those capabilities are inherited.
-The additional question here is whether one receiver succeeds uniformly before
-the input is known. Its later photon-blockade and thermal-input applications are
-not prerequisites for the vacuum-channel model.
+KM supplies selected-mode quantum states and the mode-selective capture framework.
+The project uses that framework to optimize one receiver for an entire unknown code,
+including a decoder that preserves the relative phases of its number components.
 
 ## Translate notation before comparing formulas
 
@@ -93,6 +92,7 @@ and channel accuracy.
 | Occupation modes and selected-mode quantum states | The common canonical map, reference-inclusive fidelity and coherence example |
 | A framework for pulse-state calculations | The full-process relative-entropy comparison and uniform source-isometry control |
 | Ideal output capture | The all-waveform converse, collection separation and code-dependent finite-capture bound |
+| Joint capture in orthogonal virtual cavities | The common capture subspace, coherent number-sector decoder and fixed-mode-count excitation budget |
 
 The [bridge](KIILERICH_MOLMER_BRIDGE.md) distinguishes these source-derived
 foundations from the project arguments. Its nearly matched pulse example has 99%
@@ -113,16 +113,17 @@ novelty claims.
 | What is the physical contribution? | [Interpretation](../science/INTERPRETATION.md) |
 | What exactly is optimized? | [Model](../science/MODEL.md) and [conventions](../science/CONVENTIONS.md) |
 | What proves the boundary? | [Matched pulses](../science/MATCHED_PULSES.md), [common-mode proof](../science/COMMON_MODE_BOUNDARY.md) and [proof details](../science/PROOF_DETAILS.md) |
+| How do additional retained modes change the budget? | [Multimode receiver and optimality proof](../science/MULTIMODE_RECEIVER.md) |
 | What separates collection from transfer? | [Collection estimate](../science/PHOTON_COLLECTION.md) and [two-sector witness](../science/TWO_SECTOR_WITNESS.md) |
 | What resources does physical capture require? | [Physical scope](../science/PHYSICAL_SCOPE.md) and [loss competition](../science/LOSS_COMPETITION.md) |
 | Which source supplies each ingredient? | [Reference guide](../references/README.md), [comparison](../references/COMPARISON.md) and [bibliography](../references/REFERENCES.bib) |
 | How are claims checked? | [Claim map](../science/CLAIM_EVIDENCE_MAP.md), [verification guide](../verification/README.md) and [reproduction policy](../provenance/REPRODUCTION_POLICY.md) |
 | Where should an automated reader begin? | [LLM guide](../llms.txt) |
 
-At the end of this route, a reader can state the full transfer task, explain why
-individually excellent number-specific pulses need not share one excellent
-receiver, and connect the constructive and converse bounds to their physical
-meaning. The [30 milestones](MILESTONES.md) make those understanding targets explicit.
+At the end of this route, a reader can state the transfer task, explain why
+number-specific pulses can strain a common receiver, and identify which capture
+and decoding resources change the critical excitation scale. The
+[30 milestones](MILESTONES.md) make those understanding targets explicit.
 
 See [Purpose and contact](../README.md#purpose-and-contact) for the repository's
 role and discussion details.

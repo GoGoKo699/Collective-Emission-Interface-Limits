@@ -17,6 +17,11 @@ The complete output field retains the input information. The theorem concerns a 
 canonical number map into one passive retained oscillator, with an unknown and
 possibly reference-entangled input.
 
+With a fixed number $`K`$ of captured modes and number-preserving coherent
+decoding, the [multimode theorem](MULTIMODE_RECEIVER.md) gives the critical
+excitation scale $`N^{2K/(2K+1)}`$. At that scale the fixed-subspace
+approximation and its matching converse give the exact limiting fidelity.
+
 ## 2. Claims, dependencies and evidence
 
 | Role | Claim | Analytic source | Executed-check coverage |
@@ -24,6 +29,7 @@ possibly reference-entangled input.
 | Task reduction | Positive receiving pulses reduce the optimized unconditional worst-input entanglement fidelity to the smallest number-sector overlap; arbitrary complex competitors cannot improve it. | [Channel reduction](MODEL.md#reduction-of-the-channel-objective) | Suites 03 and 08 exercise reference inputs, passive capture and phase controls. |
 | Essential lemma | Each number sector has an individually matched product-pulse approximation, uniformly across the code for $`M=o(N)`$. | [Uniform matched-pulse approximation](MATCHED_PULSES.md#uniform-individually-matched-pulse-approximation) | Suites 01, 02 and 08 check normalization, entropy, overlap and the sector-maximum norm. The exact field remains correlated. |
 | Main theorem | A constructive common pulse and an all-waveform converse give the same critical fidelity and the subcritical/supercritical alternatives. | [Constructive and converse bounds](COMMON_MODE_BOUNDARY.md#constructive-common-waveform) | Suites 02 and 08 test finite envelopes and endpoint controls through scalar evaluations. |
+| Multimode theorem | Explicit passive capture and coherent decoding attain the sharp fixed-mode-count limit. | [Multimode receiver](MULTIMODE_RECEIVER.md) | [Supplementary multimode checks](../tests/09_multimode_receiver/checks.py) cover pulse geometry, projected fields and decoder coherence. |
 | Main physical contrast | One common mode collects a fraction tending to one throughout $`M=o(N)`$, a larger range than faithful uniform transfer. | [Mean-photon bound](PHOTON_COLLECTION.md#mean-collected-fraction) | Suites 05 and 08 exercise bounded-operator and photon-weighted estimates. Collection alone does not certify the channel. |
 | Scope witness | Two populated number levels suffice to witness the critical obstruction; vacuum plus one populated number is a successful comparator. | [Two-sector proof](TWO_SECTOR_WITNESS.md) | Suite 07; fixed logical dimension still requires growing excitation number. |
 | Error explanation | At critical scaling the leading leakage occupies a tangent mode and has a Poisson count limit. | [Physical scope, B](PHYSICAL_SCOPE.md#b-the-leading-mismatch-has-a-simple-structure) | Suite 04 tests the tangent-mode expansion and leakage distribution. |
@@ -69,6 +75,7 @@ is compatible with failure of the canonical worst-input task.
 | Source | Identical emitters in the symmetric ladder, known atom number and complete decay into one vacuum Markov channel |
 | Input | An arbitrary state in the declared excitation code, possibly entangled with an external reference |
 | Target and receiver | The canonical number map into one oscillator retained after predetermined passive processing with vacuum auxiliaries |
+| Extended receiver | Fixed-dimensional passive temporal capture followed by coherent number-preserving decoding to one oscillator |
 | Supporting loss models | External mode-independent attenuation and independent atomic decay under their respective stated effective-rate assumptions |
 
 The [assumption register](../references/ASSUMPTIONS.md) relates these premises to

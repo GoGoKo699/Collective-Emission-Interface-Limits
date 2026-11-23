@@ -23,6 +23,7 @@ python verify.py --integrity-only
 python verify.py --output verification-report.json \
   --artifacts-dir verification-artifacts --require-reference
 python tools/check_loss_competition.py --output loss-competition-report.json
+python tests/09_multimode_receiver/checks.py --output multimode-receiver-report.json
 ```
 
 Use a fresh directory for `--artifacts-dir` on every run. The full run writes
@@ -35,6 +36,14 @@ For one named suite, add `--suite 08_uniform_proof_audit` or another exact name
 from the table below. The default per-suite timeout is 240 seconds. The runner
 sets `OPENBLAS_NUM_THREADS=1` and `OMP_NUM_THREADS=1` for its child processes and
 records the effective numerical environment.
+
+The supplementary [multimode receiver audit](../tests/09_multimode_receiver/checks.py)
+checks the exact polynomial constants, the convergence of the constructed capture
+subspaces, the two-mode rotation precision, and a finite correlated two-photon
+capture calculation with an independent cascade integration. It also checks the
+phase-aligned channel identity with a reference. The analytic
+[multimode proof](../science/MULTIMODE_RECEIVER.md) supplies the all-subspace
+converse and the limits.
 
 ## What the eight scientific suites check
 

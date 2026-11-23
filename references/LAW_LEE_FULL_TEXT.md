@@ -25,7 +25,7 @@ and its inverse as an effective mode number. This is the purity of the normalize
 The repository instead optimizes
 
 ```math
-\sup_{\|f\|=1}\min_{m\leq M}|\langle m_f|\Psi_{N,m}\rangle|^2,
+\sup_{\lVert f\rVert=1}\min_{m\leq M}|\langle m_f|\Psi_{N,m}\rangle|^2,
 ```
 
 with one waveform chosen for the entire unknown input code and the canonical number-state target. The complete-emission limit of their temporal-mode construction is directly relevant. Fixing a final collection time produces an ordinary temporal envelope in their construction too.
@@ -68,7 +68,7 @@ p_f=\frac{\langle n_f\rangle}{m},\qquad F_f=\Pr(n_f=m).
 For a pure output $`F_f`$ is the squared overlap with $`|m_f\rangle`$. The elementary operator inequalities
 
 ```math
-I-\Pi_{n_\perp=0}\leq n_\perp\leq m(I-\Pi_{n_\perp=0}),\qquad n_\perp=m-n_f,
+I-\Pi_{n_{\mathrm{out}}=0}\leq n_{\mathrm{out}}\leq m(I-\Pi_{n_{\mathrm{out}}=0}),\qquad n_{\mathrm{out}}=m-n_f,
 ```
 
 give
