@@ -30,7 +30,7 @@ C_{N,m}^2&=\prod_{j=0}^{m-1}(1-j/N).
 \end{aligned}
 ```
 
-Its squared modulus integrates to one on $`[0,\infty)^m`$. The factor from the $`m!`$ ordered time regions is already accounted for. The product-mode Fock state corresponds to $`\prod_i f(\tau_i)`$ for $`\|f\|_2=1`$. This cascade and its physical origin are inherited from existing Dicke-output theory, especially [Paulisch](README.md#primary-sources).
+Its squared modulus integrates to one on $`[0,\infty)^m`$. The factor from the $`m!`$ ordered time regions is already accounted for. The product-mode Fock state corresponds to $`\prod_i f(\tau_i)`$ for $`\lVert f\rVert_2=1`$. This cascade and its physical origin are inherited from existing Dicke-output theory, especially [Paulisch](README.md#primary-sources).
 
 The receiver retains one mode $`f`$, chosen before learning the input, and traces the orthogonal modes. A predetermined photon-number-preserving linear receiver with vacuum auxiliaries reduces to
 
@@ -59,7 +59,7 @@ F_e(\rho)=\sum_\nu|\mathrm{Tr}(\rho K_\nu)|^2
 A number state attaining the smallest diagonal value saturates this inequality, since every nonvacuum discarded field gives the wrong output number. Therefore the exact optimum is
 
 ```math
-\boxed{\mathcal F_{N,M}=\sup_{\|f\|_2=1}\min_{m\leq M}|\langle m_f|\Psi_{N,m}\rangle|^2.}
+\boxed{\mathcal F_{N,M}=\sup_{\lVert f\rVert_2=1}\min_{m\leq M}|\langle m_f|\Psi_{N,m}\rangle|^2.}
 ```
 
 For a complex $`f`$, replacing it by $`|f|`$ cannot reduce any overlap modulus, because the emitted amplitudes are positive. Fock-state inputs bound its worst fidelity from above, and the corresponding positive waveform realizes the resulting minimum. Optimizing over all complex waveforms thus does not evade the reduction.

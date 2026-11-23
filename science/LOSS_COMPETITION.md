@@ -23,7 +23,7 @@ number. The channel reduction in the theorem therefore gives exactly
 
 ```math
 \mathcal F^{(\eta)}_{N,M}
-=\sup_{\|f\|_2=1}\min_{0\leq m\leq M}\eta^m|A_m(f)|^2.
+=\sup_{\lVert f\rVert_2=1}\min_{0\leq m\leq M}\eta^m|A_m(f)|^2.
 ```
 
 As in the lossless theorem, the supremum may be restricted to nonnegative pulses:
@@ -78,7 +78,7 @@ $`1\leq m\leq M`$,
 
 ```math
 \begin{gathered}
-\bigl\|\Psi_{N,m}-|m_{f_{a_m}}\rangle\bigr\|\leq\varepsilon_N,\\
+\bigl\lVert \Psi_{N,m}-|m_{f_{a_m}}\rangle\bigr\rVert\leq\varepsilon_N,\\
 a_m=(m-1)/N\quad(m\geq1).
 \end{gathered}
 ```

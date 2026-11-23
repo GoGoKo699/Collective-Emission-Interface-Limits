@@ -8,7 +8,7 @@ The one-mode boundary comes from the dependence of the emitted pulse on the init
 
 Use the same ideal Dicke decay, one vacuum Markov field and input code $`\mathcal C_M=\mathrm{span}\{|D_N^m\rangle:0\le m\le M\}`$ as in the [source model](MODEL.md). The canonical output is one oscillator in $`|m\rangle`$, with every input superposition and its reference correlations included in squared entanglement fidelity.
 
-The capture stage takes a known $`K`$-dimensional subspace $`S`$ of the one-photon temporal Hilbert space. It retains the corresponding oscillators and traces $`S^\perp`$. The choice of $`S`$ may depend on $`N,M,K`$ and is made before the input arrives. A fixed number-preserving local unitary then acts on the $`K`$ oscillators. It can apply a different operation within each total-number sector while preserving coherence between sectors. The receiver keeps the first oscillator and traces the other $`K-1`$. The operation is deterministic, with no number measurement, extra photons or feedback to the source. Denote the optimized worst-input fidelity by $`\mathcal F^{(K)}_{N,M}`$.
+The capture stage takes a known $`K`$-dimensional subspace $`S`$ of the one-photon temporal Hilbert space. It retains the corresponding oscillators and traces its orthogonal complement. The choice of $`S`$ may depend on $`N,M,K`$ and is made before the input arrives. A fixed number-preserving local unitary then acts on the $`K`$ oscillators. It can apply a different operation within each total-number sector while preserving coherence between sectors. The receiver keeps the first oscillator and traces the other $`K-1`$. The operation is deterministic, with no number measurement, extra photons or feedback to the source. Denote the optimized worst-input fidelity by $`\mathcal F^{(K)}_{N,M}`$.
 
 The sector-dependent decoding is a resource beyond passive linear optics. With only passive linear mixing after capture, the first output annihilation operator is still one fixed linear combination of the captured mode operators. The complete receiver then reduces to the original one-mode model. In particular, simply adding a second storage oscillator does not give the two-mode result for transfer into one final oscillator.
 
@@ -36,7 +36,7 @@ The converse holds over all complex $`K`$-dimensional capture spaces and all all
 
 ## Exact reduction to complete capture
 
-Write $`\Psi_{N,m}`$ for the exact emitted state in the $`m`$-photon sector, and let $`P_{S,m}`$ be the orthogonal projector onto $`\mathrm{Sym}^m S`$. Set $`b_m(S)=\|P_{S,m}\Psi_{N,m}\|`$ and $`b_0=1`$.
+Write $`\Psi_{N,m}`$ for the exact emitted state in the $`m`$-photon sector, and let $`P_{S,m}`$ be the orthogonal projector onto $`\mathrm{Sym}^m S`$. Set $`b_m(S)=\lVert P_{S,m}\Psi_{N,m}\rVert`$ and $`b_0=1`$.
 
 On a number-state input $`m`$, any photon in the discarded field leaves fewer than $`m`$ photons for the decoder. A number-preserving decoder cannot then overlap with the $`m`$-photon target. This gives an upper bound $`b_m(S)^2`$ for that input. Conversely, in every $`m`$-photon block choose a unitary that sends the normalized projected state to $`|m,0,\ldots,0\rangle`$ with positive real amplitude. A block with $`b_m=0`$ can use any unitary. The direct sum is one fixed unitary. Its vacuum-environment Kraus operator has diagonal entries $`b_0,\ldots,b_M`$. All other Kraus operators lower the output number. For every input density matrix $`\rho`$, the vacuum-environment contribution to entanglement fidelity is $`(\sum_m\rho_{mm}b_m)^2`$, which is at least $`\min_m b_m^2`$. A minimizing number input attains the bound. Therefore
 
@@ -50,7 +50,7 @@ For $`m\ge1`$, use $`a_m=(m-1)/N`$ and the normalized [matched pulse](MATCHED_PU
 
 ```math
 \begin{aligned}
-\left|b_m(S)-\|P_S f_{a_m}\|^m\right|&\le \epsilon_{N,M},\\
+\left|b_m(S)-\lVert P_S f_{a_m}\rVert^m\right|&\le \epsilon_{N,M},\\
 \epsilon_{N,M}&=\sqrt{2(1-e^{-B_{N,M}/2})},\\
 B_{N,M}&=\frac{M(M-1)}{12N^2[1-(M-1)/N]^2}.
 \end{aligned}
@@ -69,7 +69,7 @@ g_a(z)=\frac{\sqrt{1-a}}{1-az}=\sum_{j=0}^{\infty}a^j v_j(z).
 On a fixed real neighborhood of $`a=0`$ the Taylor remainder is uniform in $`z\in[0,1]`$. Each $`v_j`$ is a monic polynomial of degree $`j`$. Set $`J=\mathrm{span}(v_0,\ldots,v_{K-1})`$. The degree-$`K`$ direction missed by $`J`$ is the monic shifted Legendre polynomial $`w=(I-P_J)v_K`$. Its squared norm is
 
 ```math
-h_K=\|w\|^2=\frac{1}{(2K+1)\binom{2K}{K}^2}.
+h_K=\lVert w\rVert^2=\frac{1}{(2K+1)\binom{2K}{K}^2}.
 ```
 
 Choose $`r_1,\ldots,r_K`$ to be the roots in $`(0,1)`$ of the following monic polynomial, defined at zero by continuity. Here $`T_j`$ is the Chebyshev polynomial of the first kind.
@@ -79,15 +79,15 @@ p_K(x)=2^{-2K}\frac{T_{2K+1}(\sqrt{x})}{\sqrt{x}},\qquad
 S_\delta=\mathrm{span}\{f_{\delta r_1},\ldots,f_{\delta r_K}\}.
 ```
 
-Use any real orthonormal basis of this span for the captured modes. One stable basis procedure is to apply the inverse Vandermonde matrix at the $`r_i`$, then divide its $`j`$th output by $`\delta^j`$ for $`j=0,\ldots,K-1`$. In the $`z`$ representation the resulting basis vectors equal $`v_j+O_K(\delta^{K-j})`$ uniformly. Orthonormalizing these vectors is well conditioned for small $`\delta`$, and the resulting projectors satisfy $`\|P_{S_\delta}-P_J\|=O_K(\delta)`$ in that representation.
+Use any real orthonormal basis of this span for the captured modes. One stable basis procedure is to apply the inverse Vandermonde matrix at the $`r_i`$, then divide its $`j`$th output by $`\delta^j`$ for $`j=0,\ldots,K-1`$. In the $`z`$ representation the resulting basis vectors equal $`v_j+O_K(\delta^{K-j})`$ uniformly. Orthonormalizing these vectors is well conditioned for small $`\delta`$, and the resulting projectors satisfy $`\lVert P_{S_\delta}-P_J\rVert=O_K(\delta)`$ in that representation.
 
-If $`L_i(x)`$ are the Lagrange basis polynomials for the nodes $`r_i`$, the Taylor coefficients of degree below $`K`$ cancel in the interpolation residual. The degree-$`K`$ error is exactly monic. Projecting onto $`S_\delta^\perp`$ yields, uniformly in $`x\in[0,1]`$,
+If $`L_i(x)`$ are the Lagrange basis polynomials for the nodes $`r_i`$, the Taylor coefficients of degree below $`K`$ cancel in the interpolation residual. The degree-$`K`$ error is exactly monic. Projecting onto the orthogonal complement of $`S_\delta`$ yields, uniformly in $`x\in[0,1]`$,
 
 ```math
 (I-P_{S_\delta}) g_{\delta x}=\delta^K p_K(x)w+O_K(\delta^{K+1}).
 ```
 
-The same symbol $`S_\delta`$ denotes the subspace in either unitarily equivalent representation. The product-pulse squared capture amplitude is $`(1-\|(I-P_{S_\delta})g_{a_m}\|^2)^m`$. With $`x_m=(m-1)/M`$, the critical limit has $`M\delta^{2K}\to c^{2K+1}`$, and its negative logarithm is uniformly
+The same symbol $`S_\delta`$ denotes the subspace in either unitarily equivalent representation. The product-pulse squared capture amplitude is $`(1-\lVert (I-P_{S_\delta})g_{a_m}\rVert^2)^m`$. With $`x_m=(m-1)/M`$, the critical limit has $`M\delta^{2K}\to c^{2K+1}`$, and its negative logarithm is uniformly
 
 ```math
 M\delta^{2K}h_K x_m|p_K(x_m)|^2+o(1).
@@ -102,13 +102,13 @@ For two modes the polynomial is $`p_2(x)=x^2-5x/4+5/16`$. Its two roots are $`(5
 Work at critical scaling. Take a sequence of capture spaces $`S`$ along a subsequence where the product-pulse worst fidelity is bounded below by a positive constant. The case of fidelity tending to zero already satisfies the desired upper bound. At $`K`$ distinct fixed positive fractions in $`(0,1]`$, take the nearest excitation-grid points $`x_i`$. Then $`m_i\asymp M`$ and
 
 ```math
-\|(I-P_S)g_{\delta x_i}\|=O(M^{-1/2})=O(\delta^K).
+\lVert (I-P_S)g_{\delta x_i}\rVert=O(M^{-1/2})=O(\delta^K).
 ```
 
 Indeed, $`(1-d^2)^{m_i}\le e^{-m_i d^2}`$ for the corresponding distance $`d`$. Inserting the Taylor expansion and inverting the $`K\times K`$ Vandermonde matrix gives
 
 ```math
-\|(I-P_S)v_j\|=O(\delta^{K-j}),\qquad j=0,\ldots,K-1.
+\lVert (I-P_S)v_j\rVert=O(\delta^{K-j}),\qquad j=0,\ldots,K-1.
 ```
 
 The matrix inverses stay bounded because their nodes approach distinct limits. Since $`v_0,\ldots,v_{K-1}`$ are a fixed basis of $`J`$, this bounds the gap from $`J`$ to $`S`$ by $`O(\delta)`$. Their dimensions are equal, so the gap in the other direction is also $`O(\delta)`$. For example, the projected basis $`P_Sv_j`$ spans $`S`$ and is uniformly well conditioned for small $`\delta`$. In particular $`P_S=P_J+O(\delta)`$ in operator norm even when $`S`$ depends on $`N`$ and is complex.
@@ -134,10 +134,10 @@ This proves the sharp upper bound. The product-pulse error transfers the two cri
 
 ### Coherent decoding from one-photon data
 
-The asymptotic construction does not need the exact correlated $`m`$-photon wavefunctions. In an orthonormal basis of $`S_\delta`$, calculate the unit vector $`q_m=P_{S_\delta}f_{a_m}/\|P_{S_\delta}f_{a_m}\|`$ and choose a real orthogonal transformation $`V_m`$ that takes $`q_m`$ to the first basis vector. The direct sum of $`\mathrm{Sym}^m(V_m)`$ takes the product-reference complete-capture component to $`|m,0,\ldots,0\rangle`$ with amplitude $`\|P_{S_\delta}f_{a_m}\|^m`$. When a projection vanishes, the rotation in that sector is arbitrary. For the exact source, the vacuum-environment amplitude differs from this nonnegative number by at most $`\epsilon_{N,M}`$ in every sector. The worst-input squared fidelity of this implementable block rule is therefore at least
+The asymptotic construction does not need the exact correlated $`m`$-photon wavefunctions. In an orthonormal basis of $`S_\delta`$, calculate the unit vector $`q_m=P_{S_\delta}f_{a_m}/\lVert P_{S_\delta}f_{a_m}\rVert`$ and choose a real orthogonal transformation $`V_m`$ that takes $`q_m`$ to the first basis vector. The direct sum of $`\mathrm{Sym}^m(V_m)`$ takes the product-reference complete-capture component to $`|m,0,\ldots,0\rangle`$ with amplitude $`\lVert P_{S_\delta}f_{a_m}\rVert^m`$. When a projection vanishes, the rotation in that sector is arbitrary. For the exact source, the vacuum-environment amplitude differs from this nonnegative number by at most $`\epsilon_{N,M}`$ in every sector. The worst-input squared fidelity of this implementable block rule is therefore at least
 
 ```math
-\left[\max\left\{0,\min_{1\le m\le M}\|P_{S_\delta}f_{a_m}\|^m-\epsilon_{N,M}\right\}\right]^2.
+\left[\max\left\{0,\min_{1\le m\le M}\lVert P_{S_\delta}f_{a_m}\rVert^m-\epsilon_{N,M}\right\}\right]^2.
 ```
 
 For $`M=0`$ the transfer is exact. Mode overlaps for the calculation follow from $`\langle f_a,f_b\rangle=K(-\log(1-a)+\log(1-b))`$, where $`K(u)=u/[2\sinh(u/2)]`$ is the kernel in [Matched pulses](MATCHED_PULSES.md#exact-pulse-geometry). Equivalently the squared projection is $`k^\dagger G^{-1}k`$, where $`G_{ij}=\langle f_{\delta r_i},f_{\delta r_j}\rangle`$ and $`k_i=\langle f_{\delta r_i},f_{a_m}\rangle`$. An orthonormal basis or high precision avoids conditioning problems as the snapshot pulses approach one another.
