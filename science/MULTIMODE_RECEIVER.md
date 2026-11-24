@@ -170,9 +170,12 @@ Ideal capture of an orthonormal set of modes can use a serial network of receivi
 A finite-window version can use $`K`$ coupled passive oscillators and one Markov input. In the scaled time of the source, put the conjugate envelopes of an orthonormal basis into a column $`\psi(t)`$, and define, for a fixed regularization $`\eta>0`$,
 
 ```math
-Q(t)=\eta I+\int_0^t\psi(s)\psi(s)^\dagger\,ds,\qquad
-R(t)=Q(t)^{1/2},\qquad
-A(t)=-R(t)^{-1}\dot R(t),\qquad \beta(t)=R(t)^{-1}\psi(t).
+\begin{aligned}
+Q(t)&=\eta I+\int_0^t\psi(s)\psi(s)^\dagger\,ds,&
+R(t)&=Q(t)^{1/2},\\
+A(t)&=-R(t)^{-1}\dot R(t),&
+\beta(t)&=R(t)^{-1}\psi(t).
+\end{aligned}
 ```
 
 The linear equation for the oscillator annihilation column $`c`$ is $`dc=A c\,dt+\beta\,db_{\rm in}`$. Differentiating $`R^2=Q`$ gives $`A+A^\dagger=-\beta\beta^\dagger`$. Thus it has a passive realization with vacuum initial oscillators, coupling row $`-\beta^\dagger`$ and one-particle Hamiltonian $`i(A-A^\dagger)/2`$. Integrating the equation after multiplying by $`R(t)`$ gives the exact capture map
