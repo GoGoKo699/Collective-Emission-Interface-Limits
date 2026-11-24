@@ -65,6 +65,21 @@ count, and a converse over all subspaces. Both the mean-occupation objective and
 a fixed-sector state overlap can be evaluated without testing the code's
 coherences.
 
+## Bounded receiver control
+
+Kiilerich and Mølmer supply the virtual receiving oscillator.
+Nurdin, James and Yamamoto derive singular perfect-capture control and
+study a finite truncation numerically for an exponential single-photon pulse.
+Sete, Mlinar and Korotkov use adjustable emitting and receiving couplers,
+with receiving buildup at the maximum coupling followed by reflection
+cancellation. The [bounded-receiver theorem](../science/BOUNDED_RECEIVER.md)
+uses this capture-control framework for a fixed Dicke source and an unknown
+growing number code. It optimizes the full constrained receiver and obtains
+the exact joint contribution of onset loss, duration and number mismatch.
+
+[Nurdin, James and Yamamoto, Sec. 3.3](https://arxiv.org/abs/1609.05643) ·
+[Sete, Mlinar and Korotkov, Sec. IV](https://arxiv.org/abs/1411.7103)
+
 ## Contribution and scope
 
 The contribution is the sharp optimized uniform distinction between faithful canonical state transfer and mean-photon collection for the stated collective source and one linear memory. It builds on the cascade, natural-mode optimization, number-dependent pulses, oscillator comparison and capture formalisms attributed above.

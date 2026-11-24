@@ -24,6 +24,7 @@ python verify.py --output verification-report.json \
   --artifacts-dir verification-artifacts --require-reference
 python tools/check_loss_competition.py --output loss-competition-report.json
 python tests/09_multimode_receiver/checks.py --output multimode-receiver-report.json
+python tools/check_bounded_receiver.py
 ```
 
 Use a fresh directory for `--artifacts-dir` on every run. The full run writes
@@ -44,6 +45,13 @@ capture calculation with an independent cascade integration. It also checks the
 phase-aligned channel identity with a reference. The analytic
 [multimode proof](../science/MULTIMODE_RECEIVER.md) supplies the all-subspace
 converse and the limits.
+
+The [bounded-receiver audit](../tools/check_bounded_receiver.py) checks the
+onset-cost minimum, the exact single exponential pulse, the physical cap
+and the constructed schedule's convergence with and without a finite window.
+Its sampled overlaps use the product-pulse reference. The
+[analytic proof](../science/BOUNDED_RECEIVER.md) covers every sector of the
+true collective source and every allowed control.
 
 ## What the eight scientific suites check
 

@@ -15,6 +15,7 @@ ceiling grows with the number of coherently decoded capture modes.
 | [Model](MODEL.md) and [conventions](CONVENTIONS.md) | Fix the collective ladder, emitted-state normalization, canonical number target, reference-inclusive fidelity and passive receiver class. |
 | [Matched pulses](MATCHED_PULSES.md) | Control the product-pulse approximation uniformly and derive the exact pulse-overlap kernel. |
 | [Common-mode boundary](COMMON_MODE_BOUNDARY.md) | Prove the constructive lower bound and all-waveform converse, including finite envelopes and the critical limit. |
+| [Bounded receiver](BOUNDED_RECEIVER.md) | Optimize the single receiving oscillator under a hard intensity cap and receiving window. |
 | [Multimode receiver](MULTIMODE_RECEIVER.md) | Derive the fixed-mode-count fidelity law, explicit capture modes and a coherent decoder. |
 | [Photon collection](PHOTON_COLLECTION.md) | Bound the mean collected fraction and exhibit the low-density separation from channel fidelity. |
 | [Two-sector witness](TWO_SECTOR_WITNESS.md) | Expose the obstruction with two populated number levels and distinguish the vacuum-plus-number comparator. |
@@ -32,6 +33,7 @@ expose normalization factors, phase restrictions, uniformity and endpoint argume
 | Exact optimized channel objective | Positive emitted amplitudes; one retained passive mode; the number-lowering Kraus structure; a pointwise-modulus comparison for complex pulses. |
 | Uniform matched-pulse approximation | The exact cascade; a full counting-process relative-entropy bound; positive-amplitude Hellinger control; orthogonal output number sectors. |
 | Optimized common-mode boundary | Uniform source-state control; the exact kernel; a common constructive pulse; a projective-angle converse valid for every waveform. |
+| Bounded-receiver crossover | Kernel feasibility, a sharp onset cost, projection onto the pulse tangent, and an attaining control. |
 | Fixed-mode-count receiver law | Uniform field approximation, an exact all-captured reduction, the shifted Legendre residual and weighted Chebyshev optimization. |
 | Photon-collection separation | The matched-pulse error and a positive-contraction estimate for the fractional missed number; no product assumption about the exact photons. |
 | Two-sector critical law | The same constructive pulse and a converse that already uses only the two populated constraining sectors. |

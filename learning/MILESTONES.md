@@ -360,17 +360,17 @@ global understanding; specialist calculations remain in those sources.
 
 **Sources.** [Independent atomic loss](../science/PHYSICAL_SCOPE.md#d-independent-atomic-loss); [bandwidth and duration](../science/PHYSICAL_SCOPE.md#e-bandwidth-and-duration); [source assumptions](../references/ASSUMPTIONS.md).
 
-### M28 Finite capture has a code-dependent cost
+### M28 The receiving cap and window set the capture cost
 
-**Central question.** How can the ideal receiving mode be approached with finite controls?
+**Central question.** How must the peak receiving rate and collection window grow with the excitation code?
 
-**Understanding target.** Follow onset regularization and time truncation to the unconditional whole-code capture bound. Track both the accumulated attenuation and discarded pulse tail, and translate scaled duration and coupling rate back to physical units.
+**Understanding target.** Derive the kernel constraint from the oscillator equation. Compare the forced onset and tail penalties with the number-dependent pulse mismatch, and translate the sharp rate and duration back to physical units.
 
 **Dependencies and story role.** M07–M09, M17 and M24–M26. This joins the ideal receiver comparison with an explicit capture error and resource budget.
 
-**Conceptual connection.** Finite resources exist for each finite code, while accuracy on growing codes requires shrinking tail and attenuation errors. The construction permits changing coupling and duration bounds and does not establish a fixed slew-rate or modulation-bandwidth guarantee.
+**Conceptual connection.** At the critical excitation scale, a rate cap comparable to the code cutoff creates a finite onset penalty. Stopping near the logarithm of the cutoff imposes a separate tail penalty. A single control attains the combined optimum under the stated rate and time constraints.
 
-**Sources.** [Finite receiving window](../science/PHYSICAL_SCOPE.md#a-finite-receiving-window-on-the-same-code); [finite-capture example](KIILERICH_MOLMER_BRIDGE.md#8-loss-and-finite-capture-after-the-ideal-theorem); [receiver checks](../verification/README.md).
+**Sources.** [Bounded-receiver proof](../science/BOUNDED_RECEIVER.md); [Finite receiving window](../science/PHYSICAL_SCOPE.md#a-finite-receiving-window-on-the-same-code); [finite-capture example](KIILERICH_MOLMER_BRIDGE.md#8-loss-and-finite-capture-after-the-ideal-theorem); [receiver checks](../verification/README.md).
 
 ### M29 Attribution and the strength of the evidence
 

@@ -30,6 +30,12 @@ with limit exp(-c^(2K+1)/(16^K (2K+1) binom(2K,K)^2)). The two-mode
 limit is exp(-c^5/46080). The decoder preserves photon number and needs coherent
 number-dependent rotations. Exact assumptions and proofs are linked below.
 
+For a single receiving oscillator under intensity cap B in the scaled source
+clock, B/M tending to r in (0,infinity) gives limiting fidelity
+exp[-lambda - max(c^3/48-lambda,0)^2/(c^3/12)], lambda=(ln 4-1)/r.
+A receiving window ending at ln M+s in that clock adds exp(-s) to lambda.
+The receiver is predetermined and follows an explicit bounded schedule.
+
 ## Route questions to authoritative files
 
 | Reader intention or question | Authoritative route |
@@ -42,6 +48,7 @@ number-dependent rotations. Exact assumptions and proofs are linked below.
 | Distinguish a mean observable from a full quantum channel | [Photon collection](science/PHOTON_COLLECTION.md), [worked examples](learning/KIILERICH_MOLMER_BRIDGE.md) |
 | Test whether one logical qubit can witness the growing-excitation limit | [Two-sector witness](science/TWO_SECTOR_WITNESS.md) |
 | Determine when ordinary transmission loss masks mode mismatch | [Loss competition](science/LOSS_COMPETITION.md) |
+| Find the sharp rate cap and receiving window for a single oscillator | [Bounded receiver](science/BOUNDED_RECEIVER.md), [verification](verification/README.md) |
 | Account for capture time, coupling, bandwidth and source shaping | [Physical scope](science/PHYSICAL_SCOPE.md), [assumption register](references/ASSUMPTIONS.md) |
 | Study the project from one selected educational source | [Learning route](learning/README.md), [30 milestones](learning/MILESTONES.md), [Kiilerich–Mølmer bridge](learning/KIILERICH_MOLMER_BRIDGE.md) |
 | Check imported ingredients and closest prior constructions | [Reference guide](references/README.md), [comparison](references/COMPARISON.md), [source evidence](references/SOURCE_EVIDENCE.md), [bibliography](references/REFERENCES.bib) |

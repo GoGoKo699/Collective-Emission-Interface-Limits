@@ -12,7 +12,7 @@ limit. Capturing several modes and coherently combining them raises that limit.
 | [Scientific account](science/README.md) · [Model and objective](science/MODEL.md) | Enter the connected account through its definitions and proof dependencies |
 | [Common-mode boundary](science/COMMON_MODE_BOUNDARY.md) · [Multimode receiver](science/MULTIMODE_RECEIVER.md) | Compare the sharp limits and receiver constructions |
 | [Learning route](learning/README.md) · [30 milestones](learning/MILESTONES.md) · [Source bridge](learning/KIILERICH_MOLMER_BRIDGE.md) | Build understanding from one educational anchor and local worked examples |
-| [Physical scope](science/PHYSICAL_SCOPE.md) · [References](references/README.md) | Check receiver resources, realization limits and attribution |
+| [Bounded receiver](science/BOUNDED_RECEIVER.md) · [Physical scope](science/PHYSICAL_SCOPE.md) · [References](references/README.md) | Find the sharp receiving-rate and time costs, realization limits and attribution |
 | [Verification guide](verification/README.md) | Reproduce the scientific checks and interpret the evidence |
 | [LLM guide](llms.txt) | Identify relevant questions and authoritative files for further reading |
 
@@ -66,6 +66,24 @@ This is a uniform channel limitation, not a statement that every input fails. Th
 all-waveform converse and finite bounds. The
 [photon-collection proof](science/PHOTON_COLLECTION.md) establishes the larger
 domain for the mean collected fraction.
+
+## How receiving controls limit the single oscillator
+
+Let $`B`$ be the receiver's maximum intensity in the source clock
+$`\tau=N\gamma t`$. At $`M/N^{2/3}\to c>0`$, the optimized single-oscillator
+fidelity with $`B/M\to r>0`$ tends to
+
+```math
+\exp\!\left[-\lambda-\frac{(A/4-\lambda)_+^2}{A}\right],
+\qquad A=\frac{c^3}{12},\qquad \lambda=\frac{\ln 4-1}{r}.
+```
+
+When the cap grows more slowly than $`M`$, fidelity vanishes. A cap growing
+faster than $`M`$ recovers the ideal common-mode limit. If the receiver also
+stops at $`T=\ln M+s+o(1)`$ in the source clock, add $`e^{-s}`$ to
+$`\lambda`$. The [bounded-receiver proof](science/BOUNDED_RECEIVER.md)
+gives an explicit control and a converse for every allowed coupling schedule.
+The physical rate cap is $`N\gamma B`$.
 
 ## How additional modes extend the excitation ceiling
 
@@ -171,6 +189,7 @@ python tools/check_presentation.py --self-test
 python verify.py --integrity-only
 python verify.py --artifacts-dir verification-artifacts --require-reference
 python tools/check_loss_competition.py --output loss-competition-report.json
+python tools/check_bounded_receiver.py
 python tests/09_multimode_receiver/checks.py --output multimode-receiver-report.json
 ```
 

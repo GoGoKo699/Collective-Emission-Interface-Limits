@@ -11,6 +11,7 @@ constructions, and the source versions supporting the physical assumptions.
 |---|---|
 | What established physics and mathematics enter the proof? | [Scientific background](BACKGROUND.md) |
 | How does the result relate to earlier state-transfer and mode-selection work? | [Direct comparison](COMPARISON.md) and [attribution register](PRIOR_ART.md) |
+| How does a hard receiver cap relate to known pulse-capture controls? | [Bounded control comparison](COMPARISON.md#bounded-receiver-control) |
 | What does optimized mode occupation establish? | [Law–Lee: complete-article comparison](LAW_LEE_FULL_TEXT.md) |
 | How does selected-input collective transfer relate to the common-code theorem? | [Tziperman: main-article and supplement comparison](TZIPERMAN_FULL_TEXT.md) |
 | How do bosonic mapping, few-mode projection and parameter readout differ? | [Additional source comparisons](ADDITIONAL_COMPARISONS.md) |
