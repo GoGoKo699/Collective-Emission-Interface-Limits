@@ -18,7 +18,9 @@ A receiving oscillator with coupling rate $`\kappa_\varepsilon(t)=|f(t)|^2/[\var
 For the bounded constructive pulse used here, the ideal guarantee can be approached
 with finite coupling amplitude and duration for each finite code. This statement
 allows both bounds to change with the code size and imposes no slew-rate bound on
-switching the coupling. Let $`f\geq0`$ be the chosen normalized pulse, let
+switching the coupling. The [bounded-receiver theorem](BOUNDED_RECEIVER.md)
+gives the sharp cap and duration laws for a single oscillator. The elementary
+construction here gives a finite bound for an arbitrary chosen pulse. Let $`f\geq0`$ be the chosen normalized pulse, let
 $`L\leq\min_{m\leq M}|A_m(f)|^2`$ be any proved constructive lower bound, and write
 $`P_T=\int_0^T|f(t)|^2dt>0`$. Turn off the receiver after $`T`$. Its normalized mode
 and actual signal kernel are

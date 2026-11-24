@@ -422,6 +422,17 @@ so a small single-photon error must shrink as the code grows. The proved
 controls both this attenuation and the discarded tail, with duration and coupling
 resources allowed to increase with code size.
 
+A hard intensity cap gives a sharper lesson than this regularization.
+The [bounded-receiver theorem](../science/BOUNDED_RECEIVER.md) optimizes over
+all couplings under the same cap. During the short onset, the receiving
+oscillator uses its maximum rate. It then reduces the rate to match the
+chosen pulse. The unavoidable onset penalty has leading coefficient
+$`\ln 4-1`$ divided by the cap in the source clock. At
+$`M/N^{2/3}\to c>0`$, the relevant budget is the cap per excitation.
+Stopping at $`T=\ln M+s`$ contributes an additional $`e^{-s}`$ to the
+limiting loss exponent. The balance with the pulse mismatch determines
+which excitation sectors constrain the common receiver.
+
 ## 9. Field structure, controls and the complete interpretation
 
 The two-mode explanation gives a physical picture of the failure. Near the common
